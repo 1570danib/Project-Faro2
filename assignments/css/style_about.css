@@ -1,0 +1,150 @@
+/* Solo del ABOUT*/
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #313236;
+  border-radius: 2px;
+}
+
+.navbar-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.navbar a {
+  color: #aaa;
+  display: inline-block;
+  font-size: 15px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+}
+
+.content {
+  max-width: 1280px;
+  margin: auto;
+  padding-left: 10px;
+}
+
+footer {
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+  padding: 50px 0 30px 0;
+}
+footer p, footer a {
+  font-size: 12px;
+  color: #999;
+}
+
+/* CAMBIOS SECUNDARIOS
+/* CAMBIOS EN INDEX: Sección del encabezado con fondo celeste */
+.hero-section {
+    background-color: #e0f7fa; /* Color azul celeste */
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center; /* Centra todo el bloque en la página */
+    align-items: center;
+}
+
+.hero-container {
+    max-width: 1000px;
+    display: flex;
+    align-items: center; /* Alinea verticalmente la imagen y el texto */
+    gap: 40px; /* Espacio entre la imagen y el texto */
+}
+
+.hero-logo {
+    width: 300px;
+    height: 300px; /* Asegura que sea cuadrada para el círculo */
+    object-fit: cover; /* Evita que la foto se estire */
+    border-radius: 50%;
+    box-shadow: 0 0 25px rgba(77, 208, 225, 0.8); /* Sombra azul celeste */
+    border: 3px solid #e0f7fa; /* Un pequeño borde para definir mejor el círculo */
+}
+
+.hero-text {
+    color: #000000; /* Letras negras */
+    text-align: left; /* Texto alineado a la izquierda de la sección, o sea, la foto*/
+}
+
+/* Nueva clase para centrar solo el encabezado superior */
+.hero-text.text-center {
+    text-align: center;
+    width: 100%;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero-text h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.hero-text h3 {
+    font-size: 3rem;
+    margin: 0;
+    background: linear-gradient(90deg, #0096c7, #4dd0e1); /* Degradado azul */
+    -webkit-background-clip: text; /* Aplica el fondo solo al texto */
+    -webkit-text-fill-color: transparent; /* Hace el color de letra invisible para ver el fondo */
+    display: inline-block;
+}
+
+/* Ajuste para celulares (que se ponga uno abajo del otro en pantallas chicas) */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text {
+        text-align: center;
+    }
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+    .assignment-card {
+        width: 100%; /* Una sola tarjeta por fila en celular */
+    }
+}
+
+/* REDES SOCIALES */
+/* Contenedor de iconos */
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+/* Estilo de los círculos de los iconos */
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: #e0f7fa; /* Fondo azul clarito solicitado */
+    color: #0a0908; /* Color del icono solicitado */
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+/* Animación al pasar el cursor (Hover) */
+.social-icon:hover {
+    transform: scale(1.2); /* Se hace más grande */
+    box-shadow: 0 0 15px rgba(77, 208, 225, 0.6); /* Brillo al pasar el mouse */
+}

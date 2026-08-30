@@ -1,0 +1,642 @@
+/* This is a template for the weekly assignment pages. You can copy and paste this code to create new pages for each week, and then customize the content as needed. Make sure to update the links, images, and text to reflect the specific assignment for that week. */
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="../../assignments/css/slideshow.js"></script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniela Barranco - Week 03</title>
+    <link rel="stylesheet" href="../../assignments/css/style.css">
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <a href="../../index.html">Home</a>
+        <a href="../../assignments.html">Weekly Assignments</a>
+        <a href="../../final-project.html">Final Project</a>
+        <a href="../../about.html">About me</a>
+      </div>
+    </div>
+
+    <div class="hero-section">
+      <div class="hero-container">
+        <div class="hero-text text-center">
+          <h1>Computer-Controlled Cutting</h1>
+          <h2>Week 03</h2>
+          <p>Laser Cutting and Vinyl Cutting Process</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="week-layout">
+      <aside class="week-sidebar">
+        <nav class="week-sidebar-menu">
+          <a onclick="showWeekSection('first-section')" class="week-link active">First Section</a>
+          <a onclick="showWeekSection('files')" class="week-link active">Files</a>
+          <a onclick="showWeekSection('#')" class="week-link active">First Section</a>
+        </nav>
+      </aside>
+
+      <div class="week-main-content">
+        
+        <!--1RA SECCIÓN: -->
+        <section id="first-section" class="week-section active">
+          <h2>Título principal</h2>
+          
+          <h3>Group Assignment</h3>
+
+          <!--Group Page-->
+          <div class="assignment-card" style="max-width: 500px; margin: 20px 0;">
+            <div class="card-content">
+              <h4>Group page</h4>
+              <p>Text.</p>
+              <a href="#" target="_blank" class="btn-read-more">Group Page</a>
+            </div>
+          </div>
+          <!--Fin: Group Page-->
+
+          <!--Cambiar manualmente el subtítulo / header de color a azul-->
+          <h2 style="color: #0895b1;">Subtítulo /header diferente</h2>  
+          <!--Fin: Cambiar manualmente el subtítulo de color a azul-->
+
+          <!--Contenedor de notas-->
+          <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px;">
+            <h3>tittle</h3>
+            
+            <!--Lista 01-->
+            <ul>
+              <li>List.</li>
+            </ul>
+
+            <!--Lista 02-->
+            <ol>
+                <li>A rectangle with internal lines is designed in the software.</li>
+                <li>The design is sent to the laser cutter.</li>
+                <li>The resulting distance is measured using a vernier caliper. In this test, there were 9 internal lines (marked in blue) and 0.5 for each external line (marked in red), totaling 10 lines. The total measured value is divided by this number (1.38 / 10 = <strong>0.138 mm</strong>, which is the Kerf).</li>
+            </ol>
+
+          </div>
+          <!--Fin: Contenedor de notas-->
+
+          <!--Contenedor azul-->
+            <div class="summary-box">
+                <p><strong>Formula:</strong> Total space (1.38 mm) / Number of lines (10) = <strong>0.138 mm</strong></p>
+            </div>
+          <!--Fin: Contenedor azul-->
+
+                <!--Inicio: Notas amarillas-->
+                <div class="summary-box" style="background-color: #fff3cd; border-left: 5px solid #ffc107;">
+                    <p><strong>Recommendation:</strong> When working with unknown components, always check the datasheet for connection diagrams and test the circuit on a breadboard first to verify functionality before manufacturing the PCB.</p>
+                    <img src="../../weeks/w10/img_w10/02_compressed.jpg" alt="Breadboard test 1" style="width: 100%; height: auto; margin: 15px 0;">
+                    <img src="../../weeks/w10/img_w10/3_compressed.jpg" alt="Breadboard test 2" style="width: 100%; height: auto; margin: 15px 0;">
+                </div>
+                <!--Fin: Notas amarillas-->
+
+
+          <!--Contenedor para refenciar una página en el mismo texto-->
+          <strong><a href="#" target="_blank">Referenced Tittle:</a></strong> Text.</li>
+          <!--fin: Contenedor para refenciar una página en el mismo texto-->
+
+            <!--Imagen solita-->
+          <img src="../../weeks/w03/img_w03/smart_carve_partes.jpg" alt="Solid Works photo 1" style="width: 100%; height: auto;">
+          <!--Fin: Imagen solita-->
+
+            <!--Imagen solita con pie de foto-->
+            <img src="../../weeks/w03/img_w03/27_Bisagra en solid.jpg" alt="laser cut 02" style="width: 100%; height: auto;">
+            <div style="text-align: center; margin: 20px 0;">
+                <p><em>This is how the hinge was made in SolidWorks.</em></p>
+            </div>
+            <!--Fin: Imagen solita con pie de foto-->
+
+            <!--Centrar imagen / hacer imagen pequeña-->
+            <div style="text-align: center; margin: 20px 0;">
+              <img src="../../weeks/w03/img_w03/28_resultado_final.jpg" alt="Final Result" style="width: 60%; height: auto;">
+            </div>
+            <div style="text-align: center; margin: 20px 0;">
+                <p><em>This is how the hinge was made in SolidWorks.</em></p>
+            </div>
+            <!--Fin: Centrar imagen-->
+
+          <!--Imagen con texto al lado-->
+          <h3>Raster Vs Vector My Explanation</h3>
+          <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+              <p>
+                As seen in the comparison, standard images (pixels) lose sharpness when zoomed in. By vectorizing the image, I created mathematical paths that never deform. This is vital for <b>laser cutting</b>, as it ensures the machine follows a clean line rather than a blurry grid of pixels.
+              </p>
+            </div>
+            <div style="flex: 1; min-width: 300px; text-align: center;">
+              <img src="../../weeks/w02/img_w02/2d_01.jpeg" alt="Raster vs Vector Dog" style="width: 100%; max-width: 450px; height: auto;">
+            </div>
+          </div>
+          <!--Fin: Imagen con texto al lado-->
+
+          <!-- Portfolio Gallery Section -->
+          <div class="portfolio-gallery">
+            <div class="gallery-grid">
+              <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="../../weeks/w03/img_w03/22_vinil_pegado.jpeg" alt="Vinyl Project">
+                <div class="gallery-overlay">
+                  <span class="zoom-icon">🔍</span>
+                </div>
+              </div>
+              <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="../../weeks/w03/img_w03/23_resultado_01.jpeg" alt="Result 01">
+                <div class="gallery-overlay">
+                  <span class="zoom-icon">🔍</span>
+                </div>
+              </div>
+              <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="../../weeks/w03/img_w03/24_resultado02.jpeg" alt="Result 02">
+                <div class="gallery-overlay">
+                  <span class="zoom-icon">🔍</span>
+                </div>
+              </div>
+              <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="../../weeks/w03/img_w03/25_resultado03.jpeg" alt="Result 03">
+                <div class="gallery-overlay">
+                  <span class="zoom-icon">🔍</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lightbox Modal -->
+          <div id="lightbox" class="lightbox">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <img class="lightbox-content" id="lightbox-img" src="">
+            <span class="lightbox-prev" onclick="prevImage()">❮</span>
+            <span class="lightbox-next" onclick="nextImage()">❯</span>
+          </div>
+          <!-- Fin: Portfolio Gallery Section -->
+
+            <!--VIDEO-->
+            <h3>My process</h3>
+            <p>I will show you how to vectorize an image in Inkscape.</p>
+            <video style="display: flex; justify-content: center; align-items: center; width: 100%; margin: 20px 0;" controls>
+              <source src="../../weeks/w02/img_w02/output_Inkscape_new.mp4" type="video/mp4">
+            </video>
+            <!--FIN: VIDEO-->
+
+          <!--VIDEO ESQUINAS REDONDEADAS CON PIE DE PÁGINA-->
+          <video alt="laser cut 02" style="width: 100%; height: auto;">
+            <source src="../../weeks/w04/video_w04/01.mp4" type="video/mp4">
+          </video>
+          <div style="text-align: center; margin: 20px 0;">
+            <p><em>Original code simulation</em></p>
+          </div>
+
+          <!--VIDEO de Youtube-->
+                  <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/XHKiu6XvxkU"
+                      title="Drum Feeder with Piezo Vibratory Linear and Loading Chute"
+                      allowfullscreen></iframe>
+                  </div>
+          <!--Fin: VIDEO de Youtube-->
+
+          <!--Carrusel/ AL LADO Contenedor de slideshow-->
+          <div id="slideshow-joints" class="slideshow-container">
+            <h3 style="text-align: center; color: var(--primary-dark);">Parametrization Process</h3>
+
+            <div class="slide">
+              <div class="slide-content">
+                <div class="slide-image">
+                  <img src="../../weeks/w0#" alt="Photo name" style="border-radius: 10%; width: 400px; height: auto; object-fit: cover;">
+                </div>
+                <div class="slide-text">
+                  <h4>Tittle</h4>
+                  <p>Text.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="buttons-container" style="text-align: center; margin: 20px;">
+                <button class="prev" data-target="slideshow-joints" style="border-radius: 10%; background-color: #00b4d8; color: white; border: none; padding: 10px 20px;">Previous</button>
+                <button class="next" data-target="slideshow-joints" style="border-radius: 10%; background-color: #00b4d8; color: white; border: none; padding: 10px 20px;">Next</button>
+            </div>
+          </div>
+          <!--Fin del carrusel-->
+
+         <!-- Carrusel CENTRADOS-->
+
+          <h3>Comparing Programs</h3>
+
+          <div id="slideshow1" class="slideshow-container">
+            <h3 style="text-align: center; margin-bottom: 1rem; color: var(--primary-dark);">Solid SolidWorks</h3>
+
+            <div class="slide">
+              <div class="center-content">
+                <div class="center-image">
+                  <img src="../../weeks/w02/img_w02/s01.jpeg" alt="Solid Works photo 1" style="border-radius: 10%; width: 700px; height: auto; object-fit: cover;">
+                </div>
+                <div class="center-text">
+                  <h4>1. Intuitive Usability</h4>
+                  <p>I believe it's possible to start using it only if you already have prior knowledge of 3D modeling tools. However, it has many functions and tricks that are necessary to learn through tutorials or classes.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="buttons-container" style="text-align: center; margin: 20px;">
+                <button class="prev" data-target="slideshow1" style="border-radius: 10%; background-color: #00b4d8; color: white; border: none; padding: 10px 20px; margin: 10px;">Previous</button>
+                <button class="next" data-target="slideshow1" style="border-radius: 10%; background-color: #00b4d8; color: white; border: none; padding: 10px 20px; margin: 10px;">Next</button>
+            </div>
+          </div>
+          <!--#endregion Carrusel Joints -->
+          
+          <script>
+            // Inicializar el carrusel al cargar la página
+            document.addEventListener('DOMContentLoaded', function() {
+              initializeCarousel('slideshow1');
+            });
+          </script>
+
+          <!--Termina el carrusel CENTRO-->
+
+          <!--CARRUSEL CON PESTAÑAS DE MAJO-->
+                  <div class="tabs-container">
+                    <div class="tabs-header">
+                        <button class="tab-btn active" onclick="openTab(event, 'tab1')">Laser Workflow</button>
+                        <button class="tab-btn" onclick="openTab(event, 'tab2')">Technical Issues</button>
+                    </div>
+
+                    <!--PESTAÑA 1-->
+                    <div id="tab1" class="tab-content active">
+                        <!--DIAPOSITIVA 1-->
+                        <div style="text-align: center; margin: 20px 0;">
+                          <h3>Laser Cutting Workflow</h3>
+                        </div>
+
+                        <div id="carouselTab1" class="slideshow-container">
+                        <div class="slide">
+                            <div style="text-align: center; margin: 20px 0;">
+                              <img src="tu-imagen-1.jpg" alt="Step 1" style="width:100%">
+                            </div>
+
+                            <p class="caption">1. Open Smart Carve and import files.</p>
+                        </div>
+                        <!--FIN DIAPOSITIVA 1-->
+
+                        <!--DIAPOSITIVA 2-->
+                        <div class="slide">
+                            <div style="text-align: center; margin: 20px 0;">
+                              <img src="tu-imagen-1.jpg" alt="Step 1" style="width:100%">
+                            </div>
+
+                            <p class="caption">2. Repeat import process for each file.</p>
+                        </div>
+                        <!--FIN DIAPOSITIVA 2-->
+
+                        <div class="buttons-container">
+                            <button class="prev" onclick="moveSlide('carouselTab1', -1)">&#10094; Prev</button>
+                            <button class="next" onclick="moveSlide('carouselTab1', 1)">Next &#10095;</button>
+                        </div>
+
+                    </div>
+                    <!--FIN PESTAÑA 1-->
+
+                    <!--PESTAÑA 2-->
+                    <div id="tab2" class="tab-content">
+
+                        <!--DIAPOSITIVA 1-->
+                        <div style="text-align: center; margin: 20px 0;">
+                          <h3>Technical Issues</h3>
+                        </div>
+
+                        <div id="carouselTab2" class="slideshow-container">
+                        <div class="slide">
+                            <img src="error-1.jpg" alt="Issue 1" style="width:100%; border-radius:10px;">
+                            <p class="caption">Warped material issues.</p>
+                        </div>
+                        <!--FIN DIAPOSITIVA 1-->
+
+                        <div class="buttons-container">
+                            <button class="prev" onclick="moveSlide('carouselTab2', -1)">&#10094; Prev</button>
+                            <button class="next" onclick="moveSlide('carouselTab2', 1)">Next &#10095;</button>
+                        </div>
+                        </div>
+                    </div>
+                    <!--FIN PESTAÑA 2-->
+
+                  </div>
+          <!--FIN: CARRUSEL CON PESTAÑAS DE MAJO-->
+
+
+            <!--Tabla-->
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr>
+                    <th>Resource</th>
+                    <th>Description / Link</th>
+                    <th>Format</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><strong>Downloadable Document</strong></td>
+                    <td>Joints Examples - Kerf variation and tests</td>
+                    <td><a href="https://fabacademy.org/2025/labs/puebla/week3/files/JointsExamples.zip" target="_blank">ZIP File</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Reference Book</strong></td>
+                    <td>Snap-Fit Book - Types of joints and mechanics</td>
+                    <td><a href="https://fab.cba.mit.edu/classes/S62.12/people/vernelle.noel/Plastic_Snap_fit_design.pdf" target="_blank">PDF Document</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Design Tool</strong></td>
+                    <td>Lattice Hinge Design — Choosing Torsional Stress</td>
+                    <td><a href="https://www.defproc.co.uk/analysis/lattice-hinge-design-choosing-torsional-stress/" target="_blank">Web Link</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Living Hinge Template</strong></td>
+                    <td>Parameterized hinge provided by the instructor</td>
+                    <td><a href="https://fabacademy.org/2025/labs/puebla/week3/files/livinghinge.SLDPRT" target="_blank">SolidWorks (.SLDPRT)</a></td>
+                </tr>
+                </tbody>
+            </table>
+          <!--fin Tabla-->
+
+          <!--Tarjetas para comparar con botón-->
+          <div class="comparison-container">
+            <div class="card">
+                <div class="card-content">
+                    <div style="text-align: center; color: #666; font-weight: bold; font-size: 0.8em; margin-bottom: 5px;">SIMULACIÓN INICIAL (WOKWI)</div>
+                    
+                    <div class="card-image">
+                        <img src="../w04/img_w04/003.webp" alt="ESP32 DevKit" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+
+                    <h2 class="card-title">ESP32 DevKit V1</h2>
+                    
+                    <ul class="specs-list">
+                        <li>Procesador: Xtensa® Dual-Core LX6</li>
+                        <li>Conectividad: Wi-Fi & Bluetooth integrada</li>
+                        <li>Voltaje: Operación a 3.3V</li>
+                        <li>Uso inicial: Pruebas en entorno virtual</li>
+                        <li>Limitación: Tamaño mayor para el prototipo final</li>
+                    </ul>
+                </div>
+                
+                <a href="https://www.alldatasheet.com/datasheet-pdf/view/338780/ALLEGRO/A4988.html" target="_blank" class="btn-datasheet" style="background: #666;">View Datasheet</a>
+            </div>
+
+            <div class="card highlight">
+                <div class="card-content">
+                    <div style="text-align: center; color: #28a745; font-weight: bold; font-size: 0.8em; margin-bottom: 5px;">ELECCIÓN FINAL (FAB LAB)</div>
+                    <div class="card-image">
+                        <img src="../w04/img_w04/002.jpg" alt="Seeed Studio XIAO RP2350" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <h2 class="card-title">XIAO RP2350</h2>
+                    <ul class="specs-list">
+                        <li>Procesador: Dual-core ARM Cortex-M33</li>
+                        <li>Arquitectura: Nueva RP2040 (Raspberry Pi)</li>
+                        <li>Formato: Ultra compacto (Thumb size)</li>
+                        <li>Programación: Más sencilla y eficiente</li>
+                        <li>Disponibilidad: Proporcionado por mi Nodo de Fab Lab</li>
+                    </ul>
+                </div>
+                <a href="https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-008373-DS-2-rp2350-datasheet.pdf?disposition=inline" target="_blank" class="btn-datasheet" style="background: #28a745;">View Datasheet</a>
+            </div>
+        </div>
+
+          <!--Separar información junto con summary-box-->
+          <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap; margin-bottom: 30px;">
+            <div style="flex: 1; min-width: 300px;">
+              <h3>What is it?</h3>
+              <p>
+                Is the process of writing software specifically designed to control hardware devices that perform dedicated tasks. Unlike general-purpose computers, these systems are integrated directly into machines to manage inputs and outputs in real-time.
+              </p>
+            </div>
+
+            <!-- Summary box rojo / Errores-->
+                <div class="notes-container" style="background-color: #f8d7da; border-left: 5px solid #dc3545; padding: 15px; border-radius: 4px; margin: 20px 0;">
+                    <p><strong>Mistake I made:</strong> In a previous board, I made the mistake of connecting M0, M1, and M2 incorrectly — my board failed to detect the signal and therefore the motor did not move.</p>
+                    <p>It is not critical, as these pins only define the number of steps the stepper motors can be configured to. To set them, the corresponding pins must be enabled, as explained in the table below.</p>
+                </div>
+
+
+            <div class="summary-box" style="flex: 2; min-width: 300px; background-color: #e9ecef; border-left: 5px solid #495057;">
+              <h4>Key Characteristics:</h4>
+              <ul>
+                <li><strong>Specific Functionality:</strong> The code is optimized for a single, predefined purpose.</li>
+                <li><strong>Hardware Interaction:</strong> It communicates directly with sensors, actuators, and communication modules.</li>
+                <li><strong>Resource Management:</strong> It operates on microcontrollers with limited memory requiring high efficiency.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!--Prompts contenedor-->
+            <div class="prompt-box" style="background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 15px; border-radius: 8px; font-style: italic; margin: 20px 0;">
+                <p><strong>Prompt:</strong> "These equations are part of a living hinge; I want you to explain each parameter in the table. Additionally, I want you to recommend which parameters I can change to perform several tests so my living hinge behaves like a conveyor belt (like the ones in supermarkets). Create a table with the different tests you want me to do, where the columns are the parameters to change and the rows are the test number along with the objective of each."</p>
+            </div>
+          <!--Fin: Prompts contenedor-->
+
+          <!--Lo que conozco antes-->
+            <div class="prompt-box" style="background-color: #a3b18a; border: 1px solid #588157; padding: 15px; border-radius: 8px; font-style: italic; margin: 20px 0;">
+                <p><strong>What I knew before.:</strong> .</p>
+            </div>
+          <!--Fin: Lo que conozco antes-->
+
+                    <!--Lo que conozco antes-->
+            <div class="prompt-box" style="background-color: #a3b18a; border: 1px solid #588157; padding: 15px; border-radius: 8px; font-style: italic; margin: 20px 0;">
+                <p><strong>My conclusion:</strong> .</p>
+            </div>
+          <!--Fin: Lo que conozco antes-->
+
+          <!--Tabla-->
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr>
+                    <th>Variable</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><strong>n</strong></td>
+                    <td>Number of columns or cuts in the pattern.</td>
+                </tr>
+                </tbody>
+            </table>
+          <!--Fin: Tabla-->
+
+                    <!--Tabla para extra tools-->
+                    <h3>Extra Tools</h3>
+                    <p>Text.</p>
+
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                        <tr>
+                            <th>Resource</th>
+                            <th>Description / Link</th>
+                            <th>Format</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><strong>Downloadable Document</strong></td>
+                            <td>Joints Examples - Kerf variation and tests</td>
+                            <td><a href="https://fabacademy.org/2025/labs/puebla/week3/files/JointsExamples.zip" target="_blank">ZIP File</a></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                    <!--Fin: Tabla para extra tools-->
+
+                <!--Código embebido-->
+                <div class="summary-box">
+                    <br><h5>Compression Recipe (Command):</h5>
+                    <pre><code>ffmpeg -i input.mp4 -vf "scale=-2:720" -c:v libx264 -preset slow -crf 30 -pix_fmt yuv420p -movflags +faststart -an output.mp4</code></pre>
+                </div>
+                <!--Fin: Código embebido-->
+
+          <!--Comparativa de imágenes-->
+          <h3>Circuit Evolution</h3>
+          <div class="portfolio-gallery">
+            <div class="gallery-grid">
+              <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="URL_IMAGEN_1_CIRCUITO_CON_LED" alt="Original Circuit with LED">
+                <div class="gallery-overlay"><span>Original</span></div>
+              </div>
+              <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="URL_IMAGEN_2_CIRCUITO_SIN_LED" alt="Final Circuit without LED">
+                <div class="gallery-overlay"><span>Final</span></div>
+              </div>
+            </div>
+          </div>
+          <!--Fin comparativa de imágenes-->
+
+        </section>
+        <!--Fin 1RA SECCIÓN-->
+        
+        <!--SECCIÓN: ARCHIVOS-->
+        <!-- Primera forma, todo de color negro-->
+        <div class="week-main-content"></div>
+
+          <section id="files" class="week-section">
+            <h2>Files I used this week</h2>
+            
+            <div class="cards-container">
+        
+              <!--3D-->
+              <div class="assignment-card">
+                  <div class="card-content">
+                      <h2>Text</h2>
+                      <a href="../w02/3D_files.zip" class="btn-read-more">Download</a>
+                  </div>
+              </div>
+            </div>
+          
+
+        </div>
+      </section>
+        <!--Fin: ARCHIVOS de un solo color negro-->
+
+        <!-- Files: nueva forma de color azul (me gusta más)-->
+            <section id="files" class="week-section">
+                <h2>Files I used this week</h2>
+                <div class="cards-container">
+                    <div class="assignment-card">
+                        <div class="card-content">
+                            <h3>3D Printing_Files.zip</h3>
+                            <h2 style="color: #00b4d8;">3D Files</h2>
+                            <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">The following files are included in the package:</p>
+                            
+                            <ul class="specs-list" style="margin-bottom: 20px; text-align: left;">
+                                <li><strong>3D Model:</strong> Ensamblaje1_Aretes_Prusa.3mf</li>
+                                <li><strong>G-code:</strong> final_earrings_to_print.bgcode</li>
+                            </ul>
+
+                            <a href="../w05/w05_files/3D printing_Files.zip" class="btn-read-more" style="background-color: #00b4d8; border: none; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block;">Download Zip</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+      </div>
+    </div>
+
+    <footer>
+        <p>
+            <a href="https://fabacademy.org/2026/labs/puebla/students/daniela-barranco/final-project.html">Automated Crystal Assembly System</a>
+            © 2026 by
+            <a href="https://fabacademy.org/2026/labs/puebla/students/daniela-barranco/about.html">Daniela Barranco de la Cerda</a>
+            is licensed under
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</a>
+            <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em; max-height: 1em; margin-left: .2em;">
+            <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em; max-height: 1em; margin-left: .2em;">
+            <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em; max-height: 1em; margin-left: .2em;">
+            <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em; max-height: 1em; margin-left: .2em;">
+        </p>
+        <p>Source code hosted at <a href="https://gitlab.fabcloud.org/academany/fabacademy/2026/labs/puebla/students/daniela-barranco" target="_blank">gitlab.fabcloud.org</a></p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assignments/css/slideshow.js"></script>
+    
+    <script>
+      function showWeekSection(sectionId) {
+        const sections = document.querySelectorAll('.week-section');
+        sections.forEach(section => section.classList.remove('active'));
+        const links = document.querySelectorAll('.week-link');
+        links.forEach(link => link.classList.remove('active'));
+        document.getElementById(sectionId).classList.add('active');
+        event.target.classList.add('active');
+        event.preventDefault();
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        initializeCarousel('slideshow-joints');
+        initializeCarousel('slideshow-vinyl');
+      });
+
+      // Lightbox Gallery Functions
+      let currentImageIndex = 0;
+      let galleryImages = [];
+
+      function openLightbox(element) {
+        const img = element.querySelector('img');
+        galleryImages = Array.from(document.querySelectorAll('.gallery-item img')).map(i => i.src);
+        currentImageIndex = galleryImages.indexOf(img.src);
+        
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        lightboxImg.src = img.src;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        const lightbox = document.getElementById('lightbox');
+        lightbox.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      }
+
+      function nextImage() {
+        currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+        document.getElementById('lightbox-img').src = galleryImages[currentImageIndex];
+      }
+
+      function prevImage() {
+        currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+        document.getElementById('lightbox-img').src = galleryImages[currentImageIndex];
+      }
+
+      // Keyboard navigation
+      document.addEventListener('keydown', function(event) {
+        if (document.getElementById('lightbox').classList.contains('active')) {
+          if (event.key === 'ArrowRight') nextImage();
+          if (event.key === 'ArrowLeft') prevImage();
+          if (event.key === 'Escape') closeLightbox();
+        }
+      });
+
+      // Close lightbox when clicking outside image
+      document.getElementById('lightbox').addEventListener('click', function(event) {
+        if (event.target === this) closeLightbox();
+      });
+    </script>
+  </body>
+</html>    

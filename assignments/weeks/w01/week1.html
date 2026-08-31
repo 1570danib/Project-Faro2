@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniela Barranco - Semana 1</title>
+    <link rel="stylesheet" href="../../css/style.css">
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <a href="../../../index.html">Inicio</a>
+        <a href="../../../assignments.html">Tareas semanales</a>
+        <a href="../../../final-project.html">Proyecto final</a>
+        <a href="../../../about.html">Sobre mí</a>
+      </div>
+    </div>
+
+    <!--Hero Section-->
+    <div class="hero-section">
+      <div class="hero-container">
+        <div class="hero-text text-center">
+          <h1>Ideación con Inteligencia Artificial</h1>
+          <h2>Semana 1</h2>
+          <p>Consultoría de Innovación, Diseño de Servicios y Estrategia de Negocios</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN LAYOUT WITH SIDEBAR -->
+    <div class="week-layout">
+      <!-- SIDEBAR MENU -->
+      <aside class="week-sidebar">
+        <nav class="week-sidebar-menu">
+          <a onclick="showWeekSection('marco')" class="week-link active">1. Marco del Problema</a>
+          <a onclick="showWeekSection('scamper')" class="week-link">2. Matriz SCAMPER</a>
+          <a onclick="showWeekSection('audacia')" class="week-link">3. Filtro de Audacia</a>
+          <a onclick="showWeekSection('remix')" class="week-link">4. Remix Final</a>
+        </nav>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <div class="week-main-content">
+
+        <!--SECCIÓN 1: MARCO DEL PROBLEMA-->
+        <section id="marco" class="week-section active">
+          <h2>Marco del Problema</h2>
+          <p>Desafío de co-creación lúdico y disruptivo a partir de tres variables obligatorias arrojadas por tres dados: el formato (Evento/Activación/Dinámica Comunitaria), la restricción (Frugal / Cero Presupuesto) y el usuario (Adultos Mayores o Brecha Digital).</p>
+
+          <h3>Prompt inicial</h3>
+          <div class="prompt-box" style="background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 15px; border-radius: 8px; font-style: italic; margin: 20px 0;">
+            <p><strong>Prompt:</strong> ROL: Actúa como un Consultor Senior en Innovación, Diseño de Servicios y Estrategia de Negocios. CONTEXTO: Tengo un desafío de co-creación lúdico y disruptivo. He tirado tres dados que me han arrojado tres variables obligatorias para diseñar un proyecto: 1. EL QUÉ (Formato/Entregable): Un Evento, Activación o Dinámica Comunitaria (Taller itinerante, festival relámpago, intervención en el espacio público). 2. EL CÓMO (Restricción/Enfoque): Frugal / Cero Presupuesto (Solo se pueden usar recursos que el usuario o el entorno ya tengan a la mano). 3. EL PARA QUIÉN (Usuario/Contexto): Adultos Mayores o Brecha Digital (Población que vive sola o que no interactúa fácilmente con la tecnología). TAREA: Antes de comenzar a idear soluciones específicas, necesito que me ayudes a enmarcar y entender el problema profundamente. Haz lo siguiente de forma concisa: 1. CONTEXTO Y DOLOR: Define brevemente cuál es el principal punto de dolor (pain point) de este Usuario específico cuando se enfrenta a este Formato bajo esa Restricción técnica. 2. LA PARADOJA: Si existe una contradicción o incompatibilidad aparente entre las tres variables (por ejemplo, digital vs. brecha digital, o cero presupuesto vs. infraestructura), explica brevemente cómo podemos transformarla en una oportunidad de diseño inteligente (tecnología invisible, interfaces alternativas, etc.). 3. LAS 3 PREGUNTAS HMW: Genera 3 variantes del formato estricto "¿Cómo podríamos...?" (How Might We) que unan estas tres variables. Cada opción debe enfocarse en un ángulo diferente (eficiencia, impacto social o experiencia emocional). Termina tu respuesta preguntándome cuál de las 3 opciones de "¿Cómo podríamos...?" quiero elegir para pasar a la fase de ideación SCAMPER.</p>
+          </div>
+
+          <h3>Respuesta de la IA</h3>
+          <p>¡Hola! Excelente desafío lúdico. Como consultor, veo un potencial enorme en este cruce de variables. El diseño con restricciones severas suele generar las innovaciones más humanas y disruptivas.</p>
+          <p>Aquí tienes el marco estratégico para entender el problema profundamente:</p>
+
+          <h3>1. Contexto y dolor (Pain Point)</h3>
+          <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px;">
+            <p>El principal punto de dolor del adulto mayor aislado digitalmente ante una intervención pública sin presupuesto es la ansiedad por exclusión invisible. Este usuario siente el deseo humano de conectar con su entorno comunitario, pero teme quedar expuesto públicamente por su falta de habilidades tecnológicas o sentir que el evento no fue diseñado para él, recurriendo al autoaislamiento por miedo a la frustración o al ridículo.</p>
+          </div>
+
+          <h3>2. La paradoja como oportunidad</h3>
+          <p>La contradicción aparente es diseñar para la brecha digital bajo un enfoque frugal que suele depender de "lo que hay a la mano" (que hoy en día suele ser el smartphone).</p>
+          <p>Transformamos esto en oportunidad mediante la <strong>Tecnología Analógica Inversa</strong>: en lugar de forzar al usuario a usar interfaces digitales, utilizamos el entorno físico y social como el "hardware". El vecindario se convierte en la pantalla, los objetos cotidianos en los botones y los propios vecinos en el procesador de datos. La tecnología opera detrás de escena (invisible), permitiendo al adulto mayor interactuar con total naturalidad.</p>
+
+          <h3>3. Las 3 preguntas HMW (How Might We)</h3>
+          <ul>
+            <li><strong>Ángulo de Eficiencia (Aprovechamiento de recursos):</strong> ¿Cómo podríamos <strong>rediseñar el espacio público y los objetos cotidianos del vecindario</strong> como una plataforma de activación comunitaria que integre a los adultos mayores aislados sin gastar un solo centavo?</li>
+            <li><strong>Ángulo de Impacto Social (Conexión comunitaria):</strong> ¿Cómo podríamos <strong>activar una dinámica itinerante basada en el trueque de saberes analógicos</strong> para que los adultos mayores se conviertan en los conectores esenciales de la comunidad, cerrando la brecha digital de forma orgánica?</li>
+            <li><strong>Ángulo de Experiencia Emocional (Dignidad y pertenencia):</strong> ¿Cómo podríamos <strong>crear un festival relámpago que use la memoria colectiva y la nostalgia</strong> como la principal interfaz de juego, logrando que los adultos mayores se sientan valorados y seguros sin necesidad de pantallas?</li>
+          </ul>
+
+          <div class="summary-box">
+            <p>¿Cuál de las 3 opciones de <strong>"¿Cómo podríamos...?"</strong> (Eficiencia, Impacto Social o Experiencia Emocional) prefieres elegir para que pasemos formalmente a la fase de <strong>ideación SCAMPER</strong>?</p>
+          </div>
+        </section>
+        <!--Fin SECCIÓN 1-->
+
+        <!--SECCIÓN 2: MATRIZ SCAMPER-->
+        <section id="scamper" class="week-section">
+          <h2>Elección de enfoque y Matriz SCAMPER</h2>
+
+          <h3>Mi elección</h3>
+          <div class="prompt-box" style="background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 15px; border-radius: 8px; font-style: italic; margin: 20px 0;">
+            <p><strong>Prompt:</strong> Sería el de la tercera opción Dignidad y pertenencia.</p>
+          </div>
+
+          <h3>Respuesta de la IA</h3>
+          <p>¡Excelente elección! El ángulo de <strong>Experiencia Emocional (Dignidad y Pertenencia)</strong> es el más potente para este ecosistema, ya que hackea la barrera tecnológica apelando al valor histórico y emocional del usuario.</p>
+          <p>Nuestra pregunta guía para esta sesión de innovación es:</p>
+
+          <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px;">
+            <p><strong>¿Cómo podríamos crear un festival relámpago que use la memoria colectiva y la nostalgia como la principal interfaz de juego, logrando que los adultos mayores se sientan valorados y seguros sin necesidad de pantallas?</strong></p>
+          </div>
+
+          <p>Para activar la herramienta <strong>SCAMPER</strong> bajo la restricción <strong>Frugal / Cero Presupuesto</strong>, usaremos como materia prima lo que ya está en la calle o en las casas de los vecinos: bancos públicos, tizas, cajas de cartón, objetos antiguos, historias y las propias personas.</p>
+          <p>Aquí tienes la matriz de ideación disruptiva:</p>
+
+          <h3>⚙ Matriz SCAMPER (Cero Presupuesto)</h3>
+          <ul>
+            <li><strong>S - Sustituir (Pantallas por Objetos con Memoria):</strong> Sustituimos los códigos QR o pantallas de registro por una "Estación de Objetos del Pasado" en una plaza. Cada adulto mayor trae un objeto antiguo (un cassette, una plancha de carbón, una foto). Ese objeto es su "perfil de usuario" y la llave para interactuar con los jóvenes del barrio.</li>
+            <li><strong>C - Combinar (Mobiliario Urbano + Juegos de Infancia):</strong> Combinamos las bancas del parque con el juego tradicional de la "rayuela" o "avión" pintado con tiza (recurso gratuito). Cada casilla de la rayuela invita a caminar hacia una banca donde un adulto mayor está sentado, listo para compartir un recuerdo específico de su juventud a quien caiga en su casilla.</li>
+            <li><strong>A - Adaptar (El Barrio como un Museo Viviente):</strong> Adaptamos las fachadas, rejas y ventanas de las casas de los propios adultos mayores. Se cuelgan sábanas viejas o cartones donde ellos escriben (con carbón o pintura sobrante) "El saber que el internet no te puede dar". El festival consiste en un recorrido a pie por este museo vecinal.</li>
+            <li><strong>M - Modificar / Magnificar (La Voz como Amplificador):</strong> Modificamos el concepto de "altavoz digital". Creamos el <strong>"Teléfono Escarcha"</strong> o susurrador comunitario usando latas de conservas vacías y un hilo largo. Los adultos mayores transmiten secretos, recetas o historias del barrio de una esquina a otra a los niños y jóvenes que pasan.</li>
+            <li><strong>P - Proponer otros usos (Las Aceras como Pizarras de Historia):</strong> Usamos el suelo de la calle no para transitar, sino como un lienzo de co-creación analógica. Se invita a la comunidad a dibujar con tiza el mapa del barrio "como era antes", guiados exclusivamente por los relatos en vivo y las correcciones de los adultos mayores de la cuadra.</li>
+            <li><strong>E - Eliminar (La necesidad de "Saber Usar" algo):</strong> Eliminamos cualquier manual de instrucciones o reglas complejas. La única regla del festival relámpago es <strong>"Pregunta para Jugar"</strong>. Nadie puede participar en la dinámica si no valida primero su acción conversando con un adulto mayor, eliminando la fricción de la brecha digital de golpe.</li>
+            <li><strong>R - Reordenar / Revertir (Roles de Mentoría):</strong> Invertimos el flujo tradicional donde el joven enseña tecnología al anciano. En este festival relámpago, <strong>el adulto mayor es el "Gamemaster"</strong> o juez del juego, y los jóvenes tienen que superar retos analógicos (adivinar canciones antiguas tarareadas, descifrar modismos viejos) para ganar el festival.</li>
+          </ul>
+
+          <div class="summary-box">
+            <p>Como tu Consultor de Innovación, te propongo el siguiente paso: <strong>¿Cuál de estas ideas SCAMPER te resuena más para que la transformemos en el concepto final de este proyecto (definiendo su nombre, dinámica exacta y plan de activación rápido)?</strong></p>
+            <p>Si quieres, podemos <strong>fusionar un par de ellas</strong> para crear una solución aún más robusta.</p>
+          </div>
+        </section>
+        <!--Fin SECCIÓN 2-->
+
+        <!--SECCIÓN 3: FILTRO DE AUDACIA-->
+        <section id="audacia" class="week-section">
+          <h2>Filtro de Audacia</h2>
+
+          <h3>Prompt</h3>
+          <div class="prompt-box" style="background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 15px; border-radius: 8px; font-style: italic; margin: 20px 0;">
+            <p><strong>Prompt:</strong> He elegido la opción de HMW número [3]. Como nuestro consultor de innovación, ahora vamos a aplicar la metodología SCAMPER para generar ideas altamente disruptivas para esta pregunta específica, teniendo muy presentes las restricciones de nuestros dados originales. Para no inundarme de información genérica, haz lo siguiente: 1. EL FILTRO DE AUDACIA: Genera exactamente 2 ideas innovadoras y viables para cada una de las siguientes letras de SCAMPER que son las más críticas para nuestro reto: - S (Sustituir): ¿Qué elemento tradicional, proceso o material del problema podemos sustituir para romper las reglas? - C (Combinar): ¿Con qué otro servicio, industria, hábito o tendencia actual podemos combinar nuestra solución para crear algo único? - M (Magnificar/Modificar): ¿Qué pasaría si exageramos al extremo el beneficio principal o modificamos radicalmente el formato? - E (Eliminar): ¿Qué elemento que todos dan por obligatorio en este tipo de soluciones podemos eliminar por completo para simplificar la vida del usuario? 2. FORMATO DE SALIDA: Presenta cada idea con: - Un título llamativo (máximo 4 palabras). - Una descripción de 2 frases (qué es y cómo funciona). - "El factor Wow": Qué la hace atractiva tanto para un emprendedor/freelancer (agilidad/negocio) como para un funcionario público (impacto social/comunidad). Comienza de inmediato.</p>
+          </div>
+
+          <h3>Respuesta de la IA</h3>
+          <p>Aquí tienes la propuesta estratégica enfocada exclusivamente en el ángulo de <strong>Experiencia Emocional</strong> (Dignidad y Pertenencia), aplicando el filtro de audacia con recursos 100% frugales:</p>
+
+          <h3>S (Sustituir)</h3>
+          <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px;">
+            <p><strong>1. Pasaportes de Objetos Viejos</strong></p>
+            <ul>
+              <li><strong>Descripción:</strong> Sustituimos los tickets de acceso o registros QR por un objeto antiguo que cada participante debe llevar desde su casa. El adulto mayor valida la entrada evaluando el valor emocional o la historia detrás de dicho objeto, convirtiéndose en el aduanero oficial del festival.</li>
+              <li><strong>El factor Wow:</strong> Para el emprendedor, es un modelo de activación ágil y viralizable sin soporte técnico. Para el funcionario público, promueve la economía circular y la cohesión social inmediata a nivel de barrio.</li>
+            </ul>
+            <p><strong>2. Bancos Públicos por Confesionarios</strong></p>
+            <ul>
+              <li><strong>Descripción:</strong> Sustituimos el mobiliario urbano estático por estaciones de "Secretos del Pasado" usando tizas para delimitar el espacio. Los adultos mayores se sientan a revelar anécdotas censuradas o curiosidades de la época de su juventud a los transeúntes.</li>
+              <li><strong>El factor Wow:</strong> Al freelance le da una estructura de guerrilla urbana de alto impacto visual y costo cero. Al funcionario le permite reactivar plazas públicas apagadas o percibidas como inseguras mediante el diálogo pacífico.</li>
+            </ul>
+          </div>
+
+          <h3>C (Combinar)</h3>
+          <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px;">
+            <p><strong>1. Tinder Analógico de Saberes</strong></p>
+            <ul>
+              <li><strong>Descripción:</strong> Combinamos las dinámicas de emparejamiento de las apps de citas con el formato tradicional de las ferias de pueblo. Los jóvenes buscan perfiles dibujados en cartón en la plaza y deben hacer "match" en la vida real hablando con el adulto mayor que posee el conocimiento que buscan.</li>
+              <li><strong>El factor Wow:</strong> Al emprendedor le ofrece un formato sumamente lúdico que puede paquetizarse y venderse como teambuilding corporativo. Al funcionario le resuelve directamente el indicador de aislamiento social y brecha generacional.</li>
+            </ul>
+            <p><strong>2. Gymkana del Almacén Viejo</strong></p>
+            <ul>
+              <li><strong>Descripción:</strong> Combinamos la tendencia de los escape rooms urbanos con las tiendas de abarrotes de toda la vida del vecindario. Los participantes resuelven pistas sobre la historia del barrio preguntando exclusivamente a los tenderos y vecinos más ancianos de la zona.</li>
+              <li><strong>El factor Wow:</strong> El freelancer activa una red de patrocinio hiperlocal orgánica y de bajo esfuerzo logístico. El funcionario público impulsa el comercio de barrio y el orgullo de la identidad local.</li>
+            </ul>
+          </div>
+
+          <h3>M (Magnificar / Modificar)</h3>
+          <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px;">
+            <p><strong>1. El Megáfono Humano Gigante</strong></p>
+            <ul>
+              <li><strong>Descripción:</strong> Exageramos el beneficio de la voz del adulto mayor convirtiendo las calles en un teléfono de hilo gigante con latas usadas y cuerdas tensadas entre balcones. Los mensajes, piropos de antes y consejos vecinales viajan de un extremo a otro del barrio de forma física y sonora.</li>
+              <li><strong>El factor Wow:</strong> Crea un impacto visual y acústico disruptivo en redes sociales de manera orgánica para el creador del proyecto. Para el funcionario, representa una intervención de urbanismo táctico altamente inclusiva y festiva.</li>
+            </ul>
+            <p><strong>2. El Juicio del Tiempo</strong></p>
+            <ul>
+              <li><strong>Descripción:</strong> Modificamos el formato de festival a un tribunal público simulado en plena calle donde los adultos mayores actúan como jueces implacables del presente. Los jóvenes deben defender hábitos modernos (como el uso del smartphone) ante leyes basadas en las costumbres de 1970.</li>
+              <li><strong>El factor Wow:</strong> Ofrece al emprendedor un formato de entretenimiento de calle altamente humorístico y con potencial de convertirse en show. Al funcionario le entrega una herramienta pedagógica única para debatir sobre salud mental y adicción digital.</li>
+            </ul>
+          </div>
+
+          <h3>E (Eliminar)</h3>
+          <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px;">
+            <p><strong>1. Sin Guion ni Manuales</strong></p>
+            <ul>
+              <li><strong>Descripción:</strong> Eliminamos por completo los folletos de instrucciones, los mapas impresos y las reglas complejas del evento. La única regla que existe en el espacio público es "Pregunta para avanzar", obligando al participante a interactuar de forma intuitiva con los ancianos.</li>
+              <li><strong>El factor Wow:</strong> Reduce a cero los costos de diseño gráfico, impresión y personal de staff para el freelancer. Al funcionario le garantiza un evento de accesibilidad universal donde nadie se siente excluido por no saber leer instrucciones.</li>
+            </ul>
+            <p><strong>2. Cero Electricidad y Cables</strong></p>
+            <ul>
+              <li><strong>Descripción:</strong> Eliminamos cualquier tipo de requerimiento eléctrico, plantas de luz, bocinas o iluminación artificial. Toda la activación se realiza a la luz del día usando la acústica natural de las plazas y megáfonos de cartón reciclado.</li>
+              <li><strong>El factor Wow:</strong> Permite al emprendedor ejecutar un evento relámpago con riesgo de cancelación e infraestructura cero. Al funcionario le elimina la burocracia de permisos de conexión eléctrica y reduce la huella de carbono de la activación a cero.</li>
+            </ul>
+          </div>
+
+          <div class="summary-box">
+            <p>Hemos destilado el poder de la nostalgia bajo restricciones extremas. Para pasar al diseño final del servicio, dime: <strong>¿Cuáles 2 o 3 ideas de esta matriz SCAMPER te gustaría fusionar para crear el prototipo definitivo de nuestro festival relámpago?</strong></p>
+          </div>
+        </section>
+        <!--Fin SECCIÓN 3-->
+
+        <!--SECCIÓN 4: REMIX FINAL-->
+        <section id="remix" class="week-section">
+          <h2>Remix y Concepto Final</h2>
+
+          <h3>Prompt</h3>
+          <div class="prompt-box" style="background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 15px; border-radius: 8px; font-style: italic; margin: 20px 0;">
+            <p><strong>Prompt:</strong> De las 8 ideas que me diste, las que más nos llaman la atención son: [De la S fue la 1, de la C la 2, de la M la 1 y de la E la 1]. Actúa como nuestro facilitador de diseño. Haz lo siguiente de forma súper concisa: 1. EL REMIX: Combina esas dos ideas en un concepto único de producto o servicio. Descríbelo en 3 oraciones estrictas: qué es, para quién es y qué lo hace inusual. 2. EL FILTRO DNV (Deseo, Novedad, Viabilidad): Evalúa este nuevo concepto dándole una calificación del 1 al 5 a cada criterio y justificando brevemente por qué: ○ DESEO: ¿Por qué un usuario real o una institución querría adoptar esto con urgencia? ○ NOVEDAD: ¿Qué la aleja radicalmente de las soluciones aburridas que ya existen? ○ VIABILIDAD: ¿Cuál sería el primer paso (un prototipo de 2 horas) para empezar a hacerla real hoy mismo? 3. FORMATO DE SALIDA: Presenta la idea con: ○ Un título llamativo (máximo 4 palabras) ○ Una descripción de 2 frases (qué es y cómo funciona). ○ "El factor Wow": Qué la hace atractiva tanto para un emprendedor/freelancer (agilidad/negocio) como para un funcionario (impacto social/comunidad).</p>
+          </div>
+
+          <h3>Respuesta de la IA</h3>
+          <p>¡Qué gran selección! Has elegido los componentes perfectos: el acceso por memoria (<strong>S1</strong>), el juego basado en el comercio local (<strong>C2</strong>), el impacto acústico analógico (<strong>M1</strong>) y la fricción cero de instrucciones (<strong>E1</strong>).</p>
+          <p>Aquí tienes el remix estratégico:</p>
+
+          <h3>1. El Remix (Concepto Único)</h3>
+          <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px;">
+            <p>Este concepto es una yincana urbana analógica y relámpago basada en el comercio local y el rescate de la memoria del barrio. Está diseñado especialmente para jóvenes y familias que buscan reconectar con su comunidad, posicionando a los adultos mayores de las tiendas y abarrotes como los jueces y guardianes exclusivos del juego. Lo que lo hace radicalmente inusual es que no tiene manual de instrucciones, no usa pantallas y se juega usando megáfonos de cartón y objetos viejos de los vecinos como únicos pasaportes de avance.</p>
+          </div>
+
+          <h3>2. El Filtro DNV (Deseo, Novedad, Viabilidad)</h3>
+          <ul>
+            <li><strong>DESEO: 5/5</strong> — Justificación: Las instituciones públicas necesitan con urgencia reactivar la economía local y combatir la epidemia de soledad en la vejez de forma visible. Los usuarios jóvenes buscan desesperadamente experiencias analógicas y desconexión digital (detox) que se sientan auténticas y lúdicas.</li>
+            <li><strong>NOVEDAD: 4.8/5</strong> — Justificación: Destruye el formato de yincana tradicional (que depende de apps, PDFs o mapas impresos) y lo transforma en un circuito vivo. Convierte el "error" de no tener instrucciones en la mecánica principal de juego: la única forma de avanzar es entablar una conversación real con un anciano.</li>
+            <li><strong>VIABILIDAD: 5/5</strong> — Justificación: El prototipo de 2 horas consiste en ir a la tienda de abarrotes más antigua de tu cuadra, pedirle al dueño (adulto mayor) que esconda un objeto viejo detrás del mostrador, y retar a 3 amigos a que vayan a conseguirlo usando solo pistas a viva voz, sin usar sus teléfonos.</li>
+          </ul>
+
+          <h3>3. Formato de Salida</h3>
+          <div class="summary-box">
+            <p><strong>El Teléfono del Barrio</strong></p>
+            <p><strong>Descripción:</strong> Es un circuito de juego urbano sin pantallas donde los comercios locales regentados por adultos mayores se convierten en bases secretas. Los participantes avanzan descifrando pistas acústicas transmitidas por los ancianos a través de megáfonos de cartón reciclado, validando su progreso al entregar objetos antiguos en lugar de escanear códigos QR.</p>
+            <p><strong>El factor Wow:</strong> Al <strong>emprendedor</strong> le permite vender una activación de marca hiperlocal, altamente instagrameable por su estética analógica, ejecutable en una tarde y con costo logístico de cero pesos. Al <strong>funcionario público</strong> le entrega un proyecto llave en mano que dinamiza las ventas del comercio de barrio, promueve el patrimonio inmaterial y dignifica al adulto mayor como el líder absoluto de la dinámica.</p>
+          </div>
+
+          <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px;">
+            <p>¡El concepto ya es real en papel! Para dar el cierre definitivo a esta consultoría de diseño, dime: <strong>¿Quieres que redactemos el "Guión del Prototipo Relámpago" (el paso a paso exacto para probarlo gratis este fin de semana) o prefieres que le pongamos estructura de modelo de negocio (cómo venderlo)?</strong></p>
+          </div>
+        </section>
+        <!--Fin SECCIÓN 4-->
+
+      </div>
+    </div>
+
+    <footer>
+      <p>Copyright 2026 Daniela Barranco - Creative Commons Atribución No Comercial</p>
+      <p>Código fuente alojado en <a href="https://gitlab.fabcloud.org/academany/fabacademy/2026/labs/puebla/students/daniela-barranco" target="_blank">gitlab.fabcloud.org</a></p>
+    </footer>
+
+    <script src="../../css/slideshow.js"></script>
+
+    <script>
+      function showWeekSection(sectionId) {
+        const sections = document.querySelectorAll('.week-section');
+        sections.forEach(section => section.classList.remove('active'));
+        const links = document.querySelectorAll('.week-link');
+        links.forEach(link => link.classList.remove('active'));
+        document.getElementById(sectionId).classList.add('active');
+        event.target.classList.add('active');
+        event.preventDefault();
+      }
+    </script>
+  </body>
+</html>

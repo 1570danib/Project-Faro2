@@ -13,7 +13,7 @@
         <a href="../../../index.html">Inicio</a>
         <a href="../../../assignments.html">Tareas semanales</a>
         <a href="../../../final-project.html">Proyecto final</a>
-        <a href="../../../about.html">Sobre mí</a>
+        <a href="../../../about.html">Yo merengues</a>
       </div>
     </div>
 
@@ -33,7 +33,7 @@
       <!-- SIDEBAR MENU -->
       <aside class="week-sidebar">
         <nav class="week-sidebar-menu">
-          <a onclick="showWeekSection('buscar-oportunidades')" class="week-link active">Buscar oportunidades</a>
+          <a onclick="showWeekSection('buscar-oportunidades')" class="week-link active">1. Buscar oportunidades</a>
           <a onclick="showWeekSection('insights')" class="week-link">2. Insights</a>
           <a onclick="showWeekSection('pain-gain-map')" class="week-link">3. Pain-Gain Map</a>
           <a onclick="showWeekSection('scamper-remix-de-ideas')" class="week-link">4. SCAMPER + Remix de ideas</a>
@@ -1600,6 +1600,966 @@
       </section>
       <!--Fin SECCIÓN 3-->
 
+      <!--SECCIÓN 4: SCAMPER + REMIX DE IDEAS-->
+      <section id="scamper-remix-de-ideas" class="week-section">
+        <h2>SCAMPER + Remix de ideas</h2>
+
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">SCAMPER</h3>
+
+        <div class="prompt-box" style="background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 15px; border-radius: 8px; font-style: italic; margin: 20px 0;">
+          <h4 style="margin-top:0; font-style: normal;">💬 Prompt original</h4>
+          <p>Actúa como un facilitador senior de innovación disruptiva especializado en generar ideas de negocio no obvias para productos digitales-físicos en mercados emergentes de América Latina. Tu metodología es SCAMPER aplicado a problemas verificados con usuarios reales: para cada letra produces dos ideas exploración — no mejoras incrementales, sino reencuadres que cambian cómo se crea o entrega el valor.</p>
+          <p>Una idea exploración describe en 2–3 oraciones qué haría el negocio diferente si esa letra se aplicara radicalmente.</p>
+          <p>Somos un equipo de emprendedores en México construyendo un negocio con tres componentes: una aplicación con IA, un artefacto físico inteligente y una página web de venta.</p>
+          <p>Capacidades: desarrollo de software e IA, hardware conectado (ESP32, Raspberry Pi, sensores, PCB, BLE/MQTT/WiFi), diseño y manufactura de producto físico (CAD, impresión 3D). Tenemos seis meses para MVP comercializable.</p>
+          <p>Nuestro usuario / segmento: [DESCRIBE EL SEGMENTO]<br>
+          El cruce más poderoso de nuestro Pain-Gain Map:</p>
+          <ul>
+            <li>Dolor ⭐: [pega el dolor más intenso]</li>
+            <li>Ganancia ⭐: [pega la ganancia más deseada]</li>
+            <li>Por qué no está resuelto hoy: [pega la explicación del cruce]</li>
+            <li>La oportunidad en una oración: [pega del Paso 3]</li>
+          </ul>
+          <p>Aplica cada letra de SCAMPER al cruce dolor ⭐ + ganancia ⭐ y genera 2 ideas exploración por letra. Para cada idea:</p>
+          <ul>
+            <li>Describe qué haría diferente el negocio en 2–3 oraciones</li>
+            <li>Especifica cómo cambia al menos uno de los tres componentes (app con IA / artefacto físico / canal de venta)</li>
+            <li>No repitas variaciones de la misma idea entre las dos</li>
+          </ul>
+          <p><strong>Guía por letra — lo que buscamos en cada una:</strong></p>
+          <p><strong>S — SUSTITUIR:</strong> ¿Qué elemento tradicional del problema o de su solución convencional reemplazamos por algo inesperado? Busca sustituir el componente que todos dan por sentado.</p>
+          <p><strong>C — COMBINAR:</strong> ¿Qué fusionamos con algo que ya existe en el entorno del usuario para que el negocio funcione diferente? Busca combinaciones entre sectores o entre componentes del negocio que normalmente van separados.</p>
+          <p><strong>A — ADAPTAR:</strong> ¿Qué modelo de negocio o solución que funciona brillantemente en otro sector, país o industria trasplantamos aquí? Nombra el origen: de dónde viene la lógica adaptada.</p>
+          <p><strong>M — MODIFICAR AL EXTREMO:</strong> ¿Qué atributo llevamos al límite absoluto hasta que cambia cualitativamente — no mejora, sino que se convierte en otra cosa? Especifica qué atributo y hacia qué extremo.</p>
+          <p><strong>P — PONER EN OTRO USO:</strong> ¿Qué tiene ya el usuario — tecnología, infraestructura, hábito, datos, espacio físico — que puede usarse para resolver el problema sin que compre nada nuevo? El artefacto o la app se integra con eso.</p>
+          <p><strong>E — ELIMINAR:</strong> ¿Qué parte de la solución convencional eliminamos y el valor central no solo sobrevive sino que mejora porque ya no está ese elemento? Explica por qué eliminar eso fortalece la propuesta.</p>
+          <p><strong>R — REORDENAR:</strong> ¿Qué invertimos — quién detecta, quién actúa, quién paga, cuándo ocurre la intervención — para que el flujo de valor funcione de forma radicalmente diferente?</p>
+          <p><strong>FORMATO DE SALIDA</strong> — entrega exactamente esto:</p>
+          <pre style="white-space: pre-wrap; font-family: inherit;">═══════════════════════════════════════════════════════
+      SCAMPER EXPLORADO
+      Usuario: [segmento] · Dolor ⭐: [en una línea]
+      ═══════════════════════════════════════════════════════
+      S — Sustituir
+      Idea S1: [descripción 2–3 oraciones]
+      Componente que cambia: [app / artefacto / canal de venta]
+      Idea S2: [descripción 2–3 oraciones]
+      Componente que cambia: [app / artefacto / canal de venta]
+
+      C — Combinar
+      Idea C1: [descripción 2–3 oraciones]
+      Componente que cambia: [app / artefacto / canal de venta]
+      Idea C2: [descripción 2–3 oraciones]
+      Componente que cambia: [app / artefacto / canal de venta]
+
+      A — Adaptar
+      Idea A1: [descripción 2–3 oraciones]
+      Origen de la adaptación: [sector o contexto]
+      Idea A2: [descripción 2–3 oraciones]
+      Origen de la adaptación: [sector o contexto]
+
+      M — Modificar al extremo
+      Idea M1: [descripción 2–3 oraciones]
+      Atributo llevado al límite: [cuál → hacia dónde]
+      Idea M2: [descripción 2–3 oraciones]
+      Atributo llevado al límite: [cuál → hacia dónde]
+
+      P — Poner en otro uso
+      Idea P1: [descripción 2–3 oraciones]
+      Recurso existente del usuario: [qué tiene ya]
+      Idea P2: [descripción 2–3 oraciones]
+      Recurso existente del usuario: [qué tiene ya]
+
+      E — Eliminar
+      Idea E1: [descripción 2–3 oraciones]
+      Qué se elimina y por qué el valor mejora: [en 1 línea]
+      Idea E2: [descripción 2–3 oraciones]
+      Qué se elimina y por qué el valor mejora: [en 1 línea]
+
+      R — Reordenar
+      Idea R1: [descripción 2–3 oraciones]
+      Qué se invierte: [quién / cuándo / cómo / qué]
+      Idea R2: [descripción 2–3 oraciones]
+      Qué se invierte: [quién / cuándo / cómo / qué]</pre>
+        </div>
+
+        <div class="prompt-box" style="background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 15px; border-radius: 8px; font-style: italic; margin: 20px 0;">
+          <h4 style="margin-top:0; font-style: normal;">💬 Prompt modificado (Claude)</h4>
+          <p>Actúa como un facilitador senior de innovación disruptiva especializado en generar ideas de negocio no obvias para productos digitales-físicos en mercados emergentes de América Latina. Tu metodología es SCAMPER aplicado a problemas verificados con usuarios reales: para cada letra produces dos ideas exploración — no mejoras incrementales, sino reencuadres que cambian cómo se crea o entrega el valor.</p>
+          <p>Una idea exploración describe en 2–3 oraciones qué haría el negocio diferente si esa letra se aplicara radicalmente.</p>
+          <p>Somos un equipo de emprendedores en México construyendo un negocio con tres componentes: una aplicación con IA, un artefacto físico inteligente y una página web de venta.</p>
+          <p>Capacidades: desarrollo de software e IA, hardware conectado (ESP32, Raspberry Pi, sensores, PCB, BLE/MQTT/WiFi), diseño y manufactura de producto físico (CAD, impresión 3D). Tenemos seis meses para MVP comercializable.</p>
+          <p>Nuestro usuario / segmento: [DESCRIBE EL SEGMENTO]<br>
+          El cruce más poderoso de nuestro Pain-Gain Map:</p>
+          <ul>
+            <li>] D1 (sobrealimentación no detectada entre varios cuidadores) × Ganancia ⭐ G1 (certeza de la porción correcta sin importar quién alimente al perro)</li>
+            <li>Por qué no está resuelto hoy: NO me acuerdo de la explicación, dámela de la respuesta que me diste</li>
+          </ul>
+          <p>La oportunidad en una oración: "Existe una oportunidad para las hijas e hijos adultos que trabajan fuera de casa y necesitan tener la certeza de que su perro está comiendo lo correcto sin importar quién se lo dé, porque hoy la comida pasa entre varias manos en casa sin que nadie la sume, y el resultado solo se descubre cuando ya es un diagnóstico médico."</p>
+          <p>Aplica cada letra de SCAMPER al cruce dolor ⭐ + ganancia ⭐ y genera 2 ideas exploración por letra. Para cada idea:</p>
+          <ul>
+            <li>Describe qué haría diferente el negocio en 2–3 oraciones</li>
+            <li>Especifica cómo cambia al menos uno de los tres componentes (app con IA / artefacto físico / canal de venta)</li>
+            <li>No repitas variaciones de la misma idea entre las dos</li>
+          </ul>
+          <p><strong>Guía por letra — lo que buscamos en cada una:</strong></p>
+          <p><strong>S — SUSTITUIR:</strong> ¿Qué elemento tradicional del problema o de su solución convencional reemplazamos por algo inesperado? Busca sustituir el componente que todos dan por sentado.</p>
+          <p><strong>C — COMBINAR:</strong> ¿Qué fusionamos con algo que ya existe en el entorno del usuario para que el negocio funcione diferente? Busca combinaciones entre sectores o entre componentes del negocio que normalmente van separados.</p>
+          <p><strong>A — ADAPTAR:</strong> ¿Qué modelo de negocio o solución que funciona brillantemente en otro sector, país o industria trasplantamos aquí? Nombra el origen: de dónde viene la lógica adaptada.</p>
+          <p><strong>M — MODIFICAR AL EXTREMO:</strong> ¿Qué atributo llevamos al límite absoluto hasta que cambia cualitativamente — no mejora, sino que se convierte en otra cosa? Especifica qué atributo y hacia qué extremo.</p>
+          <p><strong>P — PONER EN OTRO USO:</strong> ¿Qué tiene ya el usuario — tecnología, infraestructura, hábito, datos, espacio físico — que puede usarse para resolver el problema sin que compre nada nuevo? El artefacto o la app se integra con eso.</p>
+          <p><strong>E — ELIMINAR:</strong> ¿Qué parte de la solución convencional eliminamos y el valor central no solo sobrevive sino que mejora porque ya no está ese elemento? Explica por qué eliminar eso fortalece la propuesta.</p>
+          <p><strong>R — REORDENAR:</strong> ¿Qué invertimos — quién detecta, quién actúa, quién paga, cuándo ocurre la intervención — para que el flujo de valor funcione de forma radicalmente diferente?</p>
+          <p><strong>FORMATO DE SALIDA</strong> — entrega exactamente esto (mismo formato que el prompt original).</p>
+        </div>
+
+        <h4>Respuesta</h4>
+        <p>Aquí está la explicación que me pediste, y después el SCAMPER completo.</p>
+
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+          <p><strong>Por qué no está resuelto hoy (D1 × G1):</strong> ninguna solución actual junta "calcular la porción correcta" con "garantizar que se cumple sin importar quién alimente al perro" en un solo punto de verdad. Las apps de conteo de calorías necesitan que una sola persona registre cada comida manualmente, y en una casa con varios cuidadores nadie tiene el dato completo. Los comederos programables genéricos controlan horarios y cantidad, pero no calculan la porción correcta según raza/edad/peso/objetivo ni la marca de alimento — dan certeza de "cuánto sale del comedero", no de "cuánto es lo correcto para este perro". La recomendación verbal del veterinario define la porción correcta una sola vez, en consulta, pero no verifica que se cumpla todos los días entre distintos cuidadores. Y las dietas de prescripción atacan el síntoma (ya subió de peso) cuando el daño ya ocurrió, no la causa.</p>
+        </div>
+
+        <div class="summary-box">
+          <p style="text-align:center;">═══════════════════════════════════════════════════════<br>
+          <strong>SCAMPER EXPLORADO</strong><br>
+          Usuario: Hijas e hijos adultos (25-45 años) en zonas urbanas de México que trabajan fuera de casa y cuyo padre/madre convive con el perro la mayor parte del día · Dolor ⭐: La sobrealimentación del perro pasa entre varias manos sin que nadie la sume, y nadie se entera hasta que ya es un diagnóstico médico.<br>
+          ═══════════════════════════════════════════════════════</p>
+
+          <p><strong>S — Sustituir</strong></p>
+          <p><strong>Idea S1:</strong> Sustituir el comedero como accesorio opcional por el reemplazo físico obligatorio del plato tradicional del perro — no es algo adicional que hay que colocar junto al plato de siempre, es la única superficie donde el perro puede comer en toda la casa. Esto sustituye la costumbre de "darle de comer donde sea, con lo que sea" por una interfaz física ineludible.<br>
+          <em>Componente que cambia:</em> artefacto físico</p>
+          <p><strong>Idea S2:</strong> Sustituir el catálogo de marcas que el equipo tendría que crear y mantener por la lectura del código de barras del costal con la cámara del celular al configurar al perro — la información nutricional ya existe en las bases de los fabricantes, así que en vez de construir y actualizar un catálogo propio, se lee en el momento.<br>
+          <em>Componente que cambia:</em> app con IA</p>
+
+          <p><strong>C — Combinar</strong></p>
+          <p><strong>Idea C1:</strong> Combinar el horario del comedero con la rutina de comidas que el adulto mayor ya tiene en su propia cocina — el aviso de servir al perro coincide con los momentos en que él o ella ya está ahí por su propia comida, en vez de crear un horario nuevo que aprender.<br>
+          <em>Componente que cambia:</em> artefacto físico</p>
+          <p><strong>Idea C2:</strong> Combinar el canal de venta con el punto de compra que la familia ya frecuenta — en vez de vender solo por e-commerce directo, el comedero se ofrece como parte de la compra del costal en la veterinaria o tienda de mascotas de barrio donde el adulto mayor ya va, en el momento en que el veterinario ya diagnosticó sobrepeso.<br>
+          <em>Componente que cambia:</em> canal de venta</p>
+
+          <p><strong>A — Adaptar</strong></p>
+          <p><strong>Idea A1:</strong> Adaptar el modelo de cápsula sellada y precontada — el comedero funciona con cartuchos cerrados de porciones exactas en vez de cargarse a granel desde un costal abierto, eliminando la posibilidad de que alguien lo "rellene" sin control.<br>
+          <em>Origen de la adaptación:</em> cafeteras de cápsula tipo Nespresso/Keurig</p>
+          <p><strong>Idea A2:</strong> Adaptar el modelo de medidor inteligente de consumo con alertas de uso anómalo y un "recibo" periódico — la app envía al hijo que paga un reporte tipo estado de cuenta del consumo calórico del perro, con alertas cuando el patrón se sale de lo normal.<br>
+          <em>Origen de la adaptación:</em> medidores inteligentes de las compañías de luz/gas (utilities)</p>
+
+          <p><strong>M — Modificar al extremo</strong></p>
+          <p><strong>Idea M1:</strong> Llevar al extremo el atributo de exclusividad de acceso al alimento — el costal se conecta sellado directo al comedero desde la compra, eliminando por completo la posibilidad de que exista comida suelta en la cocina. En ese extremo el producto deja de ser "un comedero inteligente" y se convierte en "el único proveedor de alimento posible en la casa" — un cambio de categoría, no de grado.<br>
+          <em>Atributo llevado al límite:</em> exclusividad de acceso al alimento → de comedero recomendado a único punto de acceso físico posible</p>
+          <p><strong>Idea M2:</strong> Llevar al extremo la frecuencia de la certeza — en vez de reportes diarios o semanales, el hijo puede ver en cualquier instante, en vivo, exactamente cuánto ha comido el perro hasta ese segundo. En ese extremo deja de sentirse como monitoreo de mascota y se vuelve más parecido a un estado de cuenta en tiempo real.<br>
+          <em>Atributo llevado al límite:</em> frecuencia/latencia de la información → de reporte periódico a transparencia continua</p>
+
+          <p><strong>P — Poner en otro uso</strong></p>
+          <p><strong>Idea P1:</strong> Usar el grupo de WhatsApp familiar que la mayoría de las familias mexicanas ya tiene activo (mamá, papá, hijos, a veces la empleada doméstica) como canal principal de aviso, en vez de exigir que todos instalen y revisen una app nueva.<br>
+          <em>Recurso existente del usuario:</em> el grupo de WhatsApp familiar ya activo</p>
+          <p><strong>Idea P2:</strong> Usar el hábito y la báscula que ya existen en la veterinaria o tienda de mascotas de barrio que la familia ya visita, como fuente de calibración inicial del peso del perro, en vez de pedirles comprar o instalar un sensor de peso corporal aparte.<br>
+          <em>Recurso existente del usuario:</em> la infraestructura de pesaje del negocio local que ya frecuentan</p>
+
+          <p><strong>E — Eliminar</strong></p>
+          <p><strong>Idea E1:</strong> Eliminar toda pantalla, botón o menú en el comedero mismo, dejando solo una luz o sonido simple.<br>
+          <em>Qué se elimina y por qué el valor mejora:</em> se elimina la interfaz compleja en el dispositivo físico — el adulto mayor deja de tener que "aprender" nada, así la adopción no depende de su habilidad tecnológica.</p>
+          <p><strong>Idea E2:</strong> Eliminar el formulario inicial donde el dueño captura raza/edad/peso/objetivo, y en su lugar arrancar con una porción conservadora estándar que el sistema ajusta solo observando el comportamiento real en las primeras dos semanas.<br>
+          <em>Qué se elimina y por qué el valor mejora:</em> se elimina el paso de autoreporte — la precisión ya no depende de que alguien llene bien un formulario, sino de lo que el sistema observa directamente.</p>
+
+          <p><strong>R — Reordenar</strong></p>
+          <p><strong>Idea R1:</strong> Reordenar el momento y la lógica del pago — en vez de una suscripción fija por adelantado, una tarifa base baja más un descuento o devolución si el perro mantiene su peso objetivo durante el año, verificado por el propio dispositivo.<br>
+          <em>Qué se invierte:</em> de pagar por usar el producto, a pagar en parte por el resultado logrado</p>
+          <p><strong>Idea R2:</strong> Reordenar quién ejecuta la corrección ante una desviación — en vez de que el sistema avise al hijo y este tenga que decirle algo a su papá/mamá (la fricción que ya existe hoy), el comedero simplemente no libera más alimento una vez servida la porción del día, sin importar quién lo intente, eliminando el paso humano de "decir que no".<br>
+          <em>Qué se invierte:</em> de un humano que corrige a otro humano, a un dispositivo que aplica el límite sin intervención social</p>
+        </div>
+
+        <!-- REMIX -->
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Remix</h3>
+
+        <div class="prompt-box" style="background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 15px; border-radius: 8px; font-style: italic; margin: 20px 0;">
+          <h4 style="margin-top:0; font-style: normal;">💬 Prompt original</h4>
+          <p>Actúa como un sintetizador de conceptos de negocio con experiencia en crear propuestas de valor originales cruzando ideas que provienen de lógicas distintas. Tu especialidad es el remix: tomar dos o tres ideas que parecen incompatibles y encontrar el concepto híbrido que ninguna de ellas era por sí sola. Un buen remix no suma features — reencuadra quién se beneficia, cómo se entrega el valor o por qué alguien pagaría.</p>
+          <p>Somos emprendedores en México construyendo un negocio con tres componentes: una aplicación con IA, un artefacto físico inteligente y una página web de venta. Capacidades: desarrollo de software e IA, hardware conectado (ESP32, Raspberry Pi, sensores, PCB), diseño y manufactura de producto físico.</p>
+          <p>Tenemos seis meses para MVP comercializable.</p>
+          <p><strong>Nuestro usuario / segmento:</strong><br>
+          Hijas e hijos adultos (25-45 años) en zonas urbanas de México, que trabajan tiempo completo fuera de casa y cuyo padre o madre (adulto mayor) vive en el mismo hogar y es quien convive con el perro la mayor parte del día. Son ellos quienes tienen el ingreso, la tarjeta y el hábito digital para comprar la solución, aunque no sean quienes alimentan al perro día a día.</p>
+          <p><strong>La oportunidad base:</strong><br>
+          Existe una oportunidad para las hijas e hijos adultos que trabajan fuera de casa y necesitan saber que su perro está bien alimentado y que su padre o madre está bien, sin tener que llamar ni pedirle nada a nadie, porque hoy nadie en casa tiene el cuadro completo de cuánto ya comió el perro ni una forma de avisarles a distancia cuando algo se sale de lo normal.</p>
+          <p><strong>Las 4 ideas de SCAMPER que elegimos:</strong></p>
+          <ul>
+            <li>[código]: [pega la descripción completa de la idea]</li>
+            <li>[código]: [pega la descripción completa de la idea]</li>
+            <li>[código]: [pega la descripción completa de la idea]</li>
+            <li>[código]: [pega la descripción completa de la idea]</li>
+          </ul>
+          <p>También puedes considerar estas ideas propias del equipo que no vinieron del SCAMPER (si las tienen):</p>
+          <ul>
+            <li>[idea propia 1, si existe]</li>
+            <li>[idea propia 2, si existe]</li>
+          </ul>
+          <p>Genera 3 conceptos remix cruzando estas ideas. Reglas:</p>
+          <ul>
+            <li>Cada remix debe cruzar al menos 2 ideas de fuentes distintas</li>
+            <li>El resultado debe ser un concepto que no existía en ninguna de las ideas individuales — si el remix solo junta features, no es suficiente</li>
+            <li>Cada concepto debe describirse como un negocio completo: qué hace, para quién, y cómo se articulan los tres componentes (app con IA + artefacto físico + canal de venta)</li>
+            <li>Al menos uno de los remixes debe generar una propuesta de valor que cambie quién paga, quién usa, o cuándo ocurre la intervención — no solo qué hace el producto</li>
+          </ul>
+          <p><strong>FORMATO DE SALIDA</strong> — entrega exactamente esto:</p>
+          <pre style="white-space: pre-wrap; font-family: inherit;">═══════════════════════════════════════════════════════
+      REMIX DE IDEAS
+      Base: [oportunidad en una oración]
+      ═══════════════════════════════════════════════════════
+      REMIX 1 — [Nombre corto evocador, no técnico]
+      Ideas cruzadas: [código] + [código]
+      Concepto: [descripción del negocio en 3–4 oraciones — qué hace, para quién, cómo se articulan los 3 componentes]
+      Lo que el cruce genera que ninguna idea sola tenía:
+      [1 oración — la lógica nueva que emergió]
+
+      REMIX 2 — [Nombre corto evocador]
+      Ideas cruzadas: [código] + [código]
+      Concepto: [descripción en 3–4 oraciones]
+      Lo que el cruce genera que ninguna idea sola tenía:
+      [1 oración]
+
+      REMIX 3 — [Nombre corto evocador]
+      Ideas cruzadas: [código] + [código] (+ [código] si aplica)
+      Concepto: [descripción en 3–4 oraciones]
+      Lo que el cruce genera que ninguna idea sola tenía:
+      [1 oración]</pre>
+        </div>
+
+        <div class="prompt-box" style="background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 15px; border-radius: 8px; font-style: italic; margin: 20px 0;">
+          <h4 style="margin-top:0; font-style: normal;">💬 Prompt modificado (Claude)</h4>
+          <p>Actúa como un sintetizador de conceptos de negocio con experiencia en crear propuestas de valor originales cruzando ideas que provienen de lógicas distintas. Tu especialidad es el remix: tomar dos o tres ideas que parecen incompatibles y encontrar el concepto híbrido que ninguna de ellas era por sí sola. Un buen remix no suma features — reencuadra quién se beneficia, cómo se entrega el valor o por qué alguien pagaría.</p>
+          <p>Somos emprendedores en México construyendo un negocio con tres componentes: una aplicación con IA, un artefacto físico inteligente y una página web de venta. Capacidades: desarrollo de software e IA, hardware conectado (ESP32, Raspberry Pi, sensores, PCB), diseño y manufactura de producto físico.</p>
+          <p>Tenemos seis meses para MVP comercializable.</p>
+          <p><strong>Nuestro usuario / segmento:</strong> [DESCRIBE EL SEGMENTO]<br>
+          <strong>La oportunidad base:</strong> [pega la oportunidad en una oración del Paso 3]</p>
+          <p><strong>Las 4 ideas de SCAMPER que elegimos:</strong></p>
+          <p><strong>Idea S2:</strong> Sustituir el catálogo de marcas que el equipo tendría que crear y mantener por la lectura del código de barras del costal con la cámara del celular al configurar al perro — la información nutricional ya existe en las bases de los fabricantes, así que en vez de construir y actualizar un catálogo propio, se lee en el momento. Componente que cambia: app con IA</p>
+          <p><strong>Idea C2:</strong> Combinar el canal de venta con el punto de compra que la familia ya frecuenta — en vez de vender solo por e-commerce directo, el comedero se ofrece como parte de la compra del costal en la veterinaria o tienda de mascotas de barrio donde el adulto mayor ya va, en el momento en que el veterinario ya diagnosticó sobrepeso. Componente que cambia: canal de venta</p>
+          <p><strong>Idea A2:</strong> Adaptar el modelo de medidor inteligente de consumo con alertas de uso anómalo y un "recibo" periódico — la app envía al hijo que paga un reporte tipo estado de cuenta del consumo calórico del perro, con alertas cuando el patrón se sale de lo normal. Origen de la adaptación: medidores inteligentes de las compañías de luz/gas (utilities)</p>
+          <p><strong>Idea M1:</strong> Llevar al extremo el atributo de exclusividad de acceso al alimento — el costal se conecta sellado directo al comedero desde la compra, eliminando por completo la posibilidad de que exista comida suelta en la cocina. En ese extremo el producto deja de ser "un comedero inteligente" y se convierte en "el único proveedor de alimento posible en la casa" — un cambio de categoría, no de grado. Atributo llevado al límite: exclusividad de acceso al alimento → de comedero recomendado a único punto de acceso físico posible</p>
+          <p><strong>Idea P1:</strong> Usar el grupo de WhatsApp familiar que la mayoría de las familias mexicanas ya tiene activo (mamá, papá, hijos, a veces la empleada doméstica) como canal principal de aviso, en vez de exigir que todos instalen y revisen una app nueva. Recurso existente del usuario: el grupo de WhatsApp familiar ya activo</p>
+          <p><strong>Idea P2:</strong> Usar el hábito y la báscula que ya existen en la veterinaria o tienda de mascotas de barrio que la familia ya visita, como fuente de calibración inicial del peso del perro, en vez de pedirles comprar o instalar un sensor de peso corporal aparte. Recurso existente del usuario: la infraestructura de pesaje del negocio local que ya frecuentan</p>
+          <p><strong>Idea E1:</strong> Eliminar toda pantalla, botón o menú en el comedero mismo, dejando solo una luz o sonido simple. Qué se elimina y por qué el valor mejora: se elimina la interfaz compleja en el dispositivo físico — el adulto mayor deja de tener que "aprender" nada, así la adopción no depende de su habilidad tecnológica.</p>
+          <p><strong>Idea R2:</strong> Reordenar quién ejecuta la corrección ante una desviación — en vez de que el sistema avise al hijo y este tenga que decirle algo a su papá/mamá (la fricción que ya existe hoy), el comedero simplemente no libera más alimento una vez servida la porción del día, sin importar quién lo intente, eliminando el paso humano de "decir que no". Qué se invierte: de un humano que corrige a otro humano, a un dispositivo que aplica el límite sin intervención social</p>
+          <p><strong>También puedes considerar estas ideas propias del equipo que no vinieron del SCAMPER (si las tienen):</strong></p>
+          <ul>
+            <li>Como tal, mi idea es que la persona no pueda meter mano a la comida suministrada, si no que la aplicación hará los cálculos por medio de la IA y suministrará esa cantidad.</li>
+            <li>Una vez que el perro esté en sus requerimientos de peso según raza, edad, peso y estatura, la IA lo detectará y cambiará el modo (para bajar de peso o subir) a mantenimiento, para que de esta forma, no exista el efecto rebote en donde si no se vuelve a cuidar el peso una vez alcanzada la meta, se regresa al mismo peso anterior o a veces incluso suben más.</li>
+          </ul>
+          <p>Genera 3 conceptos remix cruzando estas ideas, con las mismas reglas y el mismo formato de salida indicados en el prompt original.</p>
+        </div>
+
+        <h4>Respuesta</h4>
+        <div class="summary-box">
+          <p style="text-align:center;">═══════════════════════════════════════════════════════<br>
+          <strong>REMIX DE IDEAS</strong><br>
+          Base: Existe una oportunidad para las hijas e hijos adultos que trabajan fuera de casa y necesitan tener la certeza de que su perro está comiendo lo correcto sin importar quién se lo dé, porque hoy la comida pasa entre varias manos en casa sin que nadie la sume, y el resultado solo se descubre cuando ya es un diagnóstico médico.<br>
+          ═══════════════════════════════════════════════════════</p>
+
+          <p><strong>REMIX 1 — El Recibo del Perro</strong></p>
+          <p><em>Ideas cruzadas:</em> A2 + M1 (+ C2)</p>
+          <p><strong>Concepto:</strong> En vez de vender un comedero como aparato único, el negocio vende el alimento del perro como un servicio medido y facturado mensualmente, igual que la luz o el gas. El comedero, con su cartucho sellado (M1), se entrega gratis o muy subsidiado a través de la veterinaria o tienda de mascotas donde la familia ya compra el costal (C2), y cada mes al hijo que paga le llega un "recibo" con el consumo real del perro, no una suscripción genérica (A2). El ingreso del negocio deja de depender de vender hardware una sola vez y pasa a depender de la recompra recurrente de cartuchos medidos, alineando el margen con el consumo real del perro durante toda su vida. Para quien paga, el gasto deja de sentirse como "otra suscripción de tecnología" y empieza a sentirse como un servicio del hogar más, tan normal como pagar la luz.</p>
+          <p><strong>Lo que el cruce genera que ninguna idea sola tenía:</strong> Cambia quién paga y cuándo — de comprar un dispositivo una sola vez, a pagar de forma recurrente por consumo medido y verificado, con el hardware como gancho casi gratuito en vez de producto principal.</p>
+
+          <p><strong>REMIX 2 — Logros, no Regaños</strong></p>
+          <p><em>Ideas cruzadas:</em> P1 + R2 + Idea propia (modo mantenimiento anti-rebote)</p>
+          <p><strong>Concepto:</strong> El comedero limita la porción por sí solo, sin que ningún humano tenga que decirle a otro "ya no le des más" (R2), lo que elimina la fricción de corregir a los papás. Pero en vez de que el grupo de WhatsApp familiar (P1) solo reciba avisos cuando algo sale mal, el sistema está diseñado para que su mensaje más visible sea una buena noticia: cuando la IA detecta que el perro llegó a su peso objetivo y cambia automáticamente a modo mantenimiento para evitar el rebote, ese momento se celebra en el chat familiar como un logro de todos ("¡Firulais llegó a su peso ideal!"), no como un reporte de vigilancia. La app y el artefacto trabajan juntos para que el dato negativo se resuelva en silencio —el dispositivo simplemente no sirve más comida— y el dato positivo sea lo único que se comparte en voz alta con la familia.</p>
+          <p><strong>Lo que el cruce genera que ninguna idea sola tenía:</strong> Convierte un sistema de corrección y vigilancia en un ritual familiar de reconocimiento compartido, donde nadie recibe una llamada de atención pero todos reciben el crédito del logro.</p>
+
+          <p><strong>REMIX 3 — Activación en el Mostrador</strong></p>
+          <p><em>Ideas cruzadas:</em> S2 + P2 + E1 (+ C2)</p>
+          <p><strong>Concepto:</strong> El comedero no llega a casa para que la familia lo configure — llega ya configurado, porque toda el alta ocurre en el mostrador de la veterinaria o tienda de mascotas al momento de la compra (C2): el vendedor escanea el código de barras del costal (S2) y usa la báscula que la tienda ya tiene para pesar al perro (P2), y esos dos datos arman la porción diaria antes de que el dispositivo salga de la tienda. Como el comedero no tiene pantalla ni botones (E1), en casa solo hay que enchufarlo — el adulto mayor nunca tiene que "dar de alta" nada ni aprender una interfaz, porque ese trabajo ya lo hizo alguien de confianza en la tienda. El canal de venta deja de ser solo el lugar donde se compra el producto y se convierte en el lugar donde se activa, como cuando se activa una línea telefónica en el mostrador.</p>
+          <p><strong>Lo que el cruce genera que ninguna idea sola tenía:</strong> Traslada toda la carga de configuración del punto más frágil de adopción —el adulto mayor— a un tercero de confianza que actúa antes de que el producto llegue a casa, no después.</p>
+        </div>
+
+        <!-- FILTRO DVN -->
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Filtro DVN</h3>
+
+        <div class="prompt-box" style="background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 15px; border-radius: 8px; font-style: italic; margin: 20px 0;">
+          <h4 style="margin-top:0; font-style: normal;">💬 Prompt original</h4>
+          <p>Actúa como un evaluador crítico de conceptos de negocio con experiencia en filtrar ideas de producto digital-físico bajo criterios de mercado real en América Latina. Tu metodología es el filtro DVN: evalúas cada concepto bajo tres lentes simultáneos — deseable, novedoso y viable — y produces un veredicto honesto con justificación específica. No eres optimista por defecto: un ⚠️ o ❌ bien justificado vale más que un ✅ que no resiste una pregunta de seguimiento.</p>
+          <p>Somos emprendedores en México construyendo un negocio con tres componentes: una aplicación con IA, un artefacto físico inteligente y una página web de venta. Capacidades: desarrollo de software e IA, hardware conectado (ESP32, Raspberry Pi, sensores, PCB), diseño y manufactura de producto físico.</p>
+          <p>Tenemos seis meses para MVP comercializable.</p>
+          <p>Nuestro usuario / segmento: [DESCRIBE EL SEGMENTO]</p>
+          <p><strong>Los conceptos que queremos filtrar</strong> (pueden ser remixes de Claude, ideas propias, o ambos):</p>
+          <p>CONCEPTO A — [nombre]: [descripción completa del concepto]<br>
+          CONCEPTO B — [nombre]: [descripción completa del concepto]<br>
+          CONCEPTO C — [nombre, si lo tienen]: [descripción completa del concepto]</p>
+          <p>Evalúa cada concepto bajo los tres lentes DVN:</p>
+          <p>🔴 <strong>DESEABLE:</strong> ¿El usuario lo querría de verdad — no solo lo aprobaría en una encuesta? ¿Resuelve el dolor ⭐ mejor que lo que existe hoy? ¿Hay razón para creer que pagaría por esto específicamente?</p>
+          <p>🟣 <strong>NOVEDOSO:</strong> ¿Existe algo así en LATAM o en el mundo con esta combinación específica de usuario + problema + forma de entrega? No el problema genérico — este enfoque exacto.</p>
+          <p>🟢 <strong>VIABLE:</strong> ¿Puede construirse una primera versión funcional con las capacidades descritas en seis meses? ¿Los tres componentes (app + artefacto + canal de venta) son realizables juntos en ese plazo?</p>
+          <p><strong>FORMATO DE SALIDA</strong> — entrega exactamente esto:</p>
+          <pre style="white-space: pre-wrap; font-family: inherit;">═══════════════════════════════════════════════════════
+      FILTRO DVN
+      ═══════════════════════════════════════════════════════
+      CONCEPTO A — [nombre]
+      🔴 Deseable: ✅/⚠️/❌
+      Justificación: [por qué — 1–2 oraciones específicas, no genéricas]
+      Pregunta que el equipo debe responder: [la duda clave que quedaría por resolver sobre deseabilidad]
+      🟣 Novedoso: ✅/⚠️/❌
+      Justificación: [referencia a qué existe similar o por qué no existe]
+      Pregunta que el equipo debe responder: [la duda clave]
+      🟢 Viable: ✅/⚠️/❌
+      Justificación: [qué parte es más arriesgada técnicamente o en tiempo]
+      Pregunta que el equipo debe responder: [la duda clave]
+      Puntaje DVN: [✅ de 3]
+      Veredicto: [llevar al Paso 5 / refinar antes / descartar]
+      ───────────────────────────────────────────────────────
+      CONCEPTO B — [nombre]
+      (mismo formato)
+      ───────────────────────────────────────────────────────
+      CONCEPTO C — [nombre] (si aplica)
+      (mismo formato)
+      ───────────────────────────────────────────────────────
+      CONCEPTO RECOMENDADO PARA EL PASO 5
+      Nombre: [el de mayor puntaje DVN o el más potente si hay empate]
+      Por qué este: [2 oraciones]
+      Riesgo principal a vigilar: [el lente más débil y cómo el Paso 5 puede reducir esa incertidumbre]</pre>
+        </div>
+
+        <div class="prompt-box" style="background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 15px; border-radius: 8px; font-style: italic; margin: 20px 0;">
+          <h4 style="margin-top:0; font-style: normal;">💬 Prompt modificado (Claude)</h4>
+          <p>Actúa como un evaluador crítico de conceptos de negocio con experiencia en filtrar ideas de producto digital-físico bajo criterios de mercado real en América Latina. Tu metodología es el filtro DVN: evalúas cada concepto bajo tres lentes simultáneos — deseable, novedoso y viable — y produces un veredicto honesto con justificación específica. No eres optimista por defecto: un ⚠️ o ❌ bien justificado vale más que un ✅ que no resiste una pregunta de seguimiento.</p>
+          <p>Somos emprendedores en México construyendo un negocio con tres componentes: una aplicación con IA, un artefacto físico inteligente y una página web de venta. Capacidades: desarrollo de software e IA, hardware conectado (ESP32, Raspberry Pi, sensores, PCB), diseño y manufactura de producto físico.</p>
+          <p>Tenemos seis meses para MVP comercializable.</p>
+          <p><strong>Nuestro usuario / segmento:</strong><br>
+          Hijas e hijos adultos (25-45 años) en zonas urbanas de México, que trabajan tiempo completo fuera de casa y cuyo padre o madre (adulto mayor) vive en el mismo hogar y es quien convive con el perro la mayor parte del día. Son ellos quienes tienen el ingreso, la tarjeta y el hábito digital para comprar la solución, aunque no sean quienes alimentan al perro día a día.</p>
+          <p><strong>Los conceptos que queremos filtrar</strong> (pueden ser remixes de Claude, ideas propias, o ambos):</p>
+          <p><strong>REMIX 2 — Logros, no Regaños</strong><br>
+          Ideas cruzadas: P1 + R2 + Idea propia (modo mantenimiento anti-rebote)<br>
+          Concepto: El comedero limita la porción por sí solo, sin que ningún humano tenga que decirle a otro "ya no le des más" (R2), lo que elimina la fricción de corregir a los papás. Pero en vez de que el grupo de WhatsApp familiar (P1) solo reciba avisos cuando algo sale mal, el sistema está diseñado para que su mensaje más visible sea una buena noticia: cuando la IA detecta que el perro llegó a su peso objetivo y cambia automáticamente a modo mantenimiento para evitar el rebote, ese momento se celebra en el chat familiar como un logro de todos ("¡Firulais llegó a su peso ideal!"), no como un reporte de vigilancia. La app y el artefacto trabajan juntos para que el dato negativo se resuelva en silencio —el dispositivo simplemente no sirve más comida— y el dato positivo sea lo único que se comparte en voz alta con la familia.</p>
+          <p><strong>REMIX 3 — Activación en el Mostrador</strong><br>
+          Ideas cruzadas: S2 + P2 + E1 (+ C2)<br>
+          Concepto: El comedero no llega a casa para que la familia lo configure — llega ya configurado, porque toda el alta ocurre en el mostrador de la veterinaria o tienda de mascotas al momento de la compra (C2): el vendedor escanea el código de barras del costal (S2) y usa la báscula que la tienda ya tiene para pesar al perro (P2), y esos dos datos arman la porción diaria antes de que el dispositivo salga de la tienda. Como el comedero no tiene pantalla ni botones (E1), en casa solo hay que enchufarlo — el adulto mayor nunca tiene que "dar de alta" nada ni aprender una interfaz, porque ese trabajo ya lo hizo alguien de confianza en la tienda. El canal de venta deja de ser solo el lugar donde se compra el producto y se convierte en el lugar donde se activa, como cuando se activa una línea telefónica en el mostrador.</p>
+          <p>Evalúa cada concepto bajo los tres lentes DVN, con el mismo formato de salida indicado en el prompt original.</p>
+        </div>
+
+        <h4>Respuesta</h4>
+        <div class="summary-box">
+          <p style="text-align:center;">═══════════════════════════════════════════════════════<br>
+          <strong>FILTRO DVN</strong><br>
+          ═══════════════════════════════════════════════════════</p>
+
+          <p><strong>CONCEPTO A — Logros, no Regaños</strong></p>
+          <p>🔴 <strong>Deseable: ⚠️</strong><br>
+          Justificación: El mecanismo base (el dispositivo limita solo, sin que nadie tenga que corregir a nadie) sí resuelve el dolor ⭐, pero la capa añadida —que un bot anuncie en el chat familiar que "Firulais llegó a su peso ideal"— puede tener el efecto contrario al buscado: para que haya un logro que celebrar, antes tiene que haber existido un problema, y eso puede exponer frente a toda la familia que la mamá o el papá estaba sobrealimentando al perro, justo la incomodidad que D3/D4 querían evitar.<br>
+          Pregunta que el equipo debe responder: ¿validamos con familias reales si quieren que un bot publique automáticamente en su chat familiar, o eso se siente invasivo/artificial incluso en tono positivo?</p>
+          <p>🟣 <strong>Novedoso: ⚠️</strong><br>
+          Justificación: Los bots de WhatsApp Business para notificaciones ya son comunes en México (no hay nada técnico nuevo ahí); lo novedoso es el diseño emocional —convertir vigilancia en celebración compartida— que no he visto aplicado a mascotas ni a dinámicas familiares intergeneracionales, pero es una idea de tono/copy, no de tecnología, así que no es difícil de copiar.<br>
+          Pregunta que el equipo debe responder: si la ventaja está solo en el tono de los mensajes, ¿qué tan rápido podría un competidor con el mismo hardware copiar exactamente esa idea?</p>
+          <p>🟢 <strong>Viable: ❌</strong><br>
+          Justificación: La idea propia de "la IA detecta que llegó a su peso objetivo y cambia a modo mantenimiento" requiere medir el peso corporal real del perro de forma continua — y ya decidimos en la hoja de ruta que el MVP de 4 meses NO incluye un sensor de peso corporal del perro (solo mide lo que sale del comedero, no lo que pesa el animal). Tal como está descrito, este concepto depende de una capacidad que pospusimos a fase 2.<br>
+          Pregunta que el equipo debe responder: ¿podemos rediseñar el disparador de "celebración" usando solo datos que sí tendremos en el MVP (por ejemplo, "X semanas sin desviación de la porción"), en vez de "llegó al peso objetivo"?</p>
+          <p><strong>Puntaje DVN: 0 ✅ de 3</strong><br>
+          <strong>Veredicto:</strong> Refinar antes de construir</p>
+
+          <p>───────────────────────────────────────────────────────</p>
+
+          <p><strong>CONCEPTO B — Activación en el Mostrador</strong></p>
+          <p>🔴 <strong>Deseable: ✅</strong><br>
+          Justificación: Resuelve directamente el punto de adopción más frágil que ya identificamos —que el adulto mayor no tenga que configurar ni aprender nada— y es coherente con todo lo que sabemos del comprador: quiere tranquilidad sin fricción para su papá/mamá, no otro aparato con curva de aprendizaje.<br>
+          Pregunta que el equipo debe responder: ¿confirmamos con adultos mayores reales que "solo enchufarlo" es de verdad cero fricción, o hay otro paso (dónde colocarlo, cuándo arranca) que también les genera duda?</p>
+          <p>🟣 <strong>Novedoso: ⚠️</strong><br>
+          Justificación: "Activar en el punto de venta" es un patrón ya conocido en telecom y electrónica (SIM cards, setup en tienda); aplicarlo a comederos de mascotas para hogares multigeneracionales es nuevo en esta categoría, pero el mecanismo en sí no es una barrera defendible.<br>
+          Pregunta que el equipo debe responder: si el patrón ya existe en otras industrias, ¿qué tan rápido podría replicarlo un competidor o la propia veterinaria sin nosotros?</p>
+          <p>🟢 <strong>Viable: ⚠️</strong><br>
+          Justificación: El hardware y software (escaneo de código de barras, báscula, dispositivo sin pantalla) son técnicamente sencillos de construir en el plazo; el riesgo real es de negocio, no de ingeniería — requiere reclutar y capacitar veterinarias o tiendas piloto dispuestas a hacer el proceso de activación, algo que todavía no hemos empezado a gestionar.<br>
+          Pregunta que el equipo debe responder: ¿ya tenemos conversación abierta con al menos una veterinaria o tienda de mascotas dispuesta a pilotear esto, o esa negociación arranca desde cero?</p>
+          <p><strong>Puntaje DVN: 1 ✅ de 3</strong><br>
+          <strong>Veredicto:</strong> Refinar antes de construir</p>
+
+          <p>───────────────────────────────────────────────────────</p>
+
+          <p><strong>CONCEPTO RECOMENDADO PARA EL PASO 5</strong></p>
+          <p><strong>Nombre:</strong> Activación en el Mostrador</p>
+          <p><strong>Por qué este:</strong> Es el único de los dos con un ✅ limpio y bien fundamentado —resuelve el punto de adopción más frágil del segmento sin depender de tecnología que aún no existe—, y su principal debilidad es una negociación de canal, no una limitación técnica como la de Logros, no Regaños (que depende de un sensor que ya decidimos posponer).</p>
+          <p><strong>Riesgo principal a vigilar:</strong> la viabilidad operativa. El Paso 5 debería incluir conversaciones reales con 2–3 veterinarias o tiendas de mascotas de barrio para confirmar que aceptarían hacer la activación en mostrador, antes de comprometer tiempo de ingeniería en construir todo el flujo.</p>
+        </div>
+
+      </section>
+      <!--Fin SECCIÓN 4-->
+
+      <!--SECCIÓN 5: SUICIDIO CREATIVO-->
+      <section id="suicidio-creativo" class="week-section">
+        <h2>Suicidio Creativo</h2>
+
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Ronda 1</h3>
+
+        <div class="prompt-box" style="background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 15px; border-radius: 8px; font-style: italic; margin: 20px 0;">
+          <h4 style="margin-top:0; font-style: normal;">💬 Prompt original</h4>
+          <p>Actúa como un investigador de mercado especializado en validar la deseabilidad de oportunidades de negocio en América Latina usando evidencia de comportamiento observable — no proyecciones ni opiniones de expertos. Tu metodología consiste en buscar señales concretas de que un problema existe y duele lo suficiente como para que alguien pague por resolverlo: pagos actuales a soluciones imperfectas, comunidades activas, frecuencia documentada, costo cuantificable y workarounds en uso. Si la evidencia no existe o es débil, lo dices directamente.</p>
+          <p>Somos emprendedores en México construyendo un negocio con tres componentes: una aplicación con IA, un artefacto físico inteligente y una página web de venta. Desarrollamos el siguiente concepto a partir de un proceso de investigación de oportunidades y necesitamos verificar si tiene deseabilidad real antes de comprometer seis meses de desarrollo.</p>
+          <p><strong>NUESTRO CONCEPTO:</strong><br>
+          Nombre: [nombre del Concepto Recomendado del Paso 4]<br>
+          Descripción: [2–3 oraciones del concepto]<br>
+          Usuario / segmento: [el segmento específico]<br>
+          Dolor que resuelve: [el dolor ⭐ del Pain-Gain Map]<br>
+          Ganancia que entrega: [la ganancia ⭐ del Pain-Gain Map]</p>
+          <p>Verifica cada una de las 5 señales de deseabilidad con evidencia real y observable. Para cada señal busca en fuentes primarias: comunidades online, grupos de Facebook, foros especializados, canales de YouTube, reseñas de productos similares, reportes de industria, datos del INEGI, BID, CEPAL u organismos sectoriales relevantes.</p>
+          <p><strong>SEÑAL 1 — PAGO ACTUAL POR SOLUCIONES IMPERFECTAS</strong><br>
+          ¿Hay evidencia de que este segmento ya paga por algo que resuelve parcialmente este problema, aunque sea caro, incómodo o insuficiente?<br>
+          Busca: productos o servicios que el usuario contrata hoy, precios reales, frecuencia de contratación.</p>
+          <p><strong>SEÑAL 2 — COMUNIDADES ACTIVAS</strong><br>
+          ¿Existen comunidades online donde este segmento hable de este problema, busque soluciones o se queje de las alternativas actuales?<br>
+          Busca: grupos de Facebook, subreddits, foros, canales de YouTube, hashtags, con ejemplos concretos de publicaciones o conversaciones relacionadas.</p>
+          <p><strong>SEÑAL 3 — FRECUENCIA DEL PROBLEMA</strong><br>
+          ¿Con qué regularidad experimenta este usuario este problema específico? ¿Hay datos documentados de frecuencia?<br>
+          Busca: reportes operativos, estudios sectoriales, testimonios o cualquier fuente que indique periodicidad.</p>
+          <p><strong>SEÑAL 4 — COSTO OBSERVABLE</strong><br>
+          ¿Cuánto le cuesta al usuario NO resolver este problema?<br>
+          Busca: pérdidas documentadas, costos de workarounds actuales, seguros contratados por este riesgo, tiempo invertido con costo calculable.</p>
+          <p><strong>SEÑAL 5 — WORKAROUNDS EN USO</strong><br>
+          ¿Hay evidencia de que el usuario ya inventó soluciones caseras, adaptaciones o procesos manuales para lidiar con este problema?<br>
+          Busca: descripciones de procesos no estándar, productos adaptados de otras industrias, soluciones "artesanales" documentadas en comunidades o reportes.</p>
+          <p><strong>FORMATO DE SALIDA</strong> — entrega exactamente esto:</p>
+          <pre style="white-space: pre-wrap; font-family: inherit;">═══════════════════════════════════════════════════════
+      VERIFICACIÓN DE DESEABILIDAD
+      Concepto: [nombre] · Segmento: [usuario]
+      ═══════════════════════════════════════════════════════
+      SEÑAL 1 — Pago por soluciones imperfectas
+      Evidencia encontrada: [descripción concreta con fuente]
+      Ejemplo específico: [el más representativo]
+      Veredicto: ✅ confirmada / ⚠️ parcial / ❌ no encontrada
+
+      SEÑAL 2 — Comunidades activas
+      Evidencia encontrada: [nombre de comunidades + ejemplo de post]
+      Tamaño aproximado de la comunidad: [si está disponible]
+      Veredicto: ✅ confirmada / ⚠️ parcial / ❌ no encontrada
+
+      SEÑAL 3 — Frecuencia del problema
+      Evidencia encontrada: [dato de frecuencia con fuente]
+      Periodicidad: diaria / semanal / mensual / ocasional
+      Veredicto: ✅ confirmada / ⚠️ parcial / ❌ no encontrada
+
+      SEÑAL 4 — Costo observable
+      Evidencia encontrada: [cifra o rango con fuente]
+      Tipo de costo: dinero / tiempo / riesgo / calidad
+      Veredicto: ✅ confirmada / ⚠️ parcial / ❌ no encontrada
+
+      SEÑAL 5 — Workarounds en uso
+      Evidencia encontrada: [descripción del workaround más común]
+      Dónde se documentó: [fuente]
+      Veredicto: ✅ confirmada / ⚠️ parcial / ❌ no encontrada
+      ───────────────────────────────────────────────────────
+      RESUMEN
+      Señales confirmadas ✅: [número de 5]
+      Señales parciales ⚠️: [número de 5]
+      Señales ausentes ❌: [número de 5]</pre>
+        </div>
+
+        <div class="prompt-box" style="background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 15px; border-radius: 8px; font-style: italic; margin: 20px 0;">
+          <h4 style="margin-top:0; font-style: normal;">💬 Prompt modificado (Perplexity)</h4>
+          <p>Mismo prompt que el original — mismo rol, misma metodología de las 5 señales de deseabilidad, y el mismo formato de salida exacto — enviado a Perplexity para obtener la verificación con fuentes web reales.</p>
+        </div>
+
+        <h4>Respuesta</h4>
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+          <p><em>Nota: en esta ronda, la respuesta obtenida reprodujo por error el Filtro DVN de la sección anterior (SCAMPER + Remix de ideas) en lugar de la verificación de deseabilidad de las 5 señales. Se conserva tal cual se recibió:</em></p>
+        </div>
+
+        <div class="summary-box">
+          <p style="text-align:center;">═══════════════════════════════════════════════════════<br>
+          <strong>FILTRO DVN</strong><br>
+          ═══════════════════════════════════════════════════════</p>
+
+          <p><strong>CONCEPTO A — Logros, no Regaños</strong></p>
+          <p>🔴 <strong>Deseable: ⚠️</strong><br>
+          Justificación: El mecanismo base (el dispositivo limita solo, sin que nadie tenga que corregir a nadie) sí resuelve el dolor ⭐, pero la capa añadida —que un bot anuncie en el chat familiar que "Firulais llegó a su peso ideal"— puede tener el efecto contrario al buscado: para que haya un logro que celebrar, antes tiene que haber existido un problema, y eso puede exponer frente a toda la familia que la mamá o el papá estaba sobrealimentando al perro, justo la incomodidad que D3/D4 querían evitar.<br>
+          Pregunta que el equipo debe responder: ¿validamos con familias reales si quieren que un bot publique automáticamente en su chat familiar, o eso se siente invasivo/artificial incluso en tono positivo?</p>
+          <p>🟣 <strong>Novedoso: ⚠️</strong><br>
+          Justificación: Los bots de WhatsApp Business para notificaciones ya son comunes en México (no hay nada técnico nuevo ahí); lo novedoso es el diseño emocional —convertir vigilancia en celebración compartida— que no he visto aplicado a mascotas ni a dinámicas familiares intergeneracionales, pero es una idea de tono/copy, no de tecnología, así que no es difícil de copiar.<br>
+          Pregunta que el equipo debe responder: si la ventaja está solo en el tono de los mensajes, ¿qué tan rápido podría un competidor con el mismo hardware copiar exactamente esa idea?</p>
+          <p>🟢 <strong>Viable: ❌</strong><br>
+          Justificación: La idea propia de "la IA detecta que llegó a su peso objetivo y cambia a modo mantenimiento" requiere medir el peso corporal real del perro de forma continua — y ya decidimos en la hoja de ruta que el MVP de 4 meses NO incluye un sensor de peso corporal del perro (solo mide lo que sale del comedero, no lo que pesa el animal). Tal como está descrito, este concepto depende de una capacidad que pospusimos a fase 2.<br>
+          Pregunta que el equipo debe responder: ¿podemos rediseñar el disparador de "celebración" usando solo datos que sí tendremos en el MVP (por ejemplo, "X semanas sin desviación de la porción"), en vez de "llegó al peso objetivo"?</p>
+          <p><strong>Puntaje DVN: 0 ✅ de 3</strong><br>
+          <strong>Veredicto:</strong> Refinar antes de construir</p>
+
+          <p>───────────────────────────────────────────────────────</p>
+
+          <p><strong>CONCEPTO B — Activación en el Mostrador</strong></p>
+          <p>🔴 <strong>Deseable: ✅</strong><br>
+          Justificación: Resuelve directamente el punto de adopción más frágil que ya identificamos —que el adulto mayor no tenga que configurar ni aprender nada— y es coherente con todo lo que sabemos del comprador: quiere tranquilidad sin fricción para su papá/mamá, no otro aparato con curva de aprendizaje.<br>
+          Pregunta que el equipo debe responder: ¿confirmamos con adultos mayores reales que "solo enchufarlo" es de verdad cero fricción, o hay otro paso (dónde colocarlo, cuándo arranca) que también les genera duda?</p>
+          <p>🟣 <strong>Novedoso: ⚠️</strong><br>
+          Justificación: "Activar en el punto de venta" es un patrón ya conocido en telecom y electrónica (SIM cards, setup en tienda); aplicarlo a comederos de mascotas para hogares multigeneracionales es nuevo en esta categoría, pero el mecanismo en sí no es una barrera defendible.<br>
+          Pregunta que el equipo debe responder: si el patrón ya existe en otras industrias, ¿qué tan rápido podría replicarlo un competidor o la propia veterinaria sin nosotros?</p>
+          <p>🟢 <strong>Viable: ⚠️</strong><br>
+          Justificación: El hardware y software (escaneo de código de barras, báscula, dispositivo sin pantalla) son técnicamente sencillos de construir en el plazo; el riesgo real es de negocio, no de ingeniería — requiere reclutar y capacitar veterinarias o tiendas piloto dispuestas a hacer el proceso de activación, algo que todavía no hemos empezado a gestionar.<br>
+          Pregunta que el equipo debe responder: ¿ya tenemos conversación abierta con al menos una veterinaria o tienda de mascotas dispuesta a pilotear esto, o esa negociación arranca desde cero?</p>
+          <p><strong>Puntaje DVN: 1 ✅ de 3</strong><br>
+          <strong>Veredicto:</strong> Refinar antes de construir</p>
+
+          <p>───────────────────────────────────────────────────────</p>
+
+          <p><strong>CONCEPTO RECOMENDADO PARA EL PASO 5</strong></p>
+          <p><strong>Nombre:</strong> Activación en el Mostrador</p>
+          <p><strong>Por qué este:</strong> Es el único de los dos con un ✅ limpio y bien fundamentado —resuelve el punto de adopción más frágil del segmento sin depender de tecnología que aún no existe—, y su principal debilidad es una negociación de canal, no una limitación técnica como la de Logros, no Regaños (que depende de un sensor que ya decidimos posponer).</p>
+          <p><strong>Riesgo principal a vigilar:</strong> la viabilidad operativa. El Paso 5 debería incluir conversaciones reales con 2–3 veterinarias o tiendas de mascotas de barrio para confirmar que aceptarían hacer la activación en mostrador, antes de comprometer tiempo de ingeniería en construir todo el flujo.</p>
+        </div>
+
+        <!-- SEGUNDA RONDA -->
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Segunda ronda: diagnóstico y mapa de hipótesis</h3>
+
+        <div class="prompt-box" style="background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 15px; border-radius: 8px; font-style: italic; margin: 20px 0;">
+          <h4 style="margin-top:0; font-style: normal;">💬 Prompt original</h4>
+          <p>Actúa como un mentor de emprendimiento con experiencia en ayudar a equipos de producto a interpretar evidencia de mercado y convertirla en decisiones concretas. Tu especialidad es identificar cuándo un concepto tiene deseabilidad real, cuándo está en zona de riesgo, y cuándo debe replantearse antes de invertir recursos. Eres directo: no suavizas un diagnóstico negativo ni inflas uno positivo. Si el concepto tiene riesgo de suicidio creativo, lo dices claramente.</p>
+          <p>Somos emprendedores en México construyendo un negocio con tres componentes: una aplicación con IA, un artefacto físico inteligente y una página web de venta. Tenemos seis meses para MVP comercializable. Completamos una verificación de deseabilidad de nuestro concepto y necesitamos que la interpretes y nos digas qué hacer con ella.</p>
+          <p><strong>NUESTRO CONCEPTO:</strong> [pega el nombre y descripción del Concepto Recomendado]<br>
+          <strong>RESULTADO DE LA VERIFICACIÓN DE PERPLEXITY:</strong> [pega el output completo del Prompt 1]</p>
+          <p>Necesito que hagas tres cosas en el formato exacto que se indica al final:</p>
+          <ol>
+            <li><strong>DIAGNÓSTICO DE DESEABILIDAD:</strong> ¿Qué tan sólida es la deseabilidad de nuestro concepto según la evidencia encontrada? ¿En qué señal está el mayor riesgo? ¿Hay algún patrón en las señales ausentes que sugiera que el problema existe pero no para el segmento que elegimos, o que no duele lo suficiente para que alguien pague por resolverlo?</li>
+            <li><strong>RIESGO DE SUICIDIO CREATIVO:</strong> Basándote en el patrón de señales, ¿qué tan alto es el riesgo de que este equipo construya algo que nadie quiere, que ya existe, o que no puede terminarse en seis meses? ¿Cuál de los tres tipos de suicidio creativo es el más probable para este concepto específico?</li>
+            <li><strong>MAPA DE HIPÓTESIS:</strong> Formula 3 hipótesis específicas que el equipo debe probar con usuarios reales en las entrevistas de la semana siguiente. Cada hipótesis debe ser falseable — redactada de forma que una sola conversación con el usuario correcto pueda confirmarla o refutarla. No preguntas abiertas — hipótesis concretas del tipo "creemos que [usuario] experimenta [situación] con frecuencia [X] y estaría dispuesto a pagar [rango] porque [razón]."</li>
+          </ol>
+          <p><strong>FORMATO DE SALIDA</strong> — entrega exactamente esto:</p>
+          <pre style="white-space: pre-wrap; font-family: inherit;">═══════════════════════════════════════════════════════
+      DIAGNÓSTICO DE DESEABILIDAD
+      Concepto: [nombre]
+      ═══════════════════════════════════════════════════════
+      NIVEL DE DESEABILIDAD ACTUAL:
+      [Alto — evidencia sólida en 4–5 señales]
+      [Medio — evidencia parcial, zona de riesgo controlable]
+      [Bajo — evidencia insuficiente, replantear antes de avanzar]
+
+      FORTALEZA PRINCIPAL:
+      [La señal mejor fundamentada y qué significa para el concepto]
+
+      RIESGO PRINCIPAL:
+      [La señal más débil o ausente y por qué es importante]
+
+      PATRÓN DE LAS SEÑALES:
+      [¿Qué dice el conjunto — el problema existe para un segmento diferente al elegido / existe pero no duele suficiente / existe y duele pero el concepto no lo ataca correctamente?]
+      ───────────────────────────────────────────────────────
+      RIESGO DE SUICIDIO CREATIVO
+      Tipo más probable:
+      [ ] Producto sin dolor real — el usuario lo aprobaría pero no cambiaría su comportamiento para tenerlo
+      [ ] Producto que ya existe — hay una solución similar que el equipo no encontró porque no buscó en los adyacentes
+      [ ] Producto que no puede construirse — la viabilidad técnica o el tiempo requerido excede lo disponible en seis meses
+
+      Nivel de riesgo: Alto / Medio / Bajo
+      Por qué: [2 oraciones específicas basadas en la evidencia]
+      Cómo reducirlo:
+      [1 acción concreta que el equipo puede hacer esta semana sin construir nada — una búsqueda, una conversación, una verificación — que reduciría este riesgo significativamente]
+      ───────────────────────────────────────────────────────
+      MAPA DE HIPÓTESIS
+      HIPÓTESIS 1 — sobre el dolor
+      "Creemos que [usuario específico] experimenta [situación concreta] con frecuencia [X veces por semana/mes] y le cuesta [rango de costo] porque [razón]. Si esto es falso, nuestro concepto necesita [qué cambiaría]."
+      Cómo probarla: [la pregunta exacta o situación de observación que la confirmaría o refutaría en una entrevista de 20 min]
+
+      HIPÓTESIS 2 — sobre la solución
+      "Creemos que [usuario específico] preferiría [aspecto clave del concepto] sobre [la alternativa actual] porque [razón]. Si esto es falso, nuestro concepto necesita [qué cambiaría]."
+      Cómo probarla: [la pregunta exacta o situación de observación]
+
+      HIPÓTESIS 3 — sobre el pago
+      "Creemos que [usuario específico] estaría dispuesto a pagar [rango] por [aspecto del concepto] porque [razón]. Si esto es falso, nuestro concepto necesita [qué cambiaría]."
+      Cómo probarla: [la pregunta exacta o situación de observación]
+      ───────────────────────────────────────────────────────
+      VEREDICTO FINAL
+      [Una sola oración directa: el concepto está listo para entrevistas / necesita ajuste antes de entrevistar / necesita replantearse antes de continuar — y por qué]</pre>
+        </div>
+
+        <div class="prompt-box" style="background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 15px; border-radius: 8px; font-style: italic; margin: 20px 0;">
+          <h4 style="margin-top:0; font-style: normal;">💬 Prompt modificado (Claude)</h4>
+          <p>Actúa como un mentor de emprendimiento con experiencia en ayudar a equipos de producto a interpretar evidencia de mercado y convertirla en decisiones concretas. Tu especialidad es identificar cuándo un concepto tiene deseabilidad real, cuándo está en zona de riesgo, y cuándo debe replantearse antes de invertir recursos. Eres directo: no suavizas un diagnóstico negativo ni inflas uno positivo. Si el concepto tiene riesgo de suicidio creativo, lo dices claramente.</p>
+          <p>Somos emprendedores en México construyendo un negocio con tres componentes: una aplicación con IA, un artefacto físico inteligente y una página web de venta. Tenemos seis meses para MVP comercializable. Completamos una verificación de deseabilidad de nuestro concepto y necesitamos que la interpretes y nos digas qué hacer con ella.</p>
+          <p><strong>NUESTRO CONCEPTO:</strong><br>
+          Nombre: Activación en el Mostrador<br>
+          Por qué este: Es el único de los dos con un ✅ limpio y bien fundamentado —resuelve el punto de adopción más frágil del segmento sin depender de tecnología que aún no existe—, y su principal debilidad es una negociación de canal, no una limitación técnica como la de Logros, no Regaños (que depende de un sensor que ya decidimos posponer).<br>
+          Riesgo principal a vigilar: la viabilidad operativa. El Paso 5 debería incluir conversaciones reales con 2–3 veterinarias o tiendas de mascotas de barrio para confirmar que aceptarían hacer la activación en mostrador, antes de comprometer tiempo de ingeniería en construir todo el flujo.</p>
+
+          <p><strong>RESULTADO DE LA VERIFICACIÓN DE PERPLEXITY:</strong></p>
+          <p><strong>4 oportunidades de negocio no resueltas en el sector mascotas (México y LATAM)</strong></p>
+          <p>El mercado de mascotas en América Latina está en expansión acelerada: se valuó en US$11.380 millones en 2024 y se proyecta en US$18.880 millones para 2033, con un CAGR del 5,79%. México es el segundo mercado más grande de la región, con un gasto promedio mensual por perro de $1.674 MXN (alimentos, accesorios, aseo) y costos médicos que pueden superar $50.000 MXN en casos graves. A pesar del crecimiento, persisten brechas críticas donde una solución app con IA + artefacto físico inteligente puede capturar valor real. <sup style="font-size:0.7em; color:#888;">[imveterinaria][petfoodlatinoamerica][informador][ecosistemastartup]</sup></p>
+          <p>A continuación, 4 problemas con evidencia de mercado suficiente:</p>
+
+          <p><strong>1. Detección temprana de enfermedades crónicas en gatos (insuficiencia renal, diabetes)</strong></p>
+          <p><em>El problema concreto</em></p>
+          <ul>
+            <li>Quién lo tiene: Dueños de gatos en zonas urbanas de México y LATAM, especialmente con mascotas mayores de 5 años. <sup style="font-size:0.7em; color:#888;">[catcareworld]</sup></li>
+            <li>Cuándo ocurre: De forma silenciosa y progresiva; los síntomas clínicos (pérdida de peso, aumento del consumo de agua, letargo) aparecen cuando la enfermedad ya está en etapa 2-3. <sup style="font-size:0.7em; color:#888;">[catcareworld][catcareworld]</sup></li>
+            <li>Costo de no resolverlo:
+              <ul>
+                <li>Diagnóstico tardío eleva costos de tratamiento: US$1.500–12.000 anuales según etapa. <sup style="font-size:0.7em; color:#888;">[catcareworld]</sup></li>
+                <li>En México, una consulta veterinaria cuesta $300–800 MXN, pero estudios y hospitalización multiplican el gasto. <sup style="font-size:0.7em; color:#888;">[bbva][petsapp][milenio]</sup></li>
+                <li>La ERC felina afecta a 30–50% de gatos mayores de 12 años. <sup style="font-size:0.7em; color:#888;">[catcareworld]</sup></li>
+              </ul>
+            </li>
+          </ul>
+          <p><em>Solución actual más usada y por qué es insuficiente:</em> visitas veterinarias reactivas + análisis puntuales; fuentes de agua inteligentes sin monitoreo de signos vitales; no hay monitoreo continuo en casa. <sup style="font-size:0.7em; color:#888;">[catcareworld][lanacion.com][petsnowy][genhackmagazine]</sup></p>
+          <p><em>Por qué app + IA + artefacto físico es el enfoque correcto:</em> collar/arnés con sensores + bebedero inteligente detectan desviaciones tempranas; IA identifica patrones de riesgo; mercado de wearables de salud para mascotas: US$3.600M (2024) → US$15.500M (2035). <sup style="font-size:0.7em; color:#888;">[genhackmagazine][purespet]</sup></p>
+          <p><em>Tamaño de mercado en LATAM:</em> 40–50 millones de gatos; segmento objetivo 12–15 millones; mercado potencial &gt;500.000 hogares dispuestos a pagar US$15–30/mes. <sup style="font-size:0.7em; color:#888;">[imveterinaria][noticiasneo][catcareworld][purespet][petsciencereview]</sup></p>
+
+          <p><strong>2. Obesidad y sobrepeso en perros (prevención y manejo continuo)</strong></p>
+          <p><em>El problema concreto:</em> dueños de perros urbanos, sobre todo razas pequeñas/medianas en departamentos; 35–42% con sobrepeso u obesidad; consultas repetidas, dietas de prescripción, medicamentos, cirugías; 2–3 años menos de esperanza de vida. <sup style="font-size:0.7em; color:#888;">[thunder][studocu][informador][indexbox][bbva][mordorintelligence]</sup></p>
+          <p><em>Solución actual y por qué es insuficiente:</em> dietas de control de peso + recomendaciones verbales; apps genéricas de conteo de calorías sin datos reales de actividad; sin retroalimentación en tiempo real. <sup style="font-size:0.7em; color:#888;">[indexbox][mordorintelligence][es.accio][informador]</sup></p>
+          <p><em>Por qué app + IA + artefacto físico es el enfoque correcto:</em> collar con acelerómetro + GPS mide actividad real; IA ajusta alimentación y ejercicio; dispensador inteligente controla porciones; mercado de alimentos de control de peso en México: US$78M en 2026, 8.8% CAGR. <sup style="font-size:0.7em; color:#888;">[cincodias.elpais][accio][genhackmagazine][mordorintelligence]</sup></p>
+          <p><em>Tamaño de mercado en LATAM:</em> 70–90 millones de perros; segmento con sobrepeso 25–36 millones; mercado potencial &gt;1 millón de hogares dispuestos a pagar US$10–25/mes. <sup style="font-size:0.7em; color:#888;">[imveterinaria][noticiasneo][informador][indexbox][mordorintelligence]</sup></p>
+
+          <p><strong>3. Ansiedad por separación y comportamiento destructivo en perros (monitoreo e intervención en tiempo real)</strong></p>
+          <p><em>El problema concreto:</em> dueños de perros que trabajan fuera 8+ horas diarias; ladridos, destrozos, eliminaciones inadecuadas; destrozos de $500–5.000 MXN por incidente; consultas con etólogos de $500–1.500 MXN c/u. <sup style="font-size:0.7em; color:#888;">[elpais][elcomercio][nehumanesociety][elespectador][tiendabacan][mundoperros][cuidarmiperro]</sup></p>
+          <p><em>Solución actual y por qué es insuficiente:</em> cámaras (Furbo, Petcube) sin detección automática de ansiedad; juguetes dispensadores sin adaptación al estado emocional; intervenciones manuales y reactivas. <sup style="font-size:0.7em; color:#888;">[es.accio][elcomercio][mundoperros][elpais][elespectador]</sup></p>
+          <p><em>Por qué app + IA + artefacto físico es el enfoque correcto:</em> dispositivo con micrófono, cámara y sensores detecta patrones de ansiedad en tiempo real; IA clasifica el tipo y activa intervenciones; mercado PetTech México: US$3.500M (2025) → US$4.900M (2030). <sup style="font-size:0.7em; color:#888;">[genhackmagazine][mundoperros][vetster][elcomercio][ecosistemastartup]</sup></p>
+          <p><em>Tamaño de mercado en LATAM:</em> 50–60 millones de perros en hogares urbanos; segmento con ansiedad 7,5–12 millones; mercado potencial &gt;500.000 hogares dispuestos a pagar US$20–40/mes. <sup style="font-size:0.7em; color:#888;">[imveterinaria][noticiasneo][nehumanesociety][mundoperros][889noticias][petme][ecosistemastartup][newsreportmx]</sup></p>
+
+          <p><strong>4. Hidratación insuficiente en gatos (prevención de problemas renales y urinarios)</strong></p>
+          <p><em>El problema concreto:</em> dueños de gatos con alimentación seca; bajo instinto de sed (50–100 ml/kg/día menos de lo necesario); 1 de cada 3 gatos mayores de 10 años desarrolla ERC; costos de US$1.500–12.000 anuales. <sup style="font-size:0.7em; color:#888;">[lanacion.com][vetsaglik][msn][catcareworld][paseadores][bbva][petsapp]</sup></p>
+          <p><em>Solución actual y por qué es insuficiente:</em> bebederos de agua circulante sin monitoreo real de consumo; comida húmeda sin control de ingesta total; sin alerta temprana. <sup style="font-size:0.7em; color:#888;">[lanacion.com][petsnowy][msn][wacat][infobae][bahiazoo]</sup></p>
+          <p><em>Por qué app + IA + artefacto físico es el enfoque correcto:</em> bebedero inteligente con sensor de flujo/peso; IA detecta desviaciones y notifica; adopción temprana en México y Brasil. <sup style="font-size:0.7em; color:#888;">[petsnowy][purespet][genhackmagazine][msn][ecosistemastartup][es.accio]</sup></p>
+          <p><em>Tamaño de mercado en LATAM:</em> segmento con alimentación seca 28–40 millones de gatos; mercado potencial &gt;500.000 hogares dispuestos a pagar US$15–30/mes. <sup style="font-size:0.7em; color:#888;">[imveterinaria][noticiasneo][bbva][petsnowy][wacat][lanacion.com][purespet]</sup></p>
+
+          <p><strong>Resumen de las 4 oportunidades</strong></p>
+          <table class="table table-bordered">
+            <thead class="table-dark">
+              <tr>
+                <th>Oportunidad</th>
+                <th>Problema</th>
+                <th>Costo de no resolver</th>
+                <th>Solución actual</th>
+                <th>Por qué app+IA+físico</th>
+                <th>Mercado LATAM (potencial)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Detección temprana ERC/diabetes en gatos</td>
+                <td>Enfermedades silenciosas detectadas tarde</td>
+                <td>US$1.500–12.000/año en tratamiento</td>
+                <td>Visitas veterinarias reactivas</td>
+                <td>Monitoreo continuo + alertas tempranas</td>
+                <td>&gt;500.000 hogares (gatos 5+ años)</td>
+              </tr>
+              <tr>
+                <td>Obesidad en perros</td>
+                <td>35–42% de perros con sobrepeso</td>
+                <td>Consultas, dietas, cirugías repetidas</td>
+                <td>Dietas de prescripción + recomendaciones verbales</td>
+                <td>Medición real de actividad + ajuste dinámico</td>
+                <td>&gt;1 millón de hogares (perros con sobrepeso)</td>
+              </tr>
+              <tr>
+                <td>Ansiedad por separación en perros</td>
+                <td>Destrozos, estrés, riesgo de abandono</td>
+                <td>$500–5.000 MXN por incidente + terapias</td>
+                <td>Cámaras + juguetes interactivos (reactivos)</td>
+                <td>Detección automática + intervención proactiva</td>
+                <td>&gt;500.000 hogares (perros urbanos)</td>
+              </tr>
+              <tr>
+                <td>Hidratación insuficiente en gatos</td>
+                <td>Problemas renales/urinarios prevenibles</td>
+                <td>US$1.500–12.000/año en tratamiento</td>
+                <td>Fuentes de agua + comida húmeda (sin monitoreo)</td>
+                <td>Medición exacta de ingesta + alertas</td>
+                <td>&gt;500.000 hogares (gatos con pienso)</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p><strong>Fuentes clave:</strong> Mercado Pet LATAM US$11.380M (2024) → US$18.880M (2033); México US$5.400M (2024) → US$8.270M (2033), gasto promedio perro $1.674 MXN/mes; obesidad canina en México 35–42%; ERC felina 30–50% de gatos &gt;12 años, costos US$1.500–12.000/año; wearables salud mascotas US$3.600M (2024) → US$15.500M (2035); PetTech México US$3.500M (2025) → US$4.900M (2030). <sup style="font-size:0.7em; color:#888;">[imveterinaria][petfoodlatinoamerica][informador][eleconomista.com][thunder][studocu][catcareworld][purespet][ecosistemastartup]</sup></p>
+          <p>Estas 4 oportunidades cumplen con: frecuencia alta (diaria/semanal), costo observable, soluciones actuales insuficientes, viabilidad técnica con tu stack (IA + hardware + app), y mercado &gt;50.000 pagadores en LATAM. <sup style="font-size:0.7em; color:#888;">[imveterinaria][ecosistemastartup][purespet]</sup></p>
+
+          <p>Necesito que hagas tres cosas en el formato exacto indicado al final (mismo formato del prompt original: Diagnóstico de deseabilidad, Riesgo de suicidio creativo, Mapa de hipótesis).</p>
+        </div>
+
+        <h4>Respuesta</h4>
+        <div class="summary-box">
+          <p style="text-align:center;">═══════════════════════════════════════════════════════<br>
+          <strong>DIAGNÓSTICO DE DESEABILIDAD</strong><br>
+          Concepto: Activación en el Mostrador<br>
+          ═══════════════════════════════════════════════════════</p>
+
+          <p><strong>NIVEL DE DESEABILIDAD ACTUAL:</strong><br>
+          Bajo — evidencia insuficiente, replantear antes de avanzar</p>
+
+          <p><strong>FORTALEZA PRINCIPAL:</strong><br>
+          El único punto realmente sólido es el dolor genérico detrás del concepto: la obesidad canina en México (35–42% de prevalencia), su costo médico recurrente ($300–1,200 MXN mensuales en dieta/consultas) y su frecuencia diaria están bien documentados y se repiten en varias fuentes. Eso confirma que, si el mecanismo funciona, hay un problema real y costoso detrás — pero es evidencia de categoría, no del concepto.</p>
+
+          <p><strong>RIESGO PRINCIPAL:</strong><br>
+          La evidencia entregada no dice absolutamente nada sobre las dos apuestas que hacen específico a este concepto: (1) que el segmento sea hogares multigeneracionales donde el reparto de comida entre varios cuidadores causa sobrepeso no detectado, y (2) que veterinarias o tiendas de mascotas acepten hacer la activación en mostrador. Ninguna de las cuatro oportunidades del reporte menciona siquiera la palabra "cuidadores múltiples", "adulto mayor" ni nada relacionado con reparto de responsabilidad de alimentación — ese ángulo salió enteramente de nuestro propio razonamiento, no de ninguna fuente externa, y sigue sin verificarse con una sola persona real.</p>
+
+          <p><strong>PATRÓN DE LAS SEÑALES:</strong><br>
+          El patrón es el más peligroso de los tres posibles, porque es el que menos se nota: el problema general existe y duele (buena evidencia), pero no sabemos si existe de la forma específica que elegimos atacar. Es fácil leer cifras grandes de mercado (35–42%, millones de hogares) y sentir que eso valida el concepto, cuando en realidad esas cifras describen "dueños de perro" en general — no confirman que el segmento multigeneracional sea distinguible, grande, ni que el "hijo que paga / papá que alimenta" sea un patrón real y no una hipótesis nuestra. Tampoco hay ninguna señal sobre si "activar en tienda" es algo que alguien —comprador o tienda— realmente quiere.</p>
+
+          <p>───────────────────────────────────────────────────────</p>
+
+          <p><strong>RIESGO DE SUICIDIO CREATIVO</strong></p>
+          <p><strong>Tipo más probable:</strong><br>
+          [ ] Producto sin dolor real — el usuario lo aprobaría pero no cambiaría su comportamiento para tenerlo<br>
+          [ ] Producto que ya existe — hay una solución similar que el equipo no encontró porque no buscó en los adyacentes<br>
+          [x] Producto que no puede construirse — la viabilidad técnica o el tiempo requerido excede lo disponible en seis meses</p>
+          <p><strong>Nivel de riesgo:</strong> Alto</p>
+          <p><strong>Por qué:</strong> El cuello de botella no es hardware ni software —eso es construible en el plazo— sino conseguir que veterinarias o tiendas de mascotas independientes acepten, sin ningún compromiso todavía negociado, dedicar tiempo de su personal a activar el producto de un tercero desconocido. Las negociaciones con pequeños negocios en México suelen tomar semanas o meses en confirmarse, y hoy no existe ninguna conversación iniciada con ningún socio potencial.</p>
+          <p><strong>Cómo reducirlo:</strong><br>
+          Esta semana, sin construir nada: visitar o llamar a 3 veterinarias o tiendas de mascotas de barrio y preguntarles directamente si aceptarían dedicar 10–15 minutos por venta a activar un dispositivo de un tercero, bajo qué condiciones lo harían (comisión, capacitación, garantía), y si ya hacen algo similar hoy con otras marcas. Una respuesta de "no, jamás" en las tres reduciría drásticamente la confianza en el concepto antes de invertir tiempo de ingeniería.</p>
+
+          <p>───────────────────────────────────────────────────────</p>
+
+          <p><strong>MAPA DE HIPÓTESIS</strong></p>
+
+          <p><strong>HIPÓTESIS 1 — sobre el dolor</strong><br>
+          "Creemos que los hijos/hijas adultos (25-45 años) que trabajan fuera de casa y cuyo papá/mamá cuida al perro, no saben con certeza cuánto le da de comer cada persona que lo cuida en un día típico, y les preocupa lo suficiente como para ya haberlo hablado en familia o buscado alguna solución, porque temen que derive en un problema de salud costoso. Si esto es falso, nuestro concepto necesita replantear el dolor central — quizás la sobrealimentación distribuida no es algo que noten ni les preocupe activamente."<br>
+          <em>Cómo probarla:</em> en la entrevista, preguntar sin sugerir la respuesta: "¿Sabes exactamente cuánto le da de comer tu perro cada persona que lo cuida en un día típico?" y observar si hay duda, sorpresa, o si ya lo habían pensado antes.</p>
+
+          <p><strong>HIPÓTESIS 2 — sobre la solución</strong><br>
+          "Creemos que estos hijos/hijas preferirían un comedero que llega ya configurado desde la tienda —sin tener que enseñarle nada a sus papás— sobre configurar ellos mismos una app o pedirle a sus papás que aprendan algo nuevo, porque valoran más evitarle fricción tecnológica a sus papás que tener control total sobre la configuración inicial. Si esto es falso, el concepto necesita moverse hacia auto-configuración remota en vez de activación física en mostrador."<br>
+          <em>Cómo probarla:</em> preguntar "si tuvieras que elegir, ¿preferirías configurar tú este aparato desde tu celular, o que ya llegue listo porque lo configuraron en la tienda donde lo compraron?" y pedir que expliquen por qué.</p>
+
+          <p><strong>HIPÓTESIS 3 — sobre el pago</strong><br>
+          "Creemos que estos hijos/hijas estarían dispuestos a pagar entre $400 y $700 MXN mensuales (o su equivalente en pago único, $2,500–4,000 MXN por el dispositivo) por la certeza de que su perro come la porción correcta sin importar quién lo alimente, porque hoy ya gastan una cantidad similar o mayor en alimento y visitas veterinarias sin tener esa certeza. Si esto es falso, el concepto necesita bajar el precio o buscar otra fuente de ingreso."<br>
+          <em>Cómo probarla:</em> preguntar, antes de mencionar cualquier precio de referencia (para no anclar la respuesta): "¿cuánto pagarías al mes por saber con certeza que tu perro está comiendo la porción correcta, sin importar quién le dé de comer en tu casa?"</p>
+
+          <p>───────────────────────────────────────────────────────</p>
+
+          <p><strong>VEREDICTO FINAL</strong><br>
+          El concepto está listo para entrevistas con usuarios esta semana, pero no para comprometer tiempo de ingeniería en la activación en mostrador hasta confirmar con al menos una tienda o veterinaria real que aceptaría hacerlo — ambas conversaciones deben correr en paralelo, no una después de la otra.</p>
+        </div>
+
+      </section>
+      <!--Fin SECCIÓN 5-->
+
+      <!--SECCIÓN 6: CRITERIOS DE SELECCIÓN DE OPORTUNIDAD-->
+      <section id="criterios-de-seleccion-de-oportunidad" class="week-section">
+        <h2>Criterios de selección de oportunidad</h2>
+
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">1. Pasión</h3>
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+          <p><strong>¿Alguien del equipo ha vivido este problema, conoce a alguien que lo sufre, o tiene una razón personal para querer resolverlo — más allá de la calificación?</strong></p>
+          <p>Sí, yo tengo una perrita que se llama Rinna y que de hecho tiene sobrepeso, ya la llevamos con el veterinario y le recetó un alimento especial para bajar de peso. El problema está en que el costal fue caro y en cuanto lo dejó, volvió a subir de peso.</p>
+          <p><em>[Foto de Rinna]</em></p>
+
+          <p><strong>¿Estarían dispuestos a pasar una tarde entera visitando a 5 usuarios de este sector para entender mejor el problema — aunque eso no formara parte de ningún entregable?</strong></p>
+          <p>Sí, el problema principal sería encontrar perritos con sobrepeso.</p>
+
+          <p><strong>Si el proyecto no tuviera calificación, ¿seguirían trabajando en él?</strong></p>
+          <p>No estoy segura, depende de la oportunidad de escalabilidad del proyecto.</p>
+        </div>
+
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">2. Habilidad técnica</h3>
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+          <p><strong>¿Pueden nombrar el tipo de sensor, actuador o modelo de IA que usaría el artefacto físico? Si no pueden ni aproximarse, la factibilidad técnica es baja.</strong></p>
+          <p>Muy seguramente sería una XIAO ESP s3 que tiene una cámara y de ahí entrenarla con un modelo de IA, pero en la realidad, tendría que preguntar si es la mejor opción.</p>
+
+          <p><strong>¿El componente más difícil del concepto — técnicamente — es algo que el equipo ya ha hecho antes o algo completamente nuevo para todos? Si es completamente nuevo para todos, ¿hay tiempo real para aprenderlo sin comprometer los otros dos componentes?</strong></p>
+          <p>Es nuevo para todos, la verdad, no cuento con las habilidades técnicas para lograrlo, pero la idea es buena, solamente sería cuestión de conseguirme a un socio que sepa del tema electrónico y repartir ganancias o subcontratar a alguien.</p>
+
+          <p><strong>¿El concepto requiere integraciones o dependencias externas (APIs de terceros, hardware especializado, certificaciones) que podrían bloquear el desarrollo antes de semana 13?</strong></p>
+          <p>No</p>
+
+          <p><em>Si la respuesta a la primera pregunta es "no sabemos" y la respuesta a la tercera es "probablemente sí": la factibilidad técnica necesita más análisis antes de comprometer el concepto.</em></p>
+        </div>
+
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">3. Mercado existente</h3>
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+          <p><em>El criterio que ya respondieron — ahora se formaliza. Este criterio recoge el trabajo de los Pasos 1–5. No se repite el análisis — se formaliza la conclusión en dos números y una decisión.</em></p>
+
+          <p><strong>Los dos números:</strong></p>
+          <p>Puntaje de deseabilidad del Paso 5: ¿cuántas de las 5 señales están confirmadas con ✅?</p>
+          <p>Las 5 señales tienen palomita (✅) según el reporte de Perplexity — es decir, las 5 salieron "confirmadas":</p>
+          <ol>
+            <li>✅ Pago por soluciones imperfectas</li>
+            <li>✅ Comunidades activas</li>
+            <li>✅ Frecuencia del problema</li>
+            <li>✅ Costo observable</li>
+            <li>✅ Workarounds en uso</li>
+          </ol>
+          <p>Sin embargo, el concepto necesita ajuste antes de entrevistar: la evidencia confirma que el dolor de delivery mal trazado es real y costoso, pero no confirma que el usuario prefiera o necesite hardware sobre las soluciones de software puro que ya está pagando — así que las entrevistas de la próxima semana deben comparar explícitamente ambas opciones frente al usuario, no solo validar el dolor en abstracto.</p>
+        </div>
+
+      </section>
+      <!--Fin SECCIÓN 6-->
+
+
+      <!--SECCIÓN 7: MATRIZ DE SELECCIÓN-->
+      <section id="matriz-de-seleccion" class="week-section">
+        <h2>Matriz de selección</h2>
+
+        <p style="text-align:center;"><strong>MATRIZ DE SELECCIÓN</strong> &nbsp;&nbsp;&nbsp;&nbsp; Equipo:</p>
+
+        <table class="table table-bordered">
+          <thead class="table-dark">
+            <tr>
+              <th>Criterio</th>
+              <th>Concepto A</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. PASIÓN</strong><br>¿El equipo seguiría si no hubiera calificación?</td>
+              <td>Sí, pues considero que este producto no existe y es un problema muy real, es más, en mi propia familia existe, pues tengo una perrita que se llama Rinna y que de hecho tiene sobrepeso, ya la llevamos con el veterinario y le recetó un alimento especial para bajar de peso. El problema está en que el costal fue caro y en cuanto lo dejó, volvió a subir de peso.<br><em>[Foto de Rinna]</em></td>
+            </tr>
+            <tr>
+              <td><strong>2. HABILIDAD</strong><br>¿Pueden nombrar el sensor, el modelo de IA y el protocolo que usarían hoy?</td>
+              <td>No, en esto necesito ayuda para el prototipo final, sin embargo, considero que sí puedo hacer un prototipo pues tengo habilidades en la fabricación digital, lo cual incluye: electrónica, programación y diseño.</td>
+            </tr>
+            <tr>
+              <td><strong>3. MERCADO</strong><br>Señales de deseabilidad confirmadas (Paso 5) y tamaño del segmento</td>
+              <td>5/5<br>1. ✅ Sin responder aún</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="summary-box">
+          <p><strong>RESULTADO</strong></p>
+          <p>3/3 ✅ → llevar al paso 7<br>
+          2/3 ✅ → ajustar<br>
+          1/3 ✅ → cambiar</p>
+          <p><strong>Resultado: 2/3 ✅ → ajustar</strong></p>
+        </div>
+
+      </section>
+      <!--Fin SECCIÓN 7-->
+
+
+      <!--SECCIÓN 8: DEFENSA DE MI IDEA-->
+      <section id="defensa-de-mi-idea" class="week-section">
+        <h2>Defensa de mi idea</h2>
+
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+          <p><em>Nota: el contenido de esta sección, tal como se recibió, retoma datos del hallazgo de "promesas de entrega que se incumplen" (delivery/pymes) en vez del concepto del comedero inteligente trabajado en el resto de la semana. Se conserva tal cual fue entregado, sin corregir ni resumir.</em></p>
+        </div>
+
+        <p style="text-align:center;"><strong>RESUMEN DEL PROYECTO</strong></p>
+
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">1. Verificación del problema</h3>
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+          <p><strong>Segmento:</strong> Hijas e hijos adultos (25-45 años) en zonas urbanas de México, que trabajan tiempo completo fuera de casa y cuyo padre o madre (adulto mayor) vive en el mismo hogar y es quien convive con el perro la mayor parte del día. Son ellos quienes tienen el ingreso, la tarjeta y el hábito digital para comprar la solución, aunque no sean quienes alimentan al perro día a día.</p>
+          <ul>
+            <li><strong>Dolor:</strong> Pedidos se extravían, salen incompletos o repartidores no se presentan; el dueño se entera hasta que el cliente reclama</li>
+            <li><strong>Workaround actual:</strong> Excel/libreta + múltiples grupos de WhatsApp + ubicación compartida (que repartidor olvida activar) + llamadas constantes para preguntar "¿dónde vas?"</li>
+            <li><strong>Costo observable:</strong> 29-35% comisión a plataformas o 25% pedidos con problemas + 20-40 hrs/mes coordinación manual + pérdida de clientes (retención 42.3%).</li>
+          </ul>
+        </div>
+
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">2. Evidencia de que el problema es real</h3>
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+          <p><strong>Señal 1: Pago por soluciones imperfectas</strong></p>
+          <ul>
+            <li>Pymes pagan $1,800-$6,000 MXN/mes por CRM WhatsApp (ej: Aurora Inbox $1,800 MXN/mes) que no verifican entrega física <sup style="font-size:0.7em; color:#888;">[aurorainbox]</sup></li>
+            <li>Pagan 29-35% comisión a Rappi/Uber Eats/DiDi por trazabilidad completa pero pierden margen <sup style="font-size:0.7em; color:#888;">[polotab]</sup></li>
+            <li>Invierten $70,000-$120,000 MXN en software a medida para gestión de pedidos</li>
+          </ul>
+          <p><strong>Señal 2: Comunidades activas</strong></p>
+          <ul>
+            <li>8 grupos de WhatsApp de delivery activos y verificados</li>
+            <li>Grupos Facebook emprendedores CDMX con miles de participantes</li>
+            <li>Post concreto (mayo 2026): "Hola buenas noches alguien le ha pasado el repartidor nunca llegó... no se volvió a hacer ningún intento de entrega"</li>
+          </ul>
+          <p><strong>Señal 3: Frecuencia documentada</strong></p>
+          <ul>
+            <li>25% de envíos con problemas (retrasos, incorrectos, no entrega) <sup style="font-size:0.7em; color:#888;">[elhorizonte]</sup></li>
+            <li>Para negocio con 10-20 pedidos/día = 2-5 pedidos con problemas diarios</li>
+            <li>Quejas diarias en redes: "El pedido va a llegar frío pero el repartidor caliente" (ago 2026)</li>
+          </ul>
+        </div>
+
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">3. Pasión por mi proyecto</h3>
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+          <p><strong>Conexión con el problema:</strong> Es un problema que como pyme nosotros en nuestro negocio familiar también hemos llegado a tener. Sin embargo, para continuarlo posteriormente, me gustaría ver la adopción en el mercado.</p>
+          <p><strong>Capacidad técnica concreta:</strong></p>
+          <p>Sensor: XIAO S3 con cámara y modelo de IA, pero no me sé el nombre. Y el protocolo me imagino que sería MQTT que es de los más sencillos.</p>
+        </div>
+
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">4. Oportunidad</h3>
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+          <p><strong>Oración de oportunidad:</strong> Existe una oportunidad para dueños de pymes en México que venden por WhatsApp/Instagram y hacen delivery propio que necesitan tener visibilidad en tiempo real del estado de sus pedidos sin depender de confirmaciones manuales porque hoy las soluciones existentes son o muy caras (software empresarial $35,000-$300,000 MXN) o muy básicas (Excel, WhatsApp) y no verifican que el proceso físico realmente avance</p>
+          <p><strong>Falseable:</strong> El argumento de que sistemas así ya existen.</p>
+          <p><strong>Tamaño de mercado:</strong> 70,000-100,000 negocios solo en México (65,000 restaurantes + 180,000 marcas D2C, con 40-50% haciendo delivery propio).</p>
+        </div>
+
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">5. Deseabilidad validada</h3>
+        <div class="summary-box">
+          <ul>
+            <li>✅ <strong>5 de 5 señales confirmadas:</strong> Pago actual, comunidades activas, frecuencia diaria, costo observable, workarounds documentados. Sin embargo, el concepto necesita ajuste antes de entrevistar: la evidencia confirma que el dolor de delivery mal trazado es real y costoso, pero no confirma que el usuario prefiera o necesite hardware sobre las soluciones de software puro que ya está pagando, así que las entrevistas de la próxima semana deben comparar explícitamente ambas opciones frente al usuario, no solo validar el dolor en abstracto.</li>
+            <li>✅ <strong>Mercado suficiente:</strong> 180,000+ marcas migraron a D2C en 2025-2026 para evitar retenciones de marketplaces</li>
+            <li>✅ <strong>Timing favorable:</strong> 15-30% de mipymes abandonó marketplaces en Q1 2026 por retenciones fiscales</li>
+          </ul>
+        </div>
+
+        <!--Presentación incrustada-->
+        <div class="presentation-embed" style="max-width: 40em; margin: 20em auto;">
+          <iframe 
+            src="https://drive.google.com/file/d/1OabfWOm2KdvOW5KJcpZNxyvQFYl1Ow7O/preview" 
+            width="100%" 
+            height="480" 
+            style="border: none; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);"
+            allow="autoplay">
+          </iframe>
+        </div>
+        <!--Fin: Presentación incrustada-->
+
+      </section>
+      <!--Fin SECCIÓN 8-->
+
+
+      <!--SECCIÓN 9: REPORTE DE OPORTUNIDAD-->
+      <section id="reporte-de-oportunidad" class="week-section">
+        <h2>Reporte de oportunidad</h2>
+
+        <p><em>Aquí está el reporte, como texto:</em></p>
+
+        <div class="summary-box">
+          <p style="text-align:center;">─────────────────────────────────────<br>
+          <strong>REPORTE DE OPORTUNIDAD — Semana 2</strong><br>
+          Equipo: [nombres del equipo]<br>
+          Concepto elegido: Activación en el Mostrador<br>
+          ─────────────────────────────────────</p>
+
+          <h4 style="margin-top:0;">1. El problema</h4>
+          <p><strong>Segmento específico:</strong> hijas e hijos adultos (25–45 años) en zonas urbanas de México, que trabajan tiempo completo fuera de casa y cuyo padre o madre (adulto mayor) vive en el mismo hogar y convive con el perro la mayor parte del día.</p>
+          <p><strong>Dolor ⭐:</strong> la sobrealimentación del perro pasa entre varias manos sin que nadie la sume — nadie decide sobrealimentarlo, pero entre la abuela que se queda en casa, la empleada doméstica y los hijos que llegan en la noche, entre todos lo logran. El resultado aparece meses después, sin que exista un solo responsable a quien señalar.</p>
+          <p><strong>Workaround actual y su costo observable:</strong> apps de conteo de calorías (fallan porque dependen de que una sola persona registre, y hay varios cuidadores), comederos programables genéricos (controlan horario y cantidad, no la porción correcta), recomendación verbal del veterinario (nadie verifica que se cumpla a diario), y dietas de prescripción que llegan cuando el daño ya ocurrió — con un costo de $300–800 MXN por consulta y $500–1,200 MXN mensuales en alimento especializado.</p>
+
+          <h4>2. Evidencia de deseabilidad</h4>
+          <ol>
+            <li><strong>Frecuencia y cotidianidad del dolor:</strong> 35–42% de los perros en México tiene sobrepeso u obesidad (reportes de mercado pet care México / estudios veterinarios citados).</li>
+            <li><strong>Costo cuantificable de no resolverlo:</strong> $300–800 MXN por consulta, $500–1,200 MXN mensuales en dieta de prescripción, más medicamentos o cirugías si hay diabetes o problemas articulares (fuentes: BBVA, Informador, Mordor Intelligence).</li>
+            <li><strong>Disposición a pagar ya observada en la categoría:</strong> los dueños ya gastan en promedio $462 MXN/mes en alimento y $267 MXN en accesorios, y el mercado estima más de 1 millón de hogares en LATAM dispuestos a pagar entre US$10–25/mes por un programa de control de peso (Informador, Indexbox, Mordor Intelligence).</li>
+          </ol>
+          <p><strong>Nota honesta:</strong> estas tres señales confirman que el problema general —la obesidad canina— es real, frecuente y costoso. No confirman todavía el segmento específico que elegimos (hogar multigeneracional) ni la disposición a pagar por el mecanismo exacto de este concepto (comedero + activación en tienda) — eso es justo lo que las hipótesis de la sección 7 están diseñadas para probar la próxima semana.</p>
+
+          <h4>3. Pain-Gain Map (versión final)</h4>
+          <p><strong>Dolores, de mayor a menor intensidad:</strong></p>
+          <ul>
+            <li>⭐ D1: la sobrealimentación pasa entre varias manos sin que nadie la sume.</li>
+            <li>D2: el gasto veterinario por sobrepeso llega de golpe y sin aviso.</li>
+            <li>D3: siente que falla como hijo/hija en dos frentes —el perro y sus papás— sin poder estar presente en ninguno.</li>
+            <li>D4: evita corregir a su papá o mamá sobre cómo alimentan al perro, porque señalarlo se siente como cuestionar su capacidad de cuidar la casa.</li>
+            <li>D5: siente una vergüenza silenciosa frente al veterinario cuando llega el diagnóstico de sobrepeso, como si reflejara que no cuida lo suficiente.</li>
+          </ul>
+          <p><strong>Ganancias, de mayor a menor deseo:</strong></p>
+          <ul>
+            <li>⭐ G1: tener la certeza de que el perro come la porción correcta cada día, sin importar quién se la dé.</li>
+            <li>G2: sentir que, aunque no esté ahí, cuida a su perro y a sus papás con una sola acción.</li>
+            <li>G3: reducir o evitar los gastos veterinarios grandes porque el problema se atiende antes de escalar.</li>
+            <li>G4: mejorar la relación con sus papás porque deja de tener que corregirlos.</li>
+            <li>G5: liberar la carga mental de "acordarse de preguntar" y sentirse culpable.</li>
+          </ul>
+
+          <h4>4. Concepto recomendado</h4>
+          <p><strong>Nombre:</strong> Activación en el Mostrador.</p>
+          <p><strong>Descripción:</strong> el comedero no llega a casa para que la familia lo configure — toda el alta ocurre en el mostrador de la veterinaria o tienda de mascotas al momento de la compra. El vendedor escanea el código de barras del costal y pesa al perro en la báscula que la tienda ya tiene, y esos datos arman la porción diaria antes de que el dispositivo salga de la tienda. Como el comedero no tiene pantalla ni botones, en casa solo hay que enchufarlo — el adulto mayor nunca tiene que configurar nada.</p>
+          <p><strong>Letras SCAMPER que lo originaron:</strong> S2 (Sustituir el catálogo de marcas por lectura de código de barras) + P2 (Poner en otro uso la báscula que ya tiene la veterinaria) + E1 (Eliminar pantalla y botones del comedero) + C2 (Combinar el canal de venta con el punto de compra que la familia ya frecuenta).</p>
+          <p><strong>Puntaje DVN:</strong> 1 ✅ de 3 — Deseable ✅, Novedoso ⚠️, Viable ⚠️. Veredicto: refinar antes de construir; el riesgo principal es conseguir veterinarias o tiendas piloto dispuestas a hacer la activación.</p>
+
+          <h4>5. La oportunidad en una oración</h4>
+          <p>"Existe una oportunidad para las hijas e hijos adultos que trabajan fuera de casa y necesitan tener la certeza de que su perro está comiendo lo correcto sin importar quién se lo dé, porque hoy la comida pasa entre varias manos en casa sin que nadie la sume, y el resultado solo se descubre cuando ya es un diagnóstico médico."</p>
+
+          <h4>6. Por qué este equipo</h4>
+          <p><strong>Criterio 1 — Pasión:</strong> este producto no existe, y el problema es real en nuestra propia familia — tenemos una perrita, Rinna, con sobrepeso. El veterinario le recetó alimento especial para bajar de peso, pero el costal era caro, y en cuanto lo dejamos, volvió a subir.</p>
+          <p><strong>Criterio 2 — Habilidad:</strong> sabemos hacer electrónica, programación y diseño de fabricación digital, suficiente para construir un prototipo. Lo que todavía no podemos nombrar es el sensor, el modelo de IA ni el protocolo exactos para el prototipo final — ahí necesitamos apoyo técnico.</p>
+
+          <h4>7. Hipótesis para semana 3</h4>
+          <p><strong>Hipótesis 1 — sobre el dolor:</strong> creemos que los hijos/hijas adultos no saben con certeza cuánto le da de comer cada persona que cuida al perro en un día típico, y les preocupa lo suficiente como para ya haberlo hablado en familia.<br>
+          <em>Cómo probarla:</em> preguntar sin sugerir la respuesta — "¿sabes exactamente cuánto le da de comer tu perro cada persona que lo cuida en un día típico?"</p>
+          <p><strong>Hipótesis 2 — sobre la solución:</strong> creemos que preferirían un comedero que llega ya configurado desde la tienda sobre configurarlo ellos mismos o enseñarle algo nuevo a sus papás.<br>
+          <em>Cómo probarla:</em> "si tuvieras que elegir, ¿preferirías configurar tú este aparato desde tu celular, o que ya llegue listo porque lo configuraron en la tienda?"</p>
+          <p><strong>Hipótesis 3 — sobre el pago:</strong> creemos que pagarían entre $400 y $700 MXN mensuales por la certeza de la porción correcta, porque ya gastan una cantidad similar o mayor sin tener esa certeza.<br>
+          <em>Cómo probarla:</em> preguntar, antes de mencionar cualquier precio de referencia, "¿cuánto pagarías al mes por saber con certeza que tu perro está comiendo la porción correcta, sin importar quién le dé de comer en tu casa?"</p>
+        </div>
+
+      </section>
+      <!--Fin SECCIÓN 9-->
 
       </div>
 

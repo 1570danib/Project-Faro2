@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniela Barranco - Semana 3</title>
+    <link rel="stylesheet" href="../../css/style.css">
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <a href="../../../index.html">Inicio</a>
+        <a href="../../../assignments.html">Tareas semanales</a>
+        <a href="../../../final-project.html">Proyecto final</a>
+        <a href="../../../about.html">Yo merengues</a>
+      </div>
+    </div>
+
+    <!--Hero Section-->
+    <div class="hero-section">
+      <div class="hero-container">
+        <div class="hero-text text-center">
+          <h1>Propiedad intelectual, marca y vigilancia tecnológica</h1>
+          <h2>Semana 3</h2>
+          <p>Proceso de búsqueda de patentes y protección de la propiedad intelectual</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN LAYOUT WITH SIDEBAR -->
+    <div class="week-layout">
+      <!-- SIDEBAR MENU -->
+      <aside class="week-sidebar">
+        <nav class="week-sidebar-menu">
+          <a onclick="showWeekSection('generacion-nombres')" class="week-link active">Etapa de 1 a 3: Generación de nombres</a>
+          <a onclick="showWeekSection('etapa-4')" class="week-link">Etapa 4: Búsqueda en IMPI</a>
+          <a onclick="showWeekSection('etapa-5')" class="week-link">Etapa 5: Vigilancia tecnológica</a>
+        </nav>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <div class="week-main-content">
+
+      <!--SECCIÓN 1: GENERACIÓN DE NOMBRES-->
+        <section id="generacion-nombres" class="week-section active">
+        <h2>Generación de nombres</h2>
+
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <h4 style="margin-top:0;">Qué hace el modelo de IA</h4>
+            <p>La IA calcula una dieta que el perro debe seguir para alcanzar su objetivo (subir o bajar de peso); una vez que considere que ya llegó al requerimiento, se solicitará llevar a una consulta médica para que pesen al perro y, si alcanzó la meta, ajustar nuevamente la dieta para que ahora sea de mantenimiento del peso.</p>
+        </div>
+
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Generación de nombres: Etapa 1 a 3</h3>
+
+        <div class="prompt-box" style="background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 15px; border-radius: 8px; font-style: italic; margin: 20px 0;">
+            <h4 style="margin-top:0; font-style: normal;">💬 Prompt para hacer otro prompt (Chat)</h4>
+            <p>Hola, quiero que me ayudes a crear un solo prompt para darle nombre a una marca, solamente quiero un prompt que contenga todas las especificaciones. Estas son las especificaciones para crear el prompt:</p>
+            <p>Elabora 3 prompts: * Primero: Obtén 12 nombres de marca (Evocadores, Compuestos, Inventados y Disruptivos) y eligen los 3 que más resuenen * Segundo: Evalúa los 3 finalistas * Tercero: Haz una verificación digital de pertinencia de la marca.</p>
+        </div>
+
+        <div class="prompt-box" style="background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 15px; border-radius: 8px; font-style: italic; margin: 20px 0;">
+            <h4 style="margin-top:0; font-style: normal;">💬 Prompt final (Claude)</h4>
+            <p>Actúa como un equipo senior multidisciplinario especializado en:</p>
+            <ul>
+            <li>Naming y creación de nombres de marca.</li>
+            <li>Branding y estrategia de marca.</li>
+            <li>Semiótica y lingüística.</li>
+            <li>Marketing y posicionamiento.</li>
+            <li>Análisis de mercado.</li>
+            <li>Propiedad intelectual y búsqueda de marcas.</li>
+            <li>Investigación digital.</li>
+            </ul>
+            <p>Tu objetivo es ayudarme a desarrollar y validar el nombre de una marca siguiendo un proceso profesional de <strong>CREACIÓN → SELECCIÓN → EVALUACIÓN → VERIFICACIÓN DIGITAL</strong>.</p>
+            <p>NO quiero que simplemente me des una lista de nombres. Quiero que desarrolles un proceso completo y estructurado para llegar a nombres con potencial estratégico y detectar posibles riesgos antes de avanzar a una investigación legal formal.</p>
+
+            <p><strong>INFORMACIÓN DE LA MARCA</strong></p>
+            <p>Antes de comenzar, utiliza exclusivamente la siguiente información que te proporcionaré:</p>
+            <p>Nombre provisional de la empresa, si existe: [ ]<br>
+            ¿Qué hace la empresa? [ ]<br>
+            Producto(s) o servicio(s): [ ]<br>
+            Problema que resuelve: [ ]<br>
+            Propuesta de valor: [ ]<br>
+            Público objetivo: [ ]<br>
+            Mercado / país donde operará: [ ]<br>
+            Personalidad que quiero transmitir: [ ]<br>
+            Valores de la marca: [ ]<br>
+            Conceptos, emociones o ideas que quiero evocar: [ ]<br>
+            Palabras que me gustaría considerar: [ ]<br>
+            Palabras que NO quiero utilizar: [ ]<br>
+            Competidores o marcas de referencia: [ ]<br>
+            Información adicional: [ ]</p>
+            <p>Si alguna información importante no está disponible, trabaja con lo que sí se haya proporcionado y señala al final qué información adicional podría mejorar el proceso. NO inventes características de la empresa.</p>
+
+            <p><strong>ETAPA 1 — GENERACIÓN DE 12 NOMBRES</strong></p>
+            <p>Genera exactamente 12 nombres de marca. Los nombres deben representar las siguientes cuatro categorías de naming:</p>
+            <p><strong>1. Evocadores</strong> — Nombres que sugieran una idea, sensación, beneficio, atributo o universo conceptual relacionado con la marca sin describirla literalmente.</p>
+            <p><strong>2. Compuestos</strong> — Nombres creados mediante la combinación de dos o más palabras, conceptos, raíces o elementos lingüísticos.</p>
+            <p><strong>3. Inventados</strong> — Palabras nuevas, neologismos o construcciones lingüísticas creadas específicamente para la marca.</p>
+            <p><strong>4. Disruptivos</strong> — Nombres inesperados, poco convencionales, provocadores o que rompan con las convenciones habituales de la categoría.</p>
+            <p>Las cuatro categorías deben estar representadas entre las 12 propuestas. No generes nombres genéricos, obvios, excesivamente descriptivos o basados en clichés de la industria.</p>
+
+            <p><strong>Requisitos de los nombres</strong></p>
+            <p>Cada propuesta debe buscar:</p>
+            <ul>
+            <li>Distintividad.</li>
+            <li>Memorabilidad.</li>
+            <li>Buena sonoridad.</li>
+            <li>Facilidad de pronunciación en español.</li>
+            <li>Facilidad razonable de escritura después de escucharlo.</li>
+            <li>Potencial para construir una identidad visual.</li>
+            <li>Potencial de storytelling.</li>
+            <li>Potencial comercial.</li>
+            <li>Capacidad de crecer junto con la empresa.</li>
+            <li>Adaptabilidad a futuros productos o servicios.</li>
+            <li>Coherencia con la personalidad de la marca.</li>
+            <li>Diferenciación frente a competidores.</li>
+            <li>Ausencia de asociaciones negativas evidentes.</li>
+            </ul>
+            <p>Si utilizas raíces de otros idiomas, explica su origen real y significado. NO inventes etimologías.</p>
+            <p>Presenta las 12 propuestas en una tabla con: #, Nombre, Categoría, Construcción/origen, Significado o concepto, Pronunciación, Por qué funciona, Riesgos iniciales.</p>
+
+            <p><strong>ETAPA 2 — SELECCIÓN DE 3 FINALISTAS</strong></p>
+            <p>Después de generar los 12 nombres, analiza todas las propuestas y selecciona 3 finalistas. La selección debe basarse en criterios estratégicos, NO simplemente en cuál "suena más bonito". Considera: Distintividad, Memorabilidad, Sonoridad, Pronunciación, Facilidad de escritura, Relevancia conceptual, Diferenciación, Potencial de posicionamiento, Potencial de identidad visual, Potencial de storytelling, Versatilidad, Capacidad de expansión, Riesgos lingüísticos iniciales, Riesgos de confusión evidentes.</p>
+            <p>Presenta los tres finalistas y explica objetivamente qué características hicieron que fueran seleccionados.</p>
+            <p><strong>IMPORTANTE:</strong> todavía NO realices la verificación digital exhaustiva. Primero termina la selección conceptual.</p>
+
+            <p><strong>ETAPA 3 — EVALUACIÓN PROFUNDA DE LOS 3 FINALISTAS</strong></p>
+            <p>Ahora evalúa individualmente los tres nombres seleccionados. Para cada uno analiza:</p>
+            <p><em>Identidad y significado</em> — Qué comunica, qué conceptos evoca, qué emociones podría generar, qué tan relacionado está con la propuesta de valor, qué tipo de personalidad proyecta.</p>
+            <p><em>Aspectos lingüísticos</em> — Sonoridad, pronunciación, facilidad de escritura, recordación, posibles dobles sentidos, asociaciones en español, posibles problemas fonéticos.</p>
+            <p><em>Branding</em> — Potencial para logotipo, identidad visual, storytelling, desarrollar un universo de marca, facilidad para construir una narrativa alrededor del nombre.</p>
+            <p><em>Estrategia</em> — Diferenciación, posicionamiento, versatilidad, capacidad de expansión, adaptabilidad a nuevos productos o servicios, potencial para operar en otros mercados o idiomas.</p>
+            <p><em>Riesgos</em> — Identifica cualquier riesgo conceptual, lingüístico, cultural o comercial que deba investigarse.</p>
+
+            <p><strong>ETAPA 4 — MATRIZ COMPARATIVA</strong></p>
+            <p>Construye una matriz comparativa entre los tres finalistas. Utiliza una escala de 1 a 10 únicamente como herramienta analítica, no como una afirmación objetiva absoluta. Evalúa: Distintividad, Memorabilidad, Sonoridad, Pronunciación, Facilidad de escritura, Relevancia, Diferenciación, Versatilidad, Potencial de branding, Potencial de storytelling, Potencial de expansión, Riesgo lingüístico, Riesgo cultural, Riesgo de confusión. Cada puntuación debe estar acompañada de una justificación breve y concreta. NO determines un "ganador absoluto".</p>
+
+            <p><strong>ETAPA 5 — VERIFICACIÓN DIGITAL DE PERTINENCIA</strong></p>
+            <p>Una vez evaluados los tres finalistas, realiza una investigación digital de cada uno. La finalidad es identificar señales de riesgo y pertinencia, NO emitir una opinión jurídica ni garantizar que un nombre pueda registrarse.</p>
+
+            <p><strong>A. Búsqueda general en Internet</strong> — Para cada nombre: búsqueda exacta entre comillas, sin comillas, variaciones ortográficas, variaciones fonéticas razonables, posibles errores de escritura. Identifica si existen empresas, marcas, productos, servicios, aplicaciones, organizaciones, proyectos, personas o negocios relevantes utilizando el nombre. Diferencia entre: coincidencia exacta, coincidencia fonética, coincidencia parcial, término similar, uso irrelevante. No consideres automáticamente cualquier coincidencia como un conflicto.</p>
+
+            <p><strong>B. Verificación de propiedad intelectual</strong> — Para el mercado mexicano, consulta prioritariamente: IMPI, MARCia / herramientas oficiales de búsqueda de marcas, Clasificación de Niza correspondiente. Cuando sea pertinente, también WIPO/OMPI Global Brand Database y registros oficiales de otros países relevantes. Busca coincidencias exactas, fonéticas, ortográficas, visuales, conceptuales, dentro de la misma clase de Niza y en clases relacionadas. Para cada coincidencia relevante registra: Nombre, Titular, País, Clase de Niza, Productos/servicios, Estado, Tipo de coincidencia, Relevancia.</p>
+            <p><strong>MUY IMPORTANTE:</strong> "No encontré una coincidencia" NO significa "la marca está disponible". No afirmes que un nombre puede registrarse. Si no puedes verificar algún registro directamente, indícalo.</p>
+
+            <p><strong>C. Dominios</strong> — Investiga .com, .mx, .com.mx. Para cada nombre determina si el dominio exacto aparece registrado, está siendo utilizado, existe un sitio web, parece estar relacionado con una empresa o marca, existen alternativas razonables. NO inventes disponibilidad de dominios; si no puedes comprobarla, escribe "No verificable con las herramientas disponibles."</p>
+
+            <p><strong>D. Redes sociales</strong> — Investiga la presencia de cada nombre en Instagram, Facebook, TikTok, LinkedIn, YouTube, X y otras plataformas relevantes. Determina si existe el nombre exacto, una variante cercana, si pertenece a una empresa o marca, a otra categoría, si existe riesgo de confusión, si el uso parece activo o inactivo. No asumas que una cuenta inactiva significa que el nombre de usuario está disponible.</p>
+
+            <p><strong>E. Análisis lingüístico y cultural</strong> — Identifica significados no deseados, dobles sentidos, connotaciones negativas, palabras similares, pronunciaciones problemáticas, asociaciones culturales relevantes, significados en inglés y otros idiomas importantes para el mercado objetivo.</p>
+
+            <p><strong>F. Análisis de competencia</strong> — Investiga si existen marcas de la misma industria con nombres iguales, fonéticamente similares, visualmente similares, conceptualmente similares. Distingue entre conflicto potencial, similitud moderada y coincidencia irrelevante. No declares que existe una infracción legal.</p>
+
+            <p><strong>ETAPA 6 — MATRIZ FINAL DE VERIFICACIÓN</strong> — Presenta una matriz para los tres finalistas con: Presencia web, Coincidencias exactas, Similitud fonética, Marcas similares, Riesgo dentro de la categoría, Dominios, Redes sociales, Riesgo lingüístico, Riesgo cultural, Diferenciación, Principales riesgos, Información no verificable. Usa 🟢 Bajo riesgo aparente, 🟡 Riesgo moderado / requiere investigación, 🔴 Riesgo elevado / requiere especial atención, ⚪ No verificable.</p>
+
+            <p><strong>ETAPA 7 — INFORME FINAL</strong> — Para cada finalista: Nombre, Concepto, Fortalezas, Debilidades, Oportunidades de branding, Riesgos detectados, Coincidencias encontradas, Información que falta comprobar, Fuentes consultadas. Finalmente, una conclusión comparativa neutral, sin elegir un "ganador".</p>
+
+            <p><strong>Reglas obligatorias de todo el proceso:</strong> no inventar información, etimologías, registros de marcas, disponibilidad de dominios ni de usuarios en redes sociales; no presentar ausencia de resultados como prueba de disponibilidad; distinguir hechos, análisis e inferencias; priorizar fuentes oficiales y primarias; indicar fuentes y fecha de consulta; señalar información no verificable; no presentar la investigación como asesoría jurídica; no descartar un nombre únicamente por una coincidencia irrelevante; no elegir un nombre basándose solo en criterios subjetivos; no generar nuevos nombres durante evaluación y verificación salvo que se solicite; conservar los mismos tres finalistas durante todo el análisis; no omitir ninguna etapa; completar cada etapa antes de pasar a la siguiente.</p>
+        </div>
+
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <h4 style="margin-top:0;">Información extra que la IA me solicitó</h4>
+            <p><strong>P:</strong> ¿Qué personalidad quieres que transmita la marca?<br>
+            <strong>R:</strong> Cercana y cálida</p>
+            <p><strong>P:</strong> ¿Qué tipo de negocio de mascotas es?<br>
+            <strong>R:</strong> Es producto físico, pues tendrá un dispensador de comida automático y tendrá una app que tendrá incorporado un modelo de IA para el control de peso</p>
+        </div>
+
+        <h4>Etapa 1: Respuesta</h4>
+        <p>Con esto ya tengo suficiente para arrancar la Etapa 1. Antes de la tabla, aquí está el resumen de lo que sé (y lo que asumo):</p>
+        <ul>
+            <li><strong>Producto:</strong> dispensador automático de comida para mascotas + app con IA para control de peso</li>
+            <li><strong>Problema que resuelve:</strong> alimentación descontrolada / sobrepeso en mascotas, falta de seguimiento del peso y hábitos alimenticios</li>
+            <li><strong>Personalidad:</strong> cercana y cálida</li>
+            <li><strong>Mercado:</strong> no especificado — trabajaré en general, pero para la Etapa 5 (verificación IMPI) asumiré México salvo que me digas otro país</li>
+            <li><strong>Público objetivo, valores, palabras a evitar, competidores:</strong> no proporcionados — no los voy a inventar, solo los señalaré como pendientes al final</li>
+        </ul>
+
+        <h5>Etapa 1 — Generación de 12 nombres</h5>
+        <div style="overflow-x: auto;">
+        <table class="table table-bordered">
+            <thead class="table-dark">
+            <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Categoría</th>
+                <th>Construcción/origen</th>
+                <th>Significado o concepto</th>
+                <th>Pronunciación</th>
+                <th>Por qué funciona</th>
+                <th>Riesgos iniciales</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td><td><strong>Latido</strong></td><td>Evocador</td>
+                <td>Español, del verbo "latir"</td>
+                <td>El pulso/ritmo vital de la mascota; conexión emocional dueño-mascota</td>
+                <td>la-TI-do</td>
+                <td>Cálido, memorable, evoca vida y cuidado sin ser literal sobre "peso" o "comida"</td>
+                <td>Puede sentirse abstracto si no se refuerza con storytelling</td>
+            </tr>
+            <tr>
+                <td>2</td><td><strong>Manada</strong></td><td>Evocador</td>
+                <td>Español, "grupo de animales que conviven"</td>
+                <td>Pertenencia, familia, comunidad de dueños y mascotas</td>
+                <td>ma-NA-da</td>
+                <td>Cercano, cálido, escalable a comunidad/marca de estilo de vida</td>
+                <td>Ya usado en otros contextos (gimnasios, marcas fitness)</td>
+            </tr>
+            <tr>
+                <td>3</td><td><strong>Mimo</strong></td><td>Evocador</td>
+                <td>Español, "cariño, cuidado tierno"</td>
+                <td>Cuidado afectuoso, atención</td>
+                <td>MI-mo</td>
+                <td>Corto, tierno, coherente con "cercana y cálida"</td>
+                <td>Puede sonar infantil o poco tecnológico para un producto con IA</td>
+            </tr>
+            <tr>
+                <td>4</td><td><strong>Equilibra</strong></td><td>Evocador</td>
+                <td>Español, de "equilibrar" (&lt; latín <em>libra</em>, balanza)</td>
+                <td>Balance físico y emocional de la mascota</td>
+                <td>e-qui-LI-bra</td>
+                <td>Sugiere control de peso sin decirlo literalmente; sonido fluido</td>
+                <td>Cercano a "equilibrio", término usado en salud/wellness en general</td>
+            </tr>
+            <tr>
+                <td>5</td><td><strong>PawVida</strong></td><td>Compuesto</td>
+                <td>Inglés "paw" (pata) + español "vida"</td>
+                <td>Vida activa y sana de la mascota</td>
+                <td>pau-VI-da</td>
+                <td>Bilingüe, moderno, funciona bien para app + hardware</td>
+                <td>Mezcla inglés/español puede generar dudas de pronunciación</td>
+            </tr>
+            <tr>
+                <td>6</td><td><strong>Nutrimor</strong></td><td>Compuesto</td>
+                <td>Español "nutrir" + "amor"</td>
+                <td>Nutrición con cariño</td>
+                <td>nu-tri-MOR</td>
+                <td>Cálido, fácil de recordar, sugiere alimentación con afecto</td>
+                <td>Puede sonar cercano a marcas de suplementos existentes</td>
+            </tr>
+            <tr>
+                <td>7</td><td><strong>Petibien</strong></td><td>Compuesto</td>
+                <td>Francés "petit" (pequeño) + español "bien"</td>
+                <td>Pequeño gesto de bienestar</td>
+                <td>pe-ti-BIEN</td>
+                <td>Sonoro, diminutivo cariñoso, coherente con personalidad cálida</td>
+                <td>El origen francés podría no reconocerse fácilmente en español</td>
+            </tr>
+            <tr>
+                <td>8</td><td><strong>Vitanimal</strong></td><td>Compuesto</td>
+                <td>Latín "vita" (vida) + "animal"</td>
+                <td>Vitalidad animal</td>
+                <td>vi-ta-ni-MAL</td>
+                <td>Claro, fácil de asociar a salud animal, funciona en varios idiomas</td>
+                <td>Termina en "-mal", riesgo de asociación fonética negativa ("mal")</td>
+            </tr>
+            <tr>
+                <td>9</td><td><strong>Wooffi</strong></td><td>Inventado</td>
+                <td>Onomatopeya inglesa "woof" + sufijo diminutivo "-i" (común en nombres de mascotas: Toby, Rocky)</td>
+                <td>Sonido amigable y juguetón</td>
+                <td>GÜO-fi</td>
+                <td>Divertido, fácil de pronunciar, apto para logo/mascota visual</td>
+                <td>Muy orientado a perros, podría excluir gatos u otras mascotas</td>
+            </tr>
+            <tr>
+                <td>10</td><td><strong>Nutrix</strong></td><td>Inventado</td>
+                <td>Latín real "nutrix" = nodriza, "la que nutre" (de "nutrire")</td>
+                <td>Cuidado nutricional</td>
+                <td>NU-trix</td>
+                <td>Sofisticado, corto, con raíz real verificable</td>
+                <td>Puede confundirse con "Nutrix" u otras marcas de nutrición existentes (a verificar)</td>
+            </tr>
+            <tr>
+                <td>11</td><td><strong>Gordo Feliz</strong></td><td>Disruptivo</td>
+                <td>Español literal</td>
+                <td>Reapropiación positiva y humorística del tema del sobrepeso en mascotas</td>
+                <td>GOR-do fe-LIZ</td>
+                <td>Memorable, rompe el tabú del sobrepeso con humor cercano</td>
+                <td>Puede no ser tomado en serio, riesgo de sonar burlón hacia mascotas con sobrepeso</td>
+            </tr>
+            <tr>
+                <td>12</td><td><strong>SinSobras</strong></td><td>Disruptivo</td>
+                <td>Español, "sin" + "sobras" (excesos)</td>
+                <td>Declaración directa contra el exceso de comida</td>
+                <td>sin-SO-bras</td>
+                <td>Diferenciador, directo, memorable como statement de marca</td>
+                <td>Tono un poco frío/técnico, puede sentirse menos "cálido" que el resto</td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <div class="summary-box">
+            <p><strong>Nota sobre las 4 categorías:</strong> Evocadores (1-4), Compuestos (5-8), Inventados (9-10), Disruptivos (11-12).</p>
+            <p>¿Quieres que yo avance directamente a la Etapa 2 (selección de 3 finalistas con criterio estratégico), o prefieres decirme primero cuáles de estos 12 te laten más para orientar la selección?</p>
+        </div>
+
+        <h4>Etapa 2: Tres finalistas</h4>
+        <p><strong>ETAPA 2 — SELECCIÓN DE 3 FINALISTAS</strong></p>
+        <p>Tomo tus tres finalistas confirmados: <strong>Latido</strong>, <strong>Equilibra</strong> y <strong>Wooffi</strong>. Aquí el análisis objetivo de por qué funcionan como conjunto estratégico:</p>
+
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <p><strong>Latido (Evocador)</strong></p>
+            <ul>
+            <li>Distintividad alta: no hay asociación directa con la categoría "pet tech"</li>
+            <li>Mayor potencial emocional de los tres — conecta con el vínculo dueño-mascota, no solo con el producto físico</li>
+            <li>Riesgo: es el más abstracto; necesita más trabajo de storytelling para que el usuario entienda "de qué se trata"</li>
+            </ul>
+            <p><strong>Equilibra (Evocador)</strong></p>
+            <ul>
+            <li>Es el que más se acerca conceptualmente a la propuesta de valor real (control de peso, balance) sin describirlo literalmente</li>
+            <li>Buena sonoridad, fácil de pronunciar y escribir en español</li>
+            <li>Riesgo: comparte raíz con vocabulario genérico de salud/wellness ("equilibrio"), por lo que su distintividad depende mucho del logo y tono de marca</li>
+            </ul>
+            <p><strong>Wooffi (Inventado)</strong></p>
+            <ul>
+            <li>El más memorable y "brandeable" visualmente — tiene personalidad propia, funciona muy bien para logo, mascota de marca, tono divertido</li>
+            <li>Es el único que rompe con el registro más serio de los otros dos, dando rango de personalidad al portafolio de finalistas</li>
+            <li>Riesgo: al basarse en "woof" (ladrido), sesga la marca hacia perros; si la app/dispensador también se usará para gatos u otras mascotas, esto puede jugar en contra</li>
+            </ul>
+            <p><strong>Por qué estos tres como conjunto funcionan bien para decidir:</strong> cubren tres registros distintos — emocional/abstracto (Latido), conceptual/funcional (Equilibra), lúdico/inventado (Wooffi) — lo cual te da tres direcciones de marca genuinamente diferentes en vez de tres variaciones del mismo tono.</p>
+        </div>
+
+        <div class="summary-box">
+            <p>No avanzo todavía a la verificación digital exhaustiva (Etapa 5), como marca el proceso.</p>
+            <p>¿Seguimos con la Etapa 3 — Evaluación profunda de estos tres nombres?</p>
+        </div>
+
+        <h4>Etapa 3: Evaluación profunda de los 3 finalistas</h4>
+        <p><strong>ETAPA 3 — EVALUACIÓN PROFUNDA DE LOS 3 FINALISTAS</strong></p>
+
+        <h5>1. Latido</h5>
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <p><strong>Identidad y significado</strong></p>
+            <ul>
+            <li>Comunica: vida, pulso, conexión emocional constante entre dueño y mascota</li>
+            <li>Evoca: cuidado silencioso y continuo — el dispensador y la app "cuidan mientras tú no estás", como un latido que no se detiene</li>
+            <li>Emociones: ternura, tranquilidad, confianza</li>
+            <li>Relación con la propuesta de valor: indirecta. No comunica "control de peso" ni "tecnología/IA"; comunica el por qué (amor por la mascota) más que el qué (la solución)</li>
+            <li>Personalidad proyectada: emocional, humana, poco tecnológica</li>
+            </ul>
+            <p><strong>Aspectos lingüísticos</strong></p>
+            <ul>
+            <li>Sonoridad: suave, cálida, dos sílabas fáciles de recordar (la-TI-do)</li>
+            <li>Pronunciación: sin dificultad en español</li>
+            <li>Facilidad de escritura: alta, ortografía intuitiva</li>
+            <li>Recordación: buena por su brevedad y familiaridad</li>
+            <li>Dobles sentidos: ninguno evidente en español</li>
+            <li>Asociaciones: puede asociarse a marcas de cardiología, seguros de vida o apps de salud humana (ya existe cierto uso genérico del término en salud/bienestar)</li>
+            <li>Problemas fonéticos: ninguno</li>
+            </ul>
+            <p><strong>Branding</strong></p>
+            <ul>
+            <li>Potencial de logotipo: alto — se presta a símbolos como ondas, corazón estilizado, pulso</li>
+            <li>Identidad visual: fácil de construir sobre calidez, colores cálidos, formas orgánicas</li>
+            <li>Storytelling: muy alto — "el latido de tu mascota, cuidado incluso cuando no estás"</li>
+            <li>Universo de marca: se puede expandir a un lenguaje de "ritmo", "pulso saludable", "cuidado constante"</li>
+            <li>Narrativa: requiere esfuerzo inicial de comunicación porque el nombre no explica el producto</li>
+            </ul>
+            <p><strong>Estrategia</strong></p>
+            <ul>
+            <li>Diferenciación: alta frente a nombres típicos de "pet tech" (que suelen ser descriptivos o en inglés)</li>
+            <li>Posicionamiento: se presta a un posicionamiento emocional/premium más que funcional</li>
+            <li>Versatilidad: alta — no está atado a "comida" ni "peso", puede crecer a otros productos de cuidado animal</li>
+            <li>Capacidad de expansión: alta</li>
+            <li>Adaptabilidad a otros mercados/idiomas: "Latido" es específico del español; en mercados angloparlantes necesitaría traducción o adaptación ("Heartbeat" ya es un término muy usado en otras categorías)</li>
+            </ul>
+            <p><strong>Riesgos a investigar</strong></p>
+            <ul>
+            <li>Uso genérico en el sector salud/bienestar (humano y posiblemente veterinario)</li>
+            <li>Posible existencia de apps de salud o fintech con nombre similar</li>
+            <li>Verificar si hay marcas de seguros o wearables de salud llamadas así</li>
+            </ul>
+        </div>
+
+        <h5>2. Equilibra</h5>
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <p><strong>Identidad y significado</strong></p>
+            <ul>
+            <li>Comunica: balance, control, estabilidad — el concepto más cercano al beneficio real del producto (control de peso)</li>
+            <li>Evoca: armonía entre alimentación y salud</li>
+            <li>Emociones: confianza, orden, bienestar</li>
+            <li>Relación con la propuesta de valor: alta — es el nombre que más "explica sin describir" el problema que resuelve (sobrepeso/descontrol alimenticio)</li>
+            <li>Personalidad proyectada: funcional, cuidadosa, ligeramente más técnica que Latido pero aún cálida</li>
+            </ul>
+            <p><strong>Aspectos lingüísticos</strong></p>
+            <ul>
+            <li>Sonoridad: fluida, tres sílabas con buen ritmo (e-qui-LI-bra)</li>
+            <li>Pronunciación: sencilla en español</li>
+            <li>Facilidad de escritura: alta, aunque alguien podría dudar entre "Equilibra" y "Equilibrio" al escribirlo de oído</li>
+            <li>Recordación: buena, aunque comparte raíz con una palabra de uso común, lo que puede diluir su distintividad</li>
+            <li>Dobles sentidos: ninguno negativo</li>
+            <li>Asociaciones en español: fuerte asociación con "equilibrio", término usado ampliamente en wellness, yoga, finanzas, nutrición</li>
+            <li>Problemas fonéticos: ninguno relevante</li>
+            </ul>
+            <p><strong>Branding</strong></p>
+            <ul>
+            <li>Potencial de logotipo: alto — se presta a símbolos de balanza, círculos, simetría</li>
+            <li>Identidad visual: natural hacia paletas equilibradas, minimalismo, formas geométricas</li>
+            <li>Storytelling: bueno pero más racional que emocional — "el balance perfecto para tu mascota"</li>
+            <li>Universo de marca: se puede construir alrededor de "balance" en varios sentidos (alimenticio, de actividad, emocional)</li>
+            <li>Narrativa: más fácil de comunicar de inicio que Latido, porque el nombre ya sugiere el beneficio</li>
+            </ul>
+            <p><strong>Estrategia</strong></p>
+            <ul>
+            <li>Diferenciación: media — al derivar de una palabra de uso muy común, compite conceptualmente con otras marcas de bienestar/salud que usan "equilibrio" como concepto central</li>
+            <li>Posicionamiento: funcional-racional, buen fit para un producto con componente de IA/datos</li>
+            <li>Versatilidad: alta, se adapta a futuros productos relacionados con salud integral de mascotas</li>
+            <li>Capacidad de expansión: alta</li>
+            <li>Adaptabilidad a otros mercados/idiomas: la raíz "equilibr-" existe en varios idiomas romance (equilibrium en inglés, équilibre en francés), lo que le da cierta ventaja de comprensión internacional</li>
+            </ul>
+            <p><strong>Riesgos a investigar</strong></p>
+            <ul>
+            <li>Alta probabilidad de coincidencias con marcas de wellness, nutrición, yoga o finanzas (a verificar en Etapa 5)</li>
+            <li>Posible saturación conceptual: "equilibrio/balance" es un término muy usado en naming de salud en general</li>
+            </ul>
+        </div>
+
+        <h5>3. Wooffi</h5>
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <p><strong>Identidad y significado</strong></p>
+            <ul>
+            <li>Comunica: cercanía juguetona, un producto pensado para mascotas de forma directa y divertida</li>
+            <li>Evoca: sonido de perro, calidez lúdica, algo hecho "para" la mascota más que "sobre" ella</li>
+            <li>Emociones: diversión, ternura, cercanía</li>
+            <li>Relación con la propuesta de valor: baja — no comunica nada sobre control de peso, IA o tecnología; comunica categoría (mascotas) más que beneficio</li>
+            <li>Personalidad proyectada: divertida, desenfadada, amigable — encaja con "cercana y cálida" pero suma un componente lúdico que no se pidió explícitamente</li>
+            </ul>
+            <p><strong>Aspectos lingüísticos</strong></p>
+            <ul>
+            <li>Sonoridad: alegre, con doble "f" que le da un carácter distintivo y juguetón</li>
+            <li>Pronunciación: fácil en español, aunque la doble "f" es poco común ortográficamente en el idioma</li>
+            <li>Facilidad de escritura: media — alguien que lo escuche por primera vez podría escribirlo "Wufi", "Guofi" o "Woofy"</li>
+            <li>Recordación: alta por su sonoridad distintiva y asociación clara con perros</li>
+            <li>Dobles sentidos: ninguno negativo en español</li>
+            <li>Asociaciones: directa con "woof" (ladrido en inglés), lo que ancla fuertemente la marca a perros</li>
+            <li>Problemas fonéticos: el grupo consonántico inicial "Wo-" no es natural en español, puede generar variaciones de pronunciación (¿"Wu-fi"? ¿"Guo-fi"?)</li>
+            </ul>
+            <p><strong>Branding</strong></p>
+            <ul>
+            <li>Potencial de logotipo: muy alto — nombre con personaje/mascota de marca casi implícito</li>
+            <li>Identidad visual: se presta a ilustración, colores vivos, tono infantil-amigable</li>
+            <li>Storytelling: alto en tono lúdico, pero limitado si se quiere comunicar seriedad tecnológica (IA, salud)</li>
+            <li>Universo de marca: fácil de construir un "mundo Wooffi" con personajes, pero puede encasillar la marca en un tono muy casual</li>
+            <li>Narrativa: la más sencilla de entender a primera vista en cuanto a "esto es para mascotas", pero la más difícil de asociar con tecnología/salud</li>
+            </ul>
+            <p><strong>Estrategia</strong></p>
+            <ul>
+            <li>Diferenciación: alta frente a Latido y Equilibra, pero media frente a la categoría "pet tech", donde nombres onomatopéyicos o con sufijos "-i"/"-y" son comunes (Wooffy, Petsy, etc. — patrón, no marca específica)</li>
+            <li>Posicionamiento: más apto para un producto de consumo masivo y lúdico que para un producto premium con IA</li>
+            <li>Versatilidad: media — si la empresa algún día atiende gatos, conejos u otras mascotas, "Wooffi" puede sentirse desalineado</li>
+            <li>Capacidad de expansión: media, condicionada a mantenerse en el universo canino o resignificar el nombre</li>
+            <li>Adaptabilidad a otros mercados/idiomas: "woof" se reconoce en inglés; en mercados no angloparlantes puede no comunicar nada de forma inmediata</li>
+            </ul>
+            <p><strong>Riesgos a investigar</strong></p>
+            <ul>
+            <li>Patrón de naming muy usado en pet tech (sufijos "-i", "-y", onomatopeyas de ladrido) — riesgo de baja distintividad frente a competidores directos</li>
+            <li>Posible sesgo hacia perros si el producto se piensa multi-especie</li>
+            <li>Verificar variantes ortográficas cercanas ya registradas (Woofy, Wuffi, Wufi)</li>
+            </ul>
+        </div>
+
+        <div class="summary-box">
+            <p><strong>Resumen de tensión estratégica entre los tres:</strong></p>
+            <ul>
+            <li>Latido apuesta por lo emocional, sacrificando claridad inmediata sobre el producto</li>
+            <li>Equilibra apuesta por lo funcional/conceptual, con el riesgo de sonar genérico dentro de wellness</li>
+            <li>Wooffi apuesta por lo lúdico y memorable, con el riesgo de sonar poco serio para un producto con IA y de sesgarse hacia perros</li>
+            </ul>
+            <p>¿Avanzamos a la Etapa 4 — Matriz comparativa?</p>
+        </div>
+
+        <h4>Matriz comparativa</h4>
+        <p><strong>ETAPA 4 — MATRIZ COMPARATIVA</strong></p>
+        <p>Escala 1-10 como herramienta analítica, no como veredicto absoluto.</p>
+
+        <div style="overflow-x: auto;">
+        <table class="table table-bordered">
+            <thead class="table-dark">
+            <tr><th>Criterio</th><th>Latido</th><th>Equilibra</th><th>Wooffi</th></tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Distintividad</td>
+                <td>8 — no tiene asociación previa fuerte con pet tech ni con wellness genérico</td>
+                <td>5 — comparte raíz con "equilibrio", término muy usado en salud/wellness en general</td>
+                <td>7 — sonido propio, pero comparte patrón (sufijo "-i"/onomatopeya de ladrido) con otros nombres del sector pet</td>
+            </tr>
+            <tr>
+                <td>Memorabilidad</td>
+                <td>7 — corto y cálido, aunque su abstracción exige repetición para fijarse</td>
+                <td>6 — fácil de recordar el concepto, pero puede confundirse de oído con "Equilibrio"</td>
+                <td>9 — el más pegajoso de los tres, sonido distintivo y juguetón</td>
+            </tr>
+            <tr>
+                <td>Sonoridad</td>
+                <td>8 — fluida, suave, dos sílabas</td>
+                <td>7 — buen ritmo pero más largo (4 sílabas)</td>
+                <td>8 — alegre y corta, aunque la doble "f" es poco común en español</td>
+            </tr>
+            <tr>
+                <td>Pronunciación</td>
+                <td>9 — sin dificultad en español</td>
+                <td>8 — sencilla, riesgo mínimo de confusión con "equilibrio"</td>
+                <td>6 — el grupo "Wo-" inicial no es natural en español, genera variantes de pronunciación</td>
+            </tr>
+            <tr>
+                <td>Facilidad de escritura</td>
+                <td>8 — ortografía intuitiva</td>
+                <td>7 — posible duda entre "Equilibra" y "Equilibrio"</td>
+                <td>5 — alto riesgo de escribirse como "Wufi", "Guofi", "Woofy" al oído</td>
+            </tr>
+            <tr>
+                <td>Relevancia conceptual</td>
+                <td>5 — comunica el vínculo emocional, no el beneficio funcional (control de peso)</td>
+                <td>9 — el más alineado con la propuesta de valor real del producto</td>
+                <td>3 — comunica categoría (mascotas/perros) pero no el beneficio ni la tecnología</td>
+            </tr>
+            <tr>
+                <td>Diferenciación</td>
+                <td>8 — se aleja de clichés típicos de pet tech</td>
+                <td>6 — puede diluirse entre marcas de wellness que usan "balance/equilibrio"</td>
+                <td>6 — diferenciado del tono serio, pero similar en patrón a otros nombres pet-tech lúdicos</td>
+            </tr>
+            <tr>
+                <td>Versatilidad</td>
+                <td>8 — no atado a comida ni a una especie</td>
+                <td>8 — aplicable a salud integral, no solo peso</td>
+                <td>5 — sesgado hacia perros por el origen onomatopéyico</td>
+            </tr>
+            <tr>
+                <td>Potencial de branding</td>
+                <td>8 — se presta a símbolos de pulso/ritmo, paleta cálida</td>
+                <td>8 — se presta a simetría, balanza, minimalismo</td>
+                <td>9 — el más fácil de convertir en personaje/mascota visual de marca</td>
+            </tr>
+            <tr>
+                <td>Potencial de storytelling</td>
+                <td>9 — narrativa emocional muy natural ("el latido de tu mascota")</td>
+                <td>6 — narrativa más racional, menos emotiva</td>
+                <td>7 — narrativa lúdica, fuerte pero limitada en profundidad</td>
+            </tr>
+            <tr>
+                <td>Potencial de expansión</td>
+                <td>8 — puede crecer a otros productos de cuidado</td>
+                <td>8 — puede crecer a salud integral (actividad, sueño, nutrición)</td>
+                <td>5 — condicionado a mantenerse en universo canino o resignificarse</td>
+            </tr>
+            <tr>
+                <td>Riesgo lingüístico</td>
+                <td>3 — bajo, sin dobles sentidos ni problemas fonéticos</td>
+                <td>2 — bajo, aunque riesgo leve de confusión escrita con "equilibrio"</td>
+                <td>5 — riesgo medio por variantes ortográficas y pronunciación no nativa</td>
+            </tr>
+            <tr>
+                <td>Riesgo cultural</td>
+                <td>2 — bajo, término neutro y positivo en español</td>
+                <td>2 — bajo, término neutro y positivo</td>
+                <td>3 — bajo-medio, depende de si "woof" se entiende fuera de contextos angloparlantes</td>
+            </tr>
+            <tr>
+                <td>Riesgo de confusión</td>
+                <td>4 — posible con marcas de salud/cardio (pendiente verificar)</td>
+                <td>6 — mayor probabilidad de coincidencias por ser derivado de palabra común (pendiente verificar)</td>
+                <td>5 — mayor probabilidad de coincidencias con otros nombres pet-tech de patrón similar (pendiente verificar)</td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+        <p><em>(Nota: las filas de riesgo lingüístico/cultural/confusión son evaluaciones preliminares basadas en análisis conceptual; se profundizan con evidencia en la Etapa 5.)</em></p>
+
+        <div class="summary-box">
+            <p><strong>Lectura de fortalezas y debilidades (sin ganador)</strong></p>
+            <ul>
+            <li><strong>Latido:</strong> el más fuerte en storytelling, distintividad y branding emocional. Su debilidad es que no comunica directamente el beneficio funcional (control de peso/IA), por lo que dependerá más del copy y la comunicación de marca.</li>
+            <li><strong>Equilibra:</strong> el más alineado conceptualmente con lo que hace el producto. Su debilidad es la menor distintividad por compartir raíz con un término de uso extendido en wellness, lo que puede generar más ruido competitivo.</li>
+            <li><strong>Wooffi:</strong> el más memorable y con mayor potencial visual/lúdico. Su debilidad es la relevancia conceptual más baja (no comunica el beneficio ni la tecnología) y el sesgo hacia perros, relevante si el producto es o será multi-especie.</li>
+            </ul>
+            <p>¿Avanzamos a la Etapa 5 — Verificación digital? Antes de arrancar, una aclaración: esta etapa requiere búsquedas web para cada nombre (general, IMPI, dominios, redes sociales, lingüística, competencia) — voy a asumir México como mercado principal salvo que me indiques otro país. ¿Confirmas México, o es otro mercado?</p>
+        </div>
+
+        </section>
+        <!--Fin SECCIÓN 1-->
+
+        <!--SECCIÓN 2: ETAPA 4 - BÚSQUEDA FONÉTICA EN IMPI-->
+        <section id="etapa-4" class="week-section">
+        <h2>Etapa 4: Búsqueda fonética en IMPI: demo en vivo</h2>
+
+        <div style="overflow-x: auto;">
+        <table class="table table-bordered">
+            <thead class="table-dark">
+            <tr>
+                <th>Propuesta de marca</th>
+                <th>Coincidencias exactas en el IMPI</th>
+                <th>Clases en las que está registrada</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><strong>Latido</strong></td>
+                <td>13</td>
+                <td>1, 3, 5, 30, 41, 45</td>
+            </tr>
+            <tr>
+                <td><strong>Equilibra</strong></td>
+                <td>12</td>
+                <td>14, 30, 33, 35, 35, 38</td>
+            </tr>
+            <tr>
+                <td><strong>Wooffi</strong></td>
+                <td colspan="2">No hay información asociada</td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <h4>Cómo se ven dentro de la interfaz del IMPI</h4>
+
+        <!--Imagen 1: captura de interfaz IMPI-->
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="../w03/img_w03/01.jpeg" alt="Búsqueda IMPI - Latido" style="width: 100%; max-width: 700px; height: auto; border-radius: 8px; border: 1px solid #dee2e6;">
+        </div>
+        <!--Fin: Imagen 1-->
+
+        <!--Imagen 2: captura de interfaz IMPI-->
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="../w03/img_w03/02.jpeg" alt="Búsqueda IMPI - Equilibra" style="width: 100%; max-width: 700px; height: auto; border-radius: 8px; border: 1px solid #dee2e6;">
+        </div>
+        <!--Fin: Imagen 2-->
+
+        <!--Imagen 3: captura de interfaz IMPI-->
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="../w03/img_w03/03.jpeg" alt="Búsqueda IMPI - Wooffi" style="width: 100%; max-width: 700px; height: auto; border-radius: 8px; border: 1px solid #dee2e6;">
+        </div>
+        <!--Fin: Imagen 3-->
+
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Búsqueda de variantes del nombre (IMPI)</h3>
+
+        <div style="overflow-x: auto;">
+        <table class="table table-bordered">
+            <thead class="table-dark">
+            <tr>
+                <th>Propuesta de marca</th>
+                <th>Coincidencias exactas en el IMPI</th>
+                <th>Clases en las que está registrada</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr><td>Wooffi (original)</td><td>N/A</td><td>—</td></tr>
+            <tr><td>Woofi</td><td>N/A</td><td>—</td></tr>
+            <tr><td>Woffi</td><td>N/A</td><td>—</td></tr>
+            <tr><td>wofi</td><td>N/A</td><td>—</td></tr>
+            <tr><td>Wufi</td><td>2</td><td>9, 41</td></tr>
+            <tr><td>Wufy</td><td>N/A</td><td>—</td></tr>
+            <tr><td>Woofy</td><td>2</td><td>35, 44</td></tr>
+            <tr><td>Wuffy</td><td>N/A</td><td>—</td></tr>
+            <tr><td>Wuffi</td><td>N/A</td><td>—</td></tr>
+            <tr><td>Guaffi</td><td>N/A</td><td>—</td></tr>
+            <tr><td>Guafi</td><td>1</td><td>35</td></tr>
+            <tr><td>Guafy</td><td>N/A</td><td>—</td></tr>
+            <tr><td>Guaffy</td><td>N/A</td><td>—</td></tr>
+            </tbody>
+        </table>
+        </div>
+
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Clasificación de Niza</h3>
+
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <ul>
+            <li><strong>Clase 9</strong> → software, apps, inteligencia artificial, dispositivos electrónicos</li>
+            <li><strong>Clase 7</strong> → máquinas y aparatos mecánicos (el dispensador, si se clasifica como mecánico)</li>
+            <li><strong>Clase 11</strong> → aparatos eléctricos (el dispensador, si se clasifica como eléctrico/electrodoméstico)</li>
+            </ul>
+        </div>
+
+        </section>
+        <!--Fin SECCIÓN 2-->
+
+        <!--SECCIÓN 3: ETAPA 5 - VIGILANCIA TECNOLÓGICA / FTO-->
+        <section id="etapa-5" class="week-section">
+        <h2>Etapa 5: Vigilancia tecnológica / Freedom to Operate (FTO)</h2>
+
+        <p>Este ejercicio busca si ya existen patentes que cubran el mecanismo de mi producto, para no infringir algo que ya está protegido. Es un flujo distinto al de naming: aquí no buscamos si el <em>nombre</em> está libre, sino si la <em>tecnología</em> está libre de patentes vigentes.</p>
+
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Paso 1 — Preparación</h3>
+
+        <div class="prompt-box" style="background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 15px; border-radius: 8px; font-style: italic; margin: 20px 0;">
+            <h4 style="margin-top:0; font-style: normal;">💬 Prompt 1 original</h4>
+            <p>Actúa como especialista en vigilancia tecnológica para startups de hardware + software en mercados emergentes.</p>
+            <p>Concepto: [nombre + descripción]<br>
+            Mecanismo técnico: [sensores, procesamiento, comunicación]<br>
+            Componente de IA: [qué hace y dónde corre]</p>
+            <p>Entrega:</p>
+            <ul>
+            <li>Términos en ES y EN (principales + sinónimos + combinaciones AND)</li>
+            <li>Códigos IPC relevantes (3–5 con descripción)</li>
+            <li>Secuencia: IMPI → LATIPAT → Lens.org</li>
+            </ul>
+        </div>
+
+        <div class="prompt-box" style="background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 15px; border-radius: 8px; font-style: italic; margin: 20px 0;">
+            <h4 style="margin-top:0; font-style: normal;">💬 Prompt modificado (Claude)</h4>
+            <p>Actúa como especialista en vigilancia tecnológica para startups de hardware + software en mercados emergentes.</p>
+            <p>Concepto: Dispensador automático de alimento para perros, controlado por una app móvil, enfocado en el manejo de peso corporal canino.</p>
+            <p>Mecanismo técnico: Sensor de peso integrado al dispensador que calcula la cantidad en gramos de alimento a liberar en cada porción. Comunicación entre el dispensador y la app vía WiFi y/o Bluetooth (por definir).</p>
+            <p>Componente de IA: Modelo que calcula y ajusta una dieta personalizada para que el perro alcance un objetivo de peso (subir o bajar), monitoreando el progreso hasta que se estima que la meta fue alcanzada, momento en el cual solicita una consulta veterinaria para confirmar el peso real; con base en ese resultado, ajusta la dieta a una fase de mantenimiento.</p>
+            <p>Entrega:</p>
+            <ul>
+            <li>Términos en ES y EN (principales + sinónimos + combinaciones AND)</li>
+            <li>Códigos IPC relevantes (3–5 con descripción)</li>
+            <li>Secuencia: IMPI → LATIPAT → Lens.org</li>
+            </ul>
+        </div>
+
+        <h4>Respuesta: Resultado del Paso 1 — Términos de búsqueda</h4>
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <p><strong>Nota de honestidad:</strong> los códigos IPC que doy abajo son mi mejor estimación experta basada en cómo se clasifican típicamente estas tecnologías, pero no los he verificado en vivo contra el catálogo oficial de la OMPI (ipc.wipo.int) ni en las bases mismas. Te recomiendo confirmar la descripción exacta de cada código ahí antes de usarlos como filtro definitivo — igual que con las marcas, "no encontrar algo con el código equivocado" no significa que esté libre.</p>
+
+            <p><strong>Términos en español — Principales</strong></p>
+            <ul>
+            <li>dispensador automático de alimento</li>
+            <li>alimentador automático para perros / mascotas</li>
+            <li>sensor de peso para dispensador</li>
+            <li>control de peso canino</li>
+            <li>dieta personalizada para mascotas</li>
+            </ul>
+            <p><strong>Sinónimos / variantes</strong></p>
+            <ul>
+            <li>comedero automático</li>
+            <li>porción automática de alimento</li>
+            <li>ajuste de raciones alimenticias</li>
+            <li>monitoreo de peso animal</li>
+            <li>báscula integrada para mascotas</li>
+            </ul>
+            <p><strong>Combinaciones AND</strong></p>
+            <ul>
+            <li>"dispensador automático" AND "sensor de peso"</li>
+            <li>"alimentador automático" AND "inteligencia artificial"</li>
+            <li>"comedero automático" AND "control de peso"</li>
+            <li>"dispensador de alimento" AND "app móvil"</li>
+            </ul>
+
+            <p><strong>Términos en inglés — Principales</strong></p>
+            <ul>
+            <li>automatic pet feeder</li>
+            <li>automatic dog feeder</li>
+            <li>smart feeder</li>
+            <li>weight-based feeding device</li>
+            <li>personalized pet diet algorithm</li>
+            </ul>
+            <p><strong>Sinónimos / variantes</strong></p>
+            <ul>
+            <li>portion control feeder</li>
+            <li>pet weight management device</li>
+            <li>connected feeder / IoT feeder</li>
+            <li>automated food dispenser for animals</li>
+            </ul>
+            <p><strong>Combinaciones AND</strong></p>
+            <ul>
+            <li>"automatic feeder" AND "weight sensor"</li>
+            <li>"pet feeder" AND "artificial intelligence"</li>
+            <li>"dog feeder" AND "weight management"</li>
+            <li>"smart feeder" AND "mobile app"</li>
+            </ul>
+
+            <p><strong>Códigos IPC sugeridos (a confirmar en catálogo oficial)</strong></p>
+            <table class="table table-bordered">
+            <thead class="table-dark">
+                <tr><th>Código</th><th>Descripción aproximada</th><th>Por qué aplica</th></tr>
+            </thead>
+            <tbody>
+                <tr><td><strong>A01K 5/02</strong></td><td>Dispositivos automáticos para alimentar animales</td><td>Núcleo del mecanismo — el dispensador en sí</td></tr>
+                <tr><td><strong>A01K 29/00</strong></td><td>Otros aparatos para el cuidado/manejo de animales</td><td>Puede cubrir dispositivos de monitoreo asociados al cuidado animal</td></tr>
+                <tr><td><strong>G01G 19/44</strong></td><td>Aparatos de pesaje adaptados específicamente para animales</td><td>El sensor de peso integrado</td></tr>
+                <tr><td>G06N 20/00</td><td>Aprendizaje automático (machine learning)</td><td>El componente de IA que calcula/ajusta la dieta</td></tr>
+                <tr><td>H04W 4/00 (rango)</td><td>Comunicaciones inalámbricas específicas (WiFi/Bluetooth)</td><td>La comunicación dispensador-app, mientras no definas el protocolo exacto</td></tr>
+            </tbody>
+            </table>
+            <p>Las seleccionadas fueron estas para continuar con el paso 2: <strong>A01K5/02</strong>, <strong>A01K29/00</strong>, <strong>G01G19/44</strong></p>
+        </div>
+
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Paso 2 — México (IMPI/SIGA)</h3>
+
+        <p>Tú entras a <strong>siga.impi.gob.mx</strong> (distinto de MarcaNet — SIGA es para <em>patentes</em>, no marcas) y buscas con los términos/IPC que te dé el Prompt 1. La idea aquí es leer el estado de cada resultado de la siguiente forma:</p>
+
+        <table class="table table-bordered">
+            <thead class="table-dark">
+            <tr><th>Estado</th><th>Qué significa</th><th>Qué haces</th></tr>
+            </thead>
+            <tbody>
+            <tr><td>Vigente</td><td>Protección activa</td><td>⚠️ me traes los reclamos para que los interprete (Prompt 2)</td></tr>
+            <tr><td>Caducada</td><td>Ya venció</td><td>✅ espacio libre, documentas</td></tr>
+            <tr><td>En trámite</td><td>No concedida aún</td><td>⚠️ riesgo potencial, seguir monitoreando</td></tr>
+            <tr><td>Sin resultados</td><td>Nada encontrado en MX</td><td>✅ documentas como libre en México</td></tr>
+            </tbody>
+        </table>
+
+        <h5>A01K 5/02</h5>
+        <!--Imagen: captura interfaz SIGA-->
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="../w03/img_w03/04.jpeg" alt="Búsqueda SIGA - A01K 5/02" style="width: 100%; max-width: 700px; height: auto; border-radius: 8px; border: 1px solid #dee2e6;">
+        </div>
+        <!--Fin imagen-->
+
+        <h5>A01K29/00</h5>
+        <div style="overflow-x: auto;">
+        <table class="table table-bordered">
+            <thead class="table-dark">
+            <tr>
+                <th>#</th><th>Título</th><th>No. Solicitud (Nacional)</th><th>Fecha Presentación</th>
+                <th>No. Solicitud Internacional (PCT)</th><th>Estado / Tipo</th><th>Fecha Concesión</th><th>Relevancia para tu proyecto</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Aparato para crear un camino en un animal y métodos relacionados</td>
+                <td>PA/a/2004/009664</td><td>04/10/2004</td><td>PCT/US2003/001927</td>
+                <td>Solicitud (vía PCT)</td><td>—</td>
+                <td>🔴 Irrelevante — trata de inseminación artificial/catéteres, no de dispensadores ni control de peso</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Aparato para controlar insectos en un animal</td>
+                <td>PA/a/2002/000002</td><td>07/01/2002</td><td>PCT/US2000/017615</td>
+                <td>Solicitud (vía PCT)</td><td>—</td>
+                <td>🔴 Irrelevante — trata de control de plagas/insectos en el animal, no de alimentación</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Método para incrementar la eficiencia de incorporación de ácido graso Omega-3 en carne de aves de corral</td>
+                <td>PA/a/2000/001558</td><td>14/02/2000</td><td>— (nacional directa)</td>
+                <td>Patente concedida No. 220109</td><td>23/04/2004</td>
+                <td>🔴 Irrelevante — es un método de formulación nutricional para producción avícola, no un dispositivo ni un algoritmo de dieta por IA</td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <h5>G01G19/44</h5>
+        <p><em>No encontré.</em></p>
+
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Paso 3 — LATAM (LATIPAT)</h3>
+        <p>Mismos términos, en <strong>lp.espacenet.com</strong>, cubre 18 países (incluye MX, BR, CO, AR, CL). Tú haces la búsqueda directamente ahí.</p>
+
+        <h5>A01K 5/02</h5>
+        <p>Aquí está el cuadro con el primer código IPC de cada resultado, para tu Paso 3 (LATIPAT):</p>
+        <div style="overflow-x: auto;">
+        <table class="table table-bordered">
+            <thead class="table-dark">
+            <tr><th>#</th><th>Título</th><th>Primer IPC</th><th>Solicitante</th><th>Fecha de prioridad</th><th>Relevancia para tu proyecto</th></tr>
+            </thead>
+            <tbody>
+            <tr><td>1</td><td>Lípidos ionizables para la administración de ácidos nucleicos</td><td>A61K39/00</td><td>PREC NANOSYSTEMS ULC</td><td>2019-06-20</td><td>🔴 Irrelevante — biotecnología/vacunas, no dispensadores ni IA de dieta</td></tr>
+            <tr><td>2</td><td>Uso de L-felinina para incitar a los gatos a evacuar en una caja de arena</td><td>A01K1/015</td><td>NESTLE SA</td><td>2015-04-24</td><td>🔴 Irrelevante — comportamiento felino/arena sanitaria, no alimentación automatizada</td></tr>
+            <tr><td>3</td><td>Moduladores de pirrolopiridina de RORC2 sustituidos con metilo y trifluorometilo</td><td>A61K31/454</td><td>PFIZER</td><td>2014-09-26</td><td>🔴 Irrelevante — compuesto farmacéutico</td></tr>
+            <tr><td>4</td><td>Anticuerpos, dominios variables y cadenas adaptados para su uso en seres humanos</td><td>A01K67/027</td><td>KYMAB LTD</td><td>2011-09-19</td><td>🔴 Irrelevante — ingeniería de anticuerpos/animales transgénicos</td></tr>
+            <tr><td>5</td><td>Sistema para otimização dos pratos comedouros na área de pinteiros</td><td>A01K1/10</td><td>CONTE MILTON [BR]</td><td>2005-11-11</td><td>🟡 Parcialmente relevante — es un sistema de comederos, aunque para pollos (avicultura), no para mascotas ni con sensor de peso/IA. Vale la pena revisar el detalle completo</td></tr>
+            <tr><td>6</td><td>Piensos para acuicultura con ácido estearidónico</td><td>A23K20/158</td><td>COMMW SCIENT IND RES ORG</td><td>2005-11-18</td><td>🔴 Irrelevante — formulación de alimento para acuicultura</td></tr>
+            <tr><td>7</td><td>Inhibidores de la endopeptidasa neutra (NEP) para disfunción sexual femenina</td><td>A01K67/027</td><td>PFIZER</td><td>1999-11-08</td><td>🔴 Irrelevante — compuesto farmacéutico humano</td></tr>
+            <tr><td>8</td><td>Derivados dipeptídicos como secretagogos de la hormona del crecimiento</td><td>A61K38/00</td><td>PFIZER PROD INC</td><td>1998-11-20</td><td>🔴 Irrelevante — compuesto farmacéutico</td></tr>
+            <tr><td>9</td><td>Utilización de compuestos a base de dihidroxiquinolina para conservación de productos de mamíferos y pescado</td><td>A23K1/16</td><td>SOLUTIA INC</td><td>1997-07-25</td><td>🔴 Irrelevante — conservación de alimentos, no dispensación ni IA</td></tr>
+            <tr><td>10</td><td>Moduladores de peso corporal, ácidos nucleicos y proteínas correspondientes</td><td>A61K38/17</td><td>UNIV ROCKEFELLER</td><td>1994-08-17</td><td>🟡 Parcialmente relevante — trata control de peso corporal, pero por vía bioquímica/genética (moduladores hormonales tipo leptina), no por dispositivo ni algoritmo de dieta. Concepto adyacente, no mecanismo igual</td></tr>
+            <tr><td>11</td><td>Nuevos esteroides 16-metilo sustituidos derivados de la pregna-1,4-dieno-3,20-diona</td><td>A01K63/04</td><td>ROUSSEL UCLAF</td><td>1991-06-25</td><td>🔴 Irrelevante — química de esteroides</td></tr>
+            <tr><td>12</td><td>Compuesto, isótopo radioactivo, composición farmacéutica</td><td>A61P11/00</td><td>PFIZER</td><td>1990-01-04</td><td>🔴 Irrelevante — compuesto radiofarmacéutico</td></tr>
+            <tr><td>13</td><td>Derivados del zearalanol con actividad anabólica</td><td>C07D313/00</td><td>MALLINCKRODT VETERINARY INC</td><td>1987-10-13</td><td>🔴 Irrelevante — compuesto químico anabólico</td></tr>
+            </tbody>
+        </table>
+        </div>
+
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <p><strong>Resumen para continuar con el Paso 3:</strong></p>
+            <p>De 13 resultados, ninguno coincide con tu mecanismo real (dispensador físico + sensor de peso + IA que ajusta dieta y coordina con consulta veterinaria). Los dos que marqué en 🟡 son los únicos con algo de relación temática:</p>
+            <ul>
+            <li><strong>#5</strong> (comederos para pollos) — mismo concepto de "optimizar dispensación de alimento", pero en avicultura, sin sensor de peso ni IA</li>
+            <li><strong>#10</strong> (moduladores de peso corporal) — mismo objetivo (control de peso), pero por vía farmacológica/genética, no por dispositivo</li>
+            </ul>
+            <p>Ninguno de los dos representa un riesgo de FTO para tu concepto específico, pero si quieres ser exhaustivo podrías anotarlos como "revisados — categoría adyacente, sin conflicto de mecanismo".</p>
+            <p><strong>Recomendación:</strong> esta tanda de resultados sugiere que tus términos de búsqueda en LATIPAT fueron demasiado amplios (probablemente cayeron por el código IPC genérico A01K). Prueba combinando con A01K5 (específico de alimentadores automáticos) + G01G19/44 (pesaje de animales) para acotar más, antes de concluir que esta base está "limpia".</p>
+        </div>
+
+        <!--Imagen: captura de búsqueda combinada LATIPAT-->
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="../w03/img_w03/05.jpeg" alt="Búsqueda combinada LATIPAT A01K5 + G01G19/44" style="width: 100%; max-width: 700px; height: auto; border-radius: 8px; border: 1px solid #dee2e6;">
+            <p><em>Busqué esta opción de combinar ambos conceptos, pero no la encontré.</em></p>
+        </div>
+        <!--Fin imagen-->
+
+        <h5>A01K29/00</h5>
+        <p><strong>No encontré</strong></p>
+
+        <h5>G01G19/44</h5>
+        <p>Aquí está el cuadro con estos 25 resultados (todos bajo el código IPC de sensores de peso G01G19/44 y afines):</p>
+
+        <div style="overflow-x: auto;">
+        <table class="table table-bordered">
+            <thead class="table-dark">
+            <tr><th>#</th><th>Título</th><th>Primer IPC</th><th>Solicitante</th><th>Fecha de prioridad</th><th>Relevancia para tu proyecto</th></tr>
+            </thead>
+            <tbody>
+            <tr><td>1</td><td>Balanza inteligente que brinda recomendaciones a los usuarios según su peso</td><td>G01G19/44</td><td>UNIV AUTÓNOMA DEL PERÚ</td><td>2025-06-13</td><td>🟡 Revisar — balanza + recomendaciones basadas en peso es conceptualmente cercano (dato de peso → sugerencia), aunque parece enfocada en personas, no en mascotas ni en dispensación de alimento</td></tr>
+            <tr><td>2</td><td>Método para determinar perfil de velocidad de una silla salvaescaleras según masa/inercia del usuario</td><td>B66B9/08</td><td>TK HOME SOLUTIONS</td><td>2023-01-30</td><td>🔴 Irrelevante — movilidad asistida, no alimentación</td></tr>
+            <tr><td>3</td><td>Aparato de medición de peso</td><td>G01G21/22</td><td>YU MIN TSAO</td><td>2023-01-19</td><td>🟡 Revisar — aparato de peso genérico, sin indicación de que sea para animales ni dispensación; requiere ver el detalle completo</td></tr>
+            <tr><td>4</td><td>Sistema de pesaje portátil para pacientes en urgencias pediátricas</td><td>A61B5/103</td><td>DEL CAMPO CAZALLAS / LORDEN MARTÍNEZ</td><td>2023-06-04</td><td>🔴 Irrelevante — uso médico humano/pediátrico</td></tr>
+            <tr><td>5</td><td>(Duplicado del #4, distinta publicación)</td><td>G01G19/44</td><td>DEL CAMPO CAZALLAS / LORDEN MARTÍNEZ</td><td>2023-06-04</td><td>🔴 Irrelevante — mismo caso que #4</td></tr>
+            <tr><td>6</td><td>Dispositivo y sistema para captura y tratamiento de información de transeúntes</td><td>A61B5/00</td><td>JOSERLI PEREZ KAPAZI</td><td>2021-03-01</td><td>🔴 Irrelevante — monitoreo de personas en tránsito</td></tr>
+            <tr><td>7</td><td>Cama con sistema de pesaje incorporado</td><td>A01G7/00</td><td>MORENO GONZÁLEZ MARÍA</td><td>2022-06-01</td><td>🔴 Irrelevante — pesaje en cama, uso humano</td></tr>
+            <tr><td>8</td><td>Sistema y método de detección de fraude en pesaje de individuos</td><td>A61B5/107</td><td>WELTON DE ABREU et al.</td><td>2020-09-14</td><td>🔴 Irrelevante — antifraude en báscula humana</td></tr>
+            <tr><td>9</td><td>Weighing apparatus for a wheelchair</td><td>G01G19/02</td><td>MARSDEN WEIGHING MACHINE GROUP</td><td>2020-09-11</td><td>🔴 Irrelevante — pesaje en silla de ruedas</td></tr>
+            <tr><td>10</td><td>Monitoramento do equilíbrio de fluido</td><td>A61B5/00</td><td>ELMEDIX NV</td><td>2020-04-24</td><td>🔴 Irrelevante — balance de fluidos corporales (médico humano)</td></tr>
+            <tr><td>11</td><td>Disposição introduzida em miniescada dotada de balança</td><td>G01G19/44</td><td>WENDER DE SÁ</td><td>2020-01-08</td><td>🔴 Irrelevante — escalera con báscula, uso humano</td></tr>
+            <tr><td>12</td><td>Dispositivo para pesar a un paciente en aparato de soporte de pacientes</td><td>G01G19/44</td><td>LINET SPOL SRO</td><td>2020-03-31</td><td>🔴 Irrelevante — camillas/soporte médico humano</td></tr>
+            <tr><td>13</td><td>A method for determining loading data in connection with a load supported by a transportation vehicle</td><td>G01G19/04</td><td>ALSTOM HOLDINGS</td><td>2019-04-16</td><td>🔴 Irrelevante — carga de vehículos de transporte</td></tr>
+            <tr><td>14</td><td>Báscula portátil</td><td>G01G19/44</td><td>LÓPEZ SÁEZ VIRGINIA</td><td>2020-02-13</td><td>🟡 Revisar — báscula genérica, sin especificar uso; verificar si aplica a mascotas</td></tr>
+            <tr><td>15</td><td>Báscula</td><td>G01G19/44</td><td>LEIFHEIT AG</td><td>2020-02-05</td><td>🟡 Revisar — báscula genérica de uso doméstico (Leifheit es marca de productos para el hogar); verificar aplicación</td></tr>
+            <tr><td>16</td><td>Device for remotely monitoring a patient with chronic heart failure</td><td>A61B5/00</td><td>EDEVICE</td><td>2018-01-30</td><td>🔴 Irrelevante — monitoreo cardíaco remoto humano</td></tr>
+            <tr><td>17</td><td>Dispositivo de pesaje dinámico con identificador RFID</td><td>G01G17/00</td><td>UNIV CESMAG (Colombia)</td><td>2019-07-03</td><td>🟡 Revisar — pesaje dinámico + RFID podría tener aplicación en ganado/animales; verificar el detalle</td></tr>
+            <tr><td>18</td><td>Balança com cálculo de índice de massa corporal (IMC)</td><td>G01G19/44</td><td>BIT HOME COMÉRCIO</td><td>2018-01-08</td><td>🟡 Revisar — cálculo de índice de masa corporal a partir de peso; conceptualmente cercano a "calcular estado de salud a partir del peso", aunque orientado a personas (IMC es métrica humana)</td></tr>
+            <tr>
+                <td>19</td>
+                <td><strong>Dispositivo y procedimiento de identificación de parámetros corporales del peso y elaboración de plan de dieta a partir de huella digital</strong></td>
+                <td>A61B5/04</td><td>REYES RAMOS LISIS DIANA [CU]</td><td>2017-01-24</td>
+                <td>🔴 <strong>Atención prioritaria</strong> — es el resultado MÁS cercano a tu concepto: combina peso + elaboración de plan de dieta. Aunque usa huella digital (no sensor de peso en dispensador) y no menciona mascotas, el núcleo "medir → calcular plan de dieta" es conceptualmente el más próximo de todos los resultados vistos hasta ahora. Recomiendo revisar el documento completo y sus reivindicaciones</td>
+            </tr>
+            <tr><td>20</td><td>Bancada inteligente para ambulancias</td><td>A61G1/06</td><td>UNIV ALICANTE</td><td>2016-12-23</td><td>🔴 Irrelevante — camilla de ambulancia</td></tr>
+            <tr><td>21</td><td>Sistema de gerenciamento de peso</td><td>A61B5/00</td><td>RENATO ROMANI</td><td>2015-12-15</td><td>🟡 Revisar — "sistema de gestión de peso" es un título genérico y ambiguo; vale la pena confirmar si aplica a personas o animales</td></tr>
+            <tr><td>22</td><td>Sistema para detección de posición de personas postradas sobre asistente robótico para hospitalización</td><td>A61B5/11</td><td>CINVESTAV (México)</td><td>2015-12-21</td><td>🔴 Irrelevante — asistencia robótica hospitalaria</td></tr>
+            <tr><td>23</td><td>Sistema para monitoramento do desenvolvimento infantil, tapete trocador de fraldas</td><td>A61B5/00</td><td>NUTRICIA NV</td><td>2015-12-11</td><td>🔴 Irrelevante — monitoreo de desarrollo infantil (bebés)</td></tr>
+            <tr><td>24</td><td>Aparato de pesada electrónico equipado con un sobreplato</td><td>G01G19/44</td><td>SEB SA (Francia)</td><td>2015-12-07</td><td>🟡 Revisar — SEB es fabricante de electrodomésticos; podría ser una báscula de cocina, no de mascotas, pero conviene confirmar</td></tr>
+            <tr><td>25</td><td>Absorción de energía controlada de asientos frente a impacto</td><td>B60N2/42</td><td>BOEING CO</td><td>2015-10-15</td><td>🔴 Irrelevante — asientos de aeronaves</td></tr>
+            </tbody>
+        </table>
+        </div>
+
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <p><strong>Lectura para tu Paso 3/4</strong></p>
+            <p>De los 25, el resultado #19 es el que requiere tu atención prioritaria: es el único que combina explícitamente medición de peso + elaboración de un plan de dieta, que es el corazón conceptual de tu IA. Aunque el método de medición (huella digital) es distinto al tuyo (sensor de peso en el dispensador) y no está enfocado en mascotas, la superposición de <em>función</em> (peso → plan de dieta personalizado) amerita que:</p>
+            <ol>
+            <li>Consultes el documento completo (ES2676794) en Espacenet o Google Patents</li>
+            <li>Revises sus reivindicaciones (claims) — cuando las tengas, te ayudo a interpretarlas con el Prompt 2 (Paso 6)</li>
+            </ol>
+            <p>Los marcados en 🟡 (báscula genéricas, IMC, RFID dinámico) son de menor prioridad pero vale la pena tenerlos documentados como "revisados, sin mecanismo idéntico" por si en algún momento necesitas justificar la exhaustividad de tu búsqueda.</p>
+            <p>¿Quieres que preparemos el Prompt 2 para el #19 en cuanto tengas las reivindicaciones, o sigues con más resultados de esta búsqueda?</p>
+            <p><strong>Estas son las reivindicaciones que encontré de este documento</strong> [<a href="https://lp.espacenet.com/publicationDetails/originalDocument?FT=D&date=20180724&DB=&locale=es_LP&CC=ES&NR=2676794A1&KC=A1&ND=4" target="_blank">Espacenet - Documento original</a>]</p>
+            <p><strong>REIVINDICACIONES</strong> 1.- Procedimiento de identificación de parámetros corporales del peso y elaboración de plan de dieta a partir de huella digital, caracterizado porque comprende las siguientes etapas: i.- El usuario coloca las dos palmas de las manos sobre la pantalla (2) del dispositivo (1) y ejerce presión con el cuerpo sobre la manos, ii.- El dispositivo (1) escanea dichos puntos de presión y un software (4) coteja los datos obtenidos con una base de datos (5) donde vienen recogidos las relaciones directas entre parámetros biométricos y el diseño de dietas según se persiga adelgazamiento, tonificación, o musculación. iii.- El dispositivo muestra las dietas, incompatibilidades e intolerancias correspondientes al caso del usuario. iv.- Una vez el usuario lleva a cabo la dieta indicada, vuelve a medir sus parámetros biométricos periódicamente para llevar a cabo el seguimiento de su objetivo. 2.- Dispositivo de cómputo, tal como una tablet, caracterizado porque ejecuta el procedimiento de la reivindicación 1 a partir de los sensores táctiles y de presión (3) de la pantalla (2).</p>
+        </div>
+
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Paso 4 — Global con filtro MX (Lens.org)</h3>
+        <p>En <strong>lens.org</strong>, filtras por: Legal Status = Active, Jurisdiction = MX, más el código IPC que te dé el Prompt 1.</p>
+
+        <!--Imagen: filtros aplicados en Lens.org-->
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="../w03/img_w03/06.jpeg" alt="Filtros aplicados en Lens.org" style="width: 100%; max-width: 700px; height: auto; border-radius: 8px; border: 1px solid #dee2e6;">
+            <p><em>Así filtré las cosas</em></p>
+        </div>
+        <!--Fin imagen-->
+
+        <h5>A01K5/02</h5>
+        <p>Aquí está el cuadro combinando los resultados del documento 4 y esta nueva lista (Lens.org, filtro Jurisdiction=MX, Legal Status=Active) para tu Paso 4:</p>
+
+        <div style="overflow-x: auto;">
+        <table class="table table-bordered">
+            <thead class="table-dark">
+            <tr><th>#</th><th>Título</th><th>No. MX</th><th>Tipo</th><th>Estado legal</th><th>Solicitante</th><th>Fecha prioridad</th><th>Relevancia para tu proyecto</th></tr>
+            </thead>
+            <tbody>
+            <tr><td>1</td><td>System and Method for Identification of Individual Animals Based on Images of the Back</td><td>MX 382802 B</td><td>Concedida</td><td>Active</td><td>Viking Genetics Fmba</td><td>2015-07-01</td><td>🔴 Irrelevante — identificación de animales por imagen del lomo (ganado), no dispensación ni peso</td></tr>
+            <tr><td>2</td><td><strong>System for Determining Feed Consumption of at Least One Animal</strong></td><td>MX 365564 B</td><td>Concedida</td><td>Active</td><td>Viking Genetics Fmba</td><td>2013-04-10</td><td>🟡 <strong>Revisar con atención</strong> — mide consumo de alimento por animal individual; conceptualmente cercano (monitoreo de consumo), aunque el título sugiere enfoque en ganado, no en dispensación automática con IA de dieta</td></tr>
+            <tr><td>3</td><td>Systems and Methods for Providing Products to Animals</td><td>MX 2011002981 A</td><td>Solicitud</td><td>Active</td><td>Nestec SA (Nestlé)</td><td>2008-09-22</td><td>🟡 Revisar — título amplio ("proveer productos a animales"), podría cubrir dispensación; requiere ver el detalle del mecanismo</td></tr>
+            <tr><td>4</td><td>(Duplicado de #1, otra publicación de la misma familia)</td><td>MX 2017016878 A</td><td>Solicitud</td><td>Active</td><td>Viking Genetics Fmba</td><td>2015-07-01</td><td>🔴 Irrelevante — mismo caso que #1</td></tr>
+            <tr><td>5</td><td>Real-Time Remote Data Collecting Systems and Methods</td><td>MX 348887 B</td><td>Concedida</td><td>Active</td><td>Nestec SA (Nestlé)</td><td>2012-03-06</td><td>🟡 Revisar — recolección remota de datos en tiempo real; podría aplicar a comunicación dispensador-app, pero el título no específica que sea para alimentación animal</td></tr>
+            <tr><td>6</td><td>(Duplicado de #2, otra publicación)</td><td>MX 2015014287 A</td><td>Solicitud</td><td>Active</td><td>Viking Genetics Fmba</td><td>2013-04-10</td><td>🟡 Mismo caso que #2</td></tr>
+            <tr><td>7</td><td>(Duplicado de #5, otra publicación)</td><td>MX 2014010611 A</td><td>Solicitud</td><td>Active</td><td>Nestec SA (Nestlé)</td><td>2012-03-06</td><td>🟡 Mismo caso que #5</td></tr>
+            <tr><td>8</td><td>(Duplicado de #3, otra publicación)</td><td>MX 339354 B</td><td>Concedida</td><td>Active</td><td>Nestec SA (Nestlé)</td><td>2008-09-22</td><td>🟡 Mismo caso que #3</td></tr>
+            <tr><td>9</td><td>Poultry Feeder with Level Sensor</td><td>MX 2014001581 A</td><td>Solicitud</td><td>Active</td><td>Gsi Group Llc</td><td>2011-08-09</td><td>🟡 Revisar — alimentador con sensor de nivel (no de peso), para aves de corral, no mascotas; mecanismo de sensor es adyacente</td></tr>
+            <tr><td>10</td><td>Water Supply for Animals</td><td>MX 394891 B</td><td>Concedida</td><td>Active</td><td>Crystal Spring Colony Farms Ltd</td><td>2015-07-02</td><td>🔴 Irrelevante — suministro de agua, no de alimento sólido</td></tr>
+            <tr><td>11</td><td>Water Supply for Animals <em>(detalle ampliado)</em></td><td>MX 2017015877 A</td><td>Solicitud</td><td>Active</td><td>Crystal Spring Colony Farms Ltd</td><td>2015-07-02</td><td>🔴 Irrelevante — mismo caso que #10, suministro de agua</td></tr>
+            <tr><td>12</td><td>Automated Feeding Apparatus</td><td>MX 336338 B</td><td>Concedida</td><td>Active</td><td>Cavadistrib Inc</td><td>2010-11-18</td><td>🟡 Revisar — "aparato de alimentación automatizado" genérico; falta saber si tiene sensor de peso o IA, o es solo mecánico/temporizado</td></tr>
+            <tr><td>13</td><td>Poultry Feeder with Level Sensor <em>(detalle ampliado)</em></td><td>MX 344646 B</td><td>Concedida</td><td>Active</td><td>Gsi Group Llc</td><td>2011-08-09</td><td>🟡 Mismo caso que #9</td></tr>
+            <tr><td>14</td><td><strong>Animal Feeding System</strong></td><td>MX 388323 B</td><td>Concedida</td><td>Active</td><td><strong>Pet Novations Ltd</strong></td><td>2014-06-23</td><td>🔴 <strong>Atención prioritaria</strong> — solicitante "Pet Novations" sugiere enfoque específico en mascotas (no ganado/aves como los demás); "Animal Feeding System" + familia extendida a 10+ países (incluye EE.UU., Japón, China, Rusia) indica protección robusta. <strong>Este es el más urgente de revisar en detalle antes de continuar</strong></td></tr>
+            <tr><td>15</td><td>Automated Feeding Apparatus <em>(detalle ampliado)</em></td><td>MX 2013005600 A</td><td>Solicitud</td><td>Active</td><td>Cavadistrib Inc</td><td>2010-11-18</td><td>🟡 Mismo caso que #12</td></tr>
+            </tbody>
+        </table>
+        </div>
+
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <p><strong>Lectura para tu Paso 4</strong></p>
+            <p>De los 15 registros (varios son duplicados de la misma familia de patente, publicados en distintas etapas), destaco dos niveles de atención:</p>
+            <p><strong>🔴 Máxima prioridad — #14 "Animal Feeding System" (Pet Novations Ltd, MX 388323 B)</strong></p>
+            <ul>
+            <li>Es el único solicitante cuyo nombre indica explícitamente enfoque en mascotas ("Pet Novations")</li>
+            <li>Está concedida y activa, con familia extendida a más de 13 jurisdicciones — esto sugiere que es una patente robusta, probablemente bien financiada y defendida</li>
+            <li>Necesitas revisar el abstract completo y las reivindicaciones de esta patente antes de avanzar — es tu candidata más fuerte para el Paso 5 (familia y citas cruzadas) y Paso 6 (interpretación de reclamos)</li>
+            </ul>
+            <p><strong>🟡 Segunda prioridad — #2/#6 "System for Determining Feed Consumption" (Viking Genetics)</strong></p>
+            <ul>
+            <li>Aunque el enfoque parece ser ganado (Viking Genetics es una empresa de genética bovina/porcina), el concepto de "medir consumo de alimento por animal individual" es cercano a tu sistema de monitoreo — vale la pena revisar si su mecanismo usa sensor de peso similar al tuyo</li>
+            </ul>
+            <p><strong>Recomendación inmediata:</strong> antes de seguir sumando resultados, ve directo a Espacenet o Lens.org y abre el abstract completo de "Animal Feeding System" (Pet Novations, MX 388323 B) — tráemelo aquí y lo interpretamos con el Prompt 2, porque de todo lo que hemos visto hasta ahora, este es el que más señales de riesgo real concentra (especie correcta + concedida + familia internacional amplia).</p>
+            <p><strong>Nota importante:</strong> En este caso, revisé los Claims de la publicación número 14 y el prompt 2 aplicado está en el Paso 6.</p>
+        </div>
+
+        <h5>A01K29/00</h5>
+        <p>Aquí está el cuadro solo con los resultados de esta tanda y de los documentos anteriores (5-9) que tienen relación real con tu proyecto — descarté deliberadamente los que son de ganado/lechería industrial, control de plagas, arena sanitaria, juguetes, collares, tags, etc., que no aportan nada a tu mecanismo:</p>
+
+        <div style="overflow-x: auto;">
+        <table class="table table-bordered">
+            <thead class="table-dark">
+            <tr><th>#</th><th>Título</th><th>No. MX</th><th>Tipo</th><th>Estado legal</th><th>Solicitante</th><th>Fecha prioridad</th><th>Relevancia para tu proyecto</th></tr>
+            </thead>
+            <tbody>
+            <tr><td>1</td><td><strong>A Management Program for the Benefit of a Companion Animal</strong></td><td>MX 2011009231 A</td><td>Solicitud</td><td>Active</td><td>Iams Company</td><td>2009-03-02</td><td>🔴 Atención prioritaria — Iams es fabricante reconocido de alimento para mascotas; "programa de manejo para beneficio de un animal de compañía" es el título más cercano conceptualmente a tu producto de todos los vistos hasta ahora (mascota + "management program" sugiere podría incluir dieta/peso). Es una solicitud, no concedida — pero amerita revisar el abstract/reivindicaciones completas antes de continuar</td></tr>
+            <tr><td>2</td><td>Companion Animal Health Monitoring System</td><td>MX 391639 B</td><td>Concedida</td><td>Active</td><td>Sureflap Ltd</td><td>2014-11-05</td><td>🟡 Revisar — sistema de monitoreo de salud para mascotas; conceptualmente adyacente (salud/bienestar), pero el título no menciona peso ni dieta específicamente — Sureflap es conocida por puertas/comederos con microchip, vale la pena confirmar si el mecanismo se traslapa</td></tr>
+            <tr><td>3</td><td>Multiple Sensors for Monitoring Health and Wellness of an Animal</td><td>MX 366567 B</td><td>Concedida</td><td>Active</td><td>I4c Innovations Inc</td><td>2013-03-15</td><td>🟡 Revisar — múltiples sensores para salud/bienestar animal; podría incluir peso entre las variables monitoreadas, pero el enfoque parece ser monitoreo general (actividad, signos vitales), no dispensación ni ajuste de dieta</td></tr>
+            <tr><td>4</td><td>Animal Health and Wellness Monitoring Using UWB Radar</td><td>MX 373888 B</td><td>Concedida</td><td>Active</td><td>I4c Innovations Inc</td><td>2012-11-21</td><td>🟡 Revisar — mismo solicitante que #3, usa radar UWB para monitoreo; mecanismo de sensado distinto al tuyo (radar vs. sensor de peso), pero mismo dominio de "salud y bienestar animal"</td></tr>
+            <tr><td>5</td><td>System for Determining Feed Consumption of at Least One Animal</td><td>MX 365564 B</td><td>Concedida</td><td>Active</td><td>Viking Genetics Fmba</td><td>2013-04-10</td><td>🟡 Ya identificado antes — mide consumo de alimento por animal, enfoque en ganado</td></tr>
+            </tbody>
+        </table>
+        </div>
+
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <p><strong>Lectura para tu Paso 4</strong></p>
+            <p>El resultado que más te conviene revisar a fondo ahora es el #1 — "A Management Program for the Benefit of a Companion Animal" (Iams). Es el único que combina: (a) mascota/animal de compañía explícitamente (no ganado), (b) un fabricante de alimento para mascotas como solicitante, y (c) un concepto de "programa de manejo" que podría —hay que confirmarlo con el documento completo— incluir seguimiento de peso y ajuste de dieta, que es exactamente el corazón de tu producto.</p>
+            <p>Los marcados en 🟡 (#2, #3, #4) son relevantes por dominio (salud/bienestar de mascotas con sensores) pero ninguno menciona explícitamente dispensación de alimento ni ajuste de dieta por peso — son monitoreo, no intervención alimentaria.</p>
+            <p><strong>Recomendación:</strong> busca el abstract y, si es posible, las reivindicaciones completas de la solicitud Iams (MX 2011009231 A / familia con 15 jurisdicciones) — tráemelas aquí y las interpretamos con el Prompt 2, porque de todo lo que has encontrado en las últimas rondas, esta es la que más señales de riesgo potencial concentra para tu concepto específico.</p>
+        </div>
+
+        <h5>G01G19/44</h5>
+        <p>Aquí está el cuadro con esta tanda de resultados:</p>
+
+        <div style="overflow-x: auto;">
+        <table class="table table-bordered">
+            <thead class="table-dark">
+            <tr><th>#</th><th>Título</th><th>No. MX</th><th>Tipo</th><th>Estado legal</th><th>Solicitante</th><th>Fecha prioridad</th><th>Relevancia para tu proyecto</th></tr>
+            </thead>
+            <tbody>
+            <tr><td>1</td><td>Method and System for a Talking Weight Loss Scale</td><td>MX 2008001388 A</td><td>Solicitud</td><td>Active</td><td>Cd3 Inc</td><td>2007-02-06</td><td>🟡 Revisar — báscula "parlante" para pérdida de peso; conceptualmente cercano (peso + retroalimentación al usuario), pero enfocado en personas, sin mención de dispensación de alimento ni IA de dieta</td></tr>
+            <tr><td>2</td><td>Apparatus for Customizing a Vehicle Seat for an Occupant</td><td>MX 355981 B</td><td>Concedida</td><td>Active</td><td>Ford Global Tech Llc</td><td>2014-10-29</td><td>🔴 Irrelevante — ajuste de asiento automotriz según el ocupante, no alimentación ni peso animal</td></tr>
+            <tr><td>3</td><td>(Duplicado de #2, otra publicación de la misma familia)</td><td>MX 2015014836 A</td><td>Solicitud</td><td>Active</td><td>Ford Global Tech Llc</td><td>2014-10-29</td><td>🔴 Irrelevante — mismo caso que #2</td></tr>
+            <tr><td>4</td><td>Method and Device for Determining the Body Weight of a Person</td><td>MX 350038 B</td><td>Concedida</td><td>Active</td><td>Seca Ag</td><td>2011-11-14</td><td>🟡 Revisar — Seca es fabricante reconocido de básculas médicas; método de determinación de peso corporal humano, sin componente de dieta ni dispensación</td></tr>
+            <tr><td>5</td><td>(Duplicado de #4, otra publicación)</td><td>MX 2014003757 A</td><td>Solicitud</td><td>Active</td><td>Seca Ag</td><td>2011-11-14</td><td>🟡 Mismo caso que #4</td></tr>
+            <tr><td>6</td><td>System for Position Detection of Bedridden People on a Robotic Assistant for Hospitalization</td><td>MX 384571 B</td><td>Concedida</td><td>Active</td><td>CINVESTAV (México)</td><td>2015-12-21</td><td>🔴 Irrelevante — detección de posición de pacientes encamados, uso hospitalario humano (ya lo habíamos visto antes como solicitud, ahora aparece concedida)</td></tr>
+            </tbody>
+        </table>
+        </div>
+
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <p><strong>Lectura para tu Paso 4</strong></p>
+            <p>Esta tanda no aporta ningún candidato de alto riesgo. Los dos marcados en 🟡 (#1 y #4) comparten el concepto general de "medir peso corporal", pero:</p>
+            <ul>
+            <li>Ambos están dirigidos a personas, no a animales</li>
+            <li>Ninguno menciona dispensación de alimento ni cálculo/ajuste de dieta</li>
+            <li>Su función se limita a medir y reportar el peso (una "habla" el resultado, la otra es un método de medición médica), no a actuar sobre una alimentación automatizada</li>
+            </ul>
+            <p>Ninguno de los seis representa una superposición real con tu mecanismo (sensor de peso en dispensador + IA de dieta + especie canina). Puedes documentarlos como "revisados, sin relevancia — enfoque en peso humano, no en alimentación animal".</p>
+            <p>Con esto, tu candidato de mayor atención sigue siendo el que ya identificamos antes: Pet Novations (MX 388323 B) — Animal Feeding System, que ya evaluamos como FUERA ✅.</p>
+            <p>¿Tienes más resultados por revisar, o pasamos al Paso 7 — Conclusión FTO?</p>
+        </div>
+
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Paso 5 — Familias y referencias cruzadas</h3>
+        <p>De todo lo que encuentres, eliges las 2-3 patentes de mayor riesgo (las que más se parecen a tu mecanismo) y en Espacenet revisas su "patent family" y sus citas (backward/forward), para ver qué tan robusta y extendida es esa protección.</p>
+
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Paso 6 — Interpretar reclamos conmigo</h3>
+        <p>Aquí me traes el título, número, titular, estado y las reivindicaciones 1-5 de cada patente de riesgo, y yo te aplico el Prompt 2 para decirte qué protege realmente, si tu concepto cae dentro/fuera/zona gris, y qué hacer.</p>
+
+        <div class="prompt-box" style="background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 15px; border-radius: 8px; font-style: italic; margin: 20px 0;">
+            <h4 style="margin-top:0; font-style: normal;">💬 Prompt 2 Original</h4>
+            <p>Actúa como analista de PI para equipos de ingeniería sin formación legal.</p>
+            <p>Concepto: [descripción técnica]<br>
+            Patente: Título / Número / Titular / Estado en MX / Año<br>
+            Reclamos: [pega reivindicaciones 1–5]</p>
+            <p>Responde:</p>
+            <ol>
+            <li>Qué protege (sin jerga legal)</li>
+            <li>Qué NO protege</li>
+            <li>¿Nuestro concepto cae dentro o fuera? Veredicto: dentro ⚠️ / fuera ✅ / zona gris ❌</li>
+            <li>Recomendación: ignorar / ajustar / asesoría legal / usar como guía</li>
+            </ol>
+        </div>
+
+        <div class="prompt-box" style="background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 15px; border-radius: 8px; font-style: italic; margin: 20px 0;">
+            <h4 style="margin-top:0; font-style: normal;">💬 Prompt 2 Modificado (Claude): LATAM (LATIPAT)</h4>
+            <p>Actúa como analista de PI para equipos de ingeniería sin formación legal.</p>
+            <p>Concepto: Dispensador automático de alimento para perros, con sensor de peso integrado que calcula la porción a liberar, y una app con IA que diseña y ajusta una dieta personalizada (subir/bajar de peso) según seguimiento periódico, solicitando confirmación veterinaria al alcanzar la meta.</p>
+            <p><strong>Patente:</strong><br>
+            Título: Dispositivo y procedimiento de identificación de parámetros corporales del peso y elaboración de plan de dieta a partir de huella digital.<br>
+            Número: ES2676794 (A1 / B1)<br>
+            Titular: Reyes Ramos Lisis Diana [CU]<br>
+            Estado en MX: No localizada en búsquedas de México hasta el momento (publicación española, pendiente confirmar extensión/familia en MX)<br>
+            Año: 2017 (prioridad) / 2018-2019 (publicación)</p>
+            <p><strong>Reivindicaciones:</strong><br>
+            1. Procedimiento de identificación de parámetros corporales del peso y elaboración de plan de dieta a partir de huella digital, caracterizado porque comprende: i) el usuario coloca las palmas sobre la pantalla del dispositivo y ejerce presión con el cuerpo; ii) el dispositivo escanea los puntos de presión y un software coteja los datos con una base de datos que relaciona parámetros biométricos con diseño de dietas (adelgazamiento, tonificación, musculación); iii) el dispositivo muestra las dietas, incompatibilidades e intolerancias del usuario; iv) el usuario repite la medición periódicamente para seguimiento del objetivo.<br>
+            2. Dispositivo de cómputo (ej. tablet) que ejecuta el procedimiento de la reivindicación 1 mediante sensores táctiles y de presión de la pantalla.</p>
+            <p>Responde: 1. Qué protege (sin jerga legal) 2. Qué NO protege 3. ¿Nuestro concepto cae dentro o fuera? Veredicto: dentro ⚠️ / fuera ✅ / zona gris ❌ 4. Recomendación: ignorar / ajustar / asesoría legal / usar como guía</p>
+        </div>
+
+        <h4>Respuesta</h4>
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <p><strong>1. Qué protege</strong></p>
+            <p>Protege un método muy específico: un dispositivo (tipo tablet) donde una persona coloca las palmas de las manos sobre una pantalla, el dispositivo mide presión/biometría a través del tacto (no un sensor de peso tradicional tipo báscula), cruza esos datos contra una base de datos precargada de dietas, y le muestra al usuario un plan (adelgazar, tonificar, musculación), con seguimiento periódico repitiendo la misma medición táctil.</p>
+            <p><strong>2. Qué NO protege</strong></p>
+            <ul>
+            <li>No protege el uso de un sensor de peso/báscula convencional (celdas de carga) — aquí la medición es por presión de palmas sobre una pantalla táctil, un mecanismo de captura completamente distinto al tuyo</li>
+            <li>No protege nada relacionado con animales — el procedimiento está redactado explícitamente para un "usuario" humano que coloca sus manos</li>
+            <li>No protege la dispensación física de alimento — el dispositivo de la patente solo muestra información/dietas en pantalla, no libera comida</li>
+            <li>No protege ningún componente de inteligencia artificial en el sentido moderno (machine learning) — describe un cotejo contra una base de datos preexistente de reglas, no un modelo que aprenda o se ajuste dinámicamente</li>
+            <li>No protege la coordinación con un profesional veterinario como parte del ciclo de ajuste</li>
+            </ul>
+            <p><strong>3. Veredicto: FUERA ✅</strong></p>
+            <p>Tu concepto cae claramente fuera de lo que protege esta reivindicación. Las diferencias son estructurales, no cosméticas: especie distinta (animal vs. humano), mecanismo de captura distinto (sensor de peso físico vs. biometría táctil de manos), función distinta (dispensar alimento físicamente vs. solo mostrar información en pantalla), y naturaleza del "cerebro" distinta (IA/ML vs. base de datos de reglas fijas).</p>
+            <p><strong>4. Recomendación: Usar como guía</strong></p>
+            <p>No representa un riesgo de infracción, pero es útil como antecedente conceptual — demuestra que la idea general de "medir un parámetro corporal → generar/ajustar un plan de dieta → hacer seguimiento periódico" ya ha sido documentada antes en al menos una solicitud, aunque con mecanismo y especie distintos. Te sirve como referencia de cómo <em>no</em> redactar tus propias reivindicaciones si más adelante decides patentar tu propio mecanismo (asegúrate de que tu redacción resalte con precisión el sensor de peso físico, el algoritmo de IA adaptativo, la especie animal, y el ciclo de validación veterinaria — todos elementos que esta patente no cubre y que podrían ser tu propio espacio de novedad).</p>
+        </div>
+
+        <h4>Respuesta: Lens.org</h4>
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <p>Con esta imagen ya tengo las reivindicaciones completas de la patente Pet Novations (MX 388323 B) — Animal Feeding System. Aquí el análisis con el Prompt 2:</p>
+            <p><strong>1. Qué protege</strong></p>
+            <p>Un sistema de alimentación que funciona con contenedores de comida individuales, cerrados y precargados (como cápsulas o porciones selladas con una tapa, lámina/foil o cubierta). El sistema:</p>
+            <ul>
+            <li>Toma un contenedor cerrado de una pila/stock</li>
+            <li>Lo abre mecánicamente (levantando o jalando la tapa/foil/cubierta)</li>
+            <li>Transporta el contenedor (vía un conveyor) hasta una estación de alimentación, donde el propio contenedor abierto funciona como el plato/recipiente de comida</li>
+            <li>Después de que el animal come, vuelve a cerrar el contenedor (para evitar malos olores o entrada de insectos) y lo traslada a una estación de desechos</li>
+            <li>Además, tiene sensores para detectar el tipo/sabor de la comida y el nivel de inventario, y puede generar pedidos automáticos de reabastecimiento cuando el inventario baja, notificando o pidiendo aprobación al usuario</li>
+            </ul>
+            <p><strong>2. Qué NO protege</strong></p>
+            <ul>
+            <li>No protege un sensor de peso para calcular gramos a liberar de un alimento a granel — su mecanismo es de contenedores/cápsulas precerradas e individuales, no de dosificación por peso desde un depósito</li>
+            <li>No protege ningún componente de IA que diseñe o ajuste una dieta según el peso o evolución del animal — su "inteligencia" se limita a detectar tipo de comida e inventario para reabastecimiento logístico, no a calcular necesidades nutricionales</li>
+            <li>No protege el seguimiento del progreso de peso corporal del animal ni ciclos de ajuste de dieta</li>
+            <li>No protege ninguna interacción con un profesional veterinario</li>
+            <li>No protege el manejo de alimento a granel (croquetas sueltas dispensadas por porción calculada) — su unidad de manejo es el contenedor individual completo</li>
+            </ul>
+            <p><strong>3. Veredicto: FUERA ✅</strong></p>
+            <p>El mecanismo central de esta patente (contenedores/cápsulas selladas + apertura/cierre mecánico + transportador + estación de desechos) es estructuralmente distinto al tuyo (tolva de alimento a granel + sensor de peso + liberación de una porción en gramos calculada por IA). Aunque ambos son "sistemas de alimentación automatizada para animales" en términos generales, el cómo logran la dispensación es completamente diferente, y ninguna de las 13 reivindicaciones menciona peso, IA, ni objetivos de salud/dieta del animal.</p>
+            <p><strong>4. Recomendación: Usar como guía (con vigilancia)</strong></p>
+            <p>No representa un riesgo de infracción para tu mecanismo actual. Sin embargo, dado que es una patente concedida, activa, y con familia extendida a 13+ países (la más robusta que has encontrado hasta ahora), te recomiendo:</p>
+            <ul>
+            <li>Mantenerla documentada como antecedente relevante en tu expediente de FTO</li>
+            <li>Si en el futuro tu producto evoluciona hacia un formato de cápsulas o porciones precerradas (en vez de tolva a granel + sensor de peso), esta patente sí podría volverse relevante y ameritaría una revisión más profunda o asesoría legal</li>
+            </ul>
+            <p>Con este análisis ya tienes dos casos completos para tu Paso 6 (el de huella digital/dieta = fuera ✅, y este de Pet Novations = fuera ✅). ¿Seguimos al Paso 7 — Conclusión FTO, o tienes más candidatas por revisar antes de cerrar?</p>
+        </div>
+
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Paso 7 — Conclusión FTO</h3>
+        <p>Con todo lo anterior, se resume en:</p>
+
+        <table class="table table-bordered">
+            <thead class="table-dark">
+            <tr><th>Nivel</th><th>Situación</th><th>Acción</th></tr>
+            </thead>
+            <tbody>
+            <tr><td>🟢 Alta</td><td>Sin patentes vigentes que apliquen</td><td>Continuar y documentar</td></tr>
+            <tr><td>🟡 Media</td><td>Reclamos existen pero no cubren exactamente tu mecanismo</td><td>Ajustar el concepto</td></tr>
+            <tr><td>🔴 Baja</td><td>Patente vigente que sí cubre tu mecanismo</td><td>Buscar asesoría legal</td></tr>
+            </tbody>
+        </table>
+
+        <h4>Resumen</h4>
+        <div class="summary-box">
+            <p style="text-align:center;"><strong>PASO 7 — CONCLUSIÓN FTO (Freedom to Operate)</strong></p>
+            <p>Con base en todo lo revisado hasta ahora en tu vigilancia tecnológica (SIGA, LATIPAT, Lens.org con filtro MX), aquí está el resumen consolidado:</p>
+
+            <p><strong>Resumen de lo investigado</strong></p>
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+            <thead class="table-dark">
+                <tr><th>Fuente</th><th>Resultados totales revisados</th><th>Candidatos de riesgo real identificados</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>SIGA (México)</td><td>3 (patente Omega-3, control de insectos, catéter Al)</td><td>0 — ninguno relacionado con tu mecanismo</td></tr>
+                <tr><td>LATIPAT (18 países)</td><td>13 (biotecnología, farmacéutica, avicultura genérica)</td><td>0 directos — 2 adyacentes (comederos avícolas, moduladores de peso corporal)</td></tr>
+                <tr><td>LATIPAT / IPC pesaje</td><td>25 (básculas humanas, camillas, sillas de ruedas)</td><td>1 analizado a fondo — "Dispositivo... plan de dieta a partir de huella digital" (Cuba)</td></tr>
+                <tr><td>Lens.org (filtro MX, Active)</td><td>~40 (ganado, lechería, agricultura, plagas, collares, arena sanitaria)</td><td>2 analizados a fondo (Pet Novations) + 1 pendiente de análisis profundo (Iams)</td></tr>
+            </tbody>
+            </table>
+            </div>
+
+            <p><strong>Patentes analizadas en profundidad (Prompt 2 aplicado)</strong></p>
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+            <thead class="table-dark">
+                <tr><th>Patente</th><th>Titular</th><th>Veredicto</th><th>Razón central</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>Dispositivo de identificación de parámetros corporales... plan de dieta a partir de huella digital (ES2676794)</td>
+                <td>Reyes Ramos Lisis Diana [CU]</td>
+                <td>✅ Fuera</td>
+                <td>Medición táctil de manos (no sensor de peso), enfocada en humanos, sin dispensación física ni IA adaptativa</td>
+                </tr>
+                <tr>
+                <td>Animal Feeding System (MX 388323 B)</td>
+                <td>Pet Novations Ltd</td>
+                <td>✅ Fuera</td>
+                <td>Mecanismo de cápsulas/contenedores precerrados con apertura mecánica, no tolva a granel con sensor de peso ni IA de dieta</td>
+                </tr>
+            </tbody>
+            </table>
+            </div>
+
+            <p><strong>Patente identificada como de mayor atención, pendiente de análisis completo</strong></p>
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+            <thead class="table-dark">
+                <tr><th>Patente</th><th>Titular</th><th>Estado</th><th>Por qué preocupa</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>A Management Program for the Benefit of a Companion Animal (MX 2011009231 A)</td>
+                <td>Iams Company</td>
+                <td>Solicitud, Active, familia en 15 jurisdicciones</td>
+                <td>Es el único resultado que combina explícitamente "animal de compañía" + fabricante de alimento para mascotas + concepto de "programa de manejo", que podría incluir seguimiento de peso y ajuste de dieta. <strong>No se ha revisado el abstract ni las reivindicaciones completas</strong></td>
+                </tr>
+            </tbody>
+            </table>
+            </div>
+
+            <p><strong>Nivel FTO actual: 🟡 Media</strong></p>
+            <p>No se encontró ninguna patente vigente que cubra exactamente tu mecanismo (dispensador físico + sensor de peso + IA que calcula y ajusta dieta + coordinación con validación veterinaria). Sin embargo, la conclusión no puede subir a 🟢 Alta todavía porque:</p>
+            <ol>
+            <li>Queda un candidato de riesgo potencial sin analizar a fondo (Iams — MX 2011009231 A)</li>
+            <li>La búsqueda, aunque amplia, no ha sido exhaustiva en todas las combinaciones de IPC posibles (ej. no se exploró a fondo G16H — informática médica/salud aplicada a IA)</li>
+            <li>No se realizó una búsqueda dedicada en clase 9/IPC de "machine learning aplicado a nutrición animal" de forma aislada — la mayoría de resultados llegaron por el ángulo de "sensor de peso" o "alimentador automático" por separado, no por su combinación específica con IA</li>
+            </ol>
+
+            <p><strong>Qué falta para llegar a una conclusión más sólida</strong></p>
+            <ol>
+            <li>Obtener y analizar el documento completo de Iams (MX 2011009231 A) — abstract y reivindicaciones, para aplicarle el Prompt 2 como a los otros dos casos</li>
+            <li>Verificar el estado real de cada expediente en SIGA/MarcaNet directamente (recuerda que tú mismo señalaste que esa parte corresponde hacerla manualmente)</li>
+            <li>Ampliar la búsqueda con combinaciones AND más específicas, por ejemplo: "automatic feeder" AND "machine learning" AND "diet" o "pet feeder" AND "weight" AND "artificial intelligence", ya que hasta ahora las búsquedas separaron estos conceptos y no siempre se cruzaron los tres a la vez</li>
+            <li>Revisar Espacenet para familias y citas cruzadas de la patente Pet Novations e Iams, para confirmar que no existen "hijas" o continuaciones más recientes y específicas que sí toquen tu mecanismo exacto</li>
+            </ol>
+
+            <p><strong>Recomendación final</strong></p>
+            <p>Con la información disponible, tu concepto (dispensador con sensor de peso + IA de dieta + validación veterinaria periódica) no muestra un conflicto directo con ninguna patente concedida y vigente revisada hasta ahora. Esto es una señal favorable para continuar el desarrollo, pero no equivale a una confirmación de FTO absoluta. Antes de invertir en manufactura o de solicitar tu propia patente, sería prudente:</p>
+            <ul>
+            <li>Cerrar el análisis pendiente de Iams</li>
+            <li>Hacer una ronda final de búsqueda con las combinaciones AND más específicas mencionadas arriba</li>
+            <li>Consultar con un agente de propiedad industrial para una opinión FTO formal, especialmente si planeas patentar tu propio mecanismo</li>
+            </ul>
+        </div>
+
+        </section>
+        <!--Fin SECCIÓN 3-->
+
+      </div>
+
+    </div>
+
+    <footer>
+      <p>Copyright 2026 Daniela Barranco - Creative Commons Atribución No Comercial</p>
+      <p>Código fuente alojado en <a href="https://gitlab.fabcloud.org/academany/fabacademy/2026/labs/puebla/students/daniela-barranco" target="_blank">gitlab.fabcloud.org</a></p>
+    </footer>
+
+    <script src="../../css/slideshow.js"></script>
+
+    <script>
+      function showWeekSection(sectionId) {
+        const sections = document.querySelectorAll('.week-section');
+        sections.forEach(section => section.classList.remove('active'));
+        const links = document.querySelectorAll('.week-link');
+        links.forEach(link => link.classList.remove('active'));
+        document.getElementById(sectionId).classList.add('active');
+        event.target.classList.add('active');
+        event.preventDefault();
+      }
+    </script>
+  </body>
+</html>

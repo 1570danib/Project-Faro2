@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniela Barranco - Semana 3</title>
+    <link rel="stylesheet" href="../../css/style.css">
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <a href="../../../index.html">Inicio</a>
+        <a href="../../../assignments.html">Tareas semanales</a>
+        <a href="../../../final-project.html">Proyecto final</a>
+        <a href="../../../about.html">Yo merengues</a>
+      </div>
+    </div>
+
+    <!--Hero Section-->
+    <div class="hero-section">
+      <div class="hero-container">
+        <div class="hero-text text-center">
+          <h1>Mercado, valor y propuesta de valor</h1>
+          <h2>Semana 4</h2>
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN LAYOUT WITH SIDEBAR -->
+    <div class="week-layout">
+      <!-- SIDEBAR MENU -->
+      <aside class="week-sidebar">
+        <nav class="week-sidebar-menu">
+          <a onclick="showWeekSection('1')" class="week-link active">B1: Entrevistas</a>
+          <a onclick="showWeekSection('2')" class="week-link">B2: Segmento de mercado</a>
+          <a onclick="showWeekSection('3')" class="week-link">B3.1: Pirámide de Bain</a>
+          <a onclick="showWeekSection('4')" class="week-link">B3.2: Marco IDEO</a>
+        </nav>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <div class="week-main-content">
+
+        <!--SECCIÓN 1: ENTREVISTAS-->
+        <section id="1" class="week-section active">
+            <h2>B1: Entrevistas</h2>
+
+            <p>Se le realizaron las preguntas a 3 dueños de perros que sufren obesidad. Los resultados y transcripciones se encuentran a continuación.</p>
+
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Transcripciones de las entrevistas</h3>
+
+            <h4>Primera entrevista</h4>
+            <!--Imagen: foto/captura entrevista 1-->
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="../w04/img_w04/01.jpeg" alt="Primera entrevista" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; border: 1px solid #dee2e6;">
+            </div>
+            <!--Fin imagen-->
+
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr><th>Pregunta</th><th>Respuesta</th></tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1. Cuéntame cómo es un día normal de tu perro, desde que alguien lo alimenta por primera vez hasta la noche — ¿quién hace qué?</td>
+                    <td>Somos tres personas en casa. Realmente solo comen una vez al día, a las 5:00 p. m., pero su porción suele ser bastante generosa. Llevan una dieta BARF, es decir, les damos vegetales crudos (como calabaza o zanahoria), carbohidratos (arroz o avena) y proteína (huevo o pollo hervido). Una persona se encarga de cocinar el huevo o el pollo, y otra se encarga de darles de comer a todos nuestros perros en general, incluyendo a la perrita de este caso. Si alguno no puede, otra persona toma su lugar. En ese momento también se les cambia el agua.</td>
+                </tr>
+                <tr>
+                    <td>2. ¿Cuándo fue la última vez que te enteraste de que tu perro había subido de peso o que algo no andaba bien con su alimentación? ¿Qué hiciste en ese momento?</td>
+                    <td>Es cruza de dos razas muy distintas: la mamá es husky y el papá es pug. Por eso no tenemos un parámetro claro de cuál es su peso ideal o si está excedida. Sin embargo, nos damos cuenta de que tiene sobrepeso por su grasa corporal y por cómo se ve visualmente. Además, cargarla cuesta bastante trabajo y suele lastimar la espalda o los brazos a quien lo hace.</td>
+                </tr>
+                <tr>
+                    <td>3. ¿Con qué frecuencia hablas con tu papá o mamá sobre cómo está comiendo el perro? Cuéntame de la última vez que pasó. ¿Cómo calculas las porciones de alimento que le das a tu perrito?</td>
+                    <td>La frecuencia con la que hablamos de cómo están comiendo es casi nula, porque sabemos que comen bien. Al principio, cuando empezamos a tener más perros (son 4), hablábamos para buscar opciones económicas y nutritivas. Les variamos los vegetales (zanahoria, calabaza, chayote, papa, brócoli), las proteínas y los carbohidratos.<br><br>Para las porciones, tomando como referencia un plato o contenedor de un litro, calculamos aproximadamente un cuarto de litro. Sin embargo, tratamos de darle un poco más de lo habitual porque come bastante y compite por la comida con otro perro. Para equilibrarlo, le agregamos una proporción mayor de vegetales.</td>
+                </tr>
+                <tr>
+                    <td>4. ¿Qué es lo más difícil de coordinar la comida del perro entre las distintas personas que lo cuidan?</td>
+                    <td>Realmente no es nada difícil. Ya tenemos muy bien coordinada la hora exacta de alimentarlos (las 5:00 p. m.) y lo que van a comer. Almacenamos su comida en el refrigerador en contenedores especiales únicamente para ellos, separando los carbohidratos, la proteína y los vegetales. Las croquetas también las tenemos aparte. Como ya tenemos todo asimilado, la rutina fluye bien.</td>
+                </tr>
+                <tr>
+                    <td>5. ¿Has intentado alguna vez llevar algún control de cuánto come el perro (una app, anotarlo, preguntar seguido)? ¿Qué pasó, lo siguieron usando o lo dejaron? ¿Has llevado a tu perrito al veterinario por el tema de su peso, en caso de ser así, qué les recomendó que hicieran para bajarlo de peso?</td>
+                    <td>No llevamos un control formal porque no tenemos un indicador exacto de cuál debería ser su peso ideal al ser una cruza de razas. Sin embargo, a simple vista sí está bastante subida de peso.<br><br>Anteriormente, hace unos meses, salíamos a pasear e hicimos que la mayoría de nuestros perros bajaran de peso. Actualmente no hemos podido organizarnos para salir a pasear, pero tratamos de que bajen su energía con juegos, interacciones, abrazos o simplemente hablando con ellos.</td>
+                </tr>
+                <tr>
+                    <td>6. La última vez que el veterinario les dijo algo sobre el peso o la salud del perro, ¿qué hicieron después?</td>
+                    <td>La última vez que la llevamos a registrar su peso, pesaba 3.9 kg (o 3.900 kg). Sin embargo, ese registro fue hace aproximadamente un año y desde entonces no la hemos vuelto a pesar ni le hemos dado seguimiento formal al tema.</td>
+                </tr>
+                <tr>
+                    <td>7. ¿Cuánto gastas hoy al mes en cosas relacionadas con la alimentación o salud de tu perro (croquetas especiales, consultas, lo que sea)? ¿Y cuánto tiempo le dedicas a estar al pendiente de eso?</td>
+                    <td>Gastamos un aproximado de $1,500 MXN. Como preparamos y almacenamos la comida para que rinda entre una semana y una semana y media, el costo llega a variar un poco dependiendo del precio actual del pollo, huevo, vegetales y carbohidratos en el mercado, pero en promedio es esa cantidad.</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+
+            <h4>Segunda entrevista</h4>
+            <!--Imagen: foto/captura entrevista 2-->
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="../w04/img_w04/02.jpeg" alt="Segunda entrevista" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; border: 1px solid #dee2e6;">
+            </div>
+            <!--Fin imagen-->
+
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr><th>Pregunta</th><th>Respuesta Corregida</th></tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1. Cuéntame cómo es un día normal de tu perro, desde que alguien lo alimenta por primera vez hasta la noche — ¿quién hace qué?</td>
+                    <td>Nuestros tres cachorros suelen dormir juntos cerca de nuestra puerta. Se despiertan cuando nos escuchan entrar a la cocina y nos reciben con mucha alegría. Pasan el día en la casa y a veces duermen durante la tarde.<br><br>Solo se les alimenta una vez al día, por las noches, dándoles una porción proporcional a su tamaño y al nivel de actividad que realizaron durante la jornada para que aguanten bien todo el día.</td>
+                </tr>
+                <tr>
+                    <td>2. ¿Cuándo fue la última vez que te enteraste de que tu perro había subido de peso o que algo no andaba bien con su alimentación? ¿Qué hiciste en ese momento?</td>
+                    <td>Por lo general nuestros perros están saludables, pero notamos sobrepeso en una de ellas (Norina) porque el doctor nos lo dijo y visualmente era evidente. En su momento compramos un alimento especializado para el manejo de peso y cuidamos su alimentación durante unos 4 meses. Le mantuvimos su comida una vez por la noche, pero con porciones y croquetas más controladas, con lo que logró bajar de peso.<br><br>Sin embargo, al ser un producto casi al doble de costo que un alimento convencional, tuvimos que regresar al alimento normal pero sirviéndole una cantidad menor.</td>
+                </tr>
+                <tr>
+                    <td>3. ¿Con qué frecuencia hablas con tu papá o mamá sobre cómo está comiendo el perro? Cuéntame de la última vez que pasó. ¿Cómo calculas las porciones de alimento que le das a tu perrito?</td>
+                    <td>Estamos muy al pendiente de cómo se alimentan y de si tienen apetito o no. Si vemos que no quieren comer, los motivamos poniéndoles en el fondo del plato algo de comida humana (sopa o caldo) para cambiar el sabor. Incluso recientemente en la veterinaria nos ofrecieron un sazonador en polvo para croquetas.<br><br>Calculamos las porciones según sus períodos y nivel de actividad: si hicieron mucho ejercicio o estuvieron muy activos, les servimos un poco más. Cuando entran en períodos de reproducción (como el macho), tienden a comer menos.</td>
+                </tr>
+                <tr>
+                    <td>4. ¿Qué es lo más difícil de coordinar la comida del perro entre las distintas personas que lo cuidan?</td>
+                    <td>(Para esta pregunta, la respuesta se conecta directamente con la atención al horario y el apetito que gestionan en casa):<br><br>Procuramos darles de comer siempre dentro del mismo horario. Sin embargo, si los vemos hambrientos o inquietos antes de tiempo, nos coordinamos para adelantarles un poco la comida. Lo importante para nosotros es estar al pendiente de que coman bien y que nunca falte el alimento en casa.</td>
+                </tr>
+                <tr>
+                    <td>5. ¿Has intentado alguna vez llevar algún control de cuánto come el perro (una app, anotarlo, preguntar seguido)? ¿Qué pasó, lo siguieron usando o lo dejaron? ¿Has llevado a tu perrito al veterinario por el tema de su peso, en caso de ser así, qué les recomendó que hicieran para bajarlo de peso?</td>
+                    <td>No llevamos ningún registro formal de su alimentación (ni en apps ni en notas). Todo el control lo basamos en la observación permanente y diaria de los perros.<br><br>Sobre el veterinario, cuando lo consultamos por el peso de Norina, nos recomendó cambiar a un alimento especial para control de peso.</td>
+                </tr>
+                <tr>
+                    <td>6. La última vez que el veterinario les dijo algo sobre el peso o la salud del perro, ¿qué hicieron después?</td>
+                    <td>Una vez que el veterinario nos confirmó el sobrepeso, le cambiamos la dieta a un alimento para perros con obesidad. No obstante, como era un producto mucho más caro y difícil de conseguir, con el tiempo se lo eliminamos y volvimos al alimento convencional, ajustando la cantidad a una porción menor.</td>
+                </tr>
+                <tr>
+                    <td>7. ¿Cuánto gastas hoy al mes en cosas relacionadas con la alimentación o salud de tu perro (croquetas especiales, consultas, lo que sea)? ¿Y cuánto tiempo le dedicas a estar al pendiente de eso?</td>
+                    <td>Un bulto de alimento rinde aproximadamente 3 semanas y nos cuesta $1,200 MXN. Adicionalmente, de vez en cuando gastamos en comprarles premios, como huesos u otros detalles.<br><br>En cuanto al tiempo, le dedicamos atención constante todos los días para revisar sus horarios, observar su apetito y asegurarnos de que estén bien alimentados.</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+
+            <h4>Tercera entrevista</h4>
+            <!--Imagen: foto/captura entrevista 3-->
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="../w04/img_w04/03.jpeg" alt="Tercera entrevista" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; border: 1px solid #dee2e6;">
+            </div>
+            <!--Fin imagen-->
+
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr><th>Pregunta</th><th>Respuesta Corregida</th></tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1. Cuéntame cómo es un día normal de tu perro, desde que alguien lo alimenta por primera vez hasta la noche — ¿quién hace qué?</td>
+                    <td>Hobi (una Akita Americano de 8 años) se despierta temprano cuando yo o mis papás nos levantamos. Le dan de comer en la mañana, cerca de las 8:00 a. m. Casi siempre le sirven las chicas que nos ayudan en la casa, mi hermana, mi mamá o yo, dependiendo de quién se acuerde primero.<br><br>Pasa el día en la casa y caminando por el jardín (tenemos un terreno amplio). Aunque ya no sale tanto a la calle por su edad y sobrepeso, dentro de casa sí se mantiene en constante movimiento. Por la noche, cuando es hora de cenar, quien esté disponible la despierta, pesa la porción exacta y le sirve.</td>
+                </tr>
+                <tr>
+                    <td>2. ¿Cuándo fue la última vez que te enteraste de que tu perro había subido de peso o que algo no andaba bien con su alimentación? ¿Qué hiciste en ese momento?</td>
+                    <td>Hace como un mes nos dimos cuenta al llevarla al veterinario porque lloraba/aullaba con facilidad, como si la hubieran pisado. Ya sabíamos que tenía algo de sobrepeso por sus visitas al baño, pero en esta revisión nos diagnosticaron que desarrolló displasia de cadera (común en razas grandes). Por su edad y peso, una cirugía no era opción segura.<br><br><strong>¿Qué hicimos?:</strong> Le dieron medicamentos para desinflamar la zona. Además, el veterinario nos ordenó ser muy estrictos con la dieta: le cambiamos la marca de croquetas y ahora le medimos la porción exacta con báscula (175 gramos por servida). Se le eliminó por completo la comida humana, pan y frutas que antes se le caían al piso o le daban.</td>
+                </tr>
+                <tr>
+                    <td>3. ¿Con qué frecuencia hablas con tu papá o mamá sobre cómo está comiendo el perro? Cuéntame de la última vez que pasó. ¿Cómo calculas las porciones de alimento que le das a tu perrito?</td>
+                    <td>Hablamos del tema principalmente cuando vamos al veterinario y nos da un diagnóstico. En el día a día solo nos preguntamos de forma rápida si ya comió.<br><br><strong>Cálculo de porciones:</strong> Usamos una báscula para medir exactos 175 gramos de croquetas para la mañana y otros 175 gramos para la noche. Además, cambiamos la dinámica: antes se le dejaba el plato lleno todo el día; ahora, si no se acaba las croquetas en el momento, se le retira el plato para que no coma de más ni se las gane el otro perro.</td>
+                </tr>
+                <tr>
+                    <td>4. ¿Qué es lo más difícil de coordinar la comida del perro entre las distintas personas que lo cuidan?</td>
+                    <td>Al principio era casi imposible coordinarnos. Pasaba muy seguido que nadie preguntaba si alguien ya le había dado de comer, así que terminaban alimentándola dos veces. Además, como el otro perrito es más mañoso, a veces ella se comía las croquetas del otro perro o se tropezaban las rutinas.<br><br>Lo superamos al volvernos más conscientes: coordinamos bien quién le da, confirmamos si ya desayunó o cenó, y le retiramos el plato al otro perro para que Hobi no le robe alimento.</td>
+                </tr>
+                <tr>
+                    <td>5. ¿Has intentado alguna vez llevar algún control de cuánto come el perro (una app, anotarlo, preguntar seguido)? ¿Qué pasó, lo siguieron usando o lo dejaron? ¿Has llevado a tu perrito al veterinario por el tema de su peso, en caso de ser así, qué les recomendó que hicieran para bajarlo de peso?</td>
+                    <td>No hemos usado apps ni registros escritos, solo la comunicación verbal en casa y el control estricto con la báscula al servirle.<br><br>Sí la llevamos al veterinario debido a la displasia de cadera y al peso. Nos recomendó de manera urgente: bajar la porción a 175 g exactos por comida, eliminar los premios/comida de mesa, cambiar a croquetas de control de peso, retirarle el plato si no come en el momento y sacarla a paseos cortos de 15 minutos (sin forzarla si se cansa).</td>
+                </tr>
+                <tr>
+                    <td>6. La última vez que el veterinario les dijo algo sobre el peso o la salud del perro, ¿qué hicieron después?</td>
+                    <td>Aplicamos al pie de la letra las indicaciones: compramos el nuevo alimento, empezamos a pesar cada porción en báscula, pusimos horarios para retirarle el plato si no se acaba la comida y evitamos que entre al área donde come el otro perro. También empezamos a sacarla al jardín o a paseos muy breves de 15 minutos para activarla de a poco sin lastimar sus caderas.</td>
+                </tr>
+                <tr>
+                    <td>7. ¿Cuánto gastas hoy al mes en cosas relacionadas con la alimentación o salud de tu perro (croquetas especiales, consultas, lo que sea)? ¿Y cuánto tiempo le dedicas a estar al pendiente de eso?</td>
+                    <td>Mi hermana y mis papás se encargan de las compras, pero calculo que compramos un costal de croquetas de aproximadamente 10.8 kg (24 lbs) cada 2 semanas para los dos perros. Adicionalmente, se gastan alrededor de $300 MXN o un poco más cuando requiere refuerzo de medicamentos para la desinflamación articular.<br><br><strong>Tiempo dedicado:</strong> No toma mucho tiempo servirle, pero sí exige atención constante para verificar si alguien ya le dio de comer y para pesar las porciones en cada comida.</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Síntesis de Entrevistas</h3>
+
+            <h4>1. ¿Qué hipótesis pusieron a prueba?</h4>
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+                <p>La hipótesis central que se buscaba validar era la del insight ganador de la Semana 2:</p>
+                <p><em>"En hogares con múltiples cuidadores, el perro es sobrealimentado porque nadie sabe cuánto ya le dieron los demás — y esto ocurre especialmente en hogares multigeneracionales donde un adulto mayor cuida al perro mientras los hijos trabajan fuera."</em></p>
+                <p>Dentro de esta hipótesis general había tres sub-hipótesis específicas que las preguntas del guion buscaban probar:</p>
+                <ul>
+                <li><strong>H1 (Coordinación):</strong> La falta de comunicación entre cuidadores causa sobrealimentación o duplicidad de comidas.</li>
+                <li><strong>H2 (Cálculo de porción):</strong> Los dueños calculan las porciones "a ojo" o de forma imprecisa, sin herramientas objetivas.</li>
+                <li><strong>H3 (Segmento comprador/usuario distintos):</strong> El adulto mayor es quien más tiempo pasa con el perro pero tiene menos herramientas para controlar su alimentación, y es el hijo adulto quien paga y se preocupa a distancia.</li>
+                </ul>
+            </div>
+
+            <h4>2. ¿Qué encontraron — confirmó, ajustó o pivotó?</h4>
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr><th>Hipótesis</th><th>Resultado</th><th>Evidencia</th></tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>H1 — Falta de coordinación entre cuidadores</td>
+                    <td>✅ Confirmada (parcialmente)</td>
+                    <td>El Entrevistado 3 la vivió directamente: duplicaban comidas por falta de comunicación. Los Entrevistados 1 y 2 la habían resuelto ya con rutinas manuales (horarios fijos, contenedores separados), lo que muestra que el problema existe pero es "resoluble" con disciplina, no necesariamente irresoluble sin tecnología.</td>
+                </tr>
+                <tr>
+                    <td>H2 — Cálculo impreciso de porciones</td>
+                    <td>🔄 Ajustada</td>
+                    <td>Solo el Entrevistado 3 usa báscula exacta (175g), y lo hace porque un veterinario se lo ordenó tras un diagnóstico grave (displasia de cadera), no de forma preventiva. Los otros dos calculan "a ojo" (un cuarto de litro, según actividad del día) y lo aceptan como normal — no lo viven como un dolor que buscan resolver, sino como parte de la rutina.</td>
+                </tr>
+                <tr>
+                    <td>H3 — Segmento adulto mayor + hijo que paga a distancia</td>
+                    <td>❌ Pivotó</td>
+                    <td>Ninguna de las tres entrevistas describe este patrón. En los tres casos hay varios adultos presentes y activos en la coordinación (papás, hermanos, empleada doméstica), no un adulto mayor aislado cuidando solo mientras otros trabajan fuera. El ángulo emocional "sabe que tu mamá y tu perro están bien mientras trabajas" no tiene respaldo en los datos primarios recolectados.</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin: 20px 0;">
+                <p><strong>Hallazgo no anticipado (fuera de las hipótesis originales):</strong> el problema más grave y mejor documentado (Hobi, displasia de cadera) no llegó por sobrepeso preventivo sino por una consecuencia médica ya manifestada, y la solución de la familia fue una báscula de cocina y disciplina manual — no una app ni ningún registro digital. Esto no estaba en el guion de hipótesis pero es el hallazgo más accionable de las tres entrevistas.</p>
+            </div>
+
+            <h4>3. La cita textual más importante</h4>
+            <div class="summary-box">
+                <p>"Al principio era casi imposible coordinarnos. Pasaba muy seguido que nadie preguntaba si alguien ya le había dado de comer, así que terminaban alimentándola dos veces."</p>
+                <p style="text-align: right;"><em>— Entrevistado 3, sobre Hobi (Akita, 8 años, con displasia de cadera)</em></p>
+                <p>Es la cita más importante porque conecta, en una sola frase, el dolor funcional (duplicidad de comidas) con la consecuencia médica real y medible (displasia de cadera agravada por sobrepeso) — y viene de la familia que terminó con el protocolo más estricto (báscula, 175g exactos, retiro de plato), es decir, la que mejor ilustra qué se automatizaría con tu producto.</p>
+            </div>
+
+            <h4>4. Qué cambió en el concepto (o por qué se mantuvo igual)</h4>
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+                <p><strong>Se mantiene igual:</strong></p>
+                <ul>
+                <li>El dolor central — sobrealimentación por falta de coordinación entre cuidadores — sigue siendo real y vale la pena resolverlo. La solución de "un solo punto de verdad físico" (el dispensador) para reemplazar la báscula y las preguntas verbales sigue siendo el mecanismo correcto.</li>
+                <li>La idea de que el alimento convencional + porción exacta automatizada es más viable comercialmente que empujar alimento premium de control de peso (el Entrevistado 2 abandonó el alimento especial por costo — confirma tu insight de Semana 2 sobre por qué las dietas de prescripción fallan).</li>
+                </ul>
+                <p><strong>Cambia:</strong></p>
+                <ul>
+                <li><strong>El segmento se amplía y se corrige.</strong> Deja de ser "hogar multigeneracional, adulto mayor + hijo que paga a distancia" y pasa a ser "hogares con 2 o más cuidadores del perro", sin importar la composición etaria — hermanos, padres, personal doméstico. Esto es un cambio de segmento, no solo de mensaje: afecta a quién le harías el research de precio y a quién le vendes.</li>
+                <li><strong>El gancho de venta emocional debe reformularse.</strong> En lugar de "sabe que tu mamá y tu perro están bien mientras trabajas" (sin respaldo en los datos), el dolor que sí aparece consistentemente en las tres entrevistas es más cercano a "que nadie en casa tenga que preguntar si ya le dieron de comer" — un dolor de coordinación doméstica, no de cuidado intergeneracional a distancia.</li>
+                <li><strong>Se agrega una restricción de diseño</strong> que no estaba en el insight original: el mecanismo de tolva a granel + sensor de peso solo sirve para croquetas secas. La dieta BARF del Entrevistado 1 queda fuera del alcance del MVP a menos que se rediseñe el hardware — esto había que decidirlo explícitamente como un "no" del alcance, no dejarlo implícito.</li>
+                <li><strong>Se confirma que el componente app es secundario, no protagonista.</strong> Ninguna familia usó apps ni registros digitales, ni siquiera bajo indicación veterinaria estricta. Esto refuerza (no contradice) lo que ya habías anticipado en Semana 2 — "el artefacto, no la app, es la puerta de entrada" — pero ahora tienes evidencia directa de que las familias resuelven todo con la báscula de cocina y comunicación verbal, así que el dispensador tiene que ser más simple que eso para justificar el reemplazo.</li>
+                </ul>
+            </div>
+
+            <h4>Freedom to Operate</h4>
+            <div class="summary-box">
+                <p>Se puede ver el resumen del FTO al final de la semana 3: <a href="https://1570danib.github.io/Project-Faro2/assignments/weeks/w03/week3.html" target="_blank">https://1570danib.github.io/Project-Faro2/assignments/weeks/w03/week3.html</a></p>
+            </div>
+
+        </section>
+        <!--Fin SECCIÓN 1-->
+
+        <!--SECCIÓN 2: SEGMENTO DE MERCADO-->
+        <section id="2" class="week-section">
+            <h2>B2: Segmento de mercado</h2>
+
+            <div class="prompt-box" style="background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 15px; border-radius: 8px; font-style: italic; margin: 20px 0;">
+                <h4 style="margin-top:0; font-style: normal;">💬 Prompt creado por mí</h4>
+                <p>Actúa como especialista en investigación de mercados, segmentación de mercados, comportamiento del consumidor, identificación de nichos y validación de oportunidades de negocio.</p>
+                <p>Voy a proporcionarte el contexto completo de un proyecto. Tu objetivo será analizar y acotar el segmento de mercado, así como determinar si dentro de él existe un nicho de mercado más específico y comercialmente relevante.</p>
+                <p>No quiero que simplemente confirmes el segmento que proponemos. Quiero que lo cuestiones, contrastes y refines utilizando las características reales del problema y de la solución.</p>
+
+                <p><strong>CONTEXTO DEL PROYECTO</strong></p>
+                <p>El proyecto consiste en desarrollar un dispensador automático de alimento para perros integrado con un sistema de inteligencia artificial, diseñado para ayudar a controlar la alimentación y la porción diaria del perro.</p>
+                <p>El concepto actual se denomina "Activación en el Mostrador". La propuesta consiste en que el comedero sea configurado antes de llegar al hogar, directamente en una veterinaria o tienda de mascotas.</p>
+                <p>Durante la compra:</p>
+                <ol>
+                <li>El vendedor escanea el código de barras del costal de alimento.</li>
+                <li>Se pesa al perro utilizando la báscula disponible en la tienda o veterinaria.</li>
+                <li>Estos datos se utilizan para determinar la porción diaria.</li>
+                <li>El dispositivo sale de la tienda previamente configurado.</li>
+                <li>El usuario únicamente necesita conectarlo en casa.</li>
+                <li>El dispositivo está diseñado para no requerir pantalla ni botones de configuración en el hogar.</li>
+                </ol>
+                <p>La lógica de esta propuesta es reducir el problema de configuración y evitar que los distintos cuidadores tengan que decidir cuánto alimento darle al perro.</p>
+
+                <p><strong>PROBLEMA IDENTIFICADO</strong></p>
+                <p>El segmento inicialmente identificado es: Hijas e hijos adultos de 25–45 años, que viven en zonas urbanas de México, trabajan tiempo completo fuera de casa y viven con su padre o madre adulto mayor, quien convive con el perro durante gran parte del día.</p>
+                <p>El problema específico identificado es la sobrealimentación involuntaria causada por múltiples cuidadores.</p>
+                <p>La situación observada es:</p>
+                <ul>
+                <li>El hijo o hija alimenta al perro.</li>
+                <li>El padre o madre puede volver a alimentarlo.</li>
+                <li>Una empleada doméstica puede darle alimento.</li>
+                <li>Cada persona puede desconocer cuánto alimento recibió anteriormente.</li>
+                <li>Nadie necesariamente pretende sobrealimentar al perro.</li>
+                <li>Sin embargo, las cantidades se acumulan durante el día.</li>
+                <li>El problema puede hacerse evidente meses después mediante aumento de peso o un diagnóstico veterinario.</li>
+                </ul>
+                <p>Por lo tanto, el problema no es únicamente: "Mi perro tiene sobrepeso." El problema específico planteado es: "No puedo tener certeza de cuánto alimento recibe mi perro cuando varias personas lo alimentan durante el día."</p>
+                <p>La ganancia principal buscada es: Tener la certeza de que el perro recibe la porción correcta todos los días, independientemente de quién esté presente o quién cuide al perro.</p>
+                <p><strong>Otras ganancias identificadas:</strong></p>
+                <ul>
+                <li>Poder cuidar al perro aunque el dueño trabaje fuera de casa.</li>
+                <li>Reducir la carga mental de preguntar cuánto comió.</li>
+                <li>Evitar discusiones o correcciones hacia padres u otros cuidadores.</li>
+                <li>Reducir el riesgo de problemas de salud asociados con el sobrepeso.</li>
+                <li>Evitar gastos veterinarios relacionados con problemas derivados del sobrepeso.</li>
+                <li>Facilitar el cuidado del perro dentro de hogares donde participan varias personas.</li>
+                </ul>
+
+                <p><strong>WORKAROUNDS ACTUALES</strong></p>
+                <p>Actualmente se identificaron como posibles soluciones:</p>
+                <ul>
+                <li>Aplicaciones de conteo de calorías.</li>
+                <li>Comederos programables convencionales.</li>
+                <li>Recomendaciones verbales del veterinario.</li>
+                <li>Dietas de prescripción.</li>
+                <li>Control manual de las porciones.</li>
+                <li>Comunicación entre los diferentes miembros del hogar.</li>
+                </ul>
+                <p>Sin embargo, las soluciones actuales presentan posibles limitaciones:</p>
+                <ul>
+                <li>Las aplicaciones dependen de que alguien registre correctamente lo que come el perro.</li>
+                <li>Los comederos convencionales controlan horarios y cantidades, pero no necesariamente determinan la porción adecuada.</li>
+                <li>Las recomendaciones veterinarias no garantizan que se cumplan diariamente.</li>
+                <li>Las dietas especializadas pueden representar un gasto considerable.</li>
+                <li>El control manual requiere coordinación entre varias personas.</li>
+                </ul>
+
+                <p><strong>SEGMENTO ACTUAL</strong></p>
+                <p>El segmento actualmente propuesto es: Adultos de 25–45 años, hijos o hijas de un adulto mayor, residentes en zonas urbanas de México, que trabajan tiempo completo fuera de casa, viven con su padre o madre y tienen un perro cuya alimentación es compartida entre varios cuidadores.</p>
+                <p>Sin embargo, este segmento es solamente una hipótesis inicial. Tu tarea es determinar si:</p>
+                <ol>
+                <li>Este segmento está correctamente delimitado.</li>
+                <li>Es demasiado amplio.</li>
+                <li>Es demasiado específico.</li>
+                <li>Existen variables más importantes que deberían utilizarse.</li>
+                <li>Existe un subsegmento más atractivo.</li>
+                <li>Existe un nicho todavía más específico.</li>
+                </ol>
+
+                <p><strong>MODELO DE SEGMENTACIÓN OBLIGATORIO</strong></p>
+                <p>Analiza el mercado utilizando exactamente estas cuatro dimensiones:</p>
+
+                <p><strong>1. DEMOGRÁFICA</strong> — Considera: edad, género, etapa de vida, ocupación, tipo de hogar, composición familiar, número de integrantes, presencia de adultos mayores, ubicación geográfica, tamaño de ciudad, nivel educativo, cualquier otra variable relevante. Determina especialmente si "25–45 años" y "vivir con un adulto mayor" son variables fundamentales para el mercado o simplemente características circunstanciales del problema observado.</p>
+
+                <p><strong>2. CONDUCTUAL</strong> (especial atención) — Analiza: tenencia de perros, número de perros, perros con sobrepeso u obesidad, perros cuya alimentación depende de varias personas, frecuencia con la que diferentes personas alimentan al perro, nivel de control de las porciones, existencia de reglas familiares, problemas previos de sobrealimentación, intentos anteriores de controlar el peso, visitas al veterinario, uso de dietas especializadas, uso de comederos automáticos, uso de apps para mascotas, uso de tecnología para monitorear mascotas, nivel de preocupación, frecuencia de compra de alimento, búsqueda activa de soluciones, frustración con soluciones actuales, disposición a cambiar hábitos, comportamiento de compra. Determina qué comportamientos diferencian realmente al cliente potencial. Presta especial atención a: número de personas que alimentan regularmente al perro — evalúa si esta variable podría ser más útil para segmentar que la edad o la presencia de un adulto mayor.</p>
+
+                <p><strong>3. PSICOGRÁFICA</strong> — Analiza: estilo de vida, valores, relación emocional con la mascota, percepción del perro dentro de la familia, nivel de responsabilidad percibida, preocupación por la salud del perro, interés por prevenir problemas de salud, interés por tecnología, apertura hacia IA, interés por automatización, necesidad de control, búsqueda de comodidad, carga mental relacionada con el cuidado, frustración por no poder supervisar directamente, confianza o desconfianza hacia recomendaciones automatizadas, sensibilidad hacia productos que simplifiquen la convivencia familiar. Determina si existe un perfil psicográfico común entre quienes experimentarían con mayor intensidad este problema.</p>
+
+                <p><strong>4. ECONÓMICA</strong> — Analiza: nivel de ingresos, ingreso disponible, gasto mensual en mascotas, gasto en alimento, gasto veterinario, gasto en accesorios y tecnología, capacidad de adquirir un dispositivo tecnológico, sensibilidad al precio, disposición a pagar, posible disposición a pagar mensualmente, posibilidad de pagar una suscripción. No inventes rangos económicos; si no hay información suficiente, indícalo como variable pendiente de validación.</p>
+
+                <p><strong>CRUCE DE LAS CUATRO DIMENSIONES</strong> — Determina cuáles variables son: <em>Esenciales</em> (sin ellas el problema desaparece o cambia significativamente), <em>Importantes</em> (aumentan la probabilidad pero no son indispensables), <em>Secundarias</em> (describen al consumidor pero no son determinantes), <em>Posiblemente irrelevantes</em> (no diferencian el mercado).</p>
+
+                <p><strong>COMPARACIÓN DEL SEGMENTO ACTUAL VS. SEGMENTOS ALTERNATIVOS</strong> — Considera segmentar por: edad, hogar multigeneracional, número de cuidadores del perro, número de personas que alimentan al perro, dueños que trabajan fuera de casa, perros con sobrepeso, dueños preocupados por el peso, dueños que ya intentaron controlar el peso, usuarios de tecnología para mascotas, dueños que buscan prevención, o combinaciones. No asumas que estas alternativas son mejores; analízalas.</p>
+
+                <p><strong>IDENTIFICACIÓN DEL NICHO</strong> — Un nicho debe compartir: un problema concreto, una necesidad clara, características comunes, comportamientos similares, motivaciones similares, capacidad o disposición económica, y una razón clara para preferir esta solución frente a alternativas. No consideres que un grupo es un nicho únicamente porque es pequeño o específico. (Se incluye un ejemplo ilustrativo de embudo: Mercado amplio → Dueños de perros; Segmento → Dueños preocupados por el peso; Subsegmento → Dueños con problemas para controlar porciones; Posible nicho → Personas que trabajan fuera de casa y cuyo perro es alimentado por varias personas durante el día — aclarando que es solo un ejemplo del proceso, no una conclusión predeterminada.)</p>
+
+                <p><strong>CRITERIO PARTICULARMENTE IMPORTANTE</strong> — Hipótesis inicial a analizar críticamente: el factor determinante no sería necesariamente que el hogar sea multigeneracional, sino que existen múltiples personas alimentando al mismo perro sin coordinación suficiente. Analizar si el mismo problema podría existir en: parejas que trabajan fuera de casa, familias con adolescentes, casas con varios adultos, personas que comparten vivienda, hogares con empleados domésticos, familias donde diferentes personas cuidan al perro, personas que dejan al perro al cuidado de terceros durante el día. Determinar si esto implica que el segmento debe ampliarse, modificarse o dividirse.</p>
+
+                <p><strong>CLIENTE, USUARIO Y BENEFICIARIO</strong> — Distinguir explícitamente: Comprador (¿quién decide y paga?), Usuario directo (¿quién interactúa físicamente con el dispositivo?), Usuario indirecto (¿quién se beneficia sin configurarlo?), Beneficiario final (el perro). Explicar cómo esta estructura influye en la segmentación.</p>
+
+                <p><strong>RESULTADO FINAL</strong> — Entregar el análisis en este orden: 1. Mercado general. 2. Segmentación demográfica (tabla). 3. Segmentación conductual (tabla). 4. Segmentación psicográfica (tabla). 5. Segmentación económica (tabla). 6. Cruce de variables (tabla: Nivel | Demográfica | Conductual | Psicográfica | Económica | Relación con el problema, desde mercado amplio hasta grupo más específico). 7. Evaluación del segmento actual. 8. Segmento refinado (Quién + dónde + qué comportamiento + qué problema + qué necesidad). 9. Nicho potencial (o indicarlo como pendiente de validación). 10. Perfil del cliente ideal. 11. Hipótesis a validar (5–10, ordenadas por riesgo, sin puntuación numérica). 12. Recomendación metodológica para Semana 3 (preguntas abiertas/neutrales, sin mencionar la solución, separadas por: problema, comportamiento de múltiples cuidadores, frecuencia, gravedad percibida, soluciones actuales, disposición a cambiar, disposición a pagar).</p>
+
+                <p><strong>REGLAS:</strong> no confirmar el segmento solo porque el equipo lo propuso; cuestionarlo y buscar variables que expliquen mejor el problema; no confundir mercado/segmento/subsegmento/nicho; no inventar datos; diferenciar hechos, hipótesis e inferencias; indicar fuente si se usa información externa; no usar únicamente la obesidad canina como criterio (el problema central es la sobrealimentación no coordinada); determinar si el adulto mayor es variable esencial o solo un contexto; determinar si trabajar fuera de casa es esencial o solo intensifica el problema; evaluar el número de personas que alimentan al perro como posible variable conductual central; no hacer un segmento tan amplio que pierda relevancia ni tan pequeño que sea artificial; no presentar un nicho como hecho si requiere validación; presentar alternativas razonables si existen varias, explicando qué comprobar para diferenciarlas; el objetivo es la relación más clara entre problema, comportamiento, necesidad y propuesta de valor, no "lo que suene mejor"; mantener separado el problema general de obesidad canina del problema específico del proyecto; no hacer recomendaciones de producto ajenas a la segmentación solicitada. Terminar con: "Nuestro mercado objetivo está compuesto por…" y "Nuestro nicho potencial está compuesto por…" (o indicar explícitamente si la evidencia no permite definirlos con precisión).</p>
+            </div>
+
+            <h4>Respuesta: Análisis de Segmentación de Mercado</h4>
+            <p style="text-align:center;"><em>Dispensador automático de alimento para perros con IA — "Activación en el Mostrador"</em></p>
+
+            <h5>1. Mercado general</h5>
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+                <p>El proyecto pertenece al mercado de tecnología aplicada al cuidado de mascotas (pet-tech), específicamente al subsector de dispositivos automatizados de alimentación y control nutricional canino. Dentro de este mercado general, el proyecto no compite en "comederos programables" en general, sino en una categoría más estrecha: sistemas de dosificación pre-configurada que eliminan la necesidad de coordinación manual entre cuidadores.</p>
+                <p>Es importante separar dos mercados que suelen confundirse:</p>
+                <ul>
+                <li>Mercado de control de obesidad canina (dietas, apps de calorías, alimento de prescripción).</li>
+                <li>Mercado de coordinación del cuidado entre múltiples personas (que es, según el propio proyecto, el problema central).</li>
+                </ul>
+                <p>El proyecto vive en la intersección de ambos, pero el segundo es el que le da su diferenciación real.</p>
+            </div>
+
+            <h5>2. Segmentación demográfica</h5>
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark"><tr><th>Variable</th><th>Importancia</th><th>Justificación</th></tr></thead>
+                <tbody>
+                <tr><td>Edad del comprador (25–45)</td><td>Importante (no esencial)</td><td>Correlaciona con independencia económica y con ser la persona que gestiona la salud del perro, pero el problema (múltiples cuidadores) también ocurre en compradores de otras edades (parejas de 30–60, roommates de 20–35). No es la variable que causa el problema.</td></tr>
+                <tr><td>Convivencia con adulto mayor</td><td>Secundaria / contextual</td><td>Es uno de los contextos más visibles donde ocurre el problema, pero no es indispensable: el mismo patrón aparece en parejas, roommates u hogares con empleada doméstica. Tratarla como "contexto frecuente", no como variable definitoria.</td></tr>
+                <tr><td>Trabajar tiempo completo fuera de casa</td><td>Importante</td><td>Aumenta la intensidad del problema porque el comprador no puede supervisar directamente y depende de la coordinación con otros. No es esencial: alguien que trabaja desde casa pero delega la alimentación (pareja, empleada) puede enfrentar el mismo problema con menor frecuencia.</td></tr>
+                <tr><td>Tipo de hogar multigeneracional</td><td>Secundaria</td><td>Es un ejemplo de estructura donde ocurre el problema, no la causa del problema.</td></tr>
+                <tr><td>Número de adultos con acceso al perro (≥2)</td><td>Esencial</td><td>Sin al menos dos personas con acceso al perro, no puede existir el problema de sobrealimentación por falta de coordinación.</td></tr>
+                <tr><td>Ubicación geográfica (zona urbana, México)</td><td>Importante</td><td>Relevante para el canal de distribución (veterinarias/tiendas con báscula) y poder adquisitivo, pero no es causal del problema en sí mismo.</td></tr>
+                <tr><td>Tamaño de ciudad</td><td>Secundaria</td><td>Podría influir en la disponibilidad de puntos de venta con el servicio de "activación en mostrador", pero no es indispensable.</td></tr>
+                <tr><td>Nivel educativo</td><td>Pendiente de validación</td><td>No hay evidencia suficiente para establecer relación; podría correlacionar con apertura tecnológica pero sería una inferencia, no un hecho.</td></tr>
+                </tbody>
+            </table>
+            </div>
+            <p><em>Conclusión parcial: "25–45 años" y "vivir con un adulto mayor" son circunstancias frecuentes del problema observado, no variables fundamentales del mercado.</em></p>
+
+            <h5>3. Segmentación conductual</h5>
+            <p><em>Esta es, según la evidencia disponible, la dimensión con mayor poder explicativo.</em></p>
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark"><tr><th>Variable</th><th>Importancia</th><th>Justificación</th></tr></thead>
+                <tbody>
+                <tr><td>Número de personas que alimentan regularmente al perro (≥2)</td><td>Esencial</td><td>Es la variable que define si el problema puede existir o no. Con un solo cuidador, el problema desaparece por definición.</td></tr>
+                <tr><td>Ausencia de un sistema de registro/coordinación entre cuidadores</td><td>Esencial</td><td>Es la causa directa de la sobrealimentación involuntaria; sin esta ausencia de coordinación, aunque haya varios cuidadores, el problema no ocurriría.</td></tr>
+                <tr><td>Frustración por falta de certeza sobre cuánto comió el perro</td><td>Esencial</td><td>Es literalmente la definición del dolor (pain point) del proyecto.</td></tr>
+                <tr><td>Historial de sobrepeso o diagnóstico veterinario</td><td>Importante (no esencial)</td><td>Genera urgencia y es el disparador más común para buscar una solución, pero pueden existir compradores preventivos sin diagnóstico aún.</td></tr>
+                <tr><td>Frecuencia de visitas al veterinario</td><td>Importante (operativa)</td><td>Es el canal donde ocurre la "activación en mostrador"; crítico para el modelo de distribución, aunque no es causal del problema.</td></tr>
+                <tr><td>Compra de alimento en veterinaria/tienda física (vs. solo supermercado/online)</td><td>Importante (operativa)</td><td>Necesario para que el flujo de configuración en punto de venta propuesto funcione.</td></tr>
+                <tr><td>Uso previo de apps de conteo calórico o comederos programables</td><td>Importante</td><td>Señala un comprador "buscador activo" con frustración previa, más propenso a pagar por una solución superior.</td></tr>
+                <tr><td>Número de perros en el hogar</td><td>Secundaria</td><td>Puede complicar el problema pero no lo define.</td></tr>
+                <tr><td>Raza/tamaño del perro</td><td>Secundaria / irrelevante para segmentación del comprador</td><td>Relevante para el diseño del producto (tamaño del dispensador), no para definir al cliente.</td></tr>
+                </tbody>
+            </table>
+            </div>
+            <p><em>Hallazgo clave: el número de cuidadores que alimentan al perro tiene mayor poder de segmentación que la edad del comprador o la presencia de un adulto mayor, porque es la variable sin la cual el problema deja de existir.</em></p>
+
+            <h5>4. Segmentación psicográfica</h5>
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark"><tr><th>Variable</th><th>Importancia</th><th>Justificación</th></tr></thead>
+                <tbody>
+                <tr><td>Necesidad de certeza/control sobre el cuidado del perro</td><td>Esencial</td><td>Coincide exactamente con la ganancia principal declarada: "tener la certeza de que el perro recibe la porción correcta".</td></tr>
+                <tr><td>Carga mental por coordinar a varios cuidadores</td><td>Esencial</td><td>Coincide con la ganancia declarada de "reducir la carga mental de preguntar cuánto comió".</td></tr>
+                <tr><td>Percepción del perro como miembro de la familia ("pet parent")</td><td>Importante</td><td>Aumenta la disposición emocional y económica a invertir en su bienestar, pero no es exclusiva de este segmento.</td></tr>
+                <tr><td>Culpa/preocupación por no estar presente durante el día</td><td>Importante</td><td>Motivador emocional específico de quien trabaja fuera de casa y delega el cuidado.</td></tr>
+                <tr><td>Deseo de evitar conflictos o correcciones hacia otros cuidadores (especialmente un padre/madre)</td><td>Importante, pero contextual</td><td>Es una motivación real y diferenciada en el subcontexto multigeneracional (corregir a un padre es distinto a corregir a una pareja o roommate), pero no aplica igual a todos los hogares con múltiples cuidadores.</td></tr>
+                <tr><td>Apertura a tecnología/IA</td><td>Importante</td><td>Necesaria para la adopción, pero probablemente más alta en compradores jóvenes tech-savvy que en el estereotipo "hogar con adulto mayor".</td></tr>
+                <tr><td>Confianza en automatización sin supervisión (sin pantalla ni botones)</td><td>Importante para el diseño, no necesariamente para la segmentación del comprador</td><td>Esta característica del producto (sin configuración en casa) cobra especial sentido si el usuario directo en el hogar (ej. adulto mayor) tiene baja comodidad tecnológica. Es una variable relevante para el diseño de experiencia, aunque no defina por sí sola el segmento de mercado.</td></tr>
+                </tbody>
+            </table>
+            </div>
+
+            <h5>5. Segmentación económica</h5>
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark"><tr><th>Variable</th><th>Importancia</th><th>Justificación</th></tr></thead>
+                <tbody>
+                <tr><td>Gasto actual en alimento premium o dietas especiales</td><td>Importante</td><td>Proxy de disposición a invertir en la salud del perro.</td></tr>
+                <tr><td>Gasto veterinario recurrente asociado al peso</td><td>Importante</td><td>Si ya existe gasto por problemas derivados del sobrepeso, el valor percibido del producto (evitar gastos futuros) es mayor.</td></tr>
+                <tr><td>Nivel de ingresos del comprador</td><td>Pendiente de validación</td><td>No hay datos suficientes; no se debe inventar un rango. Es razonable suponer un perfil de ingreso medio-alto urbano dado que se trata de un dispositivo tecnológico, pero esto debe validarse.</td></tr>
+                <tr><td>Disposición a pagar por el dispositivo (pago único)</td><td>Pendiente de validación</td><td>No hay evidencia disponible.</td></tr>
+                <tr><td>Disposición a pagar una suscripción (si el modelo la contempla)</td><td>Pendiente de validación</td><td>No hay evidencia disponible; depende del modelo de negocio final.</td></tr>
+                <tr><td>Sensibilidad al precio</td><td>Pendiente de validación</td><td>Requiere investigación directa (Semana 3).</td></tr>
+                </tbody>
+            </table>
+            </div>
+
+            <h5>6. Cruce de variables</h5>
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr><th>Nivel</th><th>Demográfica</th><th>Conductual</th><th>Psicográfica</th><th>Económica</th><th>Relación con el problema</th></tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Mercado amplio</td><td>Dueños de perros en zonas urbanas de México</td><td>Alimentan a su perro regularmente</td><td>Ven al perro como parte del hogar</td><td>Gasto variable en mascotas</td><td>Relación indirecta; el problema no está presente en todo este grupo</td>
+                </tr>
+                <tr>
+                    <td>Segmento</td><td>Hogares con 2+ adultos con acceso al perro</td><td>El perro es alimentado por 2+ personas sin sistema de coordinación</td><td>Necesidad de certeza y control; carga mental por coordinar</td><td>Gasto en alimento/veterinario ya asumido</td><td>Relación directa: aquí es donde el problema puede existir</td>
+                </tr>
+                <tr>
+                    <td>Subsegmento</td><td>Comprador que trabaja fuera de casa y no supervisa directamente</td><td>Delega la alimentación a otros cuidadores (familiar, pareja, empleada doméstica, adulto mayor)</td><td>Culpa/preocupación por ausencia; búsqueda activa de certeza remota</td><td>Ingreso suficiente para tecnología, pendiente de validar monto</td><td>El problema se intensifica por la ausencia física del comprador</td>
+                </tr>
+                <tr>
+                    <td>Posible nicho</td><td>Comprador cuyo perro es pesado/evaluado en veterinaria o tienda de mascotas</td><td>Recibe (o ya tiene) señal de sobrepeso o recomendación de control de porción en punto de venta</td><td>Urgencia percibida por el diagnóstico o advertencia; disposición a actuar de inmediato</td><td>Ya gasta en soluciones parciales (dietas, apps, comederos programables)</td><td>Es el momento y perfil de mayor probabilidad de conversión, combinando urgencia + canal + comportamiento central</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+
+            <h5>7. Evaluación del segmento actual</h5>
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+                <p><strong>Segmento propuesto:</strong> "Hijas e hijos adultos de 25–45 años, que trabajan tiempo completo fuera de casa, viven con un adulto mayor y tienen un perro alimentado por varias personas."</p>
+                <p><strong>Bien sustentado:</strong></p>
+                <ul>
+                <li>El elemento de "perro alimentado por varias personas" — es el núcleo real del problema y está bien identificado.</li>
+                <li>"Trabajar fuera de casa" como amplificador de la necesidad de una solución automatizada.</li>
+                </ul>
+                <p><strong>Necesita validación:</strong></p>
+                <ul>
+                <li>Que el hogar con adulto mayor sea efectivamente el contexto predominante donde ocurre el problema (vs. parejas, roommates, hogares con empleada doméstica).</li>
+                <li>Que el rango 25–45 años sea el que concentra a los compradores reales, y no un supuesto arbitrario.</li>
+                <li>El nivel de ingreso y disposición a pagar, actualmente sin datos.</li>
+                </ul>
+                <p><strong>Podría estar limitando innecesariamente el mercado:</strong></p>
+                <ul>
+                <li>Anclar el segmento a "adulto mayor en casa" excluye, sin justificación demostrada, a otros hogares con el mismo problema central (parejas que trabajan, hogares con empleada doméstica, roommates, familias con adolescentes). Si la causa real es "múltiples cuidadores sin coordinación", el mercado direccionable es probablemente más amplio que el segmento actual.</li>
+                </ul>
+            </div>
+
+            <h5>8. Segmento refinado</h5>
+            <div class="summary-box">
+                <p><strong>Quién:</strong> El adulto responsable de la salud del perro (comprador y tomador de decisión), que comparte el cuidado y la alimentación del perro con al menos otro cuidador en el hogar (pareja, familiar, adulto mayor, empleada doméstica u otro).</p>
+                <p><strong>Dónde:</strong> Zonas urbanas de México, con acceso a veterinarias o tiendas de mascotas que puedan ofrecer el servicio de "activación en mostrador".</p>
+                <p><strong>Qué comportamiento tiene:</strong> El perro es alimentado regularmente por dos o más personas sin un sistema compartido de registro o control de porciones.</p>
+                <p><strong>Qué problema experimenta:</strong> Incertidumbre sobre la cantidad total de alimento que el perro recibe al día, lo que puede derivar en sobrealimentación no intencional.</p>
+                <p><strong>Qué necesidad busca resolver:</strong> Tener la certeza de que el perro recibe la porción correcta cada día, sin depender de la coordinación activa y constante entre todos los cuidadores.</p>
+                <p><em>Nota: este segmento es más amplio que el original en la dimensión demográfica (no restringido a "adulto mayor en casa"), pero igual de específico —o más— en la dimensión conductual, que es la que realmente importa.</em></p>
+            </div>
+
+            <h5>9. Nicho potencial</h5>
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+                <p><strong>Nicho potencial — pendiente de validación (no es un hecho confirmado):</strong></p>
+                <p>Compradores cuyo perro ya fue señalado (por un veterinario, por una báscula en tienda, o por observación propia) como candidato a control de peso o porción, y que se encuentran físicamente en el punto de venta (veterinaria o tienda de mascotas) en el momento de la compra de alimento — contexto en el cual el flujo de "Activación en el Mostrador" puede ejecutarse — y cuyo hogar tiene más de un cuidador regular del perro.</p>
+                <p>Este nicho combina tres elementos con evidencia razonable de relación con el problema:</p>
+                <ol>
+                <li>Urgencia (señal o diagnóstico de sobrepeso/riesgo).</li>
+                <li>Viabilidad de canal (el punto de venta permite la configuración sin fricción).</li>
+                <li>Comportamiento central (múltiples cuidadores sin coordinación).</li>
+                </ol>
+                <p>Lo que falta validar: tamaño real de este grupo, si las veterinarias/tiendas están dispuestas a operar el flujo propuesto, y si la urgencia del diagnóstico efectivamente acelera la decisión de compra frente a otras alternativas más baratas.</p>
+            </div>
+
+            <h5>10. Perfil del cliente ideal</h5>
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+                <ul>
+                <li><strong>Demográfico:</strong> Adulto urbano en México, con capacidad económica para adquirir tecnología orientada al cuidado de mascotas; edad y estructura del hogar variables, no determinantes.</li>
+                <li><strong>Comportamiento:</strong> Comparte la alimentación del perro con al menos otra persona en el hogar; ha comprado alimento o llevado al perro a una veterinaria/tienda recientemente; probablemente ya intentó alguna solución parcial (app, comedero programable, indicaciones verbales).</li>
+                <li><strong>Psicografía:</strong> Percibe al perro como parte de la familia; siente la necesidad de tener control y certeza sobre su cuidado aunque no esté presente todo el día; experimenta carga mental por coordinar a otros cuidadores; está abierto a la automatización como forma de simplificar la convivencia familiar.</li>
+                <li><strong>Situación económica:</strong> Ya destina presupuesto recurrente a alimento y/o veterinario (monto exacto pendiente de validar).</li>
+                <li><strong>Problema:</strong> No tiene certeza de cuánto alimento recibe su perro cuando varias personas participan en su cuidado.</li>
+                <li><strong>Motivación:</strong> Prevenir el sobrepeso y sus consecuencias de salud/costo, sin tener que supervisar o coordinar activamente a todos los involucrados.</li>
+                <li><strong>Solución actual:</strong> Comunicación verbal entre cuidadores, control manual, o apps/comederos que dependen de que alguien registre correctamente.</li>
+                <li><strong>Frustración:</strong> Las soluciones actuales dependen de la memoria o buena voluntad de terceros, y el problema solo se hace evidente cuando ya es un hecho consumado (aumento de peso).</li>
+                <li><strong>Beneficio esperado:</strong> Certeza automática de la porción correcta, independientemente de quién esté presente en el hogar.</li>
+                </ul>
+            </div>
+
+            <h5>11. Hipótesis a validar (ordenadas por riesgo para el proyecto)</h5>
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+                <ol>
+                <li>El número de cuidadores que alimentan al perro es la variable central del problema — más que la edad del comprador o la convivencia con un adulto mayor. Si esta hipótesis es falsa, el segmento completo debe replantearse.</li>
+                <li>La incertidumbre sobre cuánto comió el perro es percibida como un dolor real y frecuente, no solo como un inconveniente menor tolerable.</li>
+                <li>Las veterinarias y tiendas de mascotas están dispuestas y son operativamente capaces de ejecutar el flujo de "Activación en el Mostrador" (pesar al perro, escanear el costal, configurar el dispositivo).</li>
+                <li>El hogar multigeneracional es uno de varios contextos igualmente frecuentes, y no necesariamente el dominante frente a parejas, roommates u hogares con empleada doméstica.</li>
+                <li>Existe disposición a pagar por un dispositivo con IA frente a alternativas más económicas (comedero programable simple, control manual).</li>
+                <li>El diseño "sin pantalla ni botones en casa" resuelve una fricción real para el cuidador con menor comodidad tecnológica (frecuentemente, aunque no exclusivamente, un adulto mayor).</li>
+                <li>El punto de venta (veterinaria/tienda) es un canal de distribución viable y escalable, no solo conceptualmente atractivo.</li>
+                <li>El comprador que decide y paga coincide (o no) con quien físicamente activa el dispositivo en tienda — podría ser el hijo/a, el propio adulto mayor, o incluso sugerido por el veterinario.</li>
+                <li>La frecuencia del problema (sobrealimentación acumulada) es significativa en la vida diaria, y no un evento raro o excepcional.</li>
+                <li>Existe disposición a un modelo de suscripción (si el negocio lo contempla) frente a preferencia por pago único.</li>
+                </ol>
+            </div>
+
+            <h5>12. Recomendación metodológica para Semana 3</h5>
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+                <p><strong>Sobre el problema:</strong></p>
+                <ul>
+                <li>"Cuéntame cómo se decide actualmente cuánto alimento recibe tu perro durante un día normal."</li>
+                <li>"¿Quién en tu casa participa en darle de comer al perro a lo largo del día?"</li>
+                </ul>
+                <p><strong>Sobre el comportamiento de múltiples cuidadores:</strong></p>
+                <ul>
+                <li>"Cuando alguien más le da de comer a tu perro, ¿cómo se enteran los demás de que ya comió?"</li>
+                <li>"¿Ha pasado que más de una persona le dé alimento el mismo día sin saber que el otro ya lo había hecho?"</li>
+                </ul>
+                <p><strong>Sobre la frecuencia del problema:</strong></p>
+                <ul>
+                <li>"¿Con qué frecuencia distintas personas le dan de comer a tu perro en una semana típica?"</li>
+                </ul>
+                <p><strong>Sobre la gravedad percibida:</strong></p>
+                <ul>
+                <li>"¿Cómo te enteraste, si fue el caso, de que tu perro había subido de peso?"</li>
+                <li>"¿Qué tan preocupado/a estás actualmente por el peso o la alimentación de tu perro?"</li>
+                </ul>
+                <p><strong>Sobre las soluciones actuales:</strong></p>
+                <ul>
+                <li>"¿Qué has intentado para controlar cuánto come tu perro?"</li>
+                <li>"¿Cómo le explicas a otras personas en casa cuánto debe comer el perro?"</li>
+                </ul>
+                <p><strong>Sobre la disposición a cambiar:</strong></p>
+                <ul>
+                <li>"Si pudieras cambiar algo sobre cómo se alimenta a tu perro en tu casa, ¿qué sería?"</li>
+                </ul>
+                <p><strong>Sobre la disposición a pagar:</strong></p>
+                <ul>
+                <li>"¿Qué sueles gastar mensualmente en el cuidado de tu perro (alimento, veterinario, accesorios)?"</li>
+                <li>"¿Has considerado alguna vez algún producto o servicio que te ayude a controlar mejor su alimentación? ¿Cuál?"</li>
+                </ul>
+            </div>
+
+            <div class="summary-box">
+                <p><strong>Conclusión</strong></p>
+                <p>Nuestro mercado objetivo está compuesto por dueños de perros en zonas urbanas de México cuya alimentación diaria es compartida entre dos o más cuidadores sin un sistema de coordinación, y que buscan tener certeza sobre la porción correcta sin depender de la comunicación constante entre todos los involucrados.</p>
+                <p>Nuestro nicho potencial está compuesto por compradores cuyo perro ha recibido una señal o diagnóstico de riesgo de sobrepeso y que se encuentran en el punto de venta (veterinaria o tienda de mascotas) en el momento de la compra de alimento — sin embargo, este nicho aún requiere validación en cuanto a su tamaño real, la viabilidad operativa del canal y la disposición a pagar, por lo que debe tratarse como hipótesis de trabajo para la investigación de la Semana 3, no como una conclusión definitiva.</p>
+            </div>
+
+            <!-- PROMPT DEL PROFE -->
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Prompt del profe (original)</h3>
+
+            <div class="prompt-box" style="background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 15px; border-radius: 8px; font-style: italic; margin: 20px 0;">
+                <p>Actúa como un investigador de mercado con especialización en segmentación de clientes para negocios de producto digital-físico en mercados emergentes latinoamericanos. Tu metodología combina datos demográficos verificables con análisis conductual y psicográfico basado en comportamiento observable — nunca en suposiciones sobre actitudes o valores generales. Cuando el equipo no tiene evidencia de una capa, lo señalas directamente en lugar de rellenar con hipótesis no marcadas. Un perfil honesto con huecos es más útil que uno completo con datos inventados.</p>
+                <p>Somos emprendedores en México desarrollando un negocio que combina una aplicación con IA, un artefacto físico inteligente y una página web de venta. Hemos hecho entrevistas de validación:</p>
+                <p>INSIGHTS DE ENTREVISTAS (semana 3): [pegar síntesis de entrevistas — incluir citas textuales]<br>
+                SEGMENTO HIPÓTESIS DEL PAIN-GAIN MAP (semana 2): [pegar segmento identificado]<br>
+                OPORTUNIDAD EN UNA ORACIÓN: [pegar la oportunidad del Pain-Gain Map]</p>
+                <p>Construye el perfil de segmento accionable en cuatro capas. Para cada dato indica si es VERIFICADO (viene de entrevistas o fuentes reales) o HIPÓTESIS (razonado pero sin confirmar). Si una capa no tiene evidencia suficiente, indícalo — no la inventes.</p>
+                <p><strong>FORMATO DE SALIDA:</strong></p>
+                <pre style="white-space: pre-wrap; font-family: inherit;">════════════════════════════════════════════════════════
+            PERFIL DE SEGMENTO ACCIONABLE
+            ════════════════════════════════════════════════════════
+
+            CAPA 1 — DEMOGRÁFICA
+            ¿Quién es con suficiente detalle para encontrarlo?
+            · [dato] → VERIFICADO / HIPÓTESIS
+
+            CAPA 2 — CONDUCTUAL
+            ¿Qué hace hoy para resolver el problema — proceso exacto, frecuencia, herramientas, workarounds?
+            · [dato] → VERIFICADO / HIPÓTESIS
+
+            CAPA 3 — PSICOGRÁFICA
+            ¿Qué le preocupa en sus propias palabras? ¿Qué lo motivaría a cambiar de solución?
+            · [dato o cita textual] → VERIFICADO / HIPÓTESIS
+
+            CAPA 4 — ECONÓMICA
+            ¿Cuánto le cuesta el problema hoy? ¿Cuánto podría pagar? ¿Quién decide la compra?
+            · [dato] → VERIFICADO / HIPÓTESIS
+
+            ────────────────────────────────────────────────────────
+            NIVEL DE CONOCIMIENTO DEL SEGMENTO:
+            Capas con mayoría VERIFICADA: [cuáles]
+            Capas con mayoría de HIPÓTESIS: [cuáles — agenda de investigación]
+
+            HIPÓTESIS CRÍTICAS SIN VERIFICAR:
+            [Las 2–3 suposiciones sin confirmar que más impactan la viabilidad del negocio]
+
+            PERFIL EN UNA ORACIÓN:
+            [El segmento completo en una oración específica y concreta — si no puede escribirse con datos verificados, señalarlo]
+            ════════════════════════════════════════════════════════</pre>
+            </div>
+
+            <h4>Respuesta</h4>
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+                <p>Antes de la tabla, una aclaración necesaria: como no hay entrevistas, absolutamente todo lo que sigue es HIPÓTESIS, no hay ningún dato VERIFICADO. Voy a ejecutar el prompt tal como lo pediste, pero esto significa que la Capa 3 (psicográfica) prácticamente no puede llenarse — el prompt exige citas textuales o comportamiento observado, y sin entrevistas no tengo ninguna de las dos cosas. Prefiero mostrarte ese hueco vacío a inventar una cita que suene creíble.</p>
+            </div>
+
+            <div class="summary-box">
+                <p style="text-align:center;">════════════════════════════════════════════════════════<br>
+                <strong>PERFIL DE SEGMENTO ACCIONABLE</strong><br>
+                ════════════════════════════════════════════════════════</p>
+
+                <p><strong>CAPA 1 — DEMOGRÁFICA</strong><br>¿Quién es con suficiente detalle para encontrarlo?</p>
+                <ul>
+                <li>Adultos de 25–45 años, hijas/hijos de un adulto mayor → HIPÓTESIS</li>
+                <li>Residen en zonas urbanas de México → HIPÓTESIS</li>
+                <li>Trabajan tiempo completo fuera de casa → HIPÓTESIS</li>
+                <li>Su padre o madre (adulto mayor) vive en el mismo hogar → HIPÓTESIS</li>
+                <li>Cuentan con ingreso, tarjeta y hábito de compra digital → HIPÓTESIS</li>
+                </ul>
+                <p><em>(Ninguno de estos datos proviene de una entrevista real; todos vienen del Pain-Gain Map, es decir, son un razonamiento del equipo, no evidencia de campo.)</em></p>
+
+                <p><strong>CAPA 2 — CONDUCTUAL</strong><br>¿Qué hace hoy para resolver el problema — proceso exacto, frecuencia, herramientas, workarounds?</p>
+                <ul>
+                <li>Coordina verbalmente con el padre/madre u otros cuidadores cuánto alimento darle al perro → HIPÓTESIS</li>
+                <li>Podría usar apps de conteo calórico, comederos programables convencionales o dietas de prescripción como workaround → HIPÓTESIS</li>
+                <li>Se entera del problema (sobrepeso) semanas o meses después, típicamente en el veterinario → HIPÓTESIS</li>
+                </ul>
+                <p><em>(Estos son workarounds plausibles identificados en el análisis de segmentación previo, pero ninguno fue confirmado por un usuario real diciendo "así es como lo hago yo". No sabemos el proceso exacto, ni la frecuencia real, ni qué tan seguido falla la coordinación.)</em></p>
+
+                <p><strong>CAPA 3 — PSICOGRÁFICA</strong><br>¿Qué le preocupa en sus propias palabras? ¿Qué lo motivaría a cambiar de solución?</p>
+                <ul>
+                <li>Sin evidencia suficiente.</li>
+                </ul>
+                <p>No hay ninguna cita textual ni observación de comportamiento disponible. Todo lo que podría escribir aquí (preocupación por el bienestar del perro, ansiedad de cuidar a distancia a un padre mayor, culpa, deseo de evitar conflictos con el padre/madre) proviene únicamente del razonamiento del equipo plasmado en la "oportunidad en una oración" — no de la boca de un cliente real. Marcar esto como hipótesis general sería engañoso porque ni siquiera es una hipótesis derivada de observación indirecta: es una narrativa de producto sin ningún contacto con el segmento. Esta capa queda vacía, pendiente por completo de investigación primaria.</p>
+
+                <p><strong>CAPA 4 — ECONÓMICA</strong><br>¿Cuánto le cuesta el problema hoy? ¿Cuánto podría pagar? ¿Quién decide la compra?</p>
+                <ul>
+                <li>El hijo/a adulto es quien decide y paga (tiene el ingreso y la tarjeta) → HIPÓTESIS</li>
+                <li>El costo actual del problema (gasto veterinario, alimento de prescripción, tiempo/desgaste emocional) → sin evidencia, no estimable</li>
+                <li>Disposición a pagar por app + dispositivo con IA → sin evidencia, no estimable</li>
+                <li>Preferencia entre pago único vs. suscripción → sin evidencia, no estimable</li>
+                </ul>
+
+                <p>────────────────────────────────────────────────────────</p>
+
+                <p><strong>NIVEL DE CONOCIMIENTO DEL SEGMENTO:</strong></p>
+                <p>Capas con mayoría VERIFICADA: ninguna.<br>
+                Capas con mayoría de HIPÓTESIS: Demográfica, Conductual y Económica (razonadas pero no confirmadas).<br>
+                Capa sin evidencia utilizable en absoluto: Psicográfica — esta es la más urgente en la agenda de investigación, porque además es la que sostiene emocionalmente toda la "oportunidad en una oración" (la idea de "tranquilidad" y "ansiedad de cuidar a distancia").</p>
+
+                <p><strong>HIPÓTESIS CRÍTICAS SIN VERIFICAR:</strong></p>
+                <ol>
+                <li>Que la "ansiedad de cuidar a un padre/madre mayor a distancia" sea un motivador emocional real para este comprador — hoy es puramente una narrativa construida por el equipo, sin ningún respaldo de campo. Es la hipótesis más riesgosa porque es el corazón de la propuesta de valor emocional del producto.</li>
+                <li>Que exista disposición a pagar por una solución con IA frente a alternativas mucho más baratas (comedero programable simple, control manual, comunicación verbal). Sin esto, no hay negocio viable aunque el problema sea real.</li>
+                <li>Que el adulto mayor efectivamente conviva con el perro la mayor parte del día y participe en alimentarlo sin coordinación con el hijo/a — es el supuesto conductual que sostiene todo el segmento, y no ha sido observado ni confirmado con ningún usuario real.</li>
+                </ol>
+
+                <p><strong>PERFIL EN UNA ORACIÓN:</strong></p>
+                <p>No puede escribirse con datos verificados — actualmente cero de los datos del perfil provienen de entrevistas reales. La única oración posible es en modo hipótesis de trabajo:</p>
+                <p><em>"Hijas e hijos adultos de 25–45 años en zonas urbanas de México, que trabajan fuera de casa y cuyo padre/madre mayor convive con su perro la mayoría del día, podrían estar buscando (hipótesis sin confirmar) una forma de tener certeza sobre la alimentación del perro y tranquilidad respecto al cuidado de su padre/madre — pero esto no se ha corroborado con ningún cliente real."</em></p>
+                <p style="text-align:center;">════════════════════════════════════════════════════════</p>
+                <p>Este resultado en realidad es información valiosa por sí sola: te dice que la Semana 3 de entrevistas no es opcional, es la prioridad número uno antes de avanzar con diseño de producto o pricing, porque ahora mismo el negocio se sostiene sobre una narrativa emocional (Capa 3) que nadie ha confirmado con una sola persona real.</p>
+            </div>
+
+        </section>
+        <!--Fin SECCIÓN 2-->
+
+        <!--SECCIÓN 3: PIRÁMIDE DE BAIN-->
+        <section id="3" class="week-section">
+        <h2>B3.1: Pirámide de Bain</h2>
+
+        <p>Mi producto resuelve dos necesidades: Funcional, emocional y Life-Changing; y de ellas se derivan 10 valores.</p>
+
+        <!--Imagen: diagrama de la pirámide de Bain aplicada al proyecto-->
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="../w04/img_w04/04.png" alt="Pirámide de Bain aplicada al comedero inteligente" style="width: 100%; max-width: 600px; height: auto; border-radius: 8px; border: 1px solid #dee2e6;">
+        </div>
+        <!--Fin imagen-->
+
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Funcional</h3>
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <ul>
+            <li><strong>Reduces effort (reduce esfuerzo):</strong> Automatiza el proceso de darle de comer a los perritos, además, evita pesar manualmente todos los días las porciones del perrito.</li>
+            <li><strong>Avoids hassles (evita fricciones):</strong> Elimina el problema de que "nadie preguntaba si alguien ya le había dado de comer" y terminaban duplicando comidas. Por lo cual, el comedero elimina esa fricción de coordinación entre cuidadores.</li>
+            <li><strong>Reduces risk (reduce riesgo):</strong> El sobrepeso puede derivar en enfermedades como displasia de cadera (como lo comenta el tercer entrevistado). Un dispositivo que previene la sobrealimentación reduce un riesgo de salud real y medible.</li>
+            <li><strong>Simplifies (simplifica):</strong> Convertir "báscula + memoria + comunicación verbal entre 3 personas" en "un solo aparato que ya sabe cuánto darle".</li>
+            <li><strong>Organizes (organiza):</strong> El comedero como "único punto de alimento" organiza información que hoy está repartida entre varias personas sin sistema, lo cual vuelve este hábito en una dieta calendarizada y además, programa los mejores momentos de consulta preventiva con el veterinario.</li>
+            <li><strong>Connects (conecta):</strong> Conecta a los distintos cuidadores con el mismo dato.</li>
+            <li><strong>Reduces cost (reduce costos):</strong> Elimina la duplicidad de comida, lo cual se traduce también en dinero. Además, a largo plazo, cuidar la alimentación del perrito ayuda a que tenga una mejor salud y con ello, prevenir enfermedades, las cuales suelen ser caras.</li>
+            </ul>
+        </div>
+
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Emocional</h3>
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <ul>
+            <li><strong>Therapeutic value (valor terapéutico):</strong> El producto está atado a manejo de dolor y salud articular, pues puede ayudar en reducir la angustia real de los perros que se quejan por el dolor que sienten por enfermedades como la displasia de cadera y la urgencia médica de resolverlo.</li>
+            <li><strong>Wellness (bienestar):</strong> El producto mejora el estado físico del perro.</li>
+            </ul>
+        </div>
+
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Life-Changing</h3>
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <p><em>[Pendiente — agrega aquí los valores de la categoría Life-Changing para completar los 10 valores totales]</em></p>
+        </div>
+
+        </section>
+        <!--Fin SECCIÓN 3-->
+
+        <!--SECCIÓN 4: MARCO IDEO-->
+        <section id="4" class="week-section">
+        <h2>B3.2: Marco IDEO</h2>
+
+        <div class="summary-box">
+            <p><strong>Propuesta de valor:</strong> Regalarle una mayor calidad de vida a tu compañero de vida.</p>
+            <p><em>Va en función de: ¿Por qué te lo compran a ti y no a otros?</em></p>
+            <p><strong>Oferta:</strong> Un dispensador de alimento automático conectado a bluetooth y WiFi para croquetas de perro.</p>
+        </div>
+
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">INSIGHTFUL: ¿Qué necesitan tus clientes que nadie más está dando?</h3>
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <ul>
+            <li><strong>Del mercado:</strong> los comederos automáticos que ya existen en México ($750–5,000 MXN, Coppel, Liverpool, Amazon) programan horarios y cantidades fijas, pero ninguno calcula la porción correcta según raza/edad/peso/objetivo del perro, y ninguno coordina a más de un cuidador.</li>
+            <li><strong>De las patentes:</strong> buscaste específicamente la combinación "sensor de peso + IA que ajusta dieta + validación veterinaria" en SIGA, LATIPAT y Lens.org, y no apareció ningún competidor que la resuelva junta. Lo más cercano (Pet Novations, Iams) resuelve logística de dispensación o monitoreo general, no el cálculo nutricional ajustado con ciclo veterinario.</li>
+            <li><strong>De las entrevistas:</strong> la familia de Hobi ya recibió una prescripción veterinaria exacta (175g, dos veces al día, retirar el plato si no se termina) y la están cumpliendo a mano, con una báscula de cocina, coordinándose verbalmente entre varias personas. Ese es el hueco real: existe el diagnóstico, existe la instrucción médica exacta, y no existe ningún producto —ni tuyo ni de la competencia— que la ejecute automáticamente sin depender de que un humano recuerde pesar y coordinarse.</li>
+            </ul>
+            <p><strong>El insight principal:</strong> Cuando un veterinario prescribe control estricto de porción en un hogar con más de un cuidador, hoy la única forma de cumplirlo es manual (báscula + memoria + comunicación verbal), y ningún comedero comercial ni patente existente automatiza esa ejecución exacta.</p>
+        </div>
+
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">UNIQUE: ¿Qué pueden hacer ustedes que es difícil de replicar?</h3>
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <p><strong>Lo que no tienen a favor:</strong></p>
+            <ul>
+            <li>No tienen manufactura a escala, ni distribución, ni marca reconocida. Cualquiera de esas tres cosas la puede construir un competidor con más capital en menos tiempo que tú.</li>
+            <li>El mecanismo técnico específico (tolva + sensor de peso + dispensación calibrada) no es exótico — es hardware relativamente estándar. Lo verdaderamente difícil de copiar no es el sensor, es el algoritmo de ajuste de dieta entrenado con lógica veterinaria real y el ciclo de validación con el veterinario. Si ese algoritmo termina siendo genérico (reglas simples de "gramos por kg de peso"), tu "Unique" se derrumba y cualquiera lo replica en un mes.</li>
+            </ul>
+            <p><strong>Conclusión honesta de este eje:</strong> tu unicidad real hoy no es el hardware, es la combinación de (a) haber hecho la investigación de campo que te dice cómo diseñarlo bien y (b) la intención de construir el motor de IA nutricional con respaldo real de lógica veterinaria, no una tabla de conversión simple. Si el proyecto se queda solo en "comedero con báscula programable", no tienes un "Unique" defendible — tienes una commodity con una capa de marketing.</p>
+        </div>
+
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">TARGETED: ¿Quién será el cliente apasionado?</h3>
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <p><strong>Quien NO es tu cliente ideal (aunque tenga el problema):</strong> los Entrevistados 1 y 2. Ambos notan el sobrepeso, lo mencionan, pero lo resuelven con ajustes de rutina sin urgencia real ni disposición a cambiar de herramienta — uno de ellos ni siquiera tiene un veterinario dándole seguimiento activo. Baja intensidad de dolor, baja probabilidad de pagar por un dispositivo.</p>
+            <p><strong>Quien SÍ es tu cliente apasionado, con evidencia:</strong> hogares como el de Hobi — perro con diagnóstico veterinario activo que exige control de porción estricto, y más de una persona en casa involucrada en alimentarlo. Esta familia ya:</p>
+            <ul>
+            <li>Tiene una prescripción médica exacta que cumplir (175g, dos veces al día)</li>
+            <li>Ya compró una báscula de cocina específicamente para esto</li>
+            <li>Ya tuvo el problema de duplicidad de comidas que quiere resolver</li>
+            <li>Ya gasta dinero recurrente en el problema (medicamento antiinflamatorio, alimento especial)</li>
+            <li>Tiene el mayor costo de no resolverlo (dolor articular activo, no solo un riesgo futuro abstracto)</li>
+            </ul>
+            <p>Es un segmento más angosto que "dueños de perro con sobrepeso en México" (35–42% de los perros), pero es el que tiene urgencia real, ya paga por soluciones imperfectas, y para quien tu producto no es un "nice to have" sino un reemplazo directo de algo que ya hacen a diario con esfuerzo.</p>
+            <p><strong>La tensión que debes resolver, sin maquillarla:</strong> este segmento (hogares con diagnóstico veterinario activo + múltiples cuidadores) es probablemente bastante más pequeño que el número grande que citaste en la Semana 2 (&gt;1 millón de hogares con perros con sobrepeso en LATAM). Ese número grande incluye a mucha gente como los Entrevistados 1 y 2, que no van a comprar esto pronto. Tu mercado direccionable real, con la evidencia que tienes hoy, es más chico de lo que tu investigación de mercado original sugería. Eso no mata el proyecto, pero si vas a presentar tamaño de mercado en algún reporte, no uses la cifra grande sin esta salvedad.</p>
+        </div>
+
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">La propuesta de valor</h3>
+        <div class="summary-box">
+            <p><strong>OFERTA</strong> (lo que cualquiera puede copiar):</p>
+            <p><em>"Un dispensador automático de comida para perros con sensor de peso y app con IA que calcula la dieta."</em></p>
+            <p><strong>PROPUESTA DE VALOR</strong> (por qué te lo compran a ti):</p>
+            <p><em>"El único comedero que cumple al pie de la letra la prescripción exacta de tu veterinario, sin báscula, sin turnos entre quien alimenta al perro, y sin depender de que nadie se acuerde — para las familias donde el sobrepeso de su perro ya dejó de ser una preocupación y se convirtió en un diagnóstico médico que exige control diario preciso entre varios cuidadores."</em></p>
+        </div>
+
+        </section>
+        <!--Fin SECCIÓN 4-->
+
+
+
+      </div>
+
+    </div>
+
+    <footer>
+      <p>Copyright 2026 Daniela Barranco - Creative Commons Atribución No Comercial</p>
+      <p>Código fuente alojado en <a href="https://gitlab.fabcloud.org/academany/fabacademy/2026/labs/puebla/students/daniela-barranco" target="_blank">gitlab.fabcloud.org</a></p>
+    </footer>
+
+    <script src="../../css/slideshow.js"></script>
+
+    <script>
+      function showWeekSection(sectionId) {
+        const sections = document.querySelectorAll('.week-section');
+        sections.forEach(section => section.classList.remove('active'));
+        const links = document.querySelectorAll('.week-link');
+        links.forEach(link => link.classList.remove('active'));
+        document.getElementById(sectionId).classList.add('active');
+        event.target.classList.add('active');
+        event.preventDefault();
+      }
+    </script>
+  </body>
+</html>

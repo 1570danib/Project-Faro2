@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniela Barranco - Semana 3</title>
+    <link rel="stylesheet" href="../../css/style.css">
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <a href="../../../index.html">Inicio</a>
+        <a href="../../../assignments.html">Tareas semanales</a>
+        <a href="../../../final-project.html">Proyecto final</a>
+        <a href="../../../about.html">Yo merengues</a>
+      </div>
+    </div>
+
+    <!--Hero Section-->
+    <div class="hero-section">
+      <div class="hero-container">
+        <div class="hero-text text-center">
+          <h1>Mercado, valor y propuesta de valor</h1>
+          <h2>Semana 4</h2>
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN LAYOUT WITH SIDEBAR -->
+    <div class="week-layout">
+      <!-- SIDEBAR MENU -->
+      <aside class="week-sidebar">
+        <nav class="week-sidebar-menu">
+          <a onclick="showWeekSection('1')" class="week-link active">Product Design Specification</a>
+          <a onclick="showWeekSection('2')" class="week-link">Arquitectura del Sistema</a>
+        </nav>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <div class="week-main-content">
+
+        <!--SECCIÓN 1: ENTREVISTAS-->
+        <!--SECCIÓN 1: PRODUCT DESIGN SPECIFICATION-->
+        <section id="1" class="week-section active">
+        <h2>Product Design Specification</h2>
+
+        <p>En pocas palabras es:</p>
+        <ul>
+            <li>Poner las limitaciones de hasta dónde llega el proyecto</li>
+            <li>Qué debe hacer</li>
+            <li>Bajo qué condiciones</li>
+        </ul>
+
+        <div class="prompt-box" style="background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 15px; border-radius: 8px; font-style: italic; margin: 20px 0;">
+            <h4 style="margin-top:0; font-style: normal;">💬 Prompt</h4>
+            <p>Elabora el <strong>Product Design Specification (PDS)</strong> de MI PROYECTO utilizando toda la información que ya tienes precargada sobre mi proyecto, usuario, problema, propuesta de valor, solución y contexto.</p>
+            <p>El PDS debe traducir la propuesta de valor en <strong>requerimientos técnicos concretos, verificables y medibles</strong>. NO describas cómo construir el producto; define qué debe hacer, bajo qué condiciones y cómo sabremos que funciona.</p>
+
+            <p><strong>1. REQUERIMIENTOS FUNCIONALES</strong><br>
+            Define qué debe hacer el producto y cómo interactúa con: el usuario, el entorno físico, otros sistemas o dispositivos, cualquier software/app involucrado. Cada requerimiento debe ser específico y comprobable.</p>
+
+            <p><strong>2. REQUERIMIENTOS DE DESEMPEÑO</strong><br>
+            Define qué tan bien debe funcionar el producto. Incluye, cuando aplique: precisión, velocidad/tiempo de respuesta, capacidad, autonomía, frecuencia de operación, confiabilidad, rangos de operación, cualquier otra métrica crítica. Evita términos ambiguos como "rápido", "preciso" o "fácil"; conviértelos en valores medibles.</p>
+
+            <p><strong>3. REQUERIMIENTOS DE INTERFAZ</strong><br>
+            Define cómo debe interactuar el producto con: usuario, app/software, hardware u otros dispositivos, entorno físico. Incluye aspectos de comunicación, instalación, interacción, señales, datos y compatibilidad cuando sean relevantes.</p>
+
+            <p><strong>4. REQUERIMIENTOS DE RESTRICCIÓN</strong><br>
+            Identifica los límites que el diseño debe respetar: presupuesto, tiempo de desarrollo, disponibilidad de componentes/materiales, manufactura, dimensiones/peso si son relevantes, compatibilidad, regulaciones o normas aplicables, tecnologías obligatorias o limitaciones del proyecto.</p>
+
+            <p><strong>5. FIRST-ITERATION PRODUCT</strong><br>
+            IMPORTANTE: el PDS debe describir el first-iteration product, NO un prototipo de exploración. Por lo tanto, los requerimientos deben permitir que: el producto funcione de manera autónoma, un usuario real pueda utilizarlo sin que el equipo tenga que explicarle o intervenir, pueda probarse en condiciones reales de uso, el éxito pueda validarse mediante criterios objetivos. No agregues funcionalidades innecesarias que no sean indispensables para validar la propuesta de valor en esta primera iteración.</p>
+
+            <p><strong>FORMATO FINAL</strong><br>
+            Presenta los requerimientos en una tabla: ID | Categoría | Requerimiento | Criterio medible/verificable | Prioridad. Utiliza IDs diferentes para cada categoría: F = Funcional, D = Desempeño, I = Interfaz, R = Restricción.</p>
+
+            <p>Al final, agrega una sección breve de "Criterios de éxito del first-iteration product", indicando cuáles son los requerimientos indispensables que deben cumplirse para considerar que el producto funciona y puede ser probado por un usuario real.</p>
+
+            <p><strong>IMPORTANTE:</strong> Adapta todo exclusivamente a MI PROYECTO y a la información que ya tienes. No utilices el ejemplo del sensor agrícola como contenido; úsalo únicamente para entender la metodología. No inventes especificaciones técnicas sin fundamento. Si un valor numérico no puede determinarse con la información disponible, propón un rango razonable y márcalo claramente como "por validar". Todos los requerimientos deben poder comprobarse mediante una prueba, medición, observación o criterio objetivo.</p>
+        </div>
+
+        <h4>Respuesta: Product Design Specification (PDS)</h4>
+        <p><em>Proyecto: Comedero inteligente para perros con sensor de peso, dispensador automático y app con IA para ajuste de dieta (Fab Academy Puebla, Proyectos IV).</em></p>
+
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <p>Esta tabla define el first-iteration product: la versión mínima que ya puede funcionar de forma autónoma, ser usada por un dueño de perro real sin intervención del equipo, y validar la propuesta de valor (dosificación por peso + IA + coordinación entre cuidadores). No incluye funciones descartadas en el análisis Blue Ocean (cámara, video, interacción por voz), ya que no son indispensables para validar la propuesta.</p>
+            <p>Los valores marcados como "por validar" no están definidos en la información que tengo registrada de tu proyecto; incluyo un rango de referencia razonable para que lo confirmes o ajustes con datos reales de tu curso.</p>
+        </div>
+
+        <div style="overflow-x: auto;">
+        <table class="table table-bordered">
+            <thead class="table-dark">
+            <tr><th>ID</th><th>Categoría</th><th>Requerimiento</th><th>Criterio medible/verificable</th><th>Prioridad</th></tr>
+            </thead>
+            <tbody>
+            <tr><td>F-01</td><td>Funcional</td><td>El comedero debe dispensar alimento automáticamente según una programación configurada por el usuario en la app.</td><td>Se ejecuta el 100% de los eventos programados en una prueba de 7 días consecutivos, verificado por registro de log.</td><td>Alta</td></tr>
+            <tr><td>F-02</td><td>Funcional</td><td>El sensor debe medir el peso del perro en cada evento de alimentación (o en un evento dedicado de pesaje).</td><td>Cada evento de alimentación queda asociado a una lectura de peso registrada en la app, sin intervención manual del usuario.</td><td>Alta</td></tr>
+            <tr><td>F-03</td><td>Funcional</td><td>El sistema debe calcular la porción a dispensar según el objetivo de peso definido (subir, bajar o mantener) usando el modelo de IA.</td><td>Ante un cambio de peso registrado, la porción sugerida se recalcula automáticamente en un plazo ≤24 h sin acción manual del usuario.</td><td>Alta</td></tr>
+            <tr><td>F-04</td><td>Funcional</td><td>El sistema debe registrar cada evento de alimentación (fecha, hora, cantidad dispensada, peso medido) en la app.</td><td>El historial muestra el 100% de los eventos ocurridos en las últimas 4 semanas, consultable por el usuario.</td><td>Alta</td></tr>
+            <tr><td>F-05</td><td>Funcional</td><td>La app debe permitir que 2 o más cuidadores del mismo perro vean el mismo registro de alimentación.</td><td>Un segundo usuario agregado ve, en ≤5 minutos desde el registro, el mismo evento de alimentación que el primero.</td><td>Alta</td></tr>
+            <tr><td>F-06</td><td>Funcional</td><td>El sistema debe notificar a los cuidadores cuando el perro ya fue alimentado, para prevenir doble alimentación.</td><td>El 100% de los eventos de alimentación generan una notificación visible a todos los cuidadores registrados en ≤2 minutos.</td><td>Alta</td></tr>
+            <tr><td>F-07</td><td>Funcional</td><td>El usuario debe poder configurar el perfil inicial del perro (peso objetivo, peso actual) sin soporte del equipo de desarrollo.</td><td>Un usuario no capacitado completa la configuración inicial sin asistencia externa (ver I-04).</td><td>Alta</td></tr>
+            <tr><td>F-08</td><td>Funcional</td><td>El dispensado programado debe ejecutarse aunque no haya conexión a internet en el momento exacto del evento.</td><td>El comedero dispensa correctamente en modo sin conexión y sincroniza el registro con la app al recuperar señal, en una prueba controlada de corte de red.</td><td>Media</td></tr>
+            <tr><td>D-01</td><td>Desempeño</td><td>La porción dispensada debe ajustarse con precisión respecto a la cantidad calculada por el algoritmo.</td><td>Error ≤ ±5% del peso calculado (por validar contra la tolerancia real que el equipo defina como aceptable para el ajuste de dieta).</td><td>Alta</td></tr>
+            <tr><td>D-02</td><td>Desempeño</td><td>El sensor de peso debe medir con precisión suficiente para detectar cambios relevantes en la salud del perro.</td><td>Precisión ≤ ±0.1–0.2 kg en el rango de peso soportado (por validar según el sensor/celda de carga elegida).</td><td>Alta</td></tr>
+            <tr><td>D-03</td><td>Desempeño</td><td>El sistema debe actualizar el registro en la app en un tiempo razonable tras cada evento.</td><td>Latencia entre evento físico y visualización en app ≤ 10 segundos con conexión WiFi estable (por validar).</td><td>Media</td></tr>
+            <tr><td>D-04</td><td>Desempeño</td><td>El depósito debe tener capacidad suficiente para operar varios días sin recarga.</td><td>Capacidad de 2–4 litros, suficiente para ≥ 5 días de operación continua para un perro de tamaño mediano (por validar según porciones reales).</td><td>Media</td></tr>
+            <tr><td>D-05</td><td>Desempeño</td><td>El mecanismo dispensador debe ser confiable en operación repetida.</td><td>Tasa de fallos de dispensado ≤ 5% de los eventos programados durante una prueba de 30 días.</td><td>Alta</td></tr>
+            <tr><td>D-06</td><td>Desempeño</td><td>El sistema debe soportar el rango de peso de perros del segmento de usuario objetivo.</td><td>Rango soportado: 2–40 kg (por validar contra el segmento de usuarios entrevistados; puede requerir ajuste mecánico si se prioriza solo razas medianas/grandes).</td><td>Media</td></tr>
+            <tr><td>D-07</td><td>Desempeño</td><td>La frecuencia de dispensado debe cubrir los patrones de alimentación reales de los usuarios.</td><td>Configurable entre 1 y 6 eventos por día (por validar contra hábitos reportados en tus entrevistas).</td><td>Media</td></tr>
+            <tr><td>I-01</td><td>Interfaz</td><td>La app debe mostrar el peso actual y la tendencia histórica del perro de forma accesible.</td><td>El usuario accede a la gráfica de tendencia de peso en ≤2 toques desde la pantalla principal.</td><td>Media</td></tr>
+            <tr><td>I-02</td><td>Interfaz</td><td>El comedero debe comunicarse con la app mediante WiFi doméstico estándar.</td><td>Conexión exitosa a redes 2.4 GHz con reconexión automática tras una caída de señal simulada, sin intervención manual.</td><td>Alta</td></tr>
+            <tr><td>I-03</td><td>Interfaz</td><td>El comedero debe confirmar localmente cada dispensado exitoso, sin depender de la app.</td><td>Señal visual y/o sonora perceptible a ≥1 metro de distancia en el 100% de los eventos de dispensado.</td><td>Media</td></tr>
+            <tr><td>I-04</td><td>Interfaz</td><td>La instalación inicial debe poder completarse sin conocimientos técnicos ni intervención del equipo.</td><td>Un usuario no capacitado completa unboxing + configuración inicial en ≤15 minutos, siguiendo solo instrucciones incluidas.</td><td>Alta</td></tr>
+            <tr><td>I-05</td><td>Interfaz</td><td>La app debe permitir agregar cuidadores adicionales de forma autónoma.</td><td>Un usuario agrega a un segundo cuidador mediante código/enlace en ≤3 minutos, sin soporte externo.</td><td>Alta</td></tr>
+            <tr><td>I-06</td><td>Interfaz</td><td>La app debe ser compatible con los sistemas operativos móviles usados por el segmento de usuario objetivo.</td><td>Funciona en Android e iOS (por validar contra el sistema operativo real de los dueños entrevistados).</td><td>Media</td></tr>
+            <tr><td>R-01</td><td>Restricción</td><td>El costo de materiales por unidad debe ajustarse al presupuesto disponible del curso.</td><td>Costo total de componentes ≤ [monto por validar], según presupuesto asignado en Proyectos IV.</td><td>Alta</td></tr>
+            <tr><td>R-02</td><td>Restricción</td><td>El desarrollo debe completarse dentro del calendario académico del curso.</td><td>Producto funcional y probable con usuario real antes de la fecha límite del curso (por validar).</td><td>Alta</td></tr>
+            <tr><td>R-03</td><td>Restricción</td><td>Los componentes deben poder conseguirse dentro del tiempo disponible del proyecto.</td><td>Todos los componentes críticos disponibles con entrega ≤ [plazo por validar] desde proveedores locales o en línea.</td><td>Alta</td></tr>
+            <tr><td>R-04</td><td>Restricción</td><td>La fabricación debe ser posible con las herramientas del Fab Lab.</td><td>El prototipo se produce usando únicamente equipo disponible en el Fab Lab (impresión 3D, corte láser, electrónica básica), sin maquinaria externa.</td><td>Alta</td></tr>
+            <tr><td>R-05</td><td>Restricción</td><td>El material en contacto con el alimento debe ser seguro para uso con alimento para mascotas.</td><td>Material del contenedor/tolva es apto para contacto alimentario (por validar si se requiere certificación formal o basta con criterio de material food-grade).</td><td>Alta</td></tr>
+            <tr><td>R-06</td><td>Restricción</td><td>El producto no debe requerir infraestructura adicional en el hogar del usuario.</td><td>Funciona únicamente con WiFi doméstico estándar y toma eléctrica convencional, sin hardware adicional de red.</td><td>Media</td></tr>
+            </tbody>
+        </table>
+        </div>
+
+        <h4>Criterios de éxito del first-iteration product</h4>
+        <div class="summary-box">
+            <p>Para considerar que el producto está listo para ser probado por un usuario real (dueño de perro, con al menos un segundo cuidador), deben cumplirse de forma indispensable:</p>
+            <ul>
+            <li><strong>F-01, F-02, F-03, F-04:</strong> el ciclo completo de dispensar → pesar → recalcular porción → registrar debe funcionar de extremo a extremo sin intervención del equipo.</li>
+            <li><strong>F-05 y F-06:</strong> la coordinación entre al menos dos cuidadores debe funcionar, ya que es el problema central que validaste en tus entrevistas — sin esto, no se prueba la propuesta de valor diferenciadora.</li>
+            <li><strong>F-07 e I-04:</strong> un usuario no capacitado debe poder configurar el dispositivo por sí mismo; si el equipo tiene que explicar el uso, no califica como first-iteration product según tu propio criterio.</li>
+            <li><strong>D-01, D-02 y D-05:</strong> la precisión de dosificación, la precisión del sensor de peso y la confiabilidad mecánica deben cumplir sus umbrales, porque son la base técnica de la propuesta "ajuste de dieta por IA" — si fallan, el producto no cumple su promesa central aunque todo lo demás funcione.</li>
+            <li><strong>I-02 e I-03:</strong> la comunicación WiFi y la confirmación local de dispensado deben funcionar de forma confiable, para que el usuario confíe en el sistema sin supervisión constante.</li>
+            </ul>
+            <p>Los requerimientos marcados como "por validar" (presupuesto, plazos, capacidad del depósito, rango de peso soportado, sistema operativo predominante) son datos que aún no están documentados en tu proyecto y conviene definir antes de fijar la especificación final, ya que varios criterios de desempeño y restricción dependen directamente de ellos.</p>
+        </div>
+
+        <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Ejercicio rápido en clase</h3>
+
+        <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <p>Perfecto, para el PDS (Product Design Specification) de tu comedero inteligente, aquí tienes dos requerimientos por categoría, adaptados a tu proyecto:</p>
+
+            <p><strong>Requerimientos Funcionales</strong></p>
+            <ol>
+            <li>El sistema debe dispensar automáticamente una cantidad de alimento calculada por la app con IA, según el peso actual y el peso objetivo del perro.</li>
+            <li>El sistema debe registrar el peso del perro mediante el sensor integrado cada vez que se acerque al comedero, y enviar este dato a la app para actualizar el seguimiento de la dieta.</li>
+            </ol>
+
+            <p><strong>Requerimientos de Desempeño</strong></p>
+            <ol>
+            <li>El sensor de peso debe tener una precisión mínima de ±20 gramos para garantizar un cálculo confiable de las porciones.</li>
+            <li>El dispensador debe entregar la porción calculada en un tiempo no mayor a 10 segundos desde que se activa el mecanismo.</li>
+            </ol>
+
+            <p><strong>Requerimientos de Interfaz</strong></p>
+            <ol>
+            <li>La app debe mostrar de forma clara y accesible el historial de peso del perro y el estado de su dieta (subiendo, bajando o manteniendo), permitiendo que múltiples cuidadores consulten esta información.</li>
+            <li>El comedero debe contar con indicadores físicos (LED o pantalla pequeña) que muestren el estado de operación (dispensando, nivel bajo de alimento, error de conexión, etc.).</li>
+            <li>La app mandará un mensaje por WhatsApp o como notificación de la aplicación al cuidador cuando: el nivel de alimento sea bajo o se sugiera una visita preventiva con el veterinario.</li>
+            </ol>
+
+            <p><strong>Requerimientos de Restricción</strong></p>
+            <ol>
+            <li>El costo total de los componentes electrónicos y mecánicos no debe exceder el presupuesto definido para el prototipo (ajusta este monto al que tengas asignado en tu curso).</li>
+            <li>El diseño físico debe ser compatible con perros de al menos dos rangos de tamaño (pequeño y mediano/grande), sin comprometer la seguridad del mecanismo dispensador.</li>
+            <li><strong>Falta:</strong> El precio del producto no debe exceder el de los competidores y que quede un buen margen de ganancia.</li>
+            </ol>
+        </div>
+
+        </section>
+        <!--Fin SECCIÓN 1-->
+
+        <!--SECCIÓN 2: ARQUITECTURA DEL SISTEMA-->
+        <section id="2" class="week-section">
+          <h2>B2: Arquitectura del sistema</h2>
+
+          <p><strong>Dónde va a correr la IA:</strong> Híbrido (toma decisiones rápidas al momento) / Edge / Claude (conectividad estable en la red), app (para conectar el programa).</p>
+
+          <div class="prompt-box" style="background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 15px; border-radius: 8px; font-style: italic; margin: 20px 0;">
+            <h4 style="margin-top:0; font-style: normal;">💬 Prompt</h4>
+            <p>Actúa como arquitecto de sistemas especializado en productos mecatrónicos con IA.</p>
+            <p>Utiliza toda la información que ya tienes precargada sobre MI PROYECTO, incluyendo su propuesta de valor, PDS, usuario, requerimientos, capacidades del equipo y restricciones.</p>
+            <p>Define la <strong>arquitectura completa del sistema</strong> considerando:</p>
+            <ol>
+              <li><strong>Arquitectura de IA:</strong> determina si conviene Edge, Cloud o Híbrida y justifica la decisión según conectividad, latencia, privacidad, costo y capacidades del proyecto.</li>
+              <li><strong>Tres capas del sistema:</strong>
+                <ul>
+                  <li>Hardware: sensores, actuadores, microcontrolador/SBC, alimentación y comunicación.</li>
+                  <li>Datos/Backend: almacenamiento, procesamiento, IA y servicios necesarios.</li>
+                  <li>Presentación: app/web, interfaz y notificaciones.</li>
+                </ul>
+              </li>
+              <li><strong>Comunicación:</strong> especifica qué protocolo utiliza cada conexión (BLE, WiFi, MQTT, HTTP, WebSocket, etc.) y justifica brevemente por qué es adecuado.</li>
+              <li><strong>Flujo de datos:</strong> describe paso a paso cómo viaja la información desde que se genera en el dispositivo hasta que llega al usuario y qué ocurre si algún componente falla.</li>
+              <li><strong>Viabilidad:</strong> verifica que la arquitectura sea realizable con las capacidades, presupuesto, tiempo y volumen de fabricación de la primera iteración.</li>
+            </ol>
+            <p><strong>ENTREGA:</strong></p>
+            <ul>
+              <li>Decisión Edge/Cloud/Híbrido + justificación.</li>
+              <li>Diagrama de bloques de la arquitectura.</li>
+              <li>Componentes principales de cada capa.</li>
+              <li>Protocolos de comunicación.</li>
+              <li>Flujo de datos principal.</li>
+              <li>Principales riesgos o incompatibilidades que debamos resolver.</li>
+            </ul>
+            <p><strong>IMPORTANTE:</strong> No diseñes la arquitectura más sofisticada, sino la más adecuada para MI PROYECTO y su first-iteration product. No inventes requerimientos que no estén respaldados por la información disponible.</p>
+          </div>
+
+          <h4>Respuesta</h4>
+
+          <!--Imagen: diagrama de arquitectura del sistema-->
+          <div style="text-align: center; margin: 20px 0;">
+            <img src="../w05/01.png" alt="Diagrama de arquitectura del comedero inteligente" style="width: 100%; max-width: 700px; height: auto; border-radius: 8px; border: 1px solid #dee2e6;">
+          </div>
+          <!--Fin imagen-->
+
+          <p style="text-align:center;"><em>Arquitectura del sistema — Comedero inteligente</em></p>
+
+          <h5>1. Decisión: arquitectura híbrida (Edge + Cloud)</h5>
+          <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <p>Ni Edge puro ni Cloud puro se ajustan bien a tu proyecto; una arquitectura híbrida es la más adecuada, por estas razones ligadas directamente a tu PDS:</p>
+            <ul>
+              <li><strong>Conectividad:</strong> el requerimiento F-08 exige que el dispensado funcione aunque no haya internet en ese momento. Esto obliga a que la lógica crítica (dispensar según el horario programado) viva en el dispositivo (Edge), no en la nube.</li>
+              <li><strong>Latencia:</strong> dispensar comida y confirmar localmente (I-03) debe ser inmediato; depender de un viaje de ida y vuelta a un servidor remoto para esa acción sería innecesario y riesgoso si la red falla.</li>
+              <li><strong>Privacidad:</strong> los datos que maneja el sistema (peso del perro, historial de alimentación, identidad de cuidadores) no son de sensibilidad extrema, pero sí personales — no justifican mantener todo en el dispositivo por privacidad, así que no es un factor que empuje hacia Edge puro.</li>
+              <li><strong>Costo y capacidades del equipo:</strong> el cálculo de dieta con IA (F-03) tiene una ventana de hasta 24 horas para recalcularse — no es una tarea en tiempo real. Ejecutarlo en la nube es más barato y viable para un equipo de Fab Academy que implementar un modelo de IA embebido en un microcontrolador de bajo costo (que además no tiene cámara ni necesidad de visión, según tu decisión Blue Ocean de eliminar esa función).</li>
+            </ul>
+            <p><strong>En resumen:</strong> Edge controla lo que debe funcionar siempre y de inmediato (dispensado, pesaje, confirmación local); Cloud hace lo que requiere más cómputo, historial compartido entre varios cuidadores y no es sensible a milisegundos (cálculo de dieta, sincronización multi-usuario, notificaciones).</p>
+          </div>
+
+          <h5>2. Las tres capas (ver diagrama)</h5>
+          <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <p><strong>Hardware (Edge, en el dispositivo)</strong></p>
+            <ul>
+              <li>Sensores y actuadores: celda de carga (peso) + motor/mecanismo dispensador.</li>
+              <li>Microcontrolador (tipo ESP32, ya que integra WiFi de forma nativa, es económico y compatible con las herramientas del Fab Lab por R-04): ejecuta el horario de dispensado, lee el sensor, mantiene un buffer local para operar sin conexión (F-08) y emite la señal de confirmación local (I-03).</li>
+            </ul>
+            <p><strong>Datos / backend (Cloud)</strong></p>
+            <ul>
+              <li>Base de datos: guarda el historial de eventos, perfiles de perro y de cuidadores (soporta F-04, F-05).</li>
+              <li>Motor de IA de dieta: procesa la tendencia de peso y recalcula la porción recomendada dentro de la ventana de 24 h definida en F-03. No necesita ejecutarse en tiempo real, por lo que vive cómodamente en la nube.</li>
+            </ul>
+            <p><strong>Presentación (App móvil)</strong></p>
+            <ul>
+              <li>App multi-cuidador: muestra historial y tendencia de peso (I-01), permite agregar cuidadores (I-05).</li>
+              <li>Notificaciones push: alerta a todos los cuidadores cuando el perro ya fue alimentado (F-06).</li>
+            </ul>
+          </div>
+
+          <h5>3. Protocolos de comunicación</h5>
+          <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <ul>
+              <li><strong>ESP32 ↔ router WiFi doméstico:</strong> WiFi 802.11 (2.4 GHz), tal como especifica I-02 — es el estándar más simple de implementar y compatible con cualquier hogar sin infraestructura adicional (R-06).</li>
+              <li><strong>ESP32 → backend:</strong> HTTPS (REST). Se eligió sobre MQTT porque la frecuencia de eventos es baja (unas pocas veces al día, según D-07), por lo que no se justifica la complejidad de un broker pub/sub; HTTPS es más simple de implementar dado el tiempo y capacidades disponibles del equipo (R-02).</li>
+              <li><strong>Backend → app:</strong> HTTPS para consultas de historial (bajo demanda) + un servicio de notificaciones push (ej. FCM/APNs) para las alertas en tiempo casi real que exige F-06 (≤2 minutos).</li>
+              <li><strong>Backend → ESP32:</strong> HTTPS, en sentido inverso, para bajar la porción recalculada por el motor de IA (ventana de hasta 24 h, sin urgencia de latencia).</li>
+              <li><strong>Sensor/motor ↔ ESP32:</strong> interfaz cableada directa (no es un protocolo de red) — por ejemplo, el patrón de dos hilos típico de un amplificador de celda de carga hacia el microcontrolador.</li>
+            </ul>
+          </div>
+
+          <h5>4. Flujo de datos, paso a paso</h5>
+          <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <ol>
+              <li>Llega la hora programada; el ESP32 activa el motor y dispensa la porción que tiene almacenada localmente (la última recibida del backend).</li>
+              <li>El sensor de peso registra la lectura correspondiente al evento.</li>
+              <li>El ESP32 guarda el evento (hora, cantidad, peso) en su buffer local y emite la confirmación local (LED/sonido).</li>
+              <li>El ESP32 intenta enviar el evento al backend por HTTPS.
+                <ul>
+                  <li>Si hay conexión: el backend recibe el evento, lo guarda en la base de datos y dispara una notificación push a todos los cuidadores registrados.</li>
+                  <li>Si no hay conexión (falla de red): el evento permanece en el buffer local; el ESP32 reintenta con el tiempo, y sincroniza todos los eventos pendientes en orden en cuanto vuelve la señal — el dispensado y el pesaje ya ocurrieron y no se pierden.</li>
+                </ul>
+              </li>
+              <li>Una vez al día (o según se defina), el motor de IA en el backend revisa la tendencia de peso y recalcula la porción objetivo.</li>
+              <li>El backend envía esa nueva porción al ESP32, que la guarda para el siguiente ciclo de dispensado.</li>
+              <li>Cualquier cuidador puede abrir la app en cualquier momento para consultar el historial y la tendencia de peso vía HTTPS.</li>
+            </ol>
+            <p><strong>Qué pasa si falla cada componente:</strong></p>
+            <ul>
+              <li><strong>Falla el WiFi/backend:</strong> el dispensado sigue funcionando con la última porción sincronizada; solo se retrasan el historial compartido y las notificaciones hasta que vuelva la conexión.</li>
+              <li><strong>Falla el sensor de peso:</strong> el sistema debería señalar el error localmente (I-03) y evitar que el motor de IA recalcule con datos corruptos — este manejo de error no está definido todavía en tu PDS y es un vacío a resolver.</li>
+              <li><strong>Falla el mecanismo dispensador (atasco):</strong> debe generar una señal de error local y quedar registrado como evento fallido para el seguimiento de confiabilidad (D-05).</li>
+            </ul>
+          </div>
+
+          <h5>5. Viabilidad para la primera iteración</h5>
+          <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <p>La arquitectura es coherente con las restricciones ya definidas en tu PDS:</p>
+            <ul>
+              <li><strong>Presupuesto (R-01):</strong> un ESP32 + celda de carga + motor es de bajo costo comparado con soluciones con cámara o cómputo embebido de IA.</li>
+              <li><strong>Manufactura (R-04):</strong> se fabrica con herramientas típicas de un Fab Lab, sin equipo especializado adicional.</li>
+              <li><strong>Tiempo (R-02):</strong> usar HTTPS simple y un backend ligero (en vez de infraestructura pub/sub o IA embebida) reduce la complejidad de desarrollo dentro del calendario del curso.</li>
+              <li><strong>Volumen de la primera iteración:</strong> al ser una sola unidad de prueba con un usuario real, no se requiere diseñar para escalar a múltiples dispositivos simultáneos todavía — eso simplifica el backend inicial.</li>
+            </ul>
+          </div>
+
+          <h5>Principales riesgos o incompatibilidades a resolver</h5>
+          <div class="summary-box">
+            <ol>
+              <li><strong>No hay proveedor de IA/cloud definido:</strong> como ya se señaló en el análisis de Porter, este es un vacío de información que afecta directamente el diseño del backend y del motor de IA de dieta — conviene decidirlo antes de implementar.</li>
+              <li><strong>Capacidad del buffer local no definida:</strong> si el dispositivo pasa mucho tiempo sin conexión, el buffer del ESP32 podría llenarse; el PDS no especifica cuánto tiempo offline debe soportar el sistema — dato "por validar".</li>
+              <li><strong>Precisión del sensor de peso en condiciones reales:</strong> un perro comiendo se mueve, lo cual puede afectar la lectura de la celda de carga; esto no está resuelto a nivel mecánico ni de firmware todavía.</li>
+              <li><strong>F-06 (notificación ≤2 min) depende de que el dispositivo esté conectado en el momento del evento:</strong> si el ESP32 está offline cuando ocurre el evento, la notificación se retrasará hasta la reconexión — esto es una condición no cubierta explícitamente en el requerimiento original y conviene aclararla (¿se acepta el retraso, o se necesita otro mecanismo?).</li>
+              <li><strong>Capacidad de desarrollo del equipo no documentada:</strong> no tengo información confirmada de si el equipo cuenta con experiencia en desarrollo backend/app móvil dentro del tiempo del curso — esto podría ser el mayor riesgo práctico para cumplir el cronograma (R-02), independientemente de si la arquitectura es correcta en el papel.</li>
+            </ol>
+          </div>
+
+        </section>
+        <!--Fin SECCIÓN 2-->
+
+
+
+      </div>
+
+    </div>
+
+    <footer>
+      <p>Copyright 2026 Daniela Barranco - Creative Commons Atribución No Comercial</p>
+      <p>Código fuente alojado en <a href="https://gitlab.fabcloud.org/academany/fabacademy/2026/labs/puebla/students/daniela-barranco" target="_blank">gitlab.fabcloud.org</a></p>
+    </footer>
+
+    <script src="../../css/slideshow.js"></script>
+
+    <script>
+      function showWeekSection(sectionId) {
+        const sections = document.querySelectorAll('.week-section');
+        sections.forEach(section => section.classList.remove('active'));
+        const links = document.querySelectorAll('.week-link');
+        links.forEach(link => link.classList.remove('active'));
+        document.getElementById(sectionId).classList.add('active');
+        event.target.classList.add('active');
+        event.preventDefault();
+      }
+    </script>
+  </body>
+</html>

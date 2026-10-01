@@ -19,8 +19,8 @@
     <div class="hero-section">
       <div class="hero-container">
         <div class="hero-text text-center">
-          <h1>Final Project</h1>
-          <p>My innovative project for Fab Academy 2026</p>
+          <h1>Proyecto Final</h1>
+          <p>Wooffi: Calidad de vida para tu compañero de vida</p>
         </div>
       </div>
     </div>
@@ -28,8 +28,8 @@
     <div class="week-layout">
       <aside class="week-sidebar">
         <nav class="week-sidebar-menu">
-          <a href="#" onclick="showProjectSection('overview')" class="week-link active">Project Overview</a>
-          <a href="#" onclick="showProjectSection('design')" class="week-link">Design &amp; Planning</a>
+          <a href="#" onclick="showProjectSection('semanas')" class="week-link active">Insights de las semanas</a>
+          <a href="#" onclick="showProjectSection('entrevistas')" class="week-link">Entrevistas</a>
           <a href="#" onclick="showProjectSection('timeline')" class="week-link">Implementation Timeline</a>
           <a href="#" onclick="showProjectSection('final-qa')" class="week-link">Final Project Q&amp;A</a>
           <a href="#" onclick="showProjectSection('final-construction')" class="week-link">Final Construction of the Machine</a>
@@ -43,394 +43,228 @@
         <!-- ═══════════════════════════════════════════════════════
              SECTION 1 · PROJECT OVERVIEW
         ════════════════════════════════════════════════════════ -->
-        <section id="overview" class="week-section active">
-          <h2>My Final Project</h2>
+        <section id="semanas" class="week-section active">
+          <h2>Insights de las semanas</h2>
 
-          <!-- Summary box -->
-          <div class="summary-box">
-            <h3 style="margin-top:0; color:#0895b1;">Project Overview</h3>
-            <p>The project consists of a cut glass assembly machine designed to automate a process
-              that remains manual for small and medium-sized enterprises. This accelerates production
-              and reduces costs for these businesses. The machine is intended to improve the production
-              process within the company <strong>Lámparas y Candiles de Oaxaca</strong>.</p>
-          </div>
+          <!-- Semana 2 -->
+          <h2>Búsqueda de la idea</h2>
 
-            <!--Slide-->
-            <h3 style="color: #0895b1;">Final Project Slide Presentation</h3>  
-            <p>This is the presentation slide for my final project.</p>
-            <img src="https://fabacademy.org/2026/labs/puebla/students/daniela-barranco/presentation.png" alt="final presentation slide" style="width: 100%; height: auto;">
-            <!--FIN: slide-->
-
-            <!--VIDEO-->
-            <h3 style="color: #0895b1;">Final Project Video Presentation</h3>  
-            <p>This is the presentation video for my final project.</p>
-            <video style="display: flex; justify-content: center; align-items: center; width: 100%; margin: 20px 0;" controls>
-              <source src="https://fabacademy.org/2026/labs/puebla/students/daniela-barranco/presentation.mp4" type="video/mp4">
-            </video>
-            <!--FIN: VIDEO-->
-
-          <!-- ── About the company ─────────────────────────── -->
-          <h3>About the Company</h3>
-          <p>It is my family's business, located in the state of Oaxaca, Mexico. We have more than
-            45 years of history, tradition and experience behind us. For this reason, I am happy and
-            proud to be able to contribute today — with the knowledge I have acquired throughout my
-            degree — to a business that watched me grow and that has given so much to me and my family.</p>
-          <blockquote style="border-left:4px solid #00b4d8; margin:16px 0; padding:8px 16px; color:#555; font-style:italic;">
-            "Illuminating Oaxacan homes since 1978."
-          </blockquote>
-
-          <!-- Content card: company info -->
-          <div class="content-card">
-            <img src="assignments/img_finalproject/img_fp/1_compressed.jpg" alt="Lámparas y Candiles de Oaxaca">
-            <h3>Lámparas y Candiles de Oaxaca</h3>
-            <p>We are an Oaxacan family business founded in 1978, and since then we have been
-              illuminating Oaxacan homes with all types of residential light fixtures: ceiling,
-              wall, table, and outdoor. We also offer an extensive variety of specialized lamp
-              spare parts, such as: fabric and glass shades, switches, sockets, etc. We additionally
-              provide repair, restoration, and maintenance services.</p>
-            <p>The customer is very important to us, so we create or source special products
-              (spare parts, new models, etc.) to satisfy their tastes and needs.</p>
-
-            <p><strong>Mission</strong><br>
-              To offer quality lighting products through warm and personalized customer service.</p>
-
-            <p><strong>Vision</strong><br>
-              We seek to remain in the preference of Oaxacan consumers by staying at the forefront
-              of lighting and responding to the needs of our context.</p>
-
-            <a href="https://lamycao.com.mx/" target="_blank" class="card-visit-btn">
-              Visit Lámparas y Candiles de Oaxaca
-            </a>
-          </div>
-
-          <!-- ── The problem to solve ──────────────────────── -->
-          <h3>The Problem to Solve</h3>
-          <p>One of our products is the "Imperial Chandelier"; to give you an idea of their scale,
-            they are frequently installed in churches. However, we only purchase the chandelier's
-            metal frame. Separately, to "dress" the chandelier, we buy the crystals (made of cut
-            glass) and the "bows," which are a type of staple used to link the cut crystals together.</p>
-
-          <p>While the supplier offers the chandelier fully assembled (already dressed), the price
-            increases approximately fivefold. This leaves us with virtually no profit, as our selling
-            price is nearly the same as their wholesale cost. On the other hand, the manual assembly
-            process for the cut crystals takes about one week per chandelier; consequently, it is
-            difficult to meet demand during peak sales seasons due to the time required for each
-            piece. Furthermore, keeping them in stock fully assembled is not a viable option because
-            they occupy too much warehouse space.</p>
-
-          <!-- Carousel: Imperial Chandelier (preserved intact) -->
-          <div id="slideshow1" class="slideshow-container">
-            <div class="slide">
-              <div class="slide-content">
-                <div class="slide-image">
-                  <img src="assignments/img_finalproject/candil_imperial.jpeg" alt="Imperial Chandelier"
-                    style="border-radius: 10%; width: 400px; height: auto; object-fit: cover;">
-                </div>
-                <div class="slide-text">
-                  <h4>Imperial Chandelier</h4>
-                  <p>This is the chandelier we sell</p>
-                </div>
-              </div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin: 20px 0;">
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px;">
+              <h4 style="margin-top:0;">Buscar oportunidades</h4>
+              <p>De 4 oportunidades pet-tech evaluadas, la obesidad canina ganó por tener el mercado más grande (+1M hogares en LATAM) y el mecanismo más viable de construir en 6 meses.</p>
             </div>
-
-            <div class="slide">
-              <div class="slide-content">
-                <div class="slide-image">
-                  <img src="assignments/img_finalproject/brillitos_cristal_cortados.jpeg" alt="Cut crystals"
-                    style="border-radius: 10%; width: 400px; height: auto; object-fit: cover;">
-                </div>
-                <div class="slide-text">
-                  <h4>Cut Crystals</h4>
-                  <p>These are the cut crystals used to dress the chandeliers</p>
-                </div>
-              </div>
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px;">
+              <h4 style="margin-top:0;">Insights</h4>
+              <p>Se eligió el insight de control de alimentación sobre el de ansiedad por separación: hardware maduro frente a IA de audio sin datos de entrenamiento, y un espacio de mercado más vacío.</p>
             </div>
-
-            <div class="slide">
-              <div class="slide-content">
-                <div class="slide-image">
-                  <img src="assignments/img_finalproject/grapas.jpeg" alt="staple"
-                    style="border-radius: 10%; width: 400px; height: auto; object-fit: cover;">
-                </div>
-                <div class="slide-text">
-                  <h4>Aluminum Staples</h4>
-                  <p>These staples are used to link the crystals together</p>
-                </div>
-              </div>
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px;">
+              <h4 style="margin-top:0;">Verificación con fuentes</h4>
+              <p>La prevalencia de sobrepeso (35–42%) y la insuficiencia de los comederos actuales quedaron verificadas; la disposición a pagar por suscripción quedó como hipótesis pendiente.</p>
             </div>
-
-            <div class="slide">
-              <div class="slide-content">
-                <div class="slide-image">
-                  <img src="assignments/img_finalproject/tira_brillos.jpeg" alt="Cut crystals series"
-                    style="border-radius: 10%; width: 400px; height: auto; object-fit: cover;">
-                </div>
-                <div class="slide-text">
-                  <h4>Crystal Strips</h4>
-                  <p>These are the strips of crystals linked together using the staples to "dress" the chandelier</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="buttons-container" style="text-align: center; margin: 20px;">
-              <button class="prev" data-target="slideshow1"
-                style="border-radius: 10%; background-color: #00b4d8; color: #caf0f8; border: none; padding: 10px 20px; margin: 10px;">Previous</button>
-              <button class="next" data-target="slideshow1"
-                style="border-radius: 10%; background-color: #00b4d8; color: #caf0f8; border: none; padding: 10px 20px; margin: 10px;">Next</button>
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px;">
+              <h4 style="margin-top:0;">Pain-Gain Map</h4>
+              <p>El cruce más fuerte fue "sobrealimentación no detectada" por "certeza de la porción correcta": ninguna solución actual lo cubre.</p>
             </div>
           </div>
 
-          <script>
-            document.addEventListener('DOMContentLoaded', function () {
-              initializeCarousel('slideshow1');
-            });
-          </script>
+          <!--Tercera semana-->
+            <h2>Propiedad intelectual, marca y vigilancia tecnológica</h2>
 
-          <!-- ── Production process of the chandelier ─────── -->
-          <h2 style="color: #0895b1;">Production Process of the Chandelier</h2>
-
-          <!-- Step 1 -->
-          <p class="step-title">Step 1: Merchandise Acquisition</p>
-          <p>Our suppliers send us the skeleton (body) of the chandelier not assembled — all the
-            parts come separately, so we always start by putting the structure together. However,
-            the chandelier is very large, so it is not possible for us to keep all the assembled
-            structures in our inventory at the same time.</p>
-          <div style="text-align:center; margin: 12px 0;">
-            <img src="assignments/img_finalproject/img_fp/2_compressed.jpg" alt="Box with three disassembled chandeliers"
-              style="max-width:15em; width:100%; border-radius:10px;">
-            <p style="font-size:small; color:#666;">Box with three disassembled chandeliers</p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin: 20px 0;">
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px;">
+              <h4 style="margin-top:0;">Generación de nombres</h4>
+              <p>De 12 nombres en 4 categorías se llegó a 3 finalistas; Wooffi resultó el de menor riesgo de coincidencia registral en el IMPI.</p>
+            </div>
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px;">
+              <h4 style="margin-top:0;">Freedom to Operate</h4>
+              <p>De cerca de 80 patentes revisadas en SIGA, LATIPAT y Lens.org, las dos más cercanas al mecanismo se descartaron como "fuera": riesgo FTO medio, sin conflicto directo.</p>
+            </div>
           </div>
 
-          <!-- Step 2 -->
-          <p class="step-title">Step 2: Assembly of Cut Crystals</p>
-          <p>This is the process that my machine will automate. As shown in the carousel above,
-            the cut crystals must be assembled using staples with the help of yellow pliers
-            (shown in the image).</p>
-          <ul>
-            <li><strong>Time investment:</strong> To dress a single Imperial Chandelier,
-              approximately 3,500 previously assembled cut crystals — arranged in strips of
-              different sizes — are required. Translated into time, this is one full week of
-              work for assembly alone.</li>
-            <li><strong>Summary:</strong> When many orders for this chandelier arrive during
-              peak seasons, it translates into CHAOS. Because of the chandelier's dimensions,
-              it is not possible for us to store fully finished chandeliers.</li>
-          </ul>
-          <div style="text-align:center; margin: 12px 0;">
-            <img src="assignments/img_finalproject/img_fp/3_compressed.jpg" alt="Crystal assembly process"
-              style="max-width:480px; width:100%; border-radius:10px;">
+          <!--Cuarta semana-->
+          <h2>Mercado, valor y propuesta de valor</h2>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin: 20px 0;">
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px;">
+              <h4 style="margin-top:0;">Entrevistas</h4>
+              <p>El hallazgo más accionable fue una familia resolviendo una prescripción veterinaria exacta con báscula de cocina, no con apps.</p>
+            </div>
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px;">
+              <h4 style="margin-top:0;">Segmento de mercado</h4>
+              <p>La variable esencial del problema es el número de cuidadores que alimentan al perro (2 o más), no la edad del comprador.</p>
+            </div>
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px;">
+              <h4 style="margin-top:0;">Pirámide de Bain</h4>
+              <p>Se completaron 10 valores: 7 funcionales, 2 emocionales y 1 life-changing centrado en dar esperanza de prevenir enfermedades como la displasia de cadera.</p>
+            </div>
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px;">
+              <h4 style="margin-top:0;">Marco IDEO</h4>
+              <p>Nadie automatiza hoy el cumplimiento de una prescripción veterinaria exacta entre varios cuidadores; la ventaja real está en el algoritmo, no en el hardware.</p>
+            </div>
           </div>
 
-          <!-- Step 3 -->
-          <p class="step-title">Step 3: Assembly / Dressing the Chandelier</p>
-          <p>Once all the cut crystal strips are ready, they need to be assembled onto the
-            chandelier. This translates to a full day of work.</p>
-          <div style="text-align:center; margin: 12px 0;">
-            <img src="assignments/img_finalproject/img_fp/4_compressed.jpg" alt="Dressing the chandelier"
-              style="max-width:20em; width:100%; border-radius:10px;">
-          </div>
+          <!--Quinta semana-->
+          <h2>PDS y Arquitectura del Sistema</h2>
 
-          <!-- Step 4 (labelled Step 5 in source doc — preserved as given) -->
-          <p class="step-title">Step 5: Packaging</p>
-          <p>To transport the chandelier it is necessary to mount it on a wooden structure and
-            package it to protect the chandelier.</p>
-          <div style="text-align:center; margin: 12px 0;">
-            <img src="assignments/img_finalproject/img_fp/5_compressed.jpg" alt="Chandelier packaging"
-              style="max-width:20em; width:100%; border-radius:10px;">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin: 20px 0;">
+          <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px;">
+            <h4 style="margin-top:0;">Product Design Specification</h4>
+            <p>El first-iteration product exige el ciclo completo dispensar, pesar, recalcular y registrar, coordinación entre 2 o más cuidadores, y configuración sin ayuda técnica.</p>
           </div>
+          <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px;">
+            <h4 style="margin-top:0;">Arquitectura del sistema</h4>
+            <p>Se eligió una arquitectura híbrida Edge + Cloud: el dispensado vive en el dispositivo y funciona sin internet; el cálculo de dieta vive en la nube.</p>
+          </div>
+        </div>
 
         </section>
 
         <!-- ═══════════════════════════════════════════════════════
-             SECTION 2 · DESIGN & PLANNING
+             SECTION 2 · Entrevistas
         ════════════════════════════════════════════════════════ -->
-        <section id="design" class="week-section">
-          <h2>Design &amp; Planning</h2>
+        <!--SECCIÓN 2: ENTREVISTAS-->
+        <section id="entrevistas" class="week-section active">
+            <h2>Entrevistas: Dueños con perros con obesidad</h2>
 
-          <!-- ── Assembly process ──────────────────────────── -->
-          <h3>Assembly Process</h3>
-          <ol>
-            <li>Take a piece of cut crystal and a staple.</li>
-            <li>Position the staple leg inside one of the two holes that the cut crystal piece has.</li>
-            <li>With one hand, hold the assembled piece, while with the other, grab the pliers.</li>
-            <li>Make a circular inward bend toward the cut crystal to secure the staple to the crystal.</li>
-            <li>Repeat the process until a strip with the desired number of cut crystals is formed.</li>
-            <li>On one of the two ends of the cut crystal strip, one staple leg must be left unbent
-              so that it can be assembled onto the chandelier body.</li>
-          </ol>
+            <p>Se le realizaron las preguntas a 3 dueños de perros que sufren obesidad. Los resultados y transcripciones se encuentran a continuación.</p>
 
-          <h4>In Summary…</h4>
-          <div style="text-align:center; margin: 12px 0;">
-            <img src="assignments/img_finalproject/img_fp/6_compressed.jpg" alt="Assembly process summary"
-              style="max-width:500px; width:100%; border-radius:10px;">
-          </div>
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Transcripciones de las entrevistas</h3>
 
-          <!-- ── How the machine will work ─────────────────── -->
-          <h3>How the Machine Will Work</h3>
-          <p>The machine will be composed of multiple parts because it is a production process.</p>
+            <h4>Primera entrevista</h4>
+            <!--Imagen: foto/captura entrevista 1-->
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="assignments/weeks/w04/img_w04/01.jpeg" alt="Primera entrevista" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; border: 1px solid #dee2e6;">
+            </div>
+            <!--Fin imagen-->
 
-          <!-- Tabs container -->
-          <div class="tabs-container">
-            <div class="tabs-header">
-              <button class="tab-btn active" onclick="openTab(event, 'tabRawMaterial')">Raw Material</button>
-              <button class="tab-btn" onclick="openTab(event, 'tabAssembly')">Assembly Process</button>
-              <button class="tab-btn" onclick="openTab(event, 'tabBending')">Bending</button>
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr><th>Pregunta</th><th>Respuesta</th></tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1. Cuéntame cómo es un día normal de tu perro, desde que alguien lo alimenta por primera vez hasta la noche — ¿quién hace qué?</td>
+                    <td>Somos tres personas en casa. Realmente solo comen una vez al día, a las 5:00 p. m., pero su porción suele ser bastante generosa. Llevan una dieta BARF, es decir, les damos vegetales crudos (como calabaza o zanahoria), carbohidratos (arroz o avena) y proteína (huevo o pollo hervido). Una persona se encarga de cocinar el huevo o el pollo, y otra se encarga de darles de comer a todos nuestros perros en general, incluyendo a la perrita de este caso. Si alguno no puede, otra persona toma su lugar. En ese momento también se les cambia el agua.</td>
+                </tr>
+                <tr>
+                    <td>2. ¿Cuándo fue la última vez que te enteraste de que tu perro había subido de peso o que algo no andaba bien con su alimentación? ¿Qué hiciste en ese momento?</td>
+                    <td>Es cruza de dos razas muy distintas: la mamá es husky y el papá es pug. Por eso no tenemos un parámetro claro de cuál es su peso ideal o si está excedida. Sin embargo, nos damos cuenta de que tiene sobrepeso por su grasa corporal y por cómo se ve visualmente. Además, cargarla cuesta bastante trabajo y suele lastimar la espalda o los brazos a quien lo hace.</td>
+                </tr>
+                <tr>
+                    <td>3. ¿Con qué frecuencia hablas con tu papá o mamá sobre cómo está comiendo el perro? Cuéntame de la última vez que pasó. ¿Cómo calculas las porciones de alimento que le das a tu perrito?</td>
+                    <td>La frecuencia con la que hablamos de cómo están comiendo es casi nula, porque sabemos que comen bien. Al principio, cuando empezamos a tener más perros (son 4), hablábamos para buscar opciones económicas y nutritivas. Les variamos los vegetales (zanahoria, calabaza, chayote, papa, brócoli), las proteínas y los carbohidratos.<br><br>Para las porciones, tomando como referencia un plato o contenedor de un litro, calculamos aproximadamente un cuarto de litro. Sin embargo, tratamos de darle un poco más de lo habitual porque come bastante y compite por la comida con otro perro. Para equilibrarlo, le agregamos una proporción mayor de vegetales.</td>
+                </tr>
+                <tr>
+                    <td>4. ¿Qué es lo más difícil de coordinar la comida del perro entre las distintas personas que lo cuidan?</td>
+                    <td>Realmente no es nada difícil. Ya tenemos muy bien coordinada la hora exacta de alimentarlos (las 5:00 p. m.) y lo que van a comer. Almacenamos su comida en el refrigerador en contenedores especiales únicamente para ellos, separando los carbohidratos, la proteína y los vegetales. Las croquetas también las tenemos aparte. Como ya tenemos todo asimilado, la rutina fluye bien.</td>
+                </tr>
+                <tr>
+                    <td>5. ¿Has intentado alguna vez llevar algún control de cuánto come el perro (una app, anotarlo, preguntar seguido)? ¿Qué pasó, lo siguieron usando o lo dejaron? ¿Has llevado a tu perrito al veterinario por el tema de su peso, en caso de ser así, qué les recomendó que hicieran para bajarlo de peso?</td>
+                    <td>No llevamos un control formal porque no tenemos un indicador exacto de cuál debería ser su peso ideal al ser una cruza de razas. Sin embargo, a simple vista sí está bastante subida de peso.<br><br>Anteriormente, hace unos meses, salíamos a pasear e hicimos que la mayoría de nuestros perros bajaran de peso. Actualmente no hemos podido organizarnos para salir a pasear, pero tratamos de que bajen su energía con juegos, interacciones, abrazos o simplemente hablando con ellos.</td>
+                </tr>
+                <tr>
+                    <td>6. La última vez que el veterinario les dijo algo sobre el peso o la salud del perro, ¿qué hicieron después?</td>
+                    <td>La última vez que la llevamos a registrar su peso, pesaba 3.9 kg (o 3.900 kg). Sin embargo, ese registro fue hace aproximadamente un año y desde entonces no la hemos vuelto a pesar ni le hemos dado seguimiento formal al tema.</td>
+                </tr>
+                <tr>
+                    <td>7. ¿Cuánto gastas hoy al mes en cosas relacionadas con la alimentación o salud de tu perro (croquetas especiales, consultas, lo que sea)? ¿Y cuánto tiempo le dedicas a estar al pendiente de eso?</td>
+                    <td>Gastamos un aproximado de $1,500 MXN. Como preparamos y almacenamos la comida para que rinda entre una semana y una semana y media, el costo llega a variar un poco dependiendo del precio actual del pollo, huevo, vegetales y carbohidratos en el mercado, pero en promedio es esa cantidad.</td>
+                </tr>
+                </tbody>
+            </table>
             </div>
 
-            <!-- TAB 1: Raw Material -->
-            <div id="tabRawMaterial" class="tab-content active">
-              <div class="summary-box">
-                <p><strong>Objective:</strong> Collect the raw material (cut crystals and staples),
-                  organize it, and transport it to the next step.</p>
-              </div>
-              <p>For this first part, two circular containers will be used for collection and
-                organization; they will rotate by means of a gear system. These will contain the
-                raw material: cut crystals and staples.</p>
-              <p>Through a randomness system, they will fall onto rails, which will mechanically
-                arrange them in the correct orientation.</p>
-
-              <!-- Sub-carousel inside tab 1 -->
-              <div id="carouselRawMaterial" class="slideshow-container">
-
-                <!-- Slide 1: Staples -->
-                <div class="slide">
-                  <h4 style="color:#0895b1;">Idea for the Staples</h4>
-                  <p>I based my idea on the following screw-sorting system:</p>
-                  <div class="video-wrapper">
-                    <iframe src="https://www.youtube.com/embed/XHKiu6XvxkU"
-                      title="Drum Feeder with Piezo Vibratory Linear and Loading Chute"
-                      allowfullscreen></iframe>
-                  </div>
-                  <p>The idea is to use the same rotating system so that the staples fall onto a
-                    conveyor belt designed like hollow walls, which will become increasingly
-                    narrower as the conveyor advances. This is to ensure all staples end up at
-                    the same opening angle.</p>
-                  <div style="text-align:center; margin:12px 0;">
-                    <img src="weeks/w03/img_w03/Boceto_dispensador_grapas.png"
-                      alt="Staple dispenser sketch"
-                      style="max-width:480px; width:100%; border-radius:10px;">
-                  </div>
-                  <p>I already have the base structure of the container, which is documented in
-                    Week 3 — Laser &amp; Vinyl Cutting:</p>
-                  <a href="https://fabacademy.org/2026/labs/puebla/students/daniela-barranco/weeks/w03/week03.html"
-                    target="_blank" class="action-btn">Daniela Barranco – Week 03</a>
-                  <div style="text-align:center; margin:12px 0;">
-                    <img src="weeks/w03/img_w03/23_resultado_01.jpeg"
-                      alt="Week 03 result"
-                      style="max-width:480px; width:100%; border-radius:10px;">
-                  </div>
-                </div>
-
-                <!-- Slide 2: Cut Crystals -->
-                <div class="slide">
-                  <h4 style="color:#0895b1;">Idea for the Cut Crystals</h4>
-                  <p>The YouTube videos on which I am basing this idea:</p>
-                  <p><strong>Main idea:</strong></p>
-                  <div class="video-wrapper">
-                    <iframe src="https://www.youtube.com/embed/jXfh9Nzx_9c"
-                      title="MVI 4370 cap sorter"
-                      allowfullscreen></iframe>
-                  </div>
-                  <p><strong>Secondary idea:</strong></p>
-                  <div class="video-wrapper">
-                    <iframe src="https://www.youtube.com/embed/_il1raAdet8"
-                      title="Alphamation Ltd High Speed Cap Feeder"
-                      allowfullscreen></iframe>
-                  </div>
-                  <p>I will conduct tests for this process using MDF.</p>
-                </div>
-
-                <div class="buttons-container" style="text-align: center; margin: 20px;">
-                  <button class="prev" data-target="carouselRawMaterial"
-                    style="border-radius: 10%; background-color: #00b4d8; color: #caf0f8; border: none; padding: 10px 20px; margin: 10px;">Previous</button>
-                  <button class="next" data-target="carouselRawMaterial"
-                    style="border-radius: 10%; background-color: #00b4d8; color: #caf0f8; border: none; padding: 10px 20px; margin: 10px;">Next</button>
-                </div>
-              </div>
-              <!-- end carouselRawMaterial -->
+            <h4>Segunda entrevista</h4>
+            <!--Imagen: foto/captura entrevista 2-->
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="assignments/weeks/w04/img_w04/02.jpeg" alt="Segunda entrevista" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; border: 1px solid #dee2e6;">
             </div>
-            <!-- END TAB 1 -->
+            <!--Fin imagen-->
 
-            <!-- TAB 2: Assembly Process -->
-            <div id="tabAssembly" class="tab-content">
-              <p>This is planned to be done using two conveyor belts where, through a crimping
-                process, both pieces fit together.</p>
-              <p>The idea can be seen in the following YouTube video, adapted so that the staples
-                are used instead of screws:</p>
-              <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/YyRCyqyo-Qw"
-                  title="SEMs Units – TR Product Manufacturing"
-                  allowfullscreen></iframe>
-              </div>
-
-              <p>Additionally, in this process, a camera will keep count of the number of
-                assembled cut crystals. The production process of this circuit for the camera
-                can be seen in my Input Devices week:</p>
-              <a href="https://fabacademy.org/2026/labs/puebla/students/daniela-barranco/weeks/w09/week09.html"
-                target="_blank" class="action-btn">Daniela Barranco – Week 09</a>
-              <div style="text-align:center; margin:12px 0;">
-                <img src="weeks/w09/img_w09/16.jpeg"
-                  alt="Week 09 – Input Devices"
-                  style="max-width:480px; width:100%; border-radius:10px;">
-              </div>
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr><th>Pregunta</th><th>Respuesta Corregida</th></tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1. Cuéntame cómo es un día normal de tu perro, desde que alguien lo alimenta por primera vez hasta la noche — ¿quién hace qué?</td>
+                    <td>Nuestros tres cachorros suelen dormir juntos cerca de nuestra puerta. Se despiertan cuando nos escuchan entrar a la cocina y nos reciben con mucha alegría. Pasan el día en la casa y a veces duermen durante la tarde.<br><br>Solo se les alimenta una vez al día, por las noches, dándoles una porción proporcional a su tamaño y al nivel de actividad que realizaron durante la jornada para que aguanten bien todo el día.</td>
+                </tr>
+                <tr>
+                    <td>2. ¿Cuándo fue la última vez que te enteraste de que tu perro había subido de peso o que algo no andaba bien con su alimentación? ¿Qué hiciste en ese momento?</td>
+                    <td>Por lo general nuestros perros están saludables, pero notamos sobrepeso en una de ellas (Norina) porque el doctor nos lo dijo y visualmente era evidente. En su momento compramos un alimento especializado para el manejo de peso y cuidamos su alimentación durante unos 4 meses. Le mantuvimos su comida una vez por la noche, pero con porciones y croquetas más controladas, con lo que logró bajar de peso.<br><br>Sin embargo, al ser un producto casi al doble de costo que un alimento convencional, tuvimos que regresar al alimento normal pero sirviéndole una cantidad menor.</td>
+                </tr>
+                <tr>
+                    <td>3. ¿Con qué frecuencia hablas con tu papá o mamá sobre cómo está comiendo el perro? Cuéntame de la última vez que pasó. ¿Cómo calculas las porciones de alimento que le das a tu perrito?</td>
+                    <td>Estamos muy al pendiente de cómo se alimentan y de si tienen apetito o no. Si vemos que no quieren comer, los motivamos poniéndoles en el fondo del plato algo de comida humana (sopa o caldo) para cambiar el sabor. Incluso recientemente en la veterinaria nos ofrecieron un sazonador en polvo para croquetas.<br><br>Calculamos las porciones según sus períodos y nivel de actividad: si hicieron mucho ejercicio o estuvieron muy activos, les servimos un poco más. Cuando entran en períodos de reproducción (como el macho), tienden a comer menos.</td>
+                </tr>
+                <tr>
+                    <td>4. ¿Qué es lo más difícil de coordinar la comida del perro entre las distintas personas que lo cuidan?</td>
+                    <td>(Para esta pregunta, la respuesta se conecta directamente con la atención al horario y el apetito que gestionan en casa):<br><br>Procuramos darles de comer siempre dentro del mismo horario. Sin embargo, si los vemos hambrientos o inquietos antes de tiempo, nos coordinamos para adelantarles un poco la comida. Lo importante para nosotros es estar al pendiente de que coman bien y que nunca falte el alimento en casa.</td>
+                </tr>
+                <tr>
+                    <td>5. ¿Has intentado alguna vez llevar algún control de cuánto come el perro (una app, anotarlo, preguntar seguido)? ¿Qué pasó, lo siguieron usando o lo dejaron? ¿Has llevado a tu perrito al veterinario por el tema de su peso, en caso de ser así, qué les recomendó que hicieran para bajarlo de peso?</td>
+                    <td>No llevamos ningún registro formal de su alimentación (ni en apps ni en notas). Todo el control lo basamos en la observación permanente y diaria de los perros.<br><br>Sobre el veterinario, cuando lo consultamos por el peso de Norina, nos recomendó cambiar a un alimento especial para control de peso.</td>
+                </tr>
+                <tr>
+                    <td>6. La última vez que el veterinario les dijo algo sobre el peso o la salud del perro, ¿qué hicieron después?</td>
+                    <td>Una vez que el veterinario nos confirmó el sobrepeso, le cambiamos la dieta a un alimento para perros con obesidad. No obstante, como era un producto mucho más caro y difícil de conseguir, con el tiempo se lo eliminamos y volvimos al alimento convencional, ajustando la cantidad a una porción menor.</td>
+                </tr>
+                <tr>
+                    <td>7. ¿Cuánto gastas hoy al mes en cosas relacionadas con la alimentación o salud de tu perro (croquetas especiales, consultas, lo que sea)? ¿Y cuánto tiempo le dedicas a estar al pendiente de eso?</td>
+                    <td>Un bulto de alimento rinde aproximadamente 3 semanas y nos cuesta $1,200 MXN. Adicionalmente, de vez en cuando gastamos en comprarles premios, como huesos u otros detalles.<br><br>En cuanto al tiempo, le dedicamos atención constante todos los días para revisar sus horarios, observar su apetito y asegurarnos de que estén bien alimentados.</td>
+                </tr>
+                </tbody>
+            </table>
             </div>
-            <!-- END TAB 2 -->
 
-            <!-- TAB 3: Bending -->
-            <div id="tabBending" class="tab-content">
-              <p>To secure the staples to the cut crystals, I intend to replace the process
-                previously done manually with pliers by means of a mold that will have a
-                predetermined shape to bend the staple legs.</p>
+            <h4>Tercera entrevista</h4>
+            <!--Imagen: foto/captura entrevista 3-->
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="assignments/weeks/w04/img_w04/03.jpeg" alt="Tercera entrevista" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; border: 1px solid #dee2e6;">
             </div>
-            <!-- END TAB 3 -->
+            <!--Fin imagen-->
 
-          </div>
-          <!-- end tabs-container -->
-
-                <h2>System Integration Summary</h2>
-
-                <p><a href="https://fabacademy.org/2026/labs/puebla/students/daniela-barranco/weeks/w15/week15.html" target="_blank" class="action-btn">System Integration – Week 15</a></p>
-
-                <p>The documentation for the system integration of my project is distributed across several weeks of Fab Academy. The following table links each week to its specific contribution to the final project:</p>
-
-                <table class="table table-bordered">
-                    <thead class="table-dark">
-                        <tr>
-                            <th>Week</th>
-                            <th>Contribution to the Final Project</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong><a href="../../weeks/w03/week03.html" target="_blank">Week 03</a></strong></td>
-                            <td>Staple dispenser: laser-cut base container. Original idea, staple-by-staple dispenser system.</td>
-                        </tr>
-                        <tr>
-                            <td><strong><a href="../../weeks/w12/week12.html" target="_blank">Week 12</a></strong></td>
-                            <td>
-                                Electronic design: schematic and PCB in KiCad.<br>
-                                <em>The other part of the board (with the Raspberry Pi Pico) is documented on the page of
-                                <strong><a href="https://fabacademy.org/2026/labs/puebla/students/joseph-alavez/assignments/week12.html" target="_blank">Joseph Alavez Jaimes — Week 12</a></strong>,
-                                with whom I teamed up during the PCB week and who helped me build the other part of the modular board.</em>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong><a href="../../weeks/w09/week09.html" target="_blank">Week 09</a></strong></td>
-                            <td>Input Devices: circuit with a camera for counting assembled crystals.</td>
-                        </tr>
-                        <tr>
-                            <td><strong><a href="../../weeks/w10/week10.html" target="_blank">Week 10</a></strong></td>
-                            <td>Output Devices: PCB for controlling two NEMA 17 motors with DRV8825 drivers (explanation of how these stepper motors and drivers are used).</td>
-                        </tr>
-                        <tr>
-                            <td><strong><a href="../../weeks/w14/week14.html" target="_blank">Week 14</a></strong></td>
-                            <td>Interface: MQTT dashboard for configuring and monitoring the assembly line.</td>
-                        </tr>
-                        <tr>
-                            <td><strong><a href="../../weeks/w15/week15.html" target="_blank">Week 15</a></strong></td>
-                            <td>System Integration: integration of all the subsystems above.</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr><th>Pregunta</th><th>Respuesta Corregida</th></tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1. Cuéntame cómo es un día normal de tu perro, desde que alguien lo alimenta por primera vez hasta la noche — ¿quién hace qué?</td>
+                    <td>Hobi (una Akita Americano de 8 años) se despierta temprano cuando yo o mis papás nos levantamos. Le dan de comer en la mañana, cerca de las 8:00 a. m. Casi siempre le sirven las chicas que nos ayudan en la casa, mi hermana, mi mamá o yo, dependiendo de quién se acuerde primero.<br><br>Pasa el día en la casa y caminando por el jardín (tenemos un terreno amplio). Aunque ya no sale tanto a la calle por su edad y sobrepeso, dentro de casa sí se mantiene en constante movimiento. Por la noche, cuando es hora de cenar, quien esté disponible la despierta, pesa la porción exacta y le sirve.</td>
+                </tr>
+                <tr>
+                    <td>2. ¿Cuándo fue la última vez que te enteraste de que tu perro había subido de peso o que algo no andaba bien con su alimentación? ¿Qué hiciste en ese momento?</td>
+                    <td>Hace como un mes nos dimos cuenta al llevarla al veterinario porque lloraba/aullaba con facilidad, como si la hubieran pisado. Ya sabíamos que tenía algo de sobrepeso por sus visitas al baño, pero en esta revisión nos diagnosticaron que desarrolló displasia de cadera (común en razas grandes). Por su edad y peso, una cirugía no era opción segura.<br><br><strong>¿Qué hicimos?:</strong> Le dieron medicamentos para desinflamar la zona. Además, el veterinario nos ordenó ser muy estrictos con la dieta: le cambiamos la marca de croquetas y ahora le medimos la porción exacta con báscula (175 gramos por servida). Se le eliminó por completo la comida humana, pan y frutas que antes se le caían al piso o le daban.</td>
+                </tr>
+                <tr>
+                    <td>3. ¿Con qué frecuencia hablas con tu papá o mamá sobre cómo está comiendo el perro? Cuéntame de la última vez que pasó. ¿Cómo calculas las porciones de alimento que le das a tu perrito?</td>
+                    <td>Hablamos del tema principalmente cuando vamos al veterinario y nos da un diagnóstico. En el día a día solo nos preguntamos de forma rápida si ya comió.<br><br><strong>Cálculo de porciones:</strong> Usamos una báscula para medir exactos 175 gramos de croquetas para la mañana y otros 175 gramos para la noche. Además, cambiamos la dinámica: antes se le dejaba el plato lleno todo el día; ahora, si no se acaba las croquetas en el momento, se le retira el plato para que no coma de más ni se las gane el otro perro.</td>
+                </tr>
+                <tr>
+                    <td>4. ¿Qué es lo más difícil de coordinar la comida del perro entre las distintas personas que lo cuidan?</td>
+                    <td>Al principio era casi imposible coordinarnos. Pasaba muy seguido que nadie preguntaba si alguien ya le había dado de comer, así que terminaban alimentándola dos veces. Además, como el otro perrito es más mañoso, a veces ella se comía las croquetas del otro perro o se tropezaban las rutinas.<br><br>Lo superamos al volvernos más conscientes: coordinamos bien quién le da, confirmamos si ya desayunó o cenó, y le retiramos el plato al otro perro para que Hobi no le robe alimento.</td>
+                </tr>
+                <tr>
+                    <td>5. ¿Has intentado alguna vez llevar algún control de cuánto come el perro (una app, anotarlo, preguntar seguido)? ¿Qué pasó, lo siguieron usando o lo dejaron? ¿Has llevado a tu perrito al veterinario por el tema de su peso, en caso de ser así, qué les recomendó que hicieran para bajarlo de peso?</td>
+                    <td>No hemos usado apps ni registros escritos, solo la comunicación verbal en casa y el control estricto con la báscula al servirle.<br><br>Sí la llevamos al veterinario debido a la displasia de cadera y al peso. Nos recomendó de manera urgente: bajar la porción a 175 g exactos por comida, eliminar los premios/comida de mesa, cambiar a croquetas de control de peso, retirarle el plato si no come en el momento y sacarla a paseos cortos de 15 minutos (sin forzarla si se cansa).</td>
+                </tr>
+                <tr>
+                    <td>6. La última vez que el veterinario les dijo algo sobre el peso o la salud del perro, ¿qué hicieron después?</td>
+                    <td>Aplicamos al pie de la letra las indicaciones: compramos el nuevo alimento, empezamos a pesar cada porción en báscula, pusimos horarios para retirarle el plato si no se acaba la comida y evitamos que entre al área donde come el otro perro. También empezamos a sacarla al jardín o a paseos muy breves de 15 minutos para activarla de a poco sin lastimar sus caderas.</td>
+                </tr>
+                <tr>
+                    <td>7. ¿Cuánto gastas hoy al mes en cosas relacionadas con la alimentación o salud de tu perro (croquetas especiales, consultas, lo que sea)? ¿Y cuánto tiempo le dedicas a estar al pendiente de eso?</td>
+                    <td>Mi hermana y mis papás se encargan de las compras, pero calculo que compramos un costal de croquetas de aproximadamente 10.8 kg (24 lbs) cada 2 semanas para los dos perros. Adicionalmente, se gastan alrededor de $300 MXN o un poco más cuando requiere refuerzo de medicamentos para la desinflamación articular.<br><br><strong>Tiempo dedicado:</strong> No toma mucho tiempo servirle, pero sí exige atención constante para verificar si alguien ya le dio de comer y para pesar las porciones en cada comida.</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
 
         </section>
 

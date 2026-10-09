@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniela Barranco - Semana 7</title>
+    <link rel="stylesheet" href="../../css/style.css">
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <a href="../../../index.html">Inicio</a>
+        <a href="../../../assignments.html">Tareas semanales</a>
+        <a href="../../../final-project.html">Proyecto final</a>
+        <a href="../../../about.html">Yo merengues</a>
+      </div>
+    </div>
+
+    <!--Hero Section-->
+    <div class="hero-section">
+      <div class="hero-container">
+        <div class="hero-text text-center">
+          <h1>Viabilidad técnica y económica</h1>
+          <h2>Semana 7</h2>
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN LAYOUT WITH SIDEBAR -->
+    <div class="week-layout">
+      <!-- SIDEBAR MENU -->
+      <aside class="week-sidebar">
+        <nav class="week-sidebar-menu">
+          <a onclick="showWeekSection('benchmarking-financiero')" class="week-link active">Benchmarking Financiero</a>
+          <a onclick="showWeekSection('bom')" class="week-link">BOM</a>
+          <a onclick="showWeekSection('costo-ia')" class="week-link">Costo de la IA</a>
+        </nav>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <div class="week-main-content">
+
+        <!--SECCIÓN 1: BENCHMARKING FINANCIERO-->
+        <section id="benchmarking-financiero" class="week-section active">
+            <h2>Benchmarking de modelos de ingresos</h2>
+
+            <p>
+                Para entender cómo se gana dinero en el espacio de Wooffi, comparé tres referentes:
+                Petkit y Petlibro, que son comederos inteligentes con app, y Nanu Dog, que no vende hardware
+                pero resuelve el mismo problema (la nutrición y el peso del perro). Usé Perplexity con un prompt
+                armado a partir del ejercicio y revisé los precios y las fuentes que me devolvió.
+                Fecha de consulta: 9 de octubre de 2026.
+            </p>
+
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr>
+                    <th>Producto o servicio similar</th>
+                    <th>Modelo de ingresos (quién paga, cuándo)</th>
+                    <th>Rango de precio</th>
+                    <th>Notas (fricción en el pago y otros stakeholders)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><strong>Petkit</strong> (comederos con app y cámara opcional)</td>
+                    <td>
+                    <strong>Hardware:</strong> venta única; paga el usuario al comprar.<br>
+                    <strong>Suscripción opcional (CARE+):</strong> mensual o anual, por dispositivo; paga el usuario después de comprar.<br>
+                    <strong>Consumibles:</strong> bolsas desecantes y accesorios.
+                    </td>
+                    <td>
+                    <strong>Hardware:</strong> USD $36–$159 en Amazon EE.UU.; MXN $2,999–$3,500 en PetNGo México.<br>
+                    <strong>CARE+:</strong> Basic ~USD $4/mes o $22/año; Premium ~USD $7–$8/mes o $70–$100/año.<br>
+                    <strong>Consumibles:</strong> USD $5–$10.
+                    </td>
+                    <td>
+                    <strong>Fricción:</strong> algunas funciones de IA multi-mascota requieren CARE+ después de comprar el aparato;
+                    la suscripción es por dispositivo; el video tiene 7 días de prueba y luego se paga.<br>
+                    <strong>Stakeholders:</strong> las tiendas (PetNGo, eBay) se quedan con margen. Dicen que los veterinarios lo
+                    recomiendan, pero no encontré pago ni integración formal con ellos.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Petlibro</strong> (comederos con app, cámara y báscula)</td>
+                    <td>
+                    <strong>Hardware:</strong> venta única; paga el usuario al comprar.<br>
+                    <strong>Suscripción opcional (Care):</strong> analytics de salud y tendencias, mensual o anual.<br>
+                    <strong>Suscripción aparte (Video Cloud AI):</strong> video en la nube, anual.<br>
+                    <strong>Consumibles:</strong> bolsas desecantes.
+                    </td>
+                    <td>
+                    <strong>Hardware:</strong> USD $50–$250 en sitio oficial y Amazon; MXN $1,849–$2,256 en Walmart México
+                    (modelos básicos) y MXN $4,420–$6,649 en otros distribuidores.<br>
+                    <strong>Care:</strong> USD $5.99/mes o $59.99/año (1 mascota); $12.99/mes o $129.99/año (varias).<br>
+                    <strong>Video Cloud:</strong> USD $96–$160/año.<br>
+                    <strong>Consumibles:</strong> USD ~$20 por 8 bolsas.
+                    </td>
+                    <td>
+                    <strong>Fricción:</strong> hay que pagar dos suscripciones separadas si se quiere analytics y video;
+                    el seguimiento de hábitos de alimentación queda detrás del paywall; no vi prueba gratuita clara para Care.
+                    En México los precios llegan a ser de 2 a 3 veces los de EE.UU.<br>
+                    <strong>Stakeholders:</strong> tiendas (Yupet, PetSmart, Walmart). Mencionan recomendaciones
+                    "respaldadas por veterinarios", sin evidencia de revenue share.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Nanu Dog</strong> (comida BARF con asesoría nutricional; competidor indirecto, no es hardware)</td>
+                    <td>
+                    <strong>Suscripción mensual de comida:</strong> paga el usuario de forma recurrente. Incluye menús,
+                    asesoría nutricional y envío. No hay hardware.
+                    </td>
+                    <td>
+                    <strong>Plan pequeño</strong> (hasta 10 kg): MXN $199/mes.<br>
+                    <strong>Plan mediano</strong> (11–25 kg): MXN $299/mes.<br>
+                    <strong>Plan grande</strong> (26+ kg): MXN $399/mes.
+                    </td>
+                    <td>
+                    <strong>Fricción:</strong> solo envía a la Zona Metropolitana de Guadalajara.<br>
+                    <strong>Stakeholders:</strong> vende directo al consumidor, sin intermediarios visibles. Dice que veterinarios
+                    recomiendan sus productos, pero no hay evidencia de pago ni integración formal.
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">¿Qué modelo usan la mayoría y por qué?</h3>
+            <p>
+                Los dos competidores directos usan el mismo modelo: <strong>hardware como producto de entrada y una
+                suscripción opcional por la app y la IA</strong>. Veo tres razones. Primera, el usuario puede comprar el aparato
+                y alimentar a su mascota sin comprometerse a pagar cada mes, lo que baja la fricción de la primera compra.
+                Segunda, una vez que depende de la app es más probable que pague por las funciones avanzadas (analytics, video,
+                IA). Tercera, la IA y el almacenamiento en la nube tienen un costo continuo, y una suscripción lo cubre.
+                Nanu Dog es la excepción: no vende hardware y cobra por comida más asesoría, lo que muestra que hay otras formas
+                de ganar dinero con el mismo problema.
+            </p>
+
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">¿Hay algún stakeholder al que nadie le está cobrando?</h3>
+            <p>
+                Sí. En las tres empresas encontré que los <strong>veterinarios</strong> "recomiendan" el producto, pero no vi
+                evidencia de que alguien les cobre, les pague o los integre formalmente. Como la obesidad canina es un problema
+                clínico, creo que ahí hay una oportunidad natural para Wooffi: un panel gratuito para que el veterinario dé
+                seguimiento al peso de sus pacientes, y una comisión por las suscripciones que refiera.
+            </p>
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+                <p>
+                    También detecté otros stakeholders que ninguno de los tres parece monetizar:
+                </p>
+                <ul>
+                    <li><strong>Marcas de alimento:</strong> podrían patrocinar planes nutricionales o aparecer como alimento recomendado en la app.</li>
+                    <li><strong>Aseguradoras de mascotas:</strong> podrían dar descuentos a quienes controlan el peso de su perro con Wooffi.</li>
+                    <li><strong>Tiendas y veterinarias:</strong> podrían vender el hardware con la suscripción incluida y quedarse con un margen.</li>
+                </ul>
+                <p>
+                    Estas ideas salen del análisis de Perplexity y de que no encontré evidencia de que se esté haciendo hoy.
+                    Que no encuentre evidencia no prueba que no exista, así que quedan como hipótesis por validar con veterinarios.
+                </p>
+            </div>
+
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Cómo lo conecto con mi modelo</h3>
+            <div class="summary-box">
+                <p>
+                    Mi idea inicial es un modelo en dos capas: vender el hardware una sola vez y cobrar una suscripción por la app
+                    y la IA que ajusta la dieta. La suscripción es necesaria porque la IA tiene un costo operativo continuo, que
+                    calculé en la sección de costos. Del benchmarking tomo tres decisiones. Primera, dejar el hardware básico
+                    funcionando sin suscripción, con una prueba gratuita de la IA. Segunda, cobrar una sola suscripción en vez de
+                    separar analytics y video como hace Petlibro, para no generar confusión. Tercera, poner el precio de la
+                    suscripción en pesos y por debajo de las de Petkit y Petlibro, y competitivo frente a los $199–$399 MXN/mes de
+                    Nanu Dog, que además incluyen la comida. El precio exacto lo definiré cuando tenga calculado el costo de la
+                    nube y del video, porque hoy solo tengo el costo de la IA. Además, voy a explorar a los veterinarios como
+                    canal de venta y como socio.
+                </p>
+            </div>
+
+            <p><small>
+                Fuentes: sitios oficiales de Petkit, Petlibro y Nanu Dog, Amazon, PetNGo México, Walmart México y TechCrunch.
+                Los precios de CARE+ de Petkit vienen de comentarios de usuarios en Reddit y de la tienda rusa de Petkit,
+                así que los tomo como aproximados.
+            </small></p>
+        </section>
+        <!--Fin SECCIÓN 1: BENCHMARKING FINANCIERO-->
+
+        <!--SECCIÓN 2: BOM-->
+        <section id="bom" class="week-section">
+            <h2>Lista de materiales (BOM)</h2>
+
+            <p>Con la lista final de funciones de Wooffi armé el inventario de costos por unidad. Coticé en UNIT Electronics México lo que pude y el resto lo dejé como estimado, porque todavía tengo que cotizarlo en MercadoLibre, LCSC o Digi-Key México. Los precios son en pesos mexicanos y los consulté el 9 de octubre de 2026.</p>
+
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Electrónica</h3>
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr><th>Componente</th><th>Especificación</th><th>Precio (MXN)</th><th>Fuente</th></tr>
+                </thead>
+                <tbody>
+                <tr><td>ESP32-S3-CAM</td><td>N16R8 con cámara OV2640 (reconocimiento y cámara en el teléfono)</td><td>$280</td><td>Estimado (importación, unos US$14 + envío)</td></tr>
+                <tr><td>4 celdas de carga</td><td>50 kg cada una, para la báscula del perro (4 × $22)</td><td>$88</td><td>Cotizado, UNIT Electronics</td></tr>
+                <tr><td>Módulo HX711</td><td>Amplificador para las celdas</td><td>$21</td><td>Cotizado, UNIT Electronics</td></tr>
+                <tr><td>Celda de 5 kg + HX711</td><td>Pesa la porción servida en el plato</td><td>$62</td><td>Cotizado, UNIT Electronics</td></tr>
+                <tr><td>Motor NEMA 17 17HS4401</td><td>1.7 A, 4 kg·cm, mueve el rotor</td><td>$156</td><td>Cotizado, UNIT Electronics</td></tr>
+                <tr><td>Driver A4988</td><td>Controla el motor</td><td>$34</td><td>Cotizado, UNIT Electronics</td></tr>
+                <tr><td>Pantalla IPS 1.54"</td><td>Confirma la porción servida</td><td>$100</td><td>Estimado</td></tr>
+                <tr><td>Sensor IR FC-51</td><td>Nivel de croquetas</td><td>$16</td><td>Cotizado, UNIT Electronics</td></tr>
+                <tr><td>Fuente de 12 V</td><td>Alimentación principal</td><td>$45</td><td>Estimado</td></tr>
+                <tr><td>Regulador a 5 V</td><td>Alimenta la lógica</td><td>$35</td><td>Estimado</td></tr>
+                <tr><td>2 baterías 18650</td><td>Respaldo de emergencia</td><td>$82</td><td>Estimado</td></tr>
+                <tr><td>BMS + portapilas</td><td>Protección y soporte de la batería</td><td>$65</td><td>Estimado</td></tr>
+                <tr><td>PCB, cables y conectores</td><td>Fabricación en el Fab Lab</td><td>$100</td><td>Estimado</td></tr>
+                <tr><td>Buzzer</td><td>Aviso sonoro</td><td>$10</td><td>Estimado</td></tr>
+                </tbody>
+                <tfoot>
+                <tr><td colspan="2"><strong>Subtotal electrónica</strong></td><td><strong>$1,094</strong></td><td></td></tr>
+                </tfoot>
+            </table>
+            </div>
+
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Mecánica</h3>
+            <p>Todos estos precios son estimados y dependen del diseño final.</p>
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr><th>Componente</th><th>Precio (MXN)</th></tr>
+                </thead>
+                <tbody>
+                <tr><td>Plato de acero inoxidable</td><td>$90</td></tr>
+                <tr><td>Rotor antiatasco impreso en 3D</td><td>$55</td></tr>
+                <tr><td>Cuerpo modular impreso (≈1 kg de PETG), desarmable para limpiar</td><td>$340</td></tr>
+                <tr><td>Cubierta de aluminio trabajada a mano</td><td>$250</td></tr>
+                <tr><td>Plataforma de báscula + tapete antiderrapante</td><td>$160</td></tr>
+                <tr><td>Pies de goma + lastre (base antivuelco)</td><td>$60</td></tr>
+                <tr><td>Tornillería y cierre de tapa</td><td>$70</td></tr>
+                </tbody>
+                <tfoot>
+                <tr><td><strong>Subtotal mecánica</strong></td><td><strong>$1,025</strong></td></tr>
+                </tfoot>
+            </table>
+            </div>
+
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Total y comparación con mi presupuesto</h3>
+            <div class="summary-box">
+                <p>El costo estimado por unidad es de <strong>≈ $2,119 MXN</strong>. Mi restricción es un máximo de $1,500 por unidad, con meta ideal menor a $1,000, así que por ahora me paso.</p>
+            </div>
+
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Cómo puedo bajarlo</h3>
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+                <ul>
+                    <li>Quitar la cubierta de aluminio y usar PETG, dejando acero solo en el plato: baja unos $250. Tendría que probar si resiste las mordidas.</li>
+                    <li>Usar un ESP32-S3 sin cámara: baja aproximadamente $150, pero se pierde el reconocimiento de mascota.</li>
+                    <li>Comprar en volumen: por ejemplo, el NEMA 17 baja de $156 a $138 con 10 piezas.</li>
+                </ul>
+                <p>Con las dos primeras opciones llegaría a ≈ $1,700, así que todavía tengo que reducir más la parte mecánica.</p>
+            </div>
+
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Qué cambia en mi PDS</h3>
+            <div class="summary-box">
+                <p>En la semana 5 descarté la cámara por mi análisis Blue Ocean, pero mi lista final de funciones la incluye otra vez, para el reconocimiento de mascota y para ver al perro desde el teléfono. Tengo que actualizar los requerimientos de interfaz y el de costo. También debo revisar que los materiales en contacto con la comida sean aptos para alimentos, sobre todo las piezas impresas.</p>
+            </div>
+        </section>
+        <!--Fin SECCIÓN 2: BOM-->
+
+        <!--SECCIÓN 3: COSTO DE LA IA-->
+        <section id="costo-ia" class="week-section">
+            <h2>Costo de la IA</h2>
+
+            <p>Wooffi usa un modelo de IA en la nube para calcular la porción de croquetas en cada comida, según el peso del perro, su meta (bajar o mantener peso) y las calorías de su alimento. Cada llamada al modelo tiene un costo, así que lo calculé desde ahora.</p>
+
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Fórmula</h3>
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+                <p><strong>Costo mensual por usuario</strong> = llamadas al modelo por día × (tokens de entrada × precio de entrada + tokens de salida × precio de salida) × 30 días.</p>
+            </div>
+
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Precios por millón de tokens</h3>
+            <p>Los tomé de la <a href="https://platform.claude.com/docs/en/about-claude/pricing">página oficial de precios de Claude</a> y están en dólares.</p>
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr><th>Modelo</th><th>Entrada (USD / millón)</th><th>Salida (USD / millón)</th></tr>
+                </thead>
+                <tbody>
+                <tr><td>Claude Haiku 5.5</td><td>$0.10</td><td>$0.50</td></tr>
+                <tr><td>Claude Sonnet 5.5</td><td>$2</td><td>$10</td></tr>
+                <tr><td>Claude Opus 5.5</td><td>$4</td><td>$20</td></tr>
+                <tr><td>Claude Fable 5.1</td><td>$10</td><td>$50</td></tr>
+                </tbody>
+            </table>
+            </div>
+
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Supuestos</h3>
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+                <ul>
+                    <li>Cada comida hace una llamada al modelo.</li>
+                    <li>Entrada de ≈1,000 tokens: instrucciones, perfil del perro, su meta, la marca de croquetas con sus calorías y las últimas pesadas.</li>
+                    <li>Salida de ≈150 tokens: la porción en gramos y una nota breve.</li>
+                    <li>Si se agrega una foto de unos 640×480, suma ≈410 tokens de entrada.</li>
+                    <li>Tipo de cambio supuesto: $18.50 MXN por dólar.</li>
+                    <li>Estos conteos son estimados. Para la versión final los voy a medir con el prompt real de Wooffi.</li>
+                </ul>
+            </div>
+
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Ejemplo de cálculo (Sonnet 5.5, solo texto)</h3>
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+                <p>(1,000 × $2 + 150 × $10) / 1,000,000 = $0.0035 USD por llamada. Con 2 comidas al día son 60 llamadas al mes, o sea ≈ $0.21 USD, unos $3.88 MXN.</p>
+            </div>
+
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Costo mensual por perro (MXN)</h3>
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr>
+                    <th>Modelo</th>
+                    <th>2 comidas, solo texto</th>
+                    <th>2 comidas, con foto</th>
+                    <th>3 comidas, con foto</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td>Haiku 5.5</td><td>$0.19</td><td>$0.24</td><td>$0.36</td></tr>
+                <tr><td>Sonnet 5.5</td><td>$3.88</td><td>$4.80</td><td>$7.19</td></tr>
+                <tr><td>Opus 5.5</td><td>$7.77</td><td>$9.59</td><td>$14.39</td></tr>
+                <tr><td>Fable 5.1</td><td>$19.43</td><td>$23.98</td><td>$35.96</td></tr>
+                </tbody>
+            </table>
+            </div>
+
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Qué concluyo</h3>
+            <div class="summary-box">
+                <p>El costo de la IA por perro es muy bajo, incluso con el modelo más caro. Lo que sí pesaría en una suscripción es la infraestructura en la nube y el video de la cámara, que todavía no calculé. Además, la porción base se puede calcular con una fórmula de calorías diarias directamente en el dispositivo, y la IA se usaría solo para ajustar según la tendencia de peso, lo que reduciría aún más el costo. Antes de fijar esos factores los voy a validar con un veterinario.</p>
+            </div>
+        </section>
+        <!--Fin SECCIÓN 3: COSTO DE LA IA-->
+
+      </div>
+
+    </div>
+
+    <footer>
+      <p>Copyright 2026 Daniela Barranco - Creative Commons Atribución No Comercial</p>
+      <p>Código fuente alojado en <a href="https://gitlab.fabcloud.org/academany/fabacademy/2026/labs/puebla/students/daniela-barranco" target="_blank">gitlab.fabcloud.org</a></p>
+    </footer>
+
+    <script src="../../css/slideshow.js"></script>
+
+    <script>
+      function showWeekSection(sectionId) {
+        const sections = document.querySelectorAll('.week-section');
+        sections.forEach(section => section.classList.remove('active'));
+        const links = document.querySelectorAll('.week-link');
+        links.forEach(link => link.classList.remove('active'));
+        const target = document.getElementById(sectionId);
+        if (target) target.classList.add('active');
+        if (typeof event !== 'undefined' && event && event.currentTarget) {
+          event.currentTarget.classList.add('active');
+          event.preventDefault();
+        }
+      }
+    </script>
+  </body>
+</html>

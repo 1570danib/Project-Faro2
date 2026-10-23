@@ -36,6 +36,11 @@
           <a onclick="showWeekSection('benchmarking-financiero')" class="week-link active">Benchmarking Financiero</a>
           <a onclick="showWeekSection('bom')" class="week-link">BOM</a>
           <a onclick="showWeekSection('costo-ia')" class="week-link">Costo de la IA</a>
+          <a onclick="showWeekSection('ciclo-aprendizaje')" class="week-link">Costos de desarrollo: ciclos de aprendizaje</a>
+          <a onclick="showWeekSection('diferenciacion-costos')" class="week-link">Diferenciación de costos (D, F, S)</a>
+          <a onclick="showWeekSection('crear-distribuir-oferta')" class="week-link">Crear vs. distribuir la oferta (D/F/S extendido)</a>
+          <a onclick="showWeekSection('reflexión')" class="week-link">Reflexión</a>
+
         </nav>
       </aside>
 
@@ -332,6 +337,636 @@
             </div>
         </section>
         <!--Fin SECCIÓN 3: COSTO DE LA IA-->
+
+                <!--INICIO SECCIÓN: COSTOS DE DESARROLLO — CICLOS DE APRENDIZAJE-->
+        <section id="ciclo-aprendizaje" class="week-section">
+          <h2>Costos de desarrollo: ciclos de aprendizaje</h2>
+
+          <p>El costo de desarrollo no es lineal: se estructura en ciclos de aprendizaje (diseño, construcción, prueba y aprendizaje). Mi primer cálculo me había salido demasiado bajo por ciclo, así que lo volví a cotizar. Tomé la estructura de los prompts de mi profesor (rol de analista, método conservador, contexto del proyecto y formato de salida) y la adapté a Wooffi. Lo corrí con Claude y verifiqué las tarifas y precios en fuentes actuales.</p>
+
+          <h3>Prompt que utilicé</h3>
+          <div class="prompt-box">
+<pre>Actúa como analista financiero de proyectos de innovación en hardware + software,
+con experiencia en prototipado en Fab Labs en México. Tu método es conservador:
+cuando hay incertidumbre usas el escenario menos favorable, separas lo que es gasto
+en efectivo de lo que es el valor de mi propio tiempo, y no inventas cifras:
+si un dato es supuesto, lo marcas como supuesto.
+
+Soy estudiante de Administración de Empresas y desarrollo Wooffi, un comedero
+inteligente para perros contra la obesidad canina: dispensador con rotor antiatasco
+(motor NEMA 17), báscula de 4 celdas de carga, ESP32-S3-CAM, pantalla, baterías de
+respaldo, app con IA que ajusta la porción de cada comida. Trabajo en el Fab Lab
+(impresión 3D, CNC, corte láser; el aluminio solo a mano).
+
+Mi BOM por unidad: electrónica $1,094 MXN, mecánica $1,025 MXN.
+Mi primer cálculo de ciclos me salió demasiado bajo por ciclo; necesito recotizarlo.
+
+Estructura que me pide mi profesor:
+Costo total = Fijos directos + Variables directos + Indirectos (10–20%) + Contingencias (25–40%)
+Escenarios: mínimo 3 ciclos, promedio 5–7, máximo 8+.
+
+Haz lo siguiente:
+1. Divide Wooffi en subsistemas (mecánica, electrónica+firmware, app+IA, integración y
+   pruebas con perros) y estima para cada uno: horas por ciclo, materiales por ciclo y
+   número de ciclos en cada escenario.
+2. Valora mis horas con una tarifa de referencia verificada en el mercado mexicano
+   (cita la fuente) y explica por qué elegiste ese número.
+3. Incluye licencias y cuentas de publicación de la app (con su precio actual).
+4. Calcula el costo por ciclo y el total para los tres escenarios, con indirectos del
+   15% y contingencias del 30%.
+5. Dime qué porcentaje del costo es tiempo y qué porcentaje es dinero en efectivo.
+6. Señala qué supuestos mueven más el resultado y qué palancas tengo para bajarlo.
+
+Formato: tablas con las cuentas visibles y una lista final de supuestos.</pre>
+          </div>
+
+          <h3>Respuesta</h3>
+
+          <h3>Tarifa por hora</h3>
+          <p>Usé <strong>$130 MXN/h</strong>. Sale de una vacante de ingeniero mecatrónico recién egresado con sueldo de $21,000 al mes (OCC), dividido entre 160 horas. Es una sola vacante, así que es un piso razonable y no un promedio. Si cambio esta tarifa, todo lo demás se recalcula. Como contraste, un freelance de apps en la Ciudad de México cobra entre $800 y $1,200 por hora (Cronoshare).</p>
+
+          <h3>Costo de un ciclo, por subsistema</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Subsistema</th>
+                <th>Horas por ciclo</th>
+                <th>Valor de las horas</th>
+                <th>Materiales por ciclo</th>
+                <th>Costo directo por ciclo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mecánica (CAD, impresión, ensamble, prueba antiatasco y antimordidas)</td>
+                <td>24</td>
+                <td>$3,120</td>
+                <td>$1,025 (se reimprime todo)</td>
+                <td><strong>$4,145</strong></td>
+              </tr>
+              <tr>
+                <td>Electrónica + firmware (cableado, firmware, calibración de celdas)</td>
+                <td>28</td>
+                <td>$3,640</td>
+                <td>$547 (se repone el 50% del BOM de $1,094 por ciclo)</td>
+                <td><strong>$4,187</strong></td>
+              </tr>
+              <tr>
+                <td>App + IA (interfaz, sincronización, prompt, pruebas)</td>
+                <td>30</td>
+                <td>$3,900</td>
+                <td>$50 (llamadas de prueba a la API)</td>
+                <td><strong>$3,950</strong></td>
+              </tr>
+              <tr>
+                <td>Integración y pruebas con perros reales</td>
+                <td>16</td>
+                <td>$2,080</td>
+                <td>$300 (croquetas, traslados)</td>
+                <td><strong>$2,380</strong></td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Un ciclo completo de los cuatro subsistemas cuesta ≈ <strong>$21,900 MXN</strong> con indirectos y contingencias, contra los $5,268 por ciclo del cálculo que había hecho antes un compañero con otro proyecto.</p>
+
+          <h3>Número de ciclos por escenario</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Subsistema</th>
+                <th>Mínimo</th>
+                <th>Promedio</th>
+                <th>Máximo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Mecánica</td><td>3</td><td>6</td><td>8</td></tr>
+              <tr><td>Electrónica + firmware</td><td>3</td><td>6</td><td>8</td></tr>
+              <tr><td>App + IA</td><td>3</td><td>5</td><td>8</td></tr>
+              <tr><td>Integración y pruebas</td><td>2</td><td>3</td><td>5</td></tr>
+            </tbody>
+          </table>
+
+          <h3>Costo total</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Concepto</th>
+                <th>Mínimo</th>
+                <th>Promedio</th>
+                <th>Máximo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Costos directos (horas + materiales)</td>
+                <td>$41,606</td>
+                <td><strong>$76,882</strong></td>
+                <td>$110,156</td>
+              </tr>
+              <tr>
+                <td>Licencias fijas (Google Play $25 USD ≈ $463; Apple $99 USD ≈ $1,832 solo en el máximo)</td>
+                <td>$463</td>
+                <td><strong>$463</strong></td>
+                <td>$2,295</td>
+              </tr>
+              <tr>
+                <td>Indirectos 15%</td>
+                <td>$6,310</td>
+                <td><strong>$11,602</strong></td>
+                <td>$16,868</td>
+              </tr>
+              <tr>
+                <td>Contingencias 30%</td>
+                <td>$14,514</td>
+                <td><strong>$26,684</strong></td>
+                <td>$38,796</td>
+              </tr>
+              <tr>
+                <td><strong>TOTAL</strong></td>
+                <td><strong>$62,893</strong></td>
+                <td><strong>$115,631</strong></td>
+                <td><strong>$168,115</strong></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="summary-box">
+            <p><strong>Presupuesto que recomiendo presentar: ≈ $115,600 MXN (escenario promedio).</strong> No presento el escenario mínimo, porque si algo sale mal el proyecto se queda sin recursos antes de llegar a un producto funcional.</p>
+          </div>
+
+          <h3>Lo que dicen los números</h3>
+          <div class="notes-container">
+            <ul>
+              <li><strong>Tiempo contra dinero.</strong> En el escenario promedio son 510 horas, es decir $66,300 de mi tiempo (86% de los costos directos). El efectivo real es de unos $10,600 más licencias. Wooffi es caro en horas, no en gasto.</li>
+              <li><strong>Qué mueve más el resultado.</strong> Las horas por ciclo y la tarifa. Si contratara el desarrollo de la app con un freelance (150 h × ~$880/h), solo ese subsistema pasaría de $19,750 a ≈ $132,000. Desarrollarla yo o con apoyo de IA es la palanca más grande.</li>
+              <li><strong>Palancas para bajarlo.</strong> Reducir ciclos de mecánica con un primer prototipo de baja fidelidad. Quitar el aluminio (−$250 por ciclo). Probar las celdas de carga con el firmware aislado antes de armar todo el cuerpo.</li>
+            </ul>
+          </div>
+
+          <h3>Supuestos</h3>
+          <div class="notes-container">
+            <ul>
+              <li>Las horas por ciclo (24, 28, 30 y 16) son estimaciones; falta contrastarlas con mi ritmo real de trabajo.</li>
+              <li>El 50% de reposición de electrónica por ciclo es un supuesto.</li>
+              <li>Si mi app es solo Android o solo web, la cuota de Apple de $1,832 no aplica.</li>
+              <li>Tipo de cambio de $18.50 MXN por dólar, igual que en mi sección de costo de la IA.</li>
+            </ul>
+          </div>
+
+          <h3>Aclaración sobre el método</h3>
+          <p>En el ejemplo del sensor agrícola de clase, el costo variable aparece sumado dos veces ($56,540 en total y luego $1,350 por ciclo). Yo calculé cada subsistema multiplicando su costo por sus ciclos una sola vez, sin repetir esa suma.</p>
+
+          <h3>Fuentes</h3>
+          <ul>
+            <li><a href="https://occ.com.mx/empleos/de-mecatronica/en-nuevo-leon/permanente/tipo-home-office-remoto" target="_blank">OCC, vacante de ingeniero mecatrónico</a></li>
+            <li><a href="https://www.cronoshare.com.mx/cuanto-cuesta/desarrollo-app" target="_blank">Cronoshare, tarifas de desarrollo de apps</a></li>
+            <li><a href="https://www.choicely.com/tutorials/how-much-does-it-cost-to-publish-an-app" target="_blank">Cuotas de Apple y Google para publicar apps</a></li>
+          </ul>
+        </section>
+        <!--FIN SECCIÓN: COSTOS DE DESARROLLO — CICLOS DE APRENDIZAJE-->
+
+
+        <!--INICIO SECCIÓN: DIFERENCIACIÓN DE COSTOS (D, F, S)-->
+        <section id="diferenciacion-costos" class="week-section">
+          <h2>Diferenciación de costos (D, F, S)</h2>
+
+          <p>Esta clasificación me dice dónde tengo poder de decisión. Los costos <strong>D (diferenciación)</strong> dan vida directamente a la propuesta de valor y recortarlos destruye el diferencial. Los costos <strong>F (flexibles)</strong> son importantes pero negociables, sustituibles o diferibles en una etapa temprana. Los costos <strong>S (establecidos)</strong> están fuera de mi control, como tarifas, comisiones o regulación. Adapté el criterio de mi profesor a Wooffi y lo corrí con Claude sobre mi BOM del 9 de octubre.</p>
+
+          <h3>Prompt que utilicé</h3>
+          <div class="prompt-box">
+<pre>Actúa como consultor de estrategia de producto con método IDEO. Clasificas cada costo
+como (D) Diferenciación: da vida directamente a la propuesta de valor y recortarlo la
+destruye; (F) Flexible: importante pero negociable, sustituible o diferible en etapa
+temprana; (S) Establecido: fuera de mi control (tarifas, comisiones, regulación).
+Si dudo entre dos categorías, dime cuál eliges y por qué. Si veo demasiados costos
+en D, avísame, porque es señal de que mi propuesta de valor no está clara.
+
+Producto: Wooffi. Propuesta de valor: "Calidad de vida para tu compañero de vida.
+Que su peso deje de ser una preocupación en casa" (problema real: obesidad canina).
+Diferenciales que validé en entrevistas: porción exacta por pesaje, ajuste de dieta
+con IA, coordinación entre cuidadores.
+
+Mi BOM por unidad (MXN):
+Electrónica: ESP32-S3-CAM $280 · 4 celdas de carga $88 · HX711 $21 · celda 5 kg + HX711 $62 ·
+NEMA 17 $156 · driver A4988 $34 · pantalla IPS $100 · sensor IR $16 · fuente 12 V $45 ·
+regulador 5 V $35 · 2 baterías 18650 $82 · BMS + portapilas $65 · PCB y cables $100 · buzzer $10.
+Mecánica: plato de acero $90 · rotor 3D $55 · cuerpo PETG $340 · cubierta de aluminio $250 ·
+plataforma de báscula $160 · pies y lastre $60 · tornillería $70.
+Costos recurrentes: IA ($0.19 a $3.88 MXN/mes por perro según el modelo), nube, licencias de tiendas.
+
+Haz lo siguiente:
+1. Clasifica cada costo en D, F o S con una razón de una línea ligada a mi propuesta de valor.
+2. Súmalos por categoría y dime qué porcentaje de mi BOM cae en cada una.
+3. Dime si tengo demasiados D, y si alguna decisión mía contradice mi propia propuesta de valor.
+4. Dame los primeros recortes que haría si el costo no cierra, en orden: S no se tocan,
+   F primero, D al final.</pre>
+          </div>
+
+          <h3>Respuesta</h3>
+
+          <h3>Clasificación del BOM de $2,119 MXN</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Costo</th>
+                <th>D/F/S</th>
+                <th>Por qué</th>
+                <th>MXN</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>4 celdas de carga + HX711 + plataforma de báscula</td>
+                <td><strong>D</strong></td>
+                <td>El peso del perro en cada comida es la base de "que su peso deje de ser una preocupación". Sin báscula es un dispensador cualquiera.</td>
+                <td>$88 + $21 + $160</td>
+              </tr>
+              <tr>
+                <td>Celda de 5 kg + HX711 (pesa la porción)</td>
+                <td><strong>D</strong></td>
+                <td>Es lo que garantiza la porción exacta, el diferencial que validé.</td>
+                <td>$62</td>
+              </tr>
+              <tr>
+                <td>Rotor antiatasco + NEMA 17 + driver</td>
+                <td><strong>D</strong></td>
+                <td>Dosificar con precisión sin atascarse es lo que hace confiable la porción. Es lo que los usuarios mencionaron en las entrevistas.</td>
+                <td>$55 + $156 + $34</td>
+              </tr>
+              <tr>
+                <td>IA que ajusta la porción</td>
+                <td><strong>D</strong></td>
+                <td>Es el diferencial de "ajuste de dieta". Cuesta de $0.19 a $3.88 al mes por perro.</td>
+                <td>variable</td>
+              </tr>
+              <tr>
+                <td>Desarrollo de la app (coordinación de cuidadores)</td>
+                <td><strong>D</strong></td>
+                <td>Resuelve el problema de varios cuidadores alimentando al mismo perro.</td>
+                <td>horas</td>
+              </tr>
+              <tr>
+                <td>ESP32-S3-CAM (con cámara)</td>
+                <td><strong>F</strong></td>
+                <td>Aporta reconocimiento de mascota, pero yo misma descarté la cámara en la semana 5. Sin cámara baja ≈ $150.</td>
+                <td>$280</td>
+              </tr>
+              <tr>
+                <td>Pantalla IPS, buzzer, sensor IR</td>
+                <td><strong>F</strong></td>
+                <td>Confirman, avisan y miden nivel, pero se pueden diferir en una primera versión.</td>
+                <td>$100 + $10 + $16</td>
+              </tr>
+              <tr>
+                <td>Baterías 18650 + BMS</td>
+                <td><strong>F</strong></td>
+                <td>Son respaldo de emergencia. Importan, pero la v1 puede salir solo con corriente.</td>
+                <td>$147</td>
+              </tr>
+              <tr>
+                <td>PCB y cables (Fab Lab)</td>
+                <td><strong>F</strong></td>
+                <td>Se puede empezar con módulos y protoboard.</td>
+                <td>$100</td>
+              </tr>
+              <tr>
+                <td>Cuerpo en PETG</td>
+                <td><strong>F</strong></td>
+                <td>Podría usar otro material o diseño si baja el costo.</td>
+                <td>$340</td>
+              </tr>
+              <tr>
+                <td>Cubierta de aluminio</td>
+                <td><strong>F</strong></td>
+                <td>Es el primer recorte candidato; ya había identificado que baja $250.</td>
+                <td>$250</td>
+              </tr>
+              <tr>
+                <td>Plato de acero, pies/lastre, tornillería</td>
+                <td><strong>F</strong></td>
+                <td>Higiene y estabilidad importan, pero hay alternativas de material y de proveedor.</td>
+                <td>$90 + $60 + $70</td>
+              </tr>
+              <tr>
+                <td>Fuente de 12 V + regulador a 5 V</td>
+                <td><strong>S</strong></td>
+                <td>Precios estándar de mercado, sin margen de negociación.</td>
+                <td>$45 + $35</td>
+              </tr>
+              <tr>
+                <td>Nube (Firebase)</td>
+                <td><strong>S</strong></td>
+                <td>Tarifa estándar; el piloto cabe en las cuotas gratuitas, pero Cloud Functions exige el plan de pago (Blaze).</td>
+                <td>$0 en piloto</td>
+              </tr>
+              <tr>
+                <td>Cuentas de tienda de apps</td>
+                <td><strong>S</strong></td>
+                <td>Google Play $25 USD una vez; Apple $99 USD al año.</td>
+                <td>fijo</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Suma por categoría</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Categoría</th>
+                <th>MXN del BOM</th>
+                <th>% del BOM</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>D</strong></td><td>$576</td><td>27%</td></tr>
+              <tr><td><strong>F</strong></td><td>$1,463</td><td>69%</td></tr>
+              <tr><td><strong>S</strong></td><td>$80</td><td>4%</td></tr>
+            </tbody>
+          </table>
+
+          <h3>Lectura</h3>
+          <div class="summary-box">
+            <ul>
+              <li><strong>No tengo demasiados D</strong>, y eso es sano según el criterio del curso. Son pocos, concretos y ligados a mi propuesta de valor.</li>
+              <li><strong>El 69% de mi BOM es flexible.</strong> Casi todo el sobrecosto frente a mi meta de $1,500 está en cosas que puedo mover sin tocar lo que vendo.</li>
+              <li><strong>Una decisión contradice mi propuesta.</strong> La cámara ($280) está en F, pero volvió a entrar a mi lista de funciones después de haberla descartado en el análisis Blue Ocean. Para ser coherente con la semana 5, es el segundo recorte natural después del aluminio.</li>
+            </ul>
+          </div>
+
+          <h3>Recortes, en orden (S no se tocan, F primero, D al final)</h3>
+          <ol>
+            <li>Cubierta de aluminio a PETG: −$250.</li>
+            <li>ESP32-S3 sin cámara: −$150.</li>
+            <li>Pantalla diferida a v2: −$100.</li>
+            <li>Baterías y BMS diferidos a v2: −$147.</li>
+          </ol>
+          <p>Los cuatro suman −$647 y dejan el BOM en ≈ $1,472, dentro de mi máximo de $1,500. Los costos D no se tocan.</p>
+        </section>
+        <!--FIN SECCIÓN: DIFERENCIACIÓN DE COSTOS (D, F, S)-->
+
+
+        <!--INICIO SECCIÓN: CREAR VS. DISTRIBUIR LA OFERTA (D/F/S EXTENDIDO)-->
+        <section id="crear-distribuir-oferta" class="week-section">
+          <h2>Crear vs. distribuir la oferta (D/F/S extendido)</h2>
+
+          <p>Esta tabla separa lo que cuesta construir Wooffi de lo que cuesta hacerlo llegar al cliente. Cada fila tiene su clasificación D/F/S, el costo estimado, la unidad de medida y el costo unitario. Usé precios vigentes a octubre de 2026 y marqué como supuesto lo que no pude respaldar con una fuente. La corrí con Claude con un prompt propio basado en la estructura de los de mi profesor.</p>
+
+          <h3>Prompt que utilicé</h3>
+          <div class="prompt-box">
+<pre>Actúa como analista de costos de lanzamiento de productos IoT en México. Mi profesor me
+pide la tabla de costos con dos secciones, CREAR la oferta y DISTRIBUIR la oferta, con
+columnas: costo, D/F/S, costo estimado, unidad de medida, unidades que produce ese costo
+y costo unitario. Busca cifras verificables vigentes a octubre de 2026 y marca como
+"supuesto" cualquier número que no puedas respaldar con fuente.
+
+Producto: Wooffi (comedero inteligente para perros con ESP32-S3, WiFi/Bluetooth, app y
+suscripción). Mi BOM unitario es ≈ $2,119 MXN. Modelo de ingresos: hardware de venta
+única + suscripción por la app y la IA. Volumen del piloto: 10 unidades; escala inicial:
+100 unidades.
+
+Cubre al menos: BOM agrupado, mano de obra de ensamble, IA, nube, licencias y cuentas
+de tiendas; empaque, envío nacional, cobro del hardware y de la suscripción, comisión de
+tiendas de apps, soporte y garantía, marketing, actualizaciones OTA y cumplimiento
+normativo (NOM) que aplique a un producto con WiFi/Bluetooth.
+
+Para cada fila: clasificación D/F/S con razón, y costo unitario por producto o por
+usuario-mes. Al final dime qué costo de DISTRIBUIR pesa más y cuál de ellos podría
+cambiar mi estrategia (por ejemplo, tienda de apps contra web). No uses cifras de
+otros proyectos ni de ejemplos de clase.</pre>
+          </div>
+
+          <h3>Respuesta</h3>
+
+          <h3>Crear la oferta</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Costo</th>
+                <th>D/F/S</th>
+                <th>Costo estimado</th>
+                <th>Unidad</th>
+                <th>Costo unitario</th>
+                <th>Por qué</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sistema de pesaje (celdas, HX711, plataforma)</td>
+                <td>D</td>
+                <td>$331</td>
+                <td>por unidad</td>
+                <td><strong>$331</strong></td>
+                <td>Porción exacta por pesaje.</td>
+              </tr>
+              <tr>
+                <td>Dosificador (rotor, NEMA 17, driver)</td>
+                <td>D</td>
+                <td>$245</td>
+                <td>por unidad</td>
+                <td><strong>$245</strong></td>
+                <td>Dosificar sin atascos.</td>
+              </tr>
+              <tr>
+                <td>IA que ajusta la porción</td>
+                <td>D</td>
+                <td>$0.19–$3.88</td>
+                <td>por perro-mes</td>
+                <td><strong>$0.19–$3.88</strong></td>
+                <td>Del Haiku 5.5 al Sonnet 5.5, 2 comidas al día, solo texto.</td>
+              </tr>
+              <tr>
+                <td>Electrónica de apoyo (ESP32-S3-CAM, pantalla, IR, buzzer, PCB, baterías, BMS)</td>
+                <td>F</td>
+                <td>$653</td>
+                <td>por unidad</td>
+                <td><strong>$653</strong></td>
+                <td>Recortable o diferible.</td>
+              </tr>
+              <tr>
+                <td>Fuente 12 V + regulador</td>
+                <td>S</td>
+                <td>$80</td>
+                <td>por unidad</td>
+                <td><strong>$80</strong></td>
+                <td>Precio estándar.</td>
+              </tr>
+              <tr>
+                <td>Cuerpo PETG + cubierta de aluminio</td>
+                <td>F</td>
+                <td>$590</td>
+                <td>por unidad</td>
+                <td><strong>$590</strong></td>
+                <td>El aluminio se puede quitar.</td>
+              </tr>
+              <tr>
+                <td>Plato, pies/lastre, tornillería</td>
+                <td>F</td>
+                <td>$220</td>
+                <td>por unidad</td>
+                <td><strong>$220</strong></td>
+                <td>Hay alternativas de material.</td>
+              </tr>
+              <tr>
+                <td>Ensamble y prueba por unidad (supuesto: 2 h × $130)</td>
+                <td>F</td>
+                <td>$260</td>
+                <td>por unidad</td>
+                <td><strong>$260</strong></td>
+                <td>Supuesto, sin cotizar.</td>
+              </tr>
+              <tr>
+                <td>Nube (Firebase)</td>
+                <td>S</td>
+                <td>$0 en piloto</td>
+                <td>por mes</td>
+                <td><strong>$0</strong></td>
+                <td>Hay cuotas gratuitas; Cloud Functions exige el plan Blaze (de pago).</td>
+              </tr>
+              <tr>
+                <td>Cuenta de Google Play</td>
+                <td>S</td>
+                <td>$25 USD ≈ $463</td>
+                <td>una vez</td>
+                <td><strong>fijo</strong></td>
+                <td>Pago único.</td>
+              </tr>
+              <tr>
+                <td>Cuenta de Apple Developer (solo si hay iOS)</td>
+                <td>S</td>
+                <td>$99 USD ≈ $1,832</td>
+                <td>por año</td>
+                <td><strong>fijo</strong></td>
+                <td>Solo si publico en iOS.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Los renglones por unidad (pesaje, dosificador, electrónica de apoyo, fuente, cuerpo y aluminio, plato y tornillería) suman $2,119, igual que mi BOM. El ensamble ($260) se suma aparte como mano de obra.</p>
+
+          <h3>Distribuir la oferta</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Costo</th>
+                <th>D/F/S</th>
+                <th>Costo estimado</th>
+                <th>Unidad</th>
+                <th>Costo unitario</th>
+                <th>Por qué</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Empaque (caja y protecciones)</td>
+                <td>F</td>
+                <td>≈ $80 (<strong>supuesto</strong>)</td>
+                <td>por unidad</td>
+                <td><strong>≈ $80</strong></td>
+                <td>Sin cotizar; falta pedir precio.</td>
+              </tr>
+              <tr>
+                <td>Envío nacional</td>
+                <td>S</td>
+                <td>$287 a $603</td>
+                <td>por envío</td>
+                <td><strong>$287–$603</strong></td>
+                <td>Tarifa de paquetería. $603 es lo que Estafeta cotizó a Profeco en octubre de 2026 para 5 kg de 50×40×30 cm; $287 es un estimado para 3 kg. Mi comedero es voluminoso, así que cuenta el peso volumétrico (esa caja equivale a 12 kg).</td>
+              </tr>
+              <tr>
+                <td>Cobro del hardware</td>
+                <td>S</td>
+                <td>3.6% + $3</td>
+                <td>por venta</td>
+                <td><strong>≈ $93</strong> si lo vendo a $2,500</td>
+                <td>Tarifa de Stripe México.</td>
+              </tr>
+              <tr>
+                <td>Cobro de la suscripción</td>
+                <td>S</td>
+                <td>3.6% + $3</td>
+                <td>por cobro</td>
+                <td><strong>≈ $8.36</strong> sobre $149 al mes</td>
+                <td>Varía por pasarela (hay fuentes que dan 3.4%).</td>
+              </tr>
+              <tr>
+                <td>Comisión de tiendas de apps</td>
+                <td>S</td>
+                <td>15%</td>
+                <td>por suscripción</td>
+                <td><strong>15%</strong></td>
+                <td>Apple: 15% con su programa para negocios pequeños. Google: 10% de servicio más 5% de facturación. El esquema nuevo de Google llegó el 30 de junio de 2026 a EE.UU., Reino Unido y Europa; a otros países llega a más tardar el 30 de septiembre de 2027, así que para México debo verificarlo.</td>
+              </tr>
+              <tr>
+                <td>Garantía y soporte</td>
+                <td>F</td>
+                <td>≈ 5% del costo unitario (<strong>supuesto</strong>)</td>
+                <td>por unidad</td>
+                <td><strong>≈ $106</strong></td>
+                <td>Aún no tengo dato propio.</td>
+              </tr>
+              <tr>
+                <td>Marketing</td>
+                <td>F</td>
+                <td>$0 en el piloto</td>
+                <td>por mes</td>
+                <td><strong>$0</strong></td>
+                <td>Diferible.</td>
+              </tr>
+              <tr>
+                <td>Actualizaciones OTA</td>
+                <td>F</td>
+                <td>$0</td>
+                <td>por mes</td>
+                <td><strong>$0</strong></td>
+                <td>Firmware por internet con las cuotas gratuitas.</td>
+              </tr>
+              <tr>
+                <td>Certificación NOM-208 (WiFi/Bluetooth del ESP32)</td>
+                <td>S</td>
+                <td>$26,680 sin IVA (tarifa de un laboratorio acreditado)</td>
+                <td>una vez</td>
+                <td><strong>≈ $267 a 100 unidades · $2,668 a 10</strong></td>
+                <td>Obligatoria para equipos con WiFi/Bluetooth. El certificado lo emite un organismo de certificación y su costo es aparte del informe de laboratorio.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Lo que cambia mi estrategia</h3>
+          <div class="summary-box">
+            <ul>
+              <li><strong>El costo que más pesa al distribuir es el envío</strong>, y sobre todo la NOM-208 en el piloto: $2,668 por unidad a 10 piezas es más que el costo del aparato. A 100 unidades baja a $267 por pieza.</li>
+              <li><strong>Preguntar antes de pagar.</strong> Si el módulo del ESP32 que compre ya tiene certificado en México, quizá reduzca o evite parte del trámite. No lo verifiqué; tengo que confirmarlo con el proveedor y con un organismo de certificación.</li>
+              <li><strong>La decisión de la tienda de apps cambia mi economía.</strong> Cobrar la suscripción por tienda cuesta ≈ 15% más la pasarela. Si mi app funciona como web o PWA y cobro por mi cuenta, pago solo la pasarela (≈ 5.6% sobre $149). Es una decisión F mía, no una S.</li>
+              <li><strong>Baterías de litio.</strong> No encontré si la paquetería aplica restricciones o recargos a envíos con baterías 18650. Si las dejo para la v2 (recorte 4 de la diferenciación de costos), evito esa pregunta.</li>
+            </ul>
+          </div>
+
+          <h3>Fuentes</h3>
+          <ul>
+            <li><a href="https://android-developers.googleblog.com/2026/06/play-expanded-billing.html" target="_blank">Google Play, cambios de comisión</a></li>
+            <li><a href="https://adapty.io/blog/google-play-billing-changes-subscriptions-fees/" target="_blank">Adapty, suscripciones en Google Play</a></li>
+            <li><a href="https://developer.apple.com/app-store/small-business-program/?page=2" target="_blank">Apple, App Store Small Business Program</a></li>
+            <li><a href="https://www.global66.com/blog/?p=18577" target="_blank">Stripe México, comisión por transacción</a></li>
+            <li><a href="https://expansion.mx/empresas/2026/10/07/correos-demexico-compite-dhl-estafeta-precios-tiemposentrega" target="_blank">Profeco / Expansión, comparativo de envíos</a></li>
+            <li><a href="https://www.cubbo.com/en/posts/precios-estafeta" target="_blank">Estafeta, peso volumétrico</a></li>
+            <li><a href="https://magora-systems.com/firebase-pricing/" target="_blank">Firebase, planes y cuotas</a></li>
+            <li><a href="https://platiica.economia.gob.mx/wp-content/uploads/sites/5/Tarifas/EE-0850-03117.pdf" target="_blank">Tarifa de laboratorio NOM-208</a></li>
+          </ul>
+        </section>
+        <!--FIN SECCIÓN: CREAR VS. DISTRIBUIR LA OFERTA (D/F/S EXTENDIDO)-->
+
+
+        <!--INICIO SECCIÓN: REFLEXIÓN-->
+        <section id="reflexión" class="week-section">
+          <h2>Reflexión</h2>
+
+          <p>Esta semana entendí que el proceso de creación de un producto no es tan sencillo y que se tiene que tomar en cuenta desde antes de decidir empezar a trabajar con algo así todos los ciclos de diseño que ésto puede llegar a represesntar (con ello, también el costo). Al final de cuentas, las horas que me va a costar construirlo también cuestan dinero. En mi estimación promedio, el 86% del costo de desarrollo es mi propio tiempo y solo una pequeña parte es efectivo. Ya no es solo cuánto cuesta el aparato, sino qué tanto de mi trabajo puedo hacer yo misma y cuántos ciclos necesito para tener algo que funcione.</p>
+
+          <p>También vi que la mayor parte de mi BOM es flexible (69%) y que mis costos de diferenciación son pocos y están ligados a lo que prometo: pesar bien, dosificar sin atascos y ajustar la dieta con IA. Eso me da margen para recortar sin romper la propuesta de valor.</p>
+
+          <p>Lo que más me sorprendió fue el costo de distribuir. La certificación NOM-208 a 10 unidades puede costar más que el propio aparato, y la comisión de las tiendas de apps puede cambiar mi estrategia de cobro.</p>
+        </section>
+        <!--FIN SECCIÓN: REFLEXIÓN-->
 
       </div>
 

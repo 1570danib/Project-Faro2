@@ -39,6 +39,7 @@
           <a onclick="showWeekSection('ciclo-aprendizaje')" class="week-link">Costos de desarrollo: ciclos de aprendizaje</a>
           <a onclick="showWeekSection('diferenciacion-costos')" class="week-link">Diferenciación de costos (D, F, S)</a>
           <a onclick="showWeekSection('crear-distribuir-oferta')" class="week-link">Crear vs. distribuir la oferta (D/F/S extendido)</a>
+          <a onclick="showWeekSection('valor-dinero-tiempo')" class="week-link">Valor del dinero en el tiempo</a>
           <a onclick="showWeekSection('reflexión')" class="week-link">Reflexión</a>
 
         </nav>
@@ -955,6 +956,399 @@ otros proyectos ni de ejemplos de clase.</pre>
         </section>
         <!--FIN SECCIÓN: CREAR VS. DISTRIBUIR LA OFERTA (D/F/S EXTENDIDO)-->
 
+                <!--INICIO SECCIÓN: VALOR DEL DINERO EN EL TIEMPO-->
+        <section id="valor-dinero-tiempo" class="week-section">
+          <h2>Valor del dinero en el tiempo</h2>
+
+          <p>Un peso de hoy no vale lo mismo que un peso dentro de un año. Por eso, para saber si un proyecto conviene no basta con sumar los ingresos y restar los costos: hay que llevar cada flujo a valor presente. En esta sección primero resuelvo los ejercicios de clase en Excel (VPN y TIR) y después aplico lo mismo al modelo económico de Wooffi, que era lo que le faltaba a mi semana.</p>
+
+          <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Fórmulas que usé</h3>
+          <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <ul>
+              <li><strong>Valor presente (VP)</strong> = VF / (1 + i)<sup>n</sup></li>
+              <li><strong>Valor presente neto (VPN)</strong> = −Inversión inicial + Σ Flujo<sub>t</sub> / (1 + i)<sup>t</sup></li>
+              <li><strong>Tasa interna de retorno (TIR)</strong> = la tasa que hace que el VPN sea igual a cero. Si la TIR es mayor que el costo de capital, el proyecto es viable.</li>
+            </ul>
+          </div>
+
+          <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Ejercicios de clase en Excel</h3>
+
+          <p class="step-title">Ejercicios 1 a 3: VPN con distintos tipos de flujo</p>
+          <div style="overflow-x: auto;">
+          <table class="table table-bordered">
+            <thead class="table-dark">
+              <tr>
+                <th>Ejercicio</th>
+                <th>Datos</th>
+                <th>VPN</th>
+                <th>Lectura</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1. Anualidad</td>
+                <td>Inversión de $250,000, tasa de 11%, 6 flujos iguales de $60,000</td>
+                <td><strong>$3,832</strong></td>
+                <td>Positivo, pero apenas: el proyecto casi no sobra.</td>
+              </tr>
+              <tr>
+                <td>2. Flujos variables</td>
+                <td>Inversión de $50,000, tasa de 4%, flujos de $7,500, $12,000, $20,000 y $25,000</td>
+                <td><strong>$7,456</strong></td>
+                <td>Positivo; los flujos crecen con el tiempo.</td>
+              </tr>
+              <tr>
+                <td>3. Con valor de salvamento</td>
+                <td>Inversión de $1,000,000, tasa de 10%, flujos de $300,000, $350,000, $375,000 y $300,000 + $150,000 de salvamento en el año 4</td>
+                <td><strong>$151,083</strong></td>
+                <td>Positivo; el salvamento aporta al año 4.</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p class="step-title">Ejercicio 4: comparar los proyectos X y Y (tasa de 8%)</p>
+          <div style="overflow-x: auto;">
+          <table class="table table-bordered">
+            <thead class="table-dark">
+              <tr>
+                <th>Proyecto</th>
+                <th>Flujos (años 1, 2 y 3)</th>
+                <th>VPN</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>X</strong></td><td>$25,000, $25,000, $25,000</td><td><strong>$14,427</strong></td></tr>
+              <tr><td><strong>Y</strong></td><td>$10,000, $20,000, $45,000</td><td><strong>$12,128</strong></td></tr>
+            </tbody>
+          </table>
+          </div>
+          <div class="summary-box">
+            <p>Los dos proyectos requieren la misma inversión ($50,000) y devuelven el mismo dinero en total ($75,000), pero <strong>X conviene más</strong> porque recibe el dinero antes. Es el valor del dinero en el tiempo en acción: Y concentra sus ingresos en el año 3, y esos pesos valen menos hoy.</p>
+          </div>
+
+          <p class="step-title">Ejercicio 5: sensibilidad a la tasa y TIR</p>
+          <p>Usé el proyecto X (inversión de $50,000 y tres flujos de $25,000) y moví la tasa de descuento.</p>
+          <div style="overflow-x: auto;">
+          <table class="table table-bordered">
+            <thead class="table-dark">
+              <tr>
+                <th>Caso</th>
+                <th>Tasa</th>
+                <th>VPN</th>
+                <th>TIR</th>
+                <th>¿Viable?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>X1</td><td>8%</td><td>$14,427</td><td>23.38%</td><td>Sí</td></tr>
+              <tr><td>X2</td><td>15%</td><td>$7,081</td><td>23.38%</td><td>Sí</td></tr>
+              <tr><td>X3</td><td>20%</td><td>$2,662</td><td>23.38%</td><td>Sí</td></tr>
+              <tr><td>X4</td><td>25%</td><td>−$1,200</td><td>23.38%</td><td>No</td></tr>
+            </tbody>
+          </table>
+          </div>
+          <div class="summary-box">
+            <p>Los cuatro casos tienen la misma TIR (<strong>23.38%</strong>) porque tienen los mismos flujos: la TIR no depende de la tasa de descuento, solo de los flujos. Lo que cambia es la comparación. El VPN baja conforme sube la tasa y se vuelve negativo en X4, porque 25% ya es mayor que 23.38%. Esa TIR es justo la tasa a la que el proyecto deja de convenir.</p>
+          </div>
+
+          <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Aplicación a Wooffi: modelo económico</h3>
+          <p>Con el BOM, el costo de la IA, los costos de desarrollo y la diferenciación D/F/S ya calculados, armé el modelo económico completo de Wooffi. Los números que no salen de mis cotizaciones los marqué como supuestos.</p>
+
+          <p class="step-title">Modelo de ingresos elegido</p>
+          <p>Wooffi usa el modelo de <strong>hardware con suscripción</strong>, en dos capas. La primera es el comedero, que se vende una sola vez. La segunda es una suscripción mensual con app, historial, ajuste de porción con IA y alertas. La suscripción cubre los costos que se repiten cada mes, sobre todo la IA, la nube y el cobro.</p>
+          <p><strong>Desafío de diseño:</strong> que el valor de la suscripción sea visible y urgente en el momento correcto. Como mi problema central es la obesidad canina, ese momento es cuando el dueño ve que el peso de su perro empieza a cambiar.</p>
+
+          <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Prompt que utilicé</h3>
+<pre><code>Actúa como analista financiero para startups de hardware + software en México.
+Eres conservador y dices sin rodeos lo que no cierra. Todo número que no venga
+de mis datos lo marcas como supuesto y dices cómo validarlo.
+
+Producto: Wooffi, comedero inteligente para perros contra la obesidad canina,
+con báscula, dosificador antiatasco y app con IA. Modelo en dos capas: hardware
+de venta única más suscripción mensual.
+
+Mis datos: BOM completo $2,119 MXN y BOM de piloto $1,472 (con los recortes de
+mi análisis D/F/S); ensamble 2 h × $130; empaque $80; envío de $287 a $603;
+garantía de 5%; NOM-208 $26,680 sin IVA; IA con Sonnet 5.5, 2 comidas con foto,
+$4.80 por perro al mes; costos de desarrollo $115,631 (unos $10,600 en
+efectivo); cobro 3.6% + $3; comisión de tiendas de apps 15%; Google Play $463.
+
+Haz lo siguiente:
+1. Costo unitario a 10 y 100 unidades puesto en casa del cliente, con
+   indirectos de 15% y contingencias de 25% sobre el BOM, con y sin amortizar
+   la NOM.
+2. Precio del hardware por cost-plus con 40% de margen, por competencia (mi
+   benchmark) y una recomendación. Si cost-plus no cabe en el mercado, dilo y
+   propón un esquema de enganche.
+3. Margen mensual de la suscripción, con y sin comisión de tiendas.
+4. Punto de equilibrio del año 1 y por vida del cliente, con inversión en
+   efectivo y con inversión total (mi tiempo incluido).
+5. Flujo de caja mes a mes a 12 meses para un piloto de unas 100 unidades.
+6. VPN a 12 meses con tasa anual de 15% convertida a mensual.
+7. Sensibilidad: conversión a suscripción, cancelación mensual, precio de
+   suscripción, comisión de tiendas, costo de nube y BOM completo contra BOM
+   de piloto.
+
+Formato: tablas con las fórmulas visibles, una sección de alertas y otra de
+palancas.</code></pre>
+
+          <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Supuestos del modelo</h3>
+          <div style="overflow-x: auto;">
+          <table class="table table-bordered">
+            <thead class="table-dark">
+              <tr>
+                <th>Supuesto</th>
+                <th>Valor</th>
+                <th>Origen</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>BOM completo</td><td>$2,119</td><td>Mi BOM (parte cotizado, parte estimado)</td></tr>
+              <tr><td>BOM de piloto</td><td>$1,472</td><td>BOM menos los cuatro recortes de mi análisis D/F/S</td></tr>
+              <tr><td>Ensamble</td><td>2 h × $130 = $260</td><td>Supuesto</td></tr>
+              <tr><td>Empaque</td><td>$80</td><td>Supuesto</td></tr>
+              <tr><td>Envío</td><td>$445</td><td>Punto medio de mi rango de $287 a $603</td></tr>
+              <tr><td>Garantía y soporte</td><td>5% de BOM + ensamble</td><td>Supuesto</td></tr>
+              <tr><td>Indirectos y contingencias</td><td>15% y 25% (del BOM)</td><td>Fórmula del curso</td></tr>
+              <tr><td>NOM-208</td><td>$26,680 sin IVA</td><td>Tarifa de laboratorio</td></tr>
+              <tr><td>IA por perro al mes</td><td>$4.80 (Sonnet 5.5, 2 comidas con foto)</td><td>Mi tabla de costo de la IA</td></tr>
+              <tr><td>Nube y video por usuario al mes</td><td>$10</td><td>Supuesto (aún sin cotizar)</td></tr>
+              <tr><td>Cobro con tarjeta</td><td>3.6% + $3</td><td>Pasarela</td></tr>
+              <tr><td>Compradores que se suscriben</td><td>70%</td><td>Supuesto (por validar)</td></tr>
+              <tr><td>Cancelación mensual</td><td>5% (vida de cliente ≈ 20 meses)</td><td>Supuesto</td></tr>
+              <tr><td>Ventas del año 1</td><td>100 unidades, creciendo mes a mes</td><td>Supuesto de piloto</td></tr>
+              <tr><td>Descuento por volumen a 100 unidades</td><td>10% del BOM (el NEMA 17 baja a $138 desde 10 piezas)</td><td>Supuesto</td></tr>
+              <tr><td>Tasa de descuento</td><td>15% anual (1.17% mensual)</td><td>Fórmula del curso</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Costo unitario a 10 y 100 unidades</h3>
+          <p>Es el costo puesto en casa del cliente: BOM, ensamble, empaque, envío, garantía, 15% de indirectos y 25% de contingencias sobre el BOM.</p>
+          <div style="overflow-x: auto;">
+          <table class="table table-bordered">
+            <thead class="table-dark">
+              <tr>
+                <th>Concepto (MXN)</th>
+                <th>Piloto, 10 u.</th>
+                <th>Piloto, 100 u.</th>
+                <th>Completo, 10 u.</th>
+                <th>Completo, 100 u.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>BOM</td><td>$1,454</td><td>$1,309</td><td>$2,101</td><td>$1,891</td></tr>
+              <tr><td>Ensamble</td><td>$260</td><td>$260</td><td>$260</td><td>$260</td></tr>
+              <tr><td>Empaque</td><td>$80</td><td>$80</td><td>$80</td><td>$80</td></tr>
+              <tr><td>Envío</td><td>$445</td><td>$445</td><td>$445</td><td>$445</td></tr>
+              <tr><td>Garantía (5%)</td><td>$86</td><td>$78</td><td>$118</td><td>$108</td></tr>
+              <tr><td>Indirectos (15%)</td><td>$349</td><td>$326</td><td>$451</td><td>$418</td></tr>
+              <tr><td>Contingencias (25% del BOM)</td><td>$364</td><td>$327</td><td>$525</td><td>$473</td></tr>
+              <tr><td><strong>Total</strong></td><td><strong>$3,037</strong></td><td><strong>$2,825</strong></td><td><strong>$3,980</strong></td><td><strong>$3,674</strong></td></tr>
+              <tr><td>NOM-208 amortizada</td><td>+$2,668</td><td>+$267</td><td>+$2,668</td><td>+$267</td></tr>
+            </tbody>
+          </table>
+          </div>
+          <p>Aun con el BOM de piloto, el costo puesto en casa del cliente es mucho mayor que mi límite de $1,500. El costo de fabricación todavía tiene que bajar.</p>
+
+          <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Precio de venta</h3>
+
+          <p class="step-title">Cost-plus (40% de margen)</p>
+          <p>Con el margen calculado sobre el precio y descontando el cobro de 3.6% + $3:</p>
+          <div style="overflow-x: auto;">
+          <table class="table table-bordered">
+            <thead class="table-dark">
+              <tr>
+                <th>BOM</th>
+                <th>10 unidades</th>
+                <th>100 unidades</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Piloto</td><td>$5,390</td><td>$5,014</td></tr>
+              <tr><td>Completo</td><td>$7,062</td><td>$6,519</td></tr>
+            </tbody>
+          </table>
+          </div>
+          <p>Estos precios no son competitivos.</p>
+
+          <p class="step-title">Value-based (techo)</p>
+          <ul>
+            <li><strong>Hardware:</strong> Petkit llega a USD 159 (≈ $2,942) y Petlibro a USD 250 (≈ $4,625). Tomo como techo práctico ≈ $2,900 a $3,000, que es el rango alto de Petkit.</li>
+            <li><strong>Suscripción:</strong> uso como referencia el piso de Nanu Dog, $199 al mes. Es una referencia y no una disposición a pagar medida.</li>
+          </ul>
+
+          <p class="step-title">Recomendación</p>
+          <div class="summary-box">
+            <p>Cost-plus no cabe en el mercado, así que necesito un esquema de enganche: vender el hardware cerca de su costo y ganar con la suscripción. Mi recomendación es <strong>hardware a $2,990</strong> (ganancia de ≈ $54 por unidad; con los $2,500 que había supuesto pierdo ≈ $428) y <strong>suscripción a $149 al mes</strong>. Los dos precios son hipótesis que tengo que validar con usuarios.</p>
+          </div>
+
+          <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Margen de la suscripción</h3>
+          <div style="overflow-x: auto;">
+          <table class="table table-bordered">
+            <thead class="table-dark">
+              <tr>
+                <th>Concepto (MXN al mes)</th>
+                <th>Cobro web</th>
+                <th>Con tienda de apps (15%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Precio</td><td>$149.00</td><td>$149.00</td></tr>
+              <tr><td>IA por perro</td><td>−$4.80</td><td>−$4.80</td></tr>
+              <tr><td>Nube y video (supuesto)</td><td>−$10.00</td><td>−$10.00</td></tr>
+              <tr><td>Cobro (3.6% + $3) o comisión de tienda (15%)</td><td>−$8.36</td><td>−$22.35</td></tr>
+              <tr><td><strong>Margen mensual por suscriptor</strong></td><td><strong>$125.84</strong></td><td><strong>$111.85</strong></td></tr>
+            </tbody>
+          </table>
+          </div>
+          <p>El piso de la suscripción con 40% de margen sería $38.61 al mes, así que $149 deja mucho espacio. Eso significa que el precio depende más de lo que el usuario está dispuesto a pagar que de mi costo.</p>
+
+          <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Punto de equilibrio</h3>
+          <p>Separé la inversión en dos: la <strong>inversión en efectivo</strong> y la <strong>inversión total</strong>, que incluye mi tiempo.</p>
+          <div style="overflow-x: auto;">
+          <table class="table table-bordered">
+            <thead class="table-dark">
+              <tr>
+                <th>Inversión</th>
+                <th>Cálculo</th>
+                <th>Monto</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>En efectivo</td><td>$10,600 de desarrollo + $463 de Google Play + $26,680 de NOM-208</td><td><strong>$37,743</strong></td></tr>
+              <tr><td>Total</td><td>$115,631 de desarrollo + $463 + $26,680</td><td><strong>$142,774</strong></td></tr>
+            </tbody>
+          </table>
+          </div>
+          <ul>
+            <li><strong>Año 1:</strong> no alcanzo el equilibrio solo con las ventas de 12 meses y 100 unidades, porque cada unidad vendida en el año aporta en promedio −$30 una vez que cuento la suscripción de los meses que lleva activa.</li>
+            <li><strong>Por vida del cliente:</strong> un cliente aporta ≈ $1,816 ($54 de margen del hardware + 70% de suscripción × $125.84 por mes × 20 meses de vida). Con la inversión en efectivo necesito ≈ <strong>21 clientes</strong> ($37,743 ÷ $1,816), y con la inversión total ≈ <strong>79 clientes</strong> ($142,774 ÷ $1,816).</li>
+          </ul>
+
+          <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Flujo de caja a 12 meses</h3>
+          <p>Con hardware a $2,990 y suscripción de $149, para un piloto de 100 unidades con ventas que crecen mes a mes. La columna "Hardware" es el margen de las unidades vendidas en el mes; "Suscripción" es el margen de todos los suscriptores activos.</p>
+          <div style="overflow-x: auto;">
+          <table class="table table-bordered">
+            <thead class="table-dark">
+              <tr>
+                <th>Mes</th>
+                <th>Unidades</th>
+                <th>Suscriptores activos</th>
+                <th>Hardware</th>
+                <th>Suscripción</th>
+                <th>Flujo del mes</th>
+                <th>Acumulado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>2</td><td>1.4</td><td>$109</td><td>$176</td><td>$285</td><td>$285</td></tr>
+              <tr><td>2</td><td>3</td><td>3.4</td><td>$163</td><td>$432</td><td>$595</td><td>$880</td></tr>
+              <tr><td>3</td><td>5</td><td>6.8</td><td>$272</td><td>$850</td><td>$1,122</td><td>$2,002</td></tr>
+              <tr><td>4</td><td>6</td><td>10.6</td><td>$326</td><td>$1,336</td><td>$1,663</td><td>$3,665</td></tr>
+              <tr><td>5</td><td>8</td><td>15.7</td><td>$435</td><td>$1,974</td><td>$2,409</td><td>$6,074</td></tr>
+              <tr><td>6</td><td>9</td><td>21.2</td><td>$489</td><td>$2,668</td><td>$3,158</td><td>$9,232</td></tr>
+              <tr><td>7</td><td>10</td><td>27.1</td><td>$544</td><td>$3,416</td><td>$3,959</td><td>$13,191</td></tr>
+              <tr><td>8</td><td>11</td><td>33.5</td><td>$598</td><td>$4,214</td><td>$4,812</td><td>$18,003</td></tr>
+              <tr><td>9</td><td>12</td><td>40.2</td><td>$652</td><td>$5,060</td><td>$5,713</td><td>$23,716</td></tr>
+              <tr><td>10</td><td>12</td><td>46.6</td><td>$652</td><td>$5,864</td><td>$6,517</td><td>$30,233</td></tr>
+              <tr><td>11</td><td>11</td><td>52.0</td><td>$598</td><td>$6,540</td><td>$7,138</td><td>$37,371</td></tr>
+              <tr><td>12</td><td>11</td><td>57.1</td><td>$598</td><td>$7,182</td><td>$7,780</td><td>$45,151</td></tr>
+            </tbody>
+          </table>
+          </div>
+          <p>Algunas cifras están redondeadas, así que pueden diferir por un peso. El acumulado supera mi inversión en efectivo ($37,743) hasta el mes 12.</p>
+
+          <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">VPN a 12 meses (tasa anual de 15%, mensual de 1.17%)</h3>
+          <div style="overflow-x: auto;">
+          <table class="table table-bordered">
+            <thead class="table-dark">
+              <tr>
+                <th>Inversión inicial (mes 0)</th>
+                <th>VPN</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Solo efectivo: −$37,743</td><td><strong>+$3,030</strong></td></tr>
+              <tr><td>Total con mi tiempo: −$142,774</td><td><strong>−$102,001</strong></td></tr>
+            </tbody>
+          </table>
+          </div>
+          <p>Con la inversión en efectivo, el proyecto apenas es positivo. Si cuento mi tiempo como costo, no lo es en 12 meses. Para recuperar también mi tiempo necesitaría un horizonte más largo o más clientes.</p>
+
+          <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Sensibilidad</h3>
+          <p>Moví un supuesto a la vez desde el caso base ($2,990 + $149 al mes) para ver cuáles pesan más.</p>
+          <div style="overflow-x: auto;">
+          <table class="table table-bordered">
+            <thead class="table-dark">
+              <tr>
+                <th>Caso</th>
+                <th>Margen mensual por suscriptor</th>
+                <th>Margen del hardware</th>
+                <th>VPN 12 meses (efectivo)</th>
+                <th>VPN 12 meses (total)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Base ($2,990 + $149/mes)</td><td>$126</td><td>$54</td><td>+$3,030</td><td>−$102,001</td></tr>
+              <tr><td>Solo 40% se suscribe</td><td>$126</td><td>$54</td><td>−$12,316</td><td>−$117,347</td></tr>
+              <tr><td>Cancelación de 10% mensual</td><td>$126</td><td>$54</td><td>−$1,413</td><td>−$106,444</td></tr>
+              <tr><td>Comisión de tiendas de 15%</td><td>$112</td><td>$54</td><td>−$950</td><td>−$105,981</td></tr>
+              <tr><td>Suscripción de $99</td><td>$78</td><td>$54</td><td>−$10,685</td><td>−$115,716</td></tr>
+              <tr><td>Suscripción de $199</td><td>$174</td><td>$54</td><td>+$16,745</td><td>−$88,286</td></tr>
+              <tr><td>Nube de $25 por usuario</td><td>$111</td><td>$54</td><td>−$1,238</td><td>−$106,269</td></tr>
+              <tr><td>Hardware de $2,490</td><td>$126</td><td>−$428</td><td>−$41,011</td><td>−$146,042</td></tr>
+              <tr><td>BOM completo ($2,119)</td><td>$126</td><td>−$795</td><td>−$74,544</td><td>−$179,575</td></tr>
+              <tr><td>IA con Sonnet, 3 comidas</td><td>$123</td><td>$54</td><td>+$2,350</td><td>−$102,681</td></tr>
+              <tr><td>Peor combinación (40% + 10% cancelación + tienda)</td><td>$112</td><td>$54</td><td>−$16,846</td><td>−$121,877</td></tr>
+            </tbody>
+          </table>
+          </div>
+          <p>Lo que más mueve el resultado es el costo del hardware (BOM y precio de venta) y la proporción de compradores que se suscribe. La IA casi no pesa.</p>
+
+          <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Alertas</h3>
+          <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <ol>
+              <li><strong>El hardware a $2,500 no cierra.</strong> Con $2,990 sí, pero solo si cuento la inversión en efectivo.</li>
+              <li><strong>El supuesto más frágil es que el 70% se suscriba a $149 al mes.</strong> No está medido y es mío; lo tengo que validar con usuarios.</li>
+              <li><strong>El BOM completo no sirve.</strong> Con $2,119 pierdo $795 por cada unidad.</li>
+              <li><strong>Mi tiempo es la parte más cara.</strong> Contándolo, el VPN a 12 meses es negativo en todos los casos.</li>
+              <li><strong>La NOM-208 ($26,680) pesa mucho en un piloto pequeño</strong> y todavía falta confirmar si mi módulo ESP32 ya tiene certificado.</li>
+            </ol>
+          </div>
+
+          <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Palancas</h3>
+          <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <ul>
+              <li>Subir el hardware a $2,990.</li>
+              <li>Bajar el costo de fabricación (BOM y ensamble).</li>
+              <li>Reducir la cancelación mensual.</li>
+              <li>Cobrar por web en lugar de tienda de apps.</li>
+              <li>Repartir la NOM-208 entre más unidades.</li>
+            </ul>
+          </div>
+
+          <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Pendientes</h3>
+          <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+            <ul>
+              <li>Cotizar los componentes estimados en MercadoLibre, LCSC y Digi-Key México.</li>
+              <li>Cotizar la nube y el video con mi arquitectura real.</li>
+              <li>Confirmar si el módulo ESP32 ya está certificado en México.</li>
+              <li>Verificar si la paquetería restringe baterías 18650.</li>
+              <li>Validar la porción base y los factores de IA con un veterinario.</li>
+              <li>Medir los tokens con el prompt real de Wooffi.</li>
+              <li>Validar con usuarios que pagarían $2,990 de hardware y $149 al mes.</li>
+            </ul>
+          </div>
+
+          <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Qué concluyo</h3>
+          <div class="summary-box">
+            <p>Los ejercicios me enseñaron a leer un proyecto con tres números: el VPN me dice cuánto sobra, la TIR me dice hasta qué tasa me conviene, y comparar el momento en que llega el dinero (como en X contra Y) importa tanto como cuánto llega. Aplicado a Wooffi, el modelo solo se sostiene si la gente paga la suscripción y se queda: el comedero casi tiene que venderse a su costo. Con la inversión en efectivo el VPN a 12 meses es positivo por muy poco ($3,030), y con mi tiempo incluido no lo es. Todavía no sé si $2,990 más $149 al mes es algo que un dueño pagaría; es mi supuesto más frágil y quiero validarlo antes de seguir construyendo encima de él.</p>
+          </div>
+        </section>
+        <!--FIN SECCIÓN: VALOR DEL DINERO EN EL TIEMPO-->
+
 
         <!--INICIO SECCIÓN: REFLEXIÓN-->
         <section id="reflexión" class="week-section">
@@ -967,7 +1361,7 @@ otros proyectos ni de ejemplos de clase.</pre>
           <p>Lo que más me sorprendió fue el costo de distribuir. La certificación NOM-208 a 10 unidades puede costar más que el propio aparato, y la comisión de las tiendas de apps puede cambiar mi estrategia de cobro.</p>
         </section>
         <!--FIN SECCIÓN: REFLEXIÓN-->
-
+ 
       </div>
 
     </div>

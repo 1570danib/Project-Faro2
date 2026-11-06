@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniela Barranco - Semana 8</title>
+    <link rel="stylesheet" href="../../css/style.css">
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <a href="../../../index.html">Inicio</a>
+        <a href="../../../assignments.html">Tareas semanales</a>
+        <a href="../../../final-project.html">Proyecto final</a>
+        <a href="../../../about.html">Yo merengues</a>
+      </div>
+    </div>
+
+    <!--Hero Section-->
+    <div class="hero-section">
+      <div class="hero-container">
+        <div class="hero-text text-center">
+          <h1>Prototipado y diseño para manufactura</h1>
+          <h2>Semana 8</h2>
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN LAYOUT WITH SIDEBAR -->
+    <div class="week-layout">
+      <!-- SIDEBAR MENU -->
+      <aside class="week-sidebar">
+        <nav class="week-sidebar-menu">
+          <a onclick="showWeekSection('prototipado')" class="week-link active">Prototipado</a>
+          <a onclick="showWeekSection('dfm-circular')" class="week-link">DFM y economía circular</a>
+          <a onclick="showWeekSection('defensa-tarea')" class="week-link">Defensa y tarea en casa</a>
+          <a onclick="showWeekSection('reflexion')" class="week-link">Reflexión</a>
+
+        </nav>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <div class="week-main-content">
+
+        <!--SECCIÓN 1: PROTOTIPADO-->
+        <section id="prototipado" class="week-section active">
+            <h2>Prototipado: por qué, qué tipo y cómo</h2>
+
+            <p>
+                Para Wooffi, el prototipo es la pregunta más barata que le puedo hacer al mundo real antes de
+                gastar los $115,631 de desarrollo que calculé en la semana 7. Esa semana me dejó una duda concreta:
+                mi modelo solo cierra si la gente paga lo que yo supuse. Eso lo tengo que convertir en evidencia.
+            </p>
+
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Por qué prototipar</h3>
+            <p>Mis tres razones, en orden de importancia:</p>
+            <ol>
+                <li><strong>Resolver preguntas pronto:</strong> convertir mis supuestos en evidencia.</li>
+                <li><strong>Aumentar la confianza:</strong> ver a dueños de perro reales interactuar con algo tangible.</li>
+                <li><strong>Reducir el riesgo:</strong> un error en papel cuesta minutos; en un prototipo, días; en un producto terminado, meses.</li>
+            </ol>
+
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr>
+                    <th>Prototipo de exploración</th>
+                    <th>First-iteration product</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td>Responde preguntas específicas</td><td>Producto mínimo usable por un usuario real</td></tr>
+                <tr><td>Puede ser imperfecto</td><td>Debe funcionar de forma autónoma y confiable</td></tr>
+                <tr><td>Lo usa el equipo para aprender</td><td>Lo usa el usuario final</td></tr>
+                <tr><td>Éxito = aprendizaje</td><td>Éxito = el usuario lo usa solo</td></tr>
+                </tbody>
+            </table>
+            </div>
+
+            <div class="summary-box">
+                <p>
+                    Mis prototipos de esta semana son <strong>de exploración</strong>, no el first-iteration product.
+                    El éxito no es que algo funcione, es que yo aprenda algo que antes no sabía. Y como el Business
+                    Blueprint me permite prototipar cualquier bloque, no solo el aparato, esta semana prototipo el
+                    bloque de <strong>ingresos y precio</strong>, que es donde la semana 7 me dejó el mayor riesgo.
+                </p>
+            </div>
+
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Tipos de prototipo</h3>
+            <p>
+                La regla que sigo es usar la <strong>resolución mínima que responda la pregunta</strong>. Uno de baja
+                resolución (boceto, maqueta de papel, página con precio) se hace en horas y da dirección. Uno de alta
+                resolución (demo funcional, electrónica operativa) cuesta más y sirve para elegir entre opciones concretas.
+                Estos son los cuatro tipos para un producto como Wooffi (artefacto + app + web):
+            </p>
+
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr>
+                    <th>Tipo</th>
+                    <th>Para qué lo usaría en Wooffi</th>
+                    <th>Resolución</th>
+                    <th>Esta semana</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><strong>Negocio</strong></td>
+                    <td>Saber si un dueño pagaría $2,990 de hardware y $149 al mes</td>
+                    <td>Baja</td>
+                    <td><strong>Sí, es el principal</strong></td>
+                </tr>
+                <tr>
+                    <td>Forma</td>
+                    <td>Tamaño y sistema de piezas: carcasa, plato, tapa</td>
+                    <td>Baja (cartón o impresión rápida)</td>
+                    <td>Después</td>
+                </tr>
+                <tr>
+                    <td>Función</td>
+                    <td>Rotor antiatasco con NEMA 17 y ESP32 sin carcasa</td>
+                    <td>Alta</td>
+                    <td>Siguiente hipótesis</td>
+                </tr>
+                <tr>
+                    <td>Experiencia</td>
+                    <td>Cargar, programar y confirmar la porción con una app básica</td>
+                    <td>Alta</td>
+                    <td>Después</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+
+            <div class="summary-box">
+                <p>
+                    Elijo el de <strong>negocio</strong> por la regla de la resolución mínima: una página con precio
+                    real responde la pregunta más importante en un día, mientras que probar el rotor me tomaría semanas.
+                    Además es el tipo más subestimado, porque se suele prototipar el aparato y dejar para el final saber
+                    si alguien lo compraría.
+                </p>
+            </div>
+
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Proceso de tres pasos: pregunta, prototipa, evidencia</h3>
+
+            <p class="step-title">Paso 1: hacer la pregunta correcta</p>
+            <p>Prioricé mis supuestos por riesgo (si es falso, destruye el modelo), indefinición (lo que nunca he construido) y controversia (lo que no logro decidir).</p>
+
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr>
+                    <th>Supuesto</th>
+                    <th>Riesgo</th>
+                    <th>Indefinición</th>
+                    <th>Controversia</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td><strong>Un dueño pagará $2,990 de hardware + $149 al mes</strong></td><td><strong>Alto</strong>: si es falso, el modelo no cierra</td><td>Alta: nunca lo he probado</td><td>Media</td></tr>
+                <tr><td>El rotor antiatasco no se traba</td><td>Alto</td><td><strong>Alta</strong></td><td>Baja</td></tr>
+                <tr><td>La app de IA ajusta bien la porción</td><td>Medio</td><td>Media</td><td>Media</td></tr>
+                </tbody>
+            </table>
+            </div>
+
+            <p>Elijo el primero. Una pregunta mal formulada sería "¿es viable el negocio?". La que formulo es esta:</p>
+            <div class="summary-box">
+                <p><strong>¿Un dueño de perro con sobrepeso o riesgo de sobrepeso hace clic en "Reservar mi Wooffi" después de ver el precio completo ($2,990 + $149 al mes), sin que yo se lo justifique?</strong></p>
+            </div>
+
+            <p class="step-title">Paso 2: construir el prototipo correcto</p>
+            <ol>
+                <li><strong>Hacerlo en un día o menos:</strong> una página de una sola pantalla, con precio real y botón de reserva.</li>
+                <li><strong>Falsificar cuando sea necesario:</strong> el botón no cobra, solo registra el interés y avisa que estamos en lista de espera. Debe sentirse real, no serlo.</li>
+                <li><strong>Crear variaciones:</strong> tres planes lado a lado para tener puntos de comparación.</li>
+                <li><strong>Capturar comportamiento, no opiniones:</strong> observo qué plan elige y si hace clic, no si le "gusta".</li>
+            </ol>
+
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr>
+                    <th>Plan</th>
+                    <th>Hardware</th>
+                    <th>Suscripción</th>
+                    <th>Qué pruebo</th>
+                    <th>Margen estimado</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td><strong>A. Dos capas</strong></td><td>$2,990</td><td>$149 al mes</td><td>Mi modelo base</td><td>≈ $253 por unidad y $126 al mes</td></tr>
+                <tr><td><strong>B. Enganche</strong></td><td>$1,990</td><td>$199 al mes</td><td>Hardware barato, suscripción más cara</td><td>≈ −$711 por unidad y $174 al mes</td></tr>
+                <tr><td><strong>C. Año incluido</strong></td><td>$4,490</td><td>12 meses incluidos, luego $149 al mes</td><td>Si prefieren pagar por adelantado</td><td>≈ $1,522 en el primer año</td></tr>
+                </tbody>
+            </table>
+            </div>
+            <p><small>
+                Los márgenes usan el costo puesto en casa del cliente que obtuve con el DFM de esta semana ($2,626 por
+                unidad a 100 piezas) y los supuestos de la semana 7. El mensaje de la página va en la obesidad canina y
+                en mi slogan: "Calidad de vida para tu compañero de vida".
+            </small></p>
+
+            <p class="step-title">Paso 3: colectar evidencia</p>
+            <ul>
+                <li><strong>Usuarios:</strong> mínimo 3, ideal 5, dueños de perro del segmento objetivo.</li>
+                <li><strong>Comportamientos a observar:</strong> a qué plan van primero, cuánto tardan en decidir, si hacen clic en reservar y si dudan con el precio.</li>
+                <li><strong>Cómo registrar:</strong> grabación de pantalla y notas.</li>
+                <li><strong>Si se atoran:</strong> pregunto "¿qué estás pensando ahora?", sin explicarles el precio.</li>
+            </ul>
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+                <p>El principio que sigo: lo que los usuarios hacen vale más que lo que dicen.</p>
+            </div>
+
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Mi plan de prototipado</h3>
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr>
+                    <th>Campo</th>
+                    <th>Contenido</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td><strong>Equipo y concepto</strong></td><td>Daniela Barranco · Wooffi, comedero inteligente con báscula, dosificador antiatasco y app con IA</td></tr>
+                <tr><td><strong>Supuesto a validar</strong></td><td>Un dueño pagará $2,990 de hardware + $149 al mes de suscripción</td></tr>
+                <tr><td><strong>Pregunta precisa</strong></td><td>¿Puede un dueño de perro con riesgo de sobrepeso decidir y reservar Wooffi después de ver el precio completo, sin que yo le explique nada?</td></tr>
+                <tr><td><strong>Tipo de prototipo</strong></td><td>Negocio</td></tr>
+                <tr><td><strong>Resolución</strong></td><td>Baja: la pregunta se responde con una página, no hace falta el producto</td></tr>
+                <tr><td><strong>Qué construir</strong></td><td>Una página de una pantalla con tres planes, precio real y botón de reserva (Figma o similar), en unas 2 horas</td></tr>
+                <tr><td><strong>Cómo capturar evidencia</strong></td><td>Qué plan eligen, clic en reservar, apartado y tiempo de decisión</td></tr>
+                <tr><td><strong>Umbral de éxito</strong></td><td><strong>3 de 5 hacen clic en reservar</strong> (señal débil) y <strong>2 de 5 aceptan dejar un apartado reembolsable</strong> (señal fuerte), todo en menos de 3 minutos</td></tr>
+                </tbody>
+            </table>
+            </div>
+
+            <div class="summary-box">
+                <p>
+                    <strong>Si no se cumple el umbral:</strong> pruebo una suscripción de $99 y un hardware de $2,490,
+                    o cambio de modelo hacia pago único. En la semana 7 vi que, con suscripción de $99, el VPN a
+                    12 meses en efectivo pasa de +$3,030 a −$10,685, así que esa es justo la variación que más me
+                    conviene mirar.
+                </p>
+            </div>
+        </section>
+        <!--FIN SECCIÓN 1: PROTOTIPADO-->
+
+
+        <!--SECCIÓN 2: DFM Y ECONOMÍA CIRCULAR-->
+        <section id="dfm-circular" class="week-section">
+            <h2>Diseño para manufactura y economía circular</h2>
+
+            <p>
+                Un prototipo de un solo ejemplar no se puede reproducir tal cual. El diseño para manufactura (DFM)
+                busca bajar el costo de fabricación sin perder calidad ni funcionalidad, y se hace desde la etapa de
+                concepto. Seguí el proceso de cinco pasos de Ulrich y Eppinger y lo corrí con Claude con un prompt
+                basado en el de mi profesor.
+            </p>
+
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Prompt que utilicé</h3>
+<pre><code>Actúa como ingeniero de manufactura con experiencia en DFM y DFA para productos
+IoT en prototipo temprano. Sigues el proceso de Ulrich y Eppinger y trabajas con
+recursos de laboratorio universitario (impresión 3D FDM, corte láser, CNC) y
+manufactura externa básica (JLCPCB PCBA). Sé concreto: cada ahorro lleva monto,
+y lo que no puedas calcular lo marcas como hipótesis por validar.
+
+Concepto: Wooffi, comedero para perros con báscula en el plato, dosificador con
+rotor antiatasco y NEMA 17, ESP32-S3 y app con IA. Volúmenes: 10 y 100 unidades.
+Restricción: BOM de máximo $1,500 MXN (ideal menor a $1,000).
+
+Componentes principales: [los ocho más caros de mi BOM, con su precio]
+
+Haz lo siguiente:
+1. Costo unitario a 10 y 100 unidades (BOM, ensamble manual y 15% de indirectos).
+2. Los tres componentes más caros, con alternativas estándar y compatibilidad
+   con la librería Basic de JLCPCB.
+3. Partes de la carcasa, cierres, tiempo de ensamble actual y mejorado.
+4. Costos de soporte: control de calidad, inventario, documentación.
+5. Trade-offs en calidad, tiempo al mercado y propuesta de valor.
+
+Formato: "Revisión DFM" con costo actual, oportunidades por componente, ensamble,
+costo con mejoras, trade-offs y compatibilidad con JLCPCB PCBA (✅ / ⚠️ / ❌).</code></pre>
+
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Revisión DFM de Wooffi</h3>
+
+            <p class="step-title">Paso 1: costo actual</p>
+            <p>Con la fórmula BOM + ensamble de 2 h + 15% de indirectos y mi BOM completo de $2,119:</p>
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr>
+                    <th></th>
+                    <th>10 unidades</th>
+                    <th>100 unidades</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td>Costo de fabricación actual</td><td><strong>$2,715</strong></td><td><strong>$2,474</strong></td></tr>
+                </tbody>
+            </table>
+            </div>
+
+            <p class="step-title">Paso 2: componentes más caros y alternativas</p>
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr>
+                    <th>Componente</th>
+                    <th>Costo</th>
+                    <th>Alternativa estándar</th>
+                    <th>Ahorro</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td>Cuerpo PETG impreso</td><td>$340</td><td>Menos masa y menos piezas; imprimir en lote (hipótesis por validar)</td><td>por medir</td></tr>
+                <tr><td>ESP32-S3-CAM</td><td>$280</td><td>ESP32-S3 sin cámara, con puerto para módulo opcional</td><td>−$150</td></tr>
+                <tr><td>Cubierta de aluminio</td><td>$250</td><td>PETG en vez de aluminio</td><td>−$250</td></tr>
+                <tr><td>4 celdas de carga de 50 kg</td><td>$88</td><td>1 celda de 5 kg bajo el plato, con topes de sobrecarga</td><td>−$47</td></tr>
+                <tr><td>Pantalla IPS</td><td>$100</td><td>LEDs de estado (≈ $15, estimado)</td><td>−$85</td></tr>
+                <tr><td>Baterías + BMS</td><td>$147</td><td>Diferir; alimentación solo por USB-C</td><td>−$147</td></tr>
+                </tbody>
+            </table>
+            </div>
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+                <ul>
+                    <li>Las celdas de 50 kg son de báscula de personas, demasiado para un plato. Con topes de sobrecarga una de 5 kg debería bastar, pero lo tengo que validar con una prueba.</li>
+                    <li><strong>Hipótesis por validar:</strong> quitar la celda de 5 kg del depósito (−$62) y estimar el inventario contando los pasos del rotor más el sensor IR de nivel bajo.</li>
+                    <li>El plato de acero y la plataforma ya son estándar.</li>
+                </ul>
+            </div>
+
+            <p><strong>Compatibilidad con JLCPCB PCBA</strong> (preliminar: la disponibilidad real de cada pieza se verifica en jlcpcb.com/parts):</p>
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr>
+                    <th>Elemento</th>
+                    <th>Estado</th>
+                    <th>Nota</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td>Módulo ESP32-S3</td><td>⚠️</td><td>Probablemente librería Extended (cargo extra por referencia)</td></tr>
+                <tr><td>Driver A4988 como chip</td><td>❌</td><td>Su encapsulado tiene pitch menor a 0.8 mm. Usar el módulo con headers</td></tr>
+                <tr><td>HX711</td><td>⚠️</td><td>Encapsulado de pitch 1.27 mm, pero verificar si es Basic</td></tr>
+                <tr><td>Regulador de 5 V</td><td>⚠️</td><td>Buscar un equivalente Basic</td></tr>
+                <tr><td>Conectores de sensores y motor</td><td>⚠️</td><td>Verificar</td></tr>
+                <tr><td>Buzzer, resistencias y capacitores</td><td>✅</td><td>Estándar</td></tr>
+                <tr><td>PCB en 2 capas</td><td>✅</td><td>Rutear en 2 capas</td></tr>
+                </tbody>
+            </table>
+            </div>
+
+            <p class="step-title">Paso 3: ensamble (DFA)</p>
+            <ul>
+                <li><strong>Hoy:</strong> según mi concepto serían ≈ 8 piezas de carcasa y ≈ 20 tornillos (supuesto, falta confirmarlo con el CAD) y un ensamble de 2 h.</li>
+                <li><strong>Rediseño:</strong> depósito y tapa con snap-fit; la electrónica en una charola extraíble con conectores; un solo tornillo por módulo.</li>
+                <li><strong>Meta de ensamble:</strong> 1 h por unidad (−$130). Es una meta que voy a medir, no una medición.</li>
+                <li>Las piezas desmontables para limpiar ayudan también a la circularidad.</li>
+            </ul>
+
+            <p class="step-title">Paso 4: costos de soporte</p>
+            <ul>
+                <li><strong>Control de calidad:</strong> calibrar cada báscula con un peso patrón.</li>
+                <li><strong>Inventario:</strong> cada referencia del BOM es una línea que gestionar; las mejoras eliminan 5 referencias.</li>
+                <li><strong>Documentación:</strong> una instrucción de calibración de una página.</li>
+            </ul>
+
+            <p class="step-title">Paso 5: trade-offs</p>
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+                <ul>
+                    <li>La <strong>cámara, la pantalla, la batería y el aluminio</strong> estaban en mi lista de funciones. Quitarlos baja el costo, pero me aleja de la visión completa y de funciones que ofrece la competencia. Los dejo como versión 2 modular.</li>
+                    <li>Quitar la cámara no afecta mi propuesta de valor central (controlar el peso), pero cambia el mensaje de "ver a mi perro".</li>
+                    <li><strong>Lo que no recorto:</strong> la báscula en cada comida, el dosificador antiatasco y el reconocimiento por IA, que son los costos D de la semana 7.</li>
+                </ul>
+            </div>
+
+            <p class="step-title">Resultado: costo con mejoras</p>
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr>
+                    <th>BOM</th>
+                    <th>Total</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td>Semana 7, completo</td><td>$2,119</td></tr>
+                <tr><td>Semana 7, piloto</td><td>$1,472</td></tr>
+                <tr><td><strong>DFM, cambios seguros</strong></td><td><strong>$1,440</strong></td></tr>
+                <tr><td>DFM, con la hipótesis de quitar la celda del depósito</td><td>$1,378</td></tr>
+                <tr><td>Con el NEMA 17 a $138 (10 piezas)</td><td>$1,422 / $1,360</td></tr>
+                </tbody>
+            </table>
+            </div>
+
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr>
+                    <th>Costo de fabricación (BOM + ensamble + 15%)</th>
+                    <th>10 unidades</th>
+                    <th>100 unidades</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td>Actual (BOM completo, ensamble de 2 h)</td><td>$2,715</td><td>$2,474</td></tr>
+                <tr><td><strong>Con DFM seguro y ensamble de 1 h</strong></td><td><strong>$1,785</strong></td><td><strong>$1,621</strong></td></tr>
+                </tbody>
+            </table>
+            </div>
+
+            <div class="summary-box">
+                <p>
+                    El costo de fabricación baja un <strong>34%</strong> en ambos volúmenes, y por primera vez mi BOM
+                    queda <strong>por debajo de mi límite de $1,500</strong> (la meta ideal de $1,000 sigue lejos).
+                    Puesto en casa del cliente, el costo a 100 unidades pasa de $3,674 a <strong>$2,626</strong>.
+                    <br><br>
+                    <strong>Impacto en la semana 7:</strong> con el hardware a $2,990, mi margen por unidad sube de
+                    $54 a $253; el equilibrio por vida del cliente baja de ≈ 21 a ≈ 19 clientes (con la inversión en
+                    efectivo); y el VPN a 12 meses en efectivo sube de +$3,030 a <strong>+$21,213</strong>.
+                </p>
+            </div>
+
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Economía circular y la Ley General</h3>
+            <p>
+                La Ley General de Economía Circular se publicó en el Diario Oficial de la Federación el 19 de enero de
+                2026 y ya está vigente. Diseñar para manufactura sin diseñar para circularidad es cumplir a medias.
+                Los principios que más me importan para Wooffi son el diseño circular (la circularidad se decide desde
+                el boceto), la modularidad, la reparabilidad y el diseño atemporal, que evita la obsolescencia
+                programada. Estas son mis cuatro preguntas de circularidad:
+            </p>
+
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr>
+                    <th>Pregunta</th>
+                    <th>Principio</th>
+                    <th>Cómo responde Wooffi</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td>¿Los componentes son accesibles para reparación?</td><td>Reparabilidad (Art. 4, X)</td><td>Carcasa abrible con snap-fit y tornillos accesibles; charola de electrónica extraíble</td></tr>
+                <tr><td>¿Los módulos se reemplazan por separado?</td><td>Modular (Art. 4, VIII)</td><td>PCB con conectores; rotor, báscula y motor intercambiables; las piezas modulares que ya tenía en mi lista</td></tr>
+                <tr><td>¿Los materiales son identificables para reciclaje?</td><td>Ciclo de vida</td><td>Marcar las piezas de PETG con su código de reciclaje; plato de acero separable</td></tr>
+                <tr><td>¿Se puede actualizar sin reemplazar?</td><td>Atemporal (Art. 4, I)</td><td>Actualizaciones OTA; puerto para módulo de cámara, pantalla y batería en la versión 2</td></tr>
+                </tbody>
+            </table>
+            </div>
+
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+                <p>
+                    <strong>Responsabilidad Extendida del Productor (REP, Art. 3, fr. XXXI).</strong> Hace al productor
+                    responsable ambiental de su producto durante todo su ciclo de vida, incluida la disposición final.
+                    Wooffi es un producto electrónico (RAEE), una categoría prioritaria. Si lo vendo, soy responsable de
+                    lo que pasa cuando se tire, y eso es un costo y una obligación que
+                    <strong>todavía no está en mi modelo de la semana 7</strong>. Lo agrego como pendiente: investigar
+                    el acuerdo sectorial de SEMARNAT y qué implica para un productor pequeño.
+                </p>
+            </div>
+
+            <div class="summary-box">
+                <p>
+                    <strong>Una oportunidad:</strong> el Distintivo Nacional de Economía Circular (Art. 17, fr. VI)
+                    reconoce a los productos que cumplen criterios de circularidad. La modularidad que ya diseñé podría
+                    cumplirlos y convertirse en un argumento de marca.
+                </p>
+            </div>
+        </section>
+        <!--FIN SECCIÓN 2: DFM Y ECONOMÍA CIRCULAR-->
+
+
+        <!--SECCIÓN 3: DEFENSA Y TAREA EN CASA-->
+        <section id="defensa-tarea" class="week-section">
+            <h2>Defensa del plan y tarea en casa</h2>
+
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Defensa del plan (4 minutos)</h3>
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr>
+                    <th>Parte</th>
+                    <th>Lo que voy a decir</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td><strong>1. Supuesto más riesgoso</strong></td><td>Que un dueño pague $2,990 de hardware y $149 al mes. Si es falso, el modelo no cierra: con una suscripción de $99, el VPN a 12 meses en efectivo pasa de +$3,030 a −$10,685.</td></tr>
+                <tr><td><strong>2. Prototipo</strong></td><td>Una página de baja resolución con tres planes, hecha en unas 2 horas. Responde si el usuario reserva Wooffi al ver el precio completo.</td></tr>
+                <tr><td><strong>3. Evidencia</strong></td><td>Considero que funcionó si 3 de 5 usuarios hacen clic en reservar y 2 de 5 dejan un apartado reembolsable, en menos de 3 minutos.</td></tr>
+                <tr><td><strong>4. DFM</strong></td><td>El componente más caro es el cuerpo de PETG ($340). El mayor ahorro es la cubierta de aluminio, que paso a PETG (−$250). Mi BOM baja de $2,119 a $1,440 y el costo de fabricación a 100 unidades pasa de $2,474 a $1,621.</td></tr>
+                </tbody>
+            </table>
+            </div>
+
+            <p><strong>Preguntas que me podrían hacer:</strong></p>
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+                <ul>
+                    <li><strong>¿Por qué ese supuesto y no el rotor?</strong> Porque la semana 7 muestra que todo mi VPN depende de ese precio, y se prueba en un día. El rotor es la siguiente hipótesis.</li>
+                    <li><strong>Si el usuario no puede hacer la acción, ¿qué cambia: diseño, material o instalación?</strong> En un prototipo de negocio no cambia el diseño: cambia el precio, el esquema (enganche o pago único) o el mensaje.</li>
+                    <li><strong>¿Baja resolución por la pregunta o por falta de tiempo?</strong> Por la pregunta: una página responde si pagan; un producto funcional no sería más informativo.</li>
+                </ul>
+            </div>
+
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Tarea en casa</h3>
+            <div class="notes-container" style="background-color: #caf0f8; border-left: 5px solid #0096c7; padding: 15px; margin-bottom: 20px;">
+                <p><strong>[COMPLETAR]</strong> Las partes 8.1 y 8.2 y el resultado de 8.4 dependen de lo que yo construya y observe. Están marcadas para llenarlas con mis fotos y mis pruebas reales; la parte 8.3 ya está resuelta.</p>
+            </div>
+
+            <p class="step-title">8.1 Construir el primer prototipo (2 h)</p>
+            <p>Entregable: captura o video de la página y descripción de construcción.</p>
+            <p><strong>[COMPLETAR]</strong> <em>Construí una página de una sola pantalla con los tres planes de Wooffi y precio real. El botón "Reservar" no cobra: registra el interés y muestra un mensaje de lista de espera. Tardé [X] horas usando [herramienta].</em></p>
+            <p><strong>[COMPLETAR]</strong> Foto o video de la página aquí.</p>
+
+            <p class="step-title">8.2 Probar con mínimo 3 usuarios (1 h)</p>
+            <p>Registro lo que hacen, no lo que opinan.</p>
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr>
+                    <th>Usuario</th>
+                    <th>Perfil (perro, cuidadores)</th>
+                    <th>Plan que mira primero</th>
+                    <th>Plan que elige</th>
+                    <th>¿Clic en reservar?</th>
+                    <th>¿Apartado?</th>
+                    <th>Tiempo</th>
+                    <th>Lo que dijo o hizo</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td>1</td><td>[COMPLETAR]</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>2</td><td>[COMPLETAR]</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>3</td><td>[COMPLETAR]</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>4 (ideal)</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>5 (ideal)</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                </tbody>
+            </table>
+            </div>
+
+            <p class="step-title">8.3 Mejoras DFM y BOM actualizado (1 h)</p>
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr>
+                    <th>Concepto</th>
+                    <th>Antes</th>
+                    <th>Después</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td>BOM</td><td>$2,119</td><td><strong>$1,440</strong> (seguro) / $1,378 (con validación)</td></tr>
+                <tr><td>Costo de fabricación a 10 unidades</td><td>$2,715</td><td><strong>$1,785</strong></td></tr>
+                <tr><td>Costo de fabricación a 100 unidades</td><td>$2,474</td><td><strong>$1,621</strong></td></tr>
+                <tr><td>Costo puesto en casa del cliente a 100 unidades</td><td>$3,674</td><td><strong>$2,626</strong></td></tr>
+                </tbody>
+            </table>
+            </div>
+
+            <p class="step-title">8.4 Reporte del prototipo</p>
+            <div style="overflow-x: auto;">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                <tr>
+                    <th>Campo</th>
+                    <th>Contenido</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td><strong>Equipo y concepto</strong></td><td>Daniela Barranco · Wooffi</td></tr>
+                <tr><td><strong>Tipo y resolución</strong></td><td>Negocio · baja</td></tr>
+                <tr><td><strong>Materiales y tiempo</strong></td><td>Página de una pantalla · unas 2 h</td></tr>
+                <tr><td><strong>Pregunta que respondía</strong></td><td>¿Un dueño reserva Wooffi viendo el precio completo?</td></tr>
+                <tr><td><strong>Evidencia por usuario</strong></td><td>[COMPLETAR] Tabla 8.2 (comportamiento, no opinión)</td></tr>
+                <tr><td><strong>¿Se validó el supuesto?</strong></td><td>[COMPLETAR] Sí / No / Parcialmente, y por qué (umbral: 3 de 5 y 2 de 5)</td></tr>
+                <tr><td><strong>Aprendizaje clave</strong></td><td>[COMPLETAR]</td></tr>
+                <tr><td><strong>Cambio al diseño</strong></td><td>[COMPLETAR] Precio, plan o mensaje; y los cambios DFM de 8.3</td></tr>
+                <tr><td><strong>Siguiente hipótesis a prototipar</strong></td><td>Que el rotor antiatasco no se traba con croquetas de distinto tamaño (prototipo de función)</td></tr>
+                </tbody>
+            </table>
+            </div>
+
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Lo que debo poder responder</h3>
+            <div class="summary-box">
+                <ul>
+                    <li><strong>¿Cuál es el supuesto más riesgoso y qué prototipo lo validará?</strong> Que un dueño pagará $2,990 + $149 al mes; lo valido con una página de negocio.</li>
+                    <li><strong>¿Qué evidencia de comportamiento capturaré?</strong> A qué plan van, clic en reservar, apartado y tiempo de decisión.</li>
+                    <li><strong>¿Cuál es el componente más caro de mi BOM y su alternativa DFM?</strong> El cuerpo PETG ($340), con menos masa y menos piezas. El mayor ahorro está en la cubierta de aluminio, que paso a PETG (−$250).</li>
+                    <li><strong>¿Cuántas partes tiene la carcasa y cómo las reduzco?</strong> ≈ 8 hoy (supuesto a confirmar con el CAD). Mi meta es reducirlas con snap-fit y una charola extraíble.</li>
+                </ul>
+            </div>
+
+            <h3 style="color: var(--primary-dark, #0895b1); border-bottom: 2px solid #ade8f4; padding-bottom: 8px; margin-top: 40px;">Bibliografía y herramientas</h3>
+            <ul>
+                <li>Ulrich, Eppinger y Yang (2026), <em>Product Design and Development</em>, 7.ª ed., cap. 13: DFM.</li>
+                <li>IDEO U, <em>Business Design</em>: prototipado en tres pasos.</li>
+                <li>Cámara de Diputados (2026), <em>Ley General de Economía Circular</em>, DOF, arts. 1 a 4.</li>
+                <li><a href="https://jlcpcb.com" target="_blank">JLCPCB</a> y su <a href="https://jlcpcb.com/parts" target="_blank">librería de partes</a>, para cotizar PCB y PCBA y revisar disponibilidad.</li>
+                <li><a href="https://www.bambulab.com" target="_blank">Bambu Lab</a> o <a href="https://www.prusa3d.com" target="_blank">PrusaSlicer</a>, para verificar voladizos mayores a 45° y paredes menores a 1.2 mm antes de imprimir.</li>
+                <li><a href="https://www.figma.com" target="_blank">Figma</a> y <a href="https://miro.com" target="_blank">Miro</a>, para la página de negocio y el plan.</li>
+            </ul>
+        </section>
+        <!--FIN SECCIÓN 3: DEFENSA Y TAREA EN CASA-->
+
+
+        <!--SECCIÓN 4: REFLEXIÓN-->
+        <section id="reflexion" class="week-section">
+            <h2>Reflexión</h2>
+
+            <p>Esta semana entendí que mi pregunta más peligrosa no era técnica. Había puesto el rotor antiatasco en el centro, pero el modelo de la semana 7 me mostró que lo que más mueve el resultado es si alguien paga el precio que supuse. Creo que probar eso primero es lo correcto, aunque me da un poco de miedo que la página me diga que no.</p>
+
+            <p>El DFM me sorprendió porque el ahorro más grande no salió de ser más inteligente con la electrónica, sino de dejar para después cosas que yo quería desde el principio: la cámara, la pantalla, la batería. Todavía no sé si dejarlas fuera cambia la historia de Wooffi. Eso también tengo que preguntárselo a los usuarios.</p>
+
+            <p>Y la Ley de Economía Circular me hizo ver un costo que no tenía en la cuenta: si vendo un aparato electrónico, también soy responsable de lo que pasa cuando se tira.</p>
+        </section>
+        <!--FIN SECCIÓN 4: REFLEXIÓN-->
+
+      </div>
+
+    </div>
+
+    <footer>
+      <p>Copyright 2026 Daniela Barranco - Creative Commons Atribución No Comercial</p>
+      <p>Código fuente alojado en <a href="https://gitlab.fabcloud.org/academany/fabacademy/2026/labs/puebla/students/daniela-barranco" target="_blank">gitlab.fabcloud.org</a></p>
+    </footer>
+
+    <script src="../../css/slideshow.js"></script>
+
+    <script>
+      function showWeekSection(sectionId) {
+        const sections = document.querySelectorAll('.week-section');
+        sections.forEach(section => section.classList.remove('active'));
+        const links = document.querySelectorAll('.week-link');
+        links.forEach(link => link.classList.remove('active'));
+        const target = document.getElementById(sectionId);
+        if (target) target.classList.add('active');
+        if (typeof event !== 'undefined' && event && event.currentTarget) {
+          event.currentTarget.classList.add('active');
+          event.preventDefault();
+        }
+      }
+    </script>
+  </body>
+</html>
